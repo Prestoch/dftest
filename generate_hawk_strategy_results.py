@@ -75,6 +75,8 @@ def parse_cs(path: Path) -> Dict[str, object]:
         start = eq_idx + 1
         if key == "win_rates":
             end = text.find(",\nupdate_time", start)
+            if end == -1:
+                end = text.find(";\nupdate_time", start)
         else:
             end = text.find(",\n", start)
         if end == -1:
