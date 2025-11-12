@@ -90,7 +90,7 @@ def build_matrix_payload(
                 total_matches += matches
                 total_wins += win_rate * matches
 
-            delta = (win_rate - 0.5) * 100
+            delta = (0.5 - win_rate) * 100
             row.append([f"{delta:.4f}", f"{win_rate * 100:.4f}", matches])
 
         if total_matches:
