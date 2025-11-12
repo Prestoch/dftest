@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import csv
 import json
+import argparse
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
@@ -132,9 +133,16 @@ def load_matches(
     path: Path,
     hero_to_index: Dict[str, int],
     delta_matrix: Sequence[Sequence[Optional[float]]],
+    championship_filter: Optional[Sequence[str]] = None,
 ) -> List[Match]:
     with path.open(newline="") as f:
         reader = list(csv.DictReader(f))
+
+    filter_set = (
+        {championship.strip() for championship in championship_filter}
+        if championship_filter
+        else None
+    )
 
     def sort_key(row: Dict[str, str]) -> Tuple:
         return (
@@ -149,6 +157,10 @@ def load_matches(
 
     matches: List[Match] = []
     for row in reader:
+        championship_name = row["championship"].strip()
+        if filter_set and championship_name not in filter_set:
+            continue
+
         team1_name = row["team1"].strip()
         team2_name = row["team2"].strip()
 
@@ -317,14 +329,40 @@ def simulate_strategy(matches: Sequence[Match], config: StrategyConfig) -> List[
 
 
 def main() -> None:
-    cs_data = parse_cs(CS_PATH)
+    parser = argparse.ArgumentParser(description="Simulate betting strategies on Hawk dataset.")
+    parser.add_argument("--cs", type=Path, default=CS_PATH, help="Path to cs.json (default: cs.json)")
+    parser.add_argument(
+        "--matches",
+        type=Path,
+        default=MATCHES_PATH,
+        help="Path to hawk match CSV (default: hawk_matches_merged.csv)",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=OUTPUT_PATH,
+        help="Destination CSV path (default: strategy_results_hawk_cs.csv)",
+    )
+    parser.add_argument(
+        "--championship",
+        action="append",
+        help="Filter to specific championship (can be provided multiple times).",
+    )
+    args = parser.parse_args()
+
+    cs_data = parse_cs(args.cs)
     heroes: List[str] = cs_data["heroes"]  # type: ignore[assignment]
     win_rates = cs_data["win_rates"]  # type: ignore[assignment]
 
     hero_to_index = {normalize_hero_name(name): idx for idx, name in enumerate(heroes)}
     delta_matrix = build_delta_matrix(win_rates)  # type: ignore[arg-type]
 
-    matches = load_matches(MATCHES_PATH, hero_to_index, delta_matrix)
+    matches = load_matches(
+        args.matches,
+        hero_to_index,
+        delta_matrix,
+        championship_filter=args.championship,
+    )
 
     strategy_configs: List[StrategyConfig] = [
         StrategyConfig("Flat100", "none", "any", "flat", 100.0),
@@ -379,7 +417,7 @@ def main() -> None:
         "max_step",
     ]
 
-    with OUTPUT_PATH.open("w", newline="") as f:
+    with args.output.open("w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(header)
 
@@ -387,7 +425,7 @@ def main() -> None:
             rows = simulate_strategy(matches, config)
             writer.writerows(rows)
 
-    print(f"Wrote strategy results to {OUTPUT_PATH}")
+    print(f"Wrote strategy results to {args.output}")
 
 
 if __name__ == "__main__":
