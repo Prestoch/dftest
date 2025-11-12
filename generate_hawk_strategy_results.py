@@ -195,12 +195,22 @@ def load_matches(
         ]
 
         team1_delta = sum(team1_hero_deltas)
-        match_delta = team1_delta
+        team2_delta = sum(team2_hero_deltas)
 
-        if abs(match_delta) < 1e-9:
+        favored_team: str
+        match_delta: float
+        if team1_delta > team2_delta:
+            favored_team = "team1"
+            match_delta = team1_delta
+        elif team2_delta > team1_delta:
+            favored_team = "team2"
+            match_delta = team2_delta
+        else:
             continue
 
-        favored_team = "team1" if match_delta > 0 else "team2"
+        if match_delta <= 0:
+            continue
+
         favored_odds = team1_odds if favored_team == "team1" else team2_odds
         opponent_odds = team2_odds if favored_team == "team1" else team1_odds
 

@@ -8,8 +8,8 @@ Flat100,none,any,30,14,2,14,0,1000,100,0
 Flat100,none,any,35,28,9,32,0,1000,100,0
 Flat100,none,any,40,35,14,40,411,738,100,0
 Flat100,none,any,45,33,14,42,611,738,100,0
-Flat100,none,any,50,30,13,43,703,596,100,0
-Flat100,none,any,75,11,3,27,432,625,100,0
+Flat100,none,any,50,29,12,41,363,779,100,0
+Flat100,none,any,75,10,3,30,532,525,100,0
 Flat100,none,any,100,5,1,20,657,400,100,0
 Flat100,none,any,125,1,1,100,1057,0,100,0
 Flat100,none,any,150,0,0,0,1000,0,0,0
@@ -22,8 +22,8 @@ Flat100,none,underdog,30,14,2,14,0,1000,100,0
 Flat100,none,underdog,35,28,8,29,271,754,100,0
 Flat100,none,underdog,40,25,8,32,571,496,100,0
 Flat100,none,underdog,45,23,8,35,771,496,100,0
-Flat100,none,underdog,50,20,7,35,863,396,100,0
-Flat100,none,underdog,75,7,1,14,501,499,100,0
+Flat100,none,underdog,50,19,6,32,523,602,100,0
+Flat100,none,underdog,75,6,1,17,601,399,100,0
 Flat100,none,underdog,100,4,0,0,600,400,100,0
 Flat100,none,underdog,125,0,0,0,1000,0,0,0
 Flat100,none,underdog,150,0,0,0,1000,0,0,0
@@ -50,8 +50,8 @@ Pct5,none,any,30,49,17,35,444,578,50,0
 Pct5,none,any,35,40,15,38,597,412,50,0
 Pct5,none,any,40,35,14,40,703,326,50,0
 Pct5,none,any,45,33,14,42,779,326,50,0
-Pct5,none,any,50,30,13,43,819,265,50,0
-Pct5,none,any,75,11,3,27,743,277,50,0
+Pct5,none,any,50,29,12,41,700,345,50,0
+Pct5,none,any,75,10,3,30,782,239,50,0
 Pct5,none,any,100,5,1,20,838,185,50,0
 Pct5,none,any,125,1,1,100,1028,0,50,0
 Pct5,none,any,150,0,0,0,1000,0,0,0
@@ -64,8 +64,8 @@ Pct5,none,underdog,30,34,8,24,484,521,50,0
 Pct5,none,underdog,35,28,8,29,658,348,50,0
 Pct5,none,underdog,40,25,8,32,767,240,50,0
 Pct5,none,underdog,45,23,8,35,850,227,50,0
-Pct5,none,underdog,50,20,7,35,894,186,50,0
-Pct5,none,underdog,75,7,1,14,772,228,50,0
+Pct5,none,underdog,50,19,6,32,764,281,50,0
+Pct5,none,underdog,75,6,1,17,813,187,50,0
 Pct5,none,underdog,100,4,0,0,815,185,50,0
 Pct5,none,underdog,125,0,0,0,1000,0,0,0
 Pct5,none,underdog,150,0,0,0,1000,0,0,0
@@ -260,8 +260,8 @@ Fib1,none,any,30,49,17,35,1046,110,89,11
 Fib1,none,any,35,40,15,38,1006,16,13,7
 Fib1,none,any,40,35,14,40,1008,20,13,7
 Fib1,none,any,45,33,14,42,1010,20,13,7
-Fib1,none,any,50,30,13,43,1008,12,8,6
-Fib1,none,any,75,11,3,27,994,12,8,6
+Fib1,none,any,50,29,12,41,1005,12,8,6
+Fib1,none,any,75,10,3,30,996,7,5,5
 Fib1,none,any,100,5,1,20,996,7,5,5
 Fib1,none,any,125,1,1,100,1001,0,1,1
 Fib1,none,any,150,0,0,0,1000,0,0,0
@@ -274,8 +274,8 @@ Fib1,none,underdog,30,34,8,24,1058,212,144,12
 Fib1,none,underdog,35,28,8,29,1018,12,8,6
 Fib1,none,underdog,40,25,8,32,1008,7,5,5
 Fib1,none,underdog,45,23,8,35,1010,7,5,5
-Fib1,none,underdog,50,20,7,35,1006,4,3,4
-Fib1,none,underdog,75,7,1,14,993,7,3,4
+Fib1,none,underdog,50,19,6,32,1004,6,5,5
+Fib1,none,underdog,75,6,1,17,996,4,2,3
 Fib1,none,underdog,100,4,0,0,993,7,3,4
 Fib1,none,underdog,125,0,0,0,1000,0,0,0
 Fib1,none,underdog,150,0,0,0,1000,0,0,0
@@ -386,8 +386,8 @@ Fib5,none,any,30,49,17,35,1228,550,445,11
 Fib5,none,any,35,40,15,38,1031,80,65,7
 Fib5,none,any,40,35,14,40,1039,100,65,7
 Fib5,none,any,45,33,14,42,1050,100,65,7
-Fib5,none,any,50,30,13,43,1040,60,40,6
-Fib5,none,any,75,11,3,27,969,60,40,6
+Fib5,none,any,50,29,12,41,1023,60,40,6
+Fib5,none,any,75,10,3,30,982,35,25,5
 Fib5,none,any,100,5,1,20,979,35,25,5
 Fib5,none,any,125,1,1,100,1003,0,5,1
 Fib5,none,any,150,0,0,0,1000,0,0,0
@@ -400,8 +400,8 @@ Fib5,none,underdog,30,34,8,24,1221,1060,665,12
 Fib5,none,underdog,35,28,8,29,1088,59,40,6
 Fib5,none,underdog,40,25,8,32,1040,35,25,5
 Fib5,none,underdog,45,23,8,35,1052,35,25,5
-Fib5,none,underdog,50,20,7,35,1029,20,15,4
-Fib5,none,underdog,75,7,1,14,965,35,15,4
+Fib5,none,underdog,50,19,6,32,1018,30,25,5
+Fib5,none,underdog,75,6,1,17,980,20,10,3
 Fib5,none,underdog,100,4,0,0,965,35,15,4
 Fib5,none,underdog,125,0,0,0,1000,0,0,0
 Fib5,none,underdog,150,0,0,0,1000,0,0,0
