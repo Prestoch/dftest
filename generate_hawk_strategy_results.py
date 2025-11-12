@@ -195,7 +195,7 @@ def load_matches(
         ]
 
         team1_delta = sum(team1_hero_deltas)
-        match_delta = -team1_delta
+        match_delta = team1_delta
 
         if abs(match_delta) < 1e-9:
             continue
@@ -239,7 +239,7 @@ def should_bet_on_match(
 
     required = 4 if config.hero_filter == "4+4-" else 5
     favored_hero_deltas = match.hero_deltas[match.favored_team]
-    qualifying = sum(1 for value in favored_hero_deltas if value <= -threshold)
+    qualifying = sum(1 for value in favored_hero_deltas if value >= threshold)
     return qualifying >= required
 
 

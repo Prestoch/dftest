@@ -277,7 +277,7 @@ def build_cs_payload(
                 total_matches += matches
                 total_wins += win_rate * matches
 
-            delta = (0.5 - win_rate) * 100
+            delta = (win_rate - 0.5) * 100
             row.append([f"{delta:.4f}", f"{win_rate * 100:.4f}", matches])
 
         overall_wr = (total_wins / total_matches) * 100 if total_matches else 50.0
