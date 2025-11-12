@@ -16,7 +16,6 @@ import cloudscraper
 
 
 BASE_URL = "https://dota2protracker.com/api"
-PROTRACKER_OUTPUT_PATH = Path("protracker_matchups.json")
 CS_OUTPUT_PATH = Path("cs.json")
 REQUEST_DELAY_SECONDS = 0.35
 
@@ -302,17 +301,6 @@ def main() -> None:
 
     id_to_name = {hero["hero_id"]: hero["displayName"] for hero in heroes}
     matrix = build_matrix(heroes, scraper)
-
-    payload = {
-        "hero_map": id_to_name,
-        "matrix": matrix,
-        "generated_at": time.time(),
-    }
-
-    PROTRACKER_OUTPUT_PATH.write_text(json.dumps(payload, indent=2))
-    print(
-        f"Wrote ProTracker matchup data for {len(matrix)} heroes to {PROTRACKER_OUTPUT_PATH}"
-    )
 
     # Generate Dotabuff Counter Picker matrix
     missing_ids = [hero_id for hero_id in id_to_name if hero_id not in HERO_INDEX_MAP]
