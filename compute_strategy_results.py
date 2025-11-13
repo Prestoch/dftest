@@ -4,6 +4,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+import argparse
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -108,7 +109,11 @@ def hero_advantage(
 
 
 def compute_matches(
-    path: Path, heroes_wr: Sequence[float], win_delta: Sequence[Sequence[Optional[float]]], hero_index: dict[str, int]
+    path: Path,
+    heroes_wr: Sequence[float],
+    win_delta: Sequence[Sequence[Optional[float]]],
+    hero_index: dict[str, int],
+    championship_filter: Optional[set[str]] = None,
 ):
     matches = []
     missing_heroes: set[str] = set()
@@ -116,6 +121,9 @@ def compute_matches(
     with path.open(newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
+            if championship_filter and row["championship"] not in championship_filter:
+                continue
+
             team1_heroes = [name.strip() for name in row["team1_heroes"].split("|")]
             team2_heroes = [name.strip() for name in row["team2_heroes"].split("|")]
 
@@ -320,8 +328,29 @@ def evaluate_strategy(matches: Sequence[dict], config: StrategyConfig):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Compute betting strategy results.")
+    parser.add_argument(
+        "--championship",
+        action="append",
+        dest="championships",
+        help="Restrict to specific championship (repeatable).",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=OUTPUT_PATH,
+        help=f"Output CSV path (default: {OUTPUT_PATH})",
+    )
+    args = parser.parse_args()
+
+    championship_filter = (
+        set(args.championships) if args.championships else None
+    )
+
     heroes_wr, win_delta, hero_index = load_cs(CS_PATH)
-    matches = compute_matches(MATCHES_PATH, heroes_wr, win_delta, hero_index)
+    matches = compute_matches(
+        MATCHES_PATH, heroes_wr, win_delta, hero_index, championship_filter
+    )
 
     configs = [
         StrategyConfig(group, hero_filter, odds_condition, threshold)
@@ -347,12 +376,19 @@ def main():
         "max_step",
     ]
 
-    with OUTPUT_PATH.open("w", newline="", encoding="utf-8") as f:
+    with args.output.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(results)
 
-    print(f"Wrote {len(results)} rows to {OUTPUT_PATH}")
+    filter_msg = (
+        f" for championships {sorted(championship_filter)}"
+        if championship_filter
+        else ""
+    )
+    print(
+        f"Wrote {len(results)} rows to {args.output}{filter_msg}"
+    )
 
 
 if __name__ == "__main__":
