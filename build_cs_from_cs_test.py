@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 CS_TEST_PATH = Path("cs_test.json")
+CS_FALLBACK_PATH = Path("cs.json")
 D2PTMATCHUP_PATH = Path("d2ptmatchup.py")
 OUTPUT_PATH = Path("cs_test_matrix.json")
 
@@ -40,6 +41,40 @@ def format_float(value: float, decimals: int) -> str:
     return fmt.format(value)
 
 
+def load_fallback_names(hero_index_map: Dict[int, int]) -> Dict[int, str]:
+    if not CS_FALLBACK_PATH.exists():
+        return {}
+    text = CS_FALLBACK_PATH.read_text(encoding="utf-8")
+    marker = "var heroes = "
+    if marker not in text:
+        return {}
+    start = text.index(marker) + len(marker)
+    while start < len(text) and text[start] != "[":
+        start += 1
+    depth = 0
+    for idx in range(start, len(text)):
+        ch = text[idx]
+        if ch == "[":
+            depth += 1
+        elif ch == "]":
+            depth -= 1
+            if depth == 0:
+                end = idx + 1
+                break
+    else:
+        return {}
+    try:
+        heroes = json.loads(text[start:end])
+    except json.JSONDecodeError:
+        return {}
+    ordered_items = sorted(hero_index_map.items(), key=lambda kv: kv[1])
+    return {
+        hero_id: heroes[pos]
+        for pos, (hero_id, _) in enumerate(ordered_items)
+        if pos < len(heroes)
+    }
+
+
 def main() -> None:
     hero_index_map = load_hero_index_map()
 
@@ -47,19 +82,14 @@ def main() -> None:
     heroes_by_id: Dict[int, dict] = {hero["id"]: hero for hero in data}
 
     ordered_ids: List[int] = [
-        hero_id
-        for hero_id, _ in sorted(hero_index_map.items(), key=lambda item: item[1])
-        if hero_id in heroes_by_id
+        hero_id for hero_id, _ in sorted(hero_index_map.items(), key=lambda item: item[1])
     ]
 
-    missing_ids = [
-        hero_id
-        for hero_id in hero_index_map
-        if hero_id not in heroes_by_id
-    ]
+    fallback_names = load_fallback_names(hero_index_map)
+    missing_ids = [hero_id for hero_id in ordered_ids if hero_id not in heroes_by_id]
     if missing_ids:
         print(
-            "Warning: skipping hero IDs absent from cs_test.json:",
+            "Warning: missing hero data in cs_test.json for IDs:",
             ", ".join(map(str, missing_ids)),
         )
 
@@ -75,16 +105,21 @@ def main() -> None:
         matchup_lookup[hero_id] = {entry["id"]: entry for entry in enemies}
 
     for hero_id in ordered_ids:
-        hero = heroes_by_id[hero_id]
-        display_name = hero["dName"]
+        hero = heroes_by_id.get(hero_id)
+        if hero:
+            display_name = hero["dName"]
+            overall_wr = hero.get("rankAll", {}).get("wr", 50.0)
+            if overall_wr is None or math.isnan(overall_wr):
+                overall_wr = 50.0
+        else:
+            display_name = fallback_names.get(hero_id, f"Hero {hero_id}")
+            overall_wr = 50.0
+
         heroes.append(display_name)
         heroes_bg.append(
             f"https://www.dotabuff.com/assets/heroes/{slugify(display_name)}.jpg"
         )
 
-        overall_wr = hero.get("rankAll", {}).get("wr", 50.0)
-        if overall_wr is None or math.isnan(overall_wr):
-            overall_wr = 50.0
         heroes_wr.append(format_float(overall_wr, 2))
 
     for hero_id in ordered_ids:
