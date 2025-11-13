@@ -13,10 +13,11 @@ import ast
 import csv
 import math
 import re
+from argparse import ArgumentParser
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Callable, Iterable, List
+from typing import Iterable, List
 
 START_BANKROLL = 1000.0
 MAX_BET = 10_000.0
@@ -117,6 +118,8 @@ def load_matches(
     heroes: list[str],
     heroes_wr: list[float],
     win_rates: list[list[object]],
+    championship_exact: set[str],
+    championship_contains: list[str],
 ) -> list[MatchRecord]:
     index_map = {normalize_name(name): idx for idx, name in enumerate(heroes)}
     matches: list[MatchRecord] = []
@@ -124,6 +127,14 @@ def load_matches(
     with csv_path.open(newline="") as handle:
         reader = csv.DictReader(handle)
         for row in reader:
+            championship_name = row["championship"]
+            if championship_exact and championship_name not in championship_exact:
+                continue
+            if championship_contains and not any(
+                needle in championship_name for needle in championship_contains
+            ):
+                continue
+
             team1 = row["team1"]
             team2 = row["team2"]
 
@@ -367,12 +378,52 @@ def run_all_strategies(matches: list[MatchRecord]) -> list[dict[str, object]]:
 
 
 def main() -> None:
+    parser = ArgumentParser(description="Simulate betting strategies on Hawk match data.")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=Path("strategy_results_hawk.csv"),
+        help="Path to the output CSV file.",
+    )
+    parser.add_argument(
+        "--championship",
+        action="append",
+        default=[],
+        help="Restrict to matches whose championship exactly matches this string. "
+        "May be provided multiple times.",
+    )
+    parser.add_argument(
+        "--championship-contains",
+        dest="championship_contains",
+        action="append",
+        default=[],
+        help="Restrict to matches whose championship contains this substring. "
+        "May be provided multiple times.",
+    )
+    args = parser.parse_args()
+
+    championship_exact = {entry.strip() for entry in args.championship if entry.strip()}
+    championship_contains = [
+        entry.strip() for entry in args.championship_contains if entry.strip()
+    ]
+
     heroes, heroes_wr, win_rates = load_cs_data(Path("cs.json"))
-    matches = load_matches(Path("hawk_matches_merged.csv"), heroes, heroes_wr, win_rates)
+    matches = load_matches(
+        Path("hawk_matches_merged.csv"),
+        heroes,
+        heroes_wr,
+        win_rates,
+        championship_exact=championship_exact,
+        championship_contains=championship_contains,
+    )
+
+    if not matches:
+        print("No matches found with the specified filters.")
+        return
+
     results = run_all_strategies(matches)
 
-    output_path = Path("strategy_results_hawk.csv")
-    with output_path.open("w", newline="") as handle:
+    with args.output.open("w", newline="") as handle:
         writer = csv.DictWriter(
             handle,
             fieldnames=[
@@ -393,7 +444,10 @@ def main() -> None:
         for row in results:
             writer.writerow(row)
 
-    print(f"Wrote {len(results)} rows to {output_path}")
+    print(
+        f"Wrote {len(results)} rows to {args.output} "
+        f"from {len(matches)} filtered matches."
+    )
 
 
 if __name__ == "__main__":
