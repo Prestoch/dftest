@@ -28,6 +28,15 @@ THRESHOLDS: Sequence[int] = (
     100,
     125,
     150,
+    200,
+    225,
+    250,
+    275,
+    300,
+    325,
+    350,
+    375,
+    400,
 )
 
 STRATEGY_GROUPS = ("Flat100", "Pct5", "Fib1", "Fib5")
@@ -341,13 +350,19 @@ def main():
         default=OUTPUT_PATH,
         help=f"Output CSV path (default: {OUTPUT_PATH})",
     )
+    parser.add_argument(
+        "--cs-path",
+        type=Path,
+        default=CS_PATH,
+        help=f"Path to cs dataset (default: {CS_PATH})",
+    )
     args = parser.parse_args()
 
     championship_filter = (
         set(args.championships) if args.championships else None
     )
 
-    heroes_wr, win_delta, hero_index = load_cs(CS_PATH)
+    heroes_wr, win_delta, hero_index = load_cs(args.cs_path)
     matches = compute_matches(
         MATCHES_PATH, heroes_wr, win_delta, hero_index, championship_filter
     )
@@ -387,7 +402,7 @@ def main():
         else ""
     )
     print(
-        f"Wrote {len(results)} rows to {args.output}{filter_msg}"
+        f"Wrote {len(results)} rows to {args.output}{filter_msg} using {args.cs_path}"
     )
 
 
