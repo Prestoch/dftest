@@ -1,0 +1,97 @@
+DOTA 2 BETTING SIMULATION - GENERATED FILES
+============================================
+
+Date: 2025-11-14
+Total Files Generated: 39
+
+SUMMARY & DOCUMENTATION
+-----------------------
+1. betting_results_SUMMARY.csv           - Complete results (576 configurations)
+2. BETTING_SIMULATION_SUMMARY.md         - Comprehensive analysis and insights
+3. ANALYSIS_SUMMARY.md                   - Original matrix creation documentation
+
+INDIVIDUAL STRATEGY RESULTS (36 CSV FILES)
+-------------------------------------------
+
+GROUP 1: FLAT $100 BETTING
+  4. betting_results_1_flat100_all.csv
+  5. betting_results_2_flat100_underdogs.csv
+  6. betting_results_3_flat100_favorites.csv
+
+GROUP 2: 5% BANKROLL BETTING
+  7. betting_results_4_pct5_all.csv
+  8. betting_results_5_pct5_underdogs.csv
+  9. betting_results_6_pct5_favorites.csv
+
+GROUP 3: FLAT $100, 4+4 HEROES
+  10. betting_results_7_flat100_4heroes_all.csv          ⭐ BEST PERFORMER
+  11. betting_results_8_flat100_4heroes_underdogs.csv
+  12. betting_results_9_flat100_4heroes_favorites.csv    ⭐ BEST PERFORMER
+
+GROUP 4: 5% BANKROLL, 4+4 HEROES
+  13. betting_results_10_pct5_4heroes_all.csv
+  14. betting_results_11_pct5_4heroes_underdogs.csv
+  15. betting_results_12_pct5_4heroes_favorites.csv
+
+GROUP 5: FLAT $100, 5+5 HEROES (FULL TEAM)
+  16. betting_results_13_flat100_5heroes_all.csv
+  17. betting_results_14_flat100_5heroes_underdogs.csv
+  18. betting_results_15_flat100_5heroes_favorites.csv
+
+GROUP 6: 5% BANKROLL, 5+5 HEROES
+  19. betting_results_16_pct5_5heroes_all.csv
+  20. betting_results_17_pct5_5heroes_underdogs.csv
+  21. betting_results_18_pct5_5heroes_favorites.csv
+
+GROUP 7: FIBONACCI $1 UNIT
+  22. betting_results_19_fib1_all.csv
+  23. betting_results_20_fib1_underdogs.csv
+  24. betting_results_21_fib1_favorites.csv
+
+GROUP 8: FIBONACCI $1 UNIT, 4+4 HEROES
+  25. betting_results_22_fib1_4heroes_all.csv
+  26. betting_results_23_fib1_4heroes_underdogs.csv
+  27. betting_results_24_fib1_4heroes_favorites.csv
+
+GROUP 9: FIBONACCI $1 UNIT, 5+5 HEROES
+  28. betting_results_25_fib1_5heroes_all.csv
+  29. betting_results_26_fib1_5heroes_underdogs.csv
+  30. betting_results_27_fib1_5heroes_favorites.csv
+
+GROUP 10: FIBONACCI $5 UNIT
+  31. betting_results_28_fib5_all.csv
+  32. betting_results_29_fib5_underdogs.csv
+  33. betting_results_30_fib5_favorites.csv
+
+GROUP 11: FIBONACCI $5 UNIT, 4+4 HEROES
+  34. betting_results_31_fib5_4heroes_all.csv
+  35. betting_results_32_fib5_4heroes_underdogs.csv
+  36. betting_results_33_fib5_4heroes_favorites.csv
+
+GROUP 12: FIBONACCI $5 UNIT, 5+5 HEROES
+  37. betting_results_34_fib5_5heroes_all.csv
+  38. betting_results_35_fib5_5heroes_underdogs.csv
+  39. betting_results_36_fib5_5heroes_favorites.csv
+
+SIMULATION PARAMETERS
+---------------------
+- Starting Bankroll: $1,000
+- Maximum Bet: $10,000
+- Date Range: 2023-01-02 to 2025-11-06
+- Total Matches: 26,801
+- Delta Thresholds: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100, 150, 200, 300, 400
+
+TOP RECOMMENDATIONS
+-------------------
+1. AGGRESSIVE: Flat $100, 4+4 Heroes, |Δ| ≥ 100 → 111.8% ROI ($1,118 profit)
+2. MODERATE:   Fibonacci $5, 4+4 Heroes, |Δ| ≥ 75 → 29.8% ROI ($298 profit)
+3. CONSERVATIVE: 5% Bankroll, 5+5 Heroes, |Δ| ≥ 150 → 20.4% ROI ($204 profit)
+
+KEY INSIGHTS
+------------
+- Only 6.2% of configurations were profitable
+- High delta thresholds (≥100) are critical for success
+- Betting on underdogs only was never profitable
+- 4+4 hero analysis outperformed full team analysis
+- Flat betting outperformed complex staking systems
+

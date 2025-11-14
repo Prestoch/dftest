@@ -1,0 +1,17 @@
+strategy,delta_threshold,total_bets,wins,losses,win_rate,starting_bank,final_bankroll,profit_loss,roi
+29_fib5_underdogs,5,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,10,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,15,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,20,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,25,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,30,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,35,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,40,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,45,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,50,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,75,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,100,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,150,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,200,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,300,0,0,0,0,1000,1000,0,0
+29_fib5_underdogs,400,0,0,0,0,1000,1000,0,0
