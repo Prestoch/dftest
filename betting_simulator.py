@@ -85,11 +85,19 @@ def calculate_matchup_advantage(team1_heroes, team2_heroes):
                 continue
             
             # Get matchup data from matrix
-            matchup = win_rates_matrix[idx1][idx2]
+            # Look up opponent's advantage against our hero (idx2 vs idx1)
+            matchup = win_rates_matrix[idx2][idx1]
             if matchup is not None and isinstance(matchup, list):
                 advantage = float(matchup[0])  # First element is the advantage
                 total_advantage += advantage
                 matchup_count += 1
+            elif matchup is None:
+                # If no data, try reverse direction
+                reverse_matchup = win_rates_matrix[idx1][idx2]
+                if reverse_matchup is not None and isinstance(reverse_matchup, list):
+                    advantage = float(reverse_matchup[0])
+                    total_advantage += advantage
+                    matchup_count += 1
     
     if missing_heroes:
         pass  # Silently handle missing heroes
