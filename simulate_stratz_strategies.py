@@ -22,7 +22,6 @@ from typing import Any, Dict, List, Literal, Tuple
 ROOT = Path(__file__).parent
 MATRIX_PATH = ROOT / "cs_stratz.json"
 HAWK_DATA_PATH = ROOT / "hawk_matches_merged.csv"
-OUTPUT_PATH = ROOT / "stratz_results.csv"
 FIELDNAMES = [
     "strategy_group",
     "hero_filter",
@@ -198,12 +197,19 @@ class MatrixEvaluator:
         return sum2 - sum1 + wr_diff
 
 
-def load_matches(evaluator: MatrixEvaluator, lookup: dict[str, str]) -> list[MatchRecord]:
+def load_matches(
+    evaluator: MatrixEvaluator,
+    lookup: dict[str, str],
+    championship_filter: set[str] | None = None,
+) -> list[MatchRecord]:
     records: list[MatchRecord] = []
 
     with HAWK_DATA_PATH.open(newline="", encoding="utf-8") as fh:
         reader = csv.DictReader(fh)
         for row in reader:
+            if championship_filter is not None and row["championship"] not in championship_filter:
+                continue
+
             date = datetime.fromisoformat(row["date"])
             if not (START_DATE <= date <= END_DATE):
                 continue
@@ -485,6 +491,10 @@ def build_strategies() -> list[Strategy]:
 
 def write_results(path: Path, rows: list[dict[str, Any]]) -> None:
     if not rows:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("w", newline="", encoding="utf-8") as fh:
+            writer = csv.DictWriter(fh, fieldnames=FIELDNAMES)
+            writer.writeheader()
         return
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as fh:
@@ -497,14 +507,19 @@ def main() -> None:
     heroes, hero_wr, delta_matrix = load_matrix(MATRIX_PATH)
     lookup = build_hero_lookup(heroes)
     evaluator = MatrixEvaluator(heroes, hero_wr, delta_matrix)
-    matches = load_matches(evaluator, lookup)
     strategies = build_strategies()
-    all_results: list[dict[str, Any]] = []
 
-    for strategy in strategies:
-        all_results.extend(run_strategy(strategy, matches, THRESHOLDS))
+    league_outputs = {
+        "European Pro League 31": ROOT / "stratz_results_european_pro_league_31.csv",
+        "The International 2025": ROOT / "stratz_results_the_international_2025.csv",
+    }
 
-    write_results(OUTPUT_PATH, all_results)
+    for championship, output_path in league_outputs.items():
+        matches = load_matches(evaluator, lookup, championship_filter={championship})
+        all_results: list[dict[str, Any]] = []
+        for strategy in strategies:
+            all_results.extend(run_strategy(strategy, matches, THRESHOLDS))
+        write_results(output_path, all_results)
 
 
 if __name__ == "__main__":
