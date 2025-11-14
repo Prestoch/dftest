@@ -23,6 +23,19 @@ ROOT = Path(__file__).parent
 MATRIX_PATH = ROOT / "cs_stratz.json"
 HAWK_DATA_PATH = ROOT / "hawk_matches_merged.csv"
 OUTPUT_PATH = ROOT / "stratz_results.csv"
+FIELDNAMES = [
+    "strategy_group",
+    "hero_filter",
+    "odds_condition",
+    "delta_threshold",
+    "bets",
+    "wins",
+    "win_pct",
+    "final_bank",
+    "max_drawdown",
+    "max_stake",
+    "max_step",
+]
 
 START_DATE = datetime.fromisoformat("2023-01-02")
 END_DATE = datetime.fromisoformat("2025-11-06")
@@ -354,27 +367,25 @@ def run_strategy(
             max_drawdown = max(max_drawdown, drawdown)
 
         bets = wins + losses
-        profit = bank - START_BANKROLL
-        roi = profit / total_staked if total_staked else 0.0
-        win_pct = wins / bets * 100 if bets else 0.0
+        win_pct = round((wins / bets * 100) if bets else 0)
+        final_bank = int(round(bank))
+        max_drawdown_rounded = int(round(max_drawdown))
+        max_stake_rounded = int(round(max_stake))
+        max_step = max_fib_step if strategy.stake_type == "fibonacci" else 0
 
         results.append(
             {
-                "strategy": strategy.label,
+                "strategy_group": strategy.label,
                 "hero_filter": strategy.hero_filter,
                 "odds_condition": strategy.odds_condition,
                 "delta_threshold": threshold,
                 "bets": bets,
                 "wins": wins,
-                "losses": losses,
-                "win_pct": round(win_pct, 2),
-                "final_bank": round(bank, 2),
-                "profit": round(profit, 2),
-                "total_staked": round(total_staked, 2),
-                "roi": round(roi, 4),
-                "max_drawdown": round(max_drawdown, 2),
-                "max_stake": round(max_stake, 2),
-                "max_fib_step": max_fib_step if strategy.stake_type == "fibonacci" else 0,
+                "win_pct": win_pct,
+                "final_bank": final_bank,
+                "max_drawdown": max_drawdown_rounded,
+                "max_stake": max_stake_rounded,
+                "max_step": max_step,
             }
         )
 
@@ -394,7 +405,7 @@ def build_strategies() -> list[Strategy]:
         label: str,
         stake_type: Literal["flat", "percent", "fibonacci"],
         stake_value: float,
-        hero_filter: Literal["none", "4+4-", "5+5-"],
+    hero_filter: Literal["none", "4+4-", "5+5-"],
         odds_condition: Literal["any", "underdog", "favorite"],
     ) -> None:
         strategies.append(
@@ -409,99 +420,65 @@ def build_strategies() -> list[Strategy]:
         )
 
     # Flat $100 combinations
-    add("flat100_none_any", "Flat $100", "flat", 100.0, "none", "any")
-    add("flat100_none_underdog", "Flat $100", "flat", 100.0, "none", "underdog")
-    add("flat100_none_favorite", "Flat $100", "flat", 100.0, "none", "favorite")
+    add("flat100_none_any", "Flat100", "flat", 100.0, "none", "any")
+    add("flat100_none_underdog", "Flat100", "flat", 100.0, "none", "underdog")
+    add("flat100_none_favorite", "Flat100", "flat", 100.0, "none", "favorite")
 
     # 5% bankroll combinations
-    add("pct5_none_any", "5% Bankroll", "percent", 0.05, "none", "any")
-    add("pct5_none_underdog", "5% Bankroll", "percent", 0.05, "none", "underdog")
-    add("pct5_none_favorite", "5% Bankroll", "percent", 0.05, "none", "favorite")
+    add("pct5_none_any", "Pct5", "percent", 0.05, "none", "any")
+    add("pct5_none_underdog", "Pct5", "percent", 0.05, "none", "underdog")
+    add("pct5_none_favorite", "Pct5", "percent", 0.05, "none", "favorite")
 
     # Flat $100 with hero filters
-    add("flat100_4plus_any", "Flat $100 (4+4-)", "flat", 100.0, "4+4-", "any")
-    add("flat100_4plus_underdog", "Flat $100 (4+4-)", "flat", 100.0, "4+4-", "underdog")
-    add("flat100_4plus_favorite", "Flat $100 (4+4-)", "flat", 100.0, "4+4-", "favorite")
+    add("flat100_4plus_any", "Flat100", "flat", 100.0, "4+4-", "any")
+    add("flat100_4plus_underdog", "Flat100", "flat", 100.0, "4+4-", "underdog")
+    add("flat100_4plus_favorite", "Flat100", "flat", 100.0, "4+4-", "favorite")
 
     # Flat 5% (constant $50) with 4+4-
-    add("flat5pct_4plus_any", "Flat $50 (4+4-)", "flat", START_BANKROLL * 0.05, "4+4-", "any")
-    add(
-        "flat5pct_4plus_underdog",
-        "Flat $50 (4+4-)",
-        "flat",
-        START_BANKROLL * 0.05,
-        "4+4-",
-        "underdog",
-    )
-    add(
-        "flat5pct_4plus_favorite",
-        "Flat $50 (4+4-)",
-        "flat",
-        START_BANKROLL * 0.05,
-        "4+4-",
-        "favorite",
-    )
+    flat50 = START_BANKROLL * 0.05
+    add("flat50_4plus_any", "Flat50", "flat", flat50, "4+4-", "any")
+    add("flat50_4plus_underdog", "Flat50", "flat", flat50, "4+4-", "underdog")
+    add("flat50_4plus_favorite", "Flat50", "flat", flat50, "4+4-", "favorite")
 
     # Flat $100 with 5+5-
-    add("flat100_5plus_any", "Flat $100 (5+5-)", "flat", 100.0, "5+5-", "any")
-    add("flat100_5plus_underdog", "Flat $100 (5+5-)", "flat", 100.0, "5+5-", "underdog")
-    add("flat100_5plus_favorite", "Flat $100 (5+5-)", "flat", 100.0, "5+5-", "favorite")
+    add("flat100_5plus_any", "Flat100", "flat", 100.0, "5+5-", "any")
+    add("flat100_5plus_underdog", "Flat100", "flat", 100.0, "5+5-", "underdog")
+    add("flat100_5plus_favorite", "Flat100", "flat", 100.0, "5+5-", "favorite")
 
     # Flat $50 with 5+5-
-    add(
-        "flat5pct_5plus_any",
-        "Flat $50 (5+5-)",
-        "flat",
-        START_BANKROLL * 0.05,
-        "5+5-",
-        "any",
-    )
-    add(
-        "flat5pct_5plus_underdog",
-        "Flat $50 (5+5-)",
-        "flat",
-        START_BANKROLL * 0.05,
-        "5+5-",
-        "underdog",
-    )
-    add(
-        "flat5pct_5plus_favorite",
-        "Flat $50 (5+5-)",
-        "flat",
-        START_BANKROLL * 0.05,
-        "5+5-",
-        "favorite",
-    )
+    add("flat50_5plus_any", "Flat50", "flat", flat50, "5+5-", "any")
+    add("flat50_5plus_underdog", "Flat50", "flat", flat50, "5+5-", "underdog")
+    add("flat50_5plus_favorite", "Flat50", "flat", flat50, "5+5-", "favorite")
 
     # Fibonacci $1 unit
-    add("fib1_none_any", "Fibonacci $1", "fibonacci", 1.0, "none", "any")
-    add("fib1_none_underdog", "Fibonacci $1", "fibonacci", 1.0, "none", "underdog")
-    add("fib1_none_favorite", "Fibonacci $1", "fibonacci", 1.0, "none", "favorite")
+    add("fib1_none_any", "Fib1", "fibonacci", 1.0, "none", "any")
+    add("fib1_none_underdog", "Fib1", "fibonacci", 1.0, "none", "underdog")
+    add("fib1_none_favorite", "Fib1", "fibonacci", 1.0, "none", "favorite")
 
     # Fibonacci $1 with 4+4-
-    add("fib1_4plus_any", "Fibonacci $1 (4+4-)", "fibonacci", 1.0, "4+4-", "any")
-    add("fib1_4plus_underdog", "Fibonacci $1 (4+4-)", "fibonacci", 1.0, "4+4-", "underdog")
-    add("fib1_4plus_favorite", "Fibonacci $1 (4+4-)", "fibonacci", 1.0, "4+4-", "favorite")
+    add("fib1_4plus_any", "Fib1", "fibonacci", 1.0, "4+4-", "any")
+    add("fib1_4plus_underdog", "Fib1", "fibonacci", 1.0, "4+4-", "underdog")
+    add("fib1_4plus_favorite", "Fib1", "fibonacci", 1.0, "4+4-", "favorite")
 
     # Fibonacci $1 with 5+5-
-    add("fib1_5plus_any", "Fibonacci $1 (5+5-)", "fibonacci", 1.0, "5+5-", "any")
-    add("fib1_5plus_underdog", "Fibonacci $1 (5+5-)", "fibonacci", 1.0, "5+5-", "underdog")
-    add("fib1_5plus_favorite", "Fibonacci $1 (5+5-)", "fibonacci", 1.0, "5+5-", "favorite")
+    add("fib1_5plus_any", "Fib1", "fibonacci", 1.0, "5+5-", "any")
+    add("fib1_5plus_underdog", "Fib1", "fibonacci", 1.0, "5+5-", "underdog")
+    add("fib1_5plus_favorite", "Fib1", "fibonacci", 1.0, "5+5-", "favorite")
 
     # Fibonacci $5 unit
-    add("fib5_none_any", "Fibonacci $5", "fibonacci", 5.0, "none", "any")
-    add("fib5_none_underdog", "Fibonacci $5", "fibonacci", 5.0, "none", "underdog")
-    add("fib5_none_favorite", "Fibonacci $5", "fibonacci", 5.0, "none", "favorite")
+    add("fib5_none_any", "Fib5", "fibonacci", 5.0, "none", "any")
+    add("fib5_none_underdog", "Fib5", "fibonacci", 5.0, "none", "underdog")
+    add("fib5_none_favorite", "Fib5", "fibonacci", 5.0, "none", "favorite")
 
     # Fibonacci $5 with 4+4-
-    add("fib5_4plus_any", "Fibonacci $5 (4+4-)", "fibonacci", 5.0, "4+4-", "any")
-    add("fib5_4plus_underdog", "Fibonacci $5 (4+4-)", "fibonacci", 5.0, "4+4-", "underdog")
-    add("fib5_4plus_favorite", "Fibonacci $5 (4+4-)", "fibonacci", 5.0, "4+4-", "favorite")
+    add("fib5_4plus_any", "Fib5", "fibonacci", 5.0, "4+4-", "any")
+    add("fib5_4plus_underdog", "Fib5", "fibonacci", 5.0, "4+4-", "underdog")
+    add("fib5_4plus_favorite", "Fib5", "fibonacci", 5.0, "4+4-", "favorite")
 
     # Fibonacci $5 with 5+5-
-    add("fib5_5plus_any", "Fibonacci $5 (5+5-)", "fibonacci", 5.0, "5+5-", "any")
-    add("fib5_5plus_underdog", "Fibonacci $5 (5+5-)", "fibonacci", 5.0, "5+5-", "underdog")
-    add("fib5_5plus_favorite", "Fibonacci $5 (5+5-)", "fibonacci", 5.0, "5+5-", "favorite")
+    add("fib5_5plus_any", "Fib5", "fibonacci", 5.0, "5+5-", "any")
+    add("fib5_5plus_underdog", "Fib5", "fibonacci", 5.0, "5+5-", "underdog")
+    add("fib5_5plus_favorite", "Fib5", "fibonacci", 5.0, "5+5-", "favorite")
 
     return strategies
 
@@ -509,10 +486,9 @@ def build_strategies() -> list[Strategy]:
 def write_results(path: Path, rows: list[dict[str, Any]]) -> None:
     if not rows:
         return
-    fieldnames = list(rows[0].keys())
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=fieldnames)
+        writer = csv.DictWriter(fh, fieldnames=FIELDNAMES)
         writer.writeheader()
         writer.writerows(rows)
 
@@ -527,16 +503,6 @@ def main() -> None:
 
     for strategy in strategies:
         all_results.extend(run_strategy(strategy, matches, THRESHOLDS))
-
-    # Order results for easier consumption
-    all_results.sort(
-        key=lambda row: (
-            row["strategy"],
-            row["hero_filter"],
-            row["odds_condition"],
-            row["delta_threshold"],
-        )
-    )
 
     write_results(OUTPUT_PATH, all_results)
 
