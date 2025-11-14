@@ -22,7 +22,7 @@ from typing import Any, Dict, List, Literal, Tuple
 ROOT = Path(__file__).parent
 MATRIX_PATH = ROOT / "cs_stratz.json"
 HAWK_DATA_PATH = ROOT / "hawk_matches_merged.csv"
-OUTPUT_DIR = ROOT / "stratz_results"
+OUTPUT_PATH = ROOT / "stratz_results.csv"
 
 START_DATE = datetime.fromisoformat("2023-01-02")
 END_DATE = datetime.fromisoformat("2025-11-06")
@@ -523,11 +523,22 @@ def main() -> None:
     evaluator = MatrixEvaluator(heroes, hero_wr, delta_matrix)
     matches = load_matches(evaluator, lookup)
     strategies = build_strategies()
+    all_results: list[dict[str, Any]] = []
 
     for strategy in strategies:
-        results = run_strategy(strategy, matches, THRESHOLDS)
-        output_path = OUTPUT_DIR / f"{strategy.key}.csv"
-        write_results(output_path, results)
+        all_results.extend(run_strategy(strategy, matches, THRESHOLDS))
+
+    # Order results for easier consumption
+    all_results.sort(
+        key=lambda row: (
+            row["strategy"],
+            row["hero_filter"],
+            row["odds_condition"],
+            row["delta_threshold"],
+        )
+    )
+
+    write_results(OUTPUT_PATH, all_results)
 
 
 if __name__ == "__main__":
