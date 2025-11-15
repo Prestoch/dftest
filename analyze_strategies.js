@@ -10,11 +10,14 @@ const MAX_BET = 10000;
 const DELTA_THRESHOLDS = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75];
 
 function main() {
+  const { leagueFilter, outputFile } = parseArgs();
   const csPath = path.join(process.cwd(), 'cs.json');
   const hawkPath = path.join(process.cwd(), 'hawk_matches_merged.csv');
   const heroData = loadCsData(csPath);
-  const matches = loadMatches(hawkPath, heroData);
-  console.log(`Loaded ${matches.length} matches with matchup data`);
+  const { matches, skipCounters } = loadMatches(hawkPath, heroData, leagueFilter);
+  const label = leagueFilter ? ` for league "${leagueFilter}"` : '';
+  console.log(`Skip counters${label}:`, skipCounters);
+  console.log(`Loaded ${matches.length} matches${label} with matchup data`);
 
   const combos = buildCombos();
   const rows = [];
@@ -27,9 +30,36 @@ function main() {
     }
   }
 
-  const outPath = path.join(process.cwd(), 'strategy_results_hawk.csv');
+  const outPath = path.join(process.cwd(), outputFile);
   fs.writeFileSync(outPath, rows.join('\n'));
   console.log(`Wrote ${rows.length - 1} strategy rows to ${outPath}`);
+}
+
+function parseArgs() {
+  const args = process.argv.slice(2);
+  let leagueFilter = null;
+  let outputFile = 'strategy_results_hawk.csv';
+  for (let i = 0; i < args.length; i += 1) {
+    const arg = args[i];
+    if (arg === '--league') {
+      if (i + 1 >= args.length) {
+        throw new Error('Missing value for --league');
+      }
+      leagueFilter = args[i + 1];
+      i += 1;
+      continue;
+    }
+    if (arg === '--output') {
+      if (i + 1 >= args.length) {
+        throw new Error('Missing value for --output');
+      }
+      outputFile = args[i + 1];
+      i += 1;
+      continue;
+    }
+    throw new Error(`Unknown argument: ${arg}`);
+  }
+  return { leagueFilter, outputFile };
 }
 
 function loadCsData(csPath) {
@@ -54,7 +84,7 @@ function loadCsData(csPath) {
   };
 }
 
-function loadMatches(csvPath, heroData) {
+function loadMatches(csvPath, heroData, leagueFilter = null) {
   const text = fs.readFileSync(csvPath, 'utf8');
   const lines = text.split(/\r?\n/);
   const header = lines.shift();
@@ -80,6 +110,10 @@ function loadMatches(csvPath, heroData) {
     const row = parseCsvLine(line);
     if (row.length < 14) {
       skipCounters.malformed += 1;
+      return;
+    }
+    const championship = (row[1] || '').trim();
+    if (leagueFilter && championship !== leagueFilter) {
       return;
     }
     const deltaRaw = parseNumber(row[10]);
@@ -150,8 +184,7 @@ function loadMatches(csvPath, heroData) {
   if (heroData.missingHeroes.size > 0) {
     console.warn(`Missing hero mappings for ${heroData.missingHeroes.size} hero names`);
   }
-  console.log('Skip counters:', skipCounters);
-  return matches;
+  return { matches, skipCounters };
 }
 
 function simulateStrategy(matches, combo, deltaThreshold) {
