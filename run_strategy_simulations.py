@@ -12,6 +12,8 @@ from __future__ import annotations
 import csv
 import json
 import re
+import argparse
+import sys
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -105,6 +107,7 @@ def team_summary(hero_names: List[str], enemy_names: List[str], hero_index, hero
 def build_match_records(
     csv_path: Path,
     heroes_data,
+    allowed_championships: Optional[set[str]] = None,
 ) -> List[MatchRecord]:
     _heroes, hero_wr, win_rates, hero_index = heroes_data
     records: List[MatchRecord] = []
@@ -135,6 +138,9 @@ def build_match_records(
     sortable_rows.sort(key=lambda x: x[0])
 
     for _, row in sortable_rows:
+        championship = row.get("championship")
+        if allowed_championships and championship not in allowed_championships:
+            continue
         team1_heroes = row.get("team1_heroes", "")
         team2_heroes = row.get("team2_heroes", "")
         if not team1_heroes or not team2_heroes:
@@ -282,8 +288,26 @@ def simulate_strategy(matches: List[MatchRecord], strategy_group: str, hero_filt
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Simulate bankroll strategies from hawk match data.")
+    parser.add_argument(
+        "--championship",
+        action="append",
+        dest="championships",
+        help="Championship name to include (can be provided multiple times). Defaults to all.",
+    )
+    parser.add_argument(
+        "--output",
+        default="strategy_results_hawk_cs_bankroll.csv",
+        help="Output CSV path.",
+    )
+    args = parser.parse_args()
+
     heroes_data = load_cs_data(Path("cs_pro_filtered.json"))
-    matches = build_match_records(Path("hawk_matches_merged.csv"), heroes_data)
+    allowed = set(args.championships) if args.championships else None
+    matches = build_match_records(Path("hawk_matches_merged.csv"), heroes_data, allowed)
+    if not matches:
+        print("No matches matched the provided filters.", file=sys.stderr)
+        # Still write the CSV (all zeros)
 
     strategy_specs = []
     for strategy_group in ("Flat100", "Pct5", "Fib1", "Fib5"):
@@ -309,7 +333,7 @@ def main():
         )
     )
 
-    output_path = Path("strategy_results_hawk_cs_bankroll.csv")
+    output_path = Path(args.output)
     with output_path.open("w", newline="") as f:
         writer = csv.DictWriter(
             f,
