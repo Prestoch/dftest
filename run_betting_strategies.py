@@ -1,3 +1,4 @@
+import argparse
 import csv
 import json
 import math
@@ -10,7 +11,7 @@ THRESHOLDS = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75]
 
 CS_PATH = Path('cs.json')
 MATCHES_PATH = Path('hawk_matches_merged.csv')
-OUTPUT_PATH = Path('strategy_results_hawk_bankroll.csv')
+DEFAULT_OUTPUT_PATH = Path('strategy_results_hawk_bankroll.csv')
 
 RE_HEROES = re.compile(r'var heroes = (\[[\s\S]*?\])\s*,\s*heroes_bg')
 RE_HEROES_WR = re.compile(r'heroes_wr = (\[[\s\S]*?\])\s*,\s*win_rates')
@@ -63,12 +64,19 @@ def hero_advantage(hero_id: int, opponent_ids, win_rates):
     return total
 
 
-def compute_match_records(heroes, hero_wr, hero_map, win_rates):
+def compute_match_records(heroes, hero_wr, hero_map, win_rates, championship_filter=None):
     matches = []
     missing_heroes = set()
+    if championship_filter:
+        championship_filter = [token.lower() for token in championship_filter]
     with MATCHES_PATH.open() as f:
         reader = csv.DictReader(f)
         for idx, row in enumerate(reader):
+            champ_name = (row.get('championship') or '')
+            if championship_filter:
+                champ_lower = champ_name.lower()
+                if not any(token in champ_lower for token in championship_filter):
+                    continue
             try:
                 delta = float(row['delta'])
             except (ValueError, KeyError):
@@ -254,9 +262,29 @@ def run_strategy(matches, cfg, threshold):
     return result
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Simulate bankroll strategies on hawk_matches_merged.csv")
+    parser.add_argument(
+        "--championship",
+        action="append",
+        default=[],
+        help="Restrict to specific championship name (can be provided multiple times)",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=DEFAULT_OUTPUT_PATH,
+        help="Path to write the output CSV (default: strategy_results_hawk_bankroll.csv)",
+    )
+    return parser.parse_args()
+
+
 def main():
+    args = parse_args()
     heroes, hero_wr, hero_map, win_rates = load_cs_data()
-    matches = compute_match_records(heroes, hero_wr, hero_map, win_rates)
+    matches = compute_match_records(heroes, hero_wr, hero_map, win_rates, args.championship or None)
+    if not matches:
+        raise SystemExit("No matches found for the specified filter.")
 
     strategy_configs = []
 
@@ -298,7 +326,7 @@ def main():
             result = run_strategy(matches, cfg, threshold)
             results.append(result)
 
-    with OUTPUT_PATH.open('w', newline='') as f:
+    with args.output.open('w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=[
             'strategy_group', 'hero_filter', 'odds_condition', 'delta_threshold',
             'bets', 'wins', 'win_pct', 'final_bank', 'max_drawdown', 'max_stake', 'max_step'
