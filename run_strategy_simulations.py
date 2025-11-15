@@ -300,9 +300,14 @@ def main():
         default="strategy_results_hawk_cs_bankroll.csv",
         help="Output CSV path.",
     )
+    parser.add_argument(
+        "--cs-file",
+        default="cs_pro_filtered.json",
+        help="Path to hero matchup dataset (e.g. cs_pro_filtered.json or cs.json).",
+    )
     args = parser.parse_args()
 
-    heroes_data = load_cs_data(Path("cs_pro_filtered.json"))
+    heroes_data = load_cs_data(Path(args.cs_file))
     allowed = set(args.championships) if args.championships else None
     matches = build_match_records(Path("hawk_matches_merged.csv"), heroes_data, allowed)
     if not matches:
