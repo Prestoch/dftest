@@ -1,3 +1,4 @@
+import argparse
 import ast
 import csv
 import re
@@ -94,7 +95,7 @@ def count_thresholds(advs: Sequence[float], threshold: float) -> Tuple[int, int]
     return plus, minus
 
 
-def build_match_book(csv_path: Path, hero_index, win_rates, heroes_wr):
+def build_match_book(csv_path: Path, hero_index, win_rates, heroes_wr, allowed_championships: Optional[set] = None):
     rows = []
     with csv_path.open(newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -141,6 +142,8 @@ def build_match_book(csv_path: Path, hero_index, win_rates, heroes_wr):
                 "plus5": plus5_t2 if fav == team1 else plus5_t1,
                 "minus5": minus5_t2 if fav == team1 else minus5_t1,
             }
+            if allowed_championships and row.get("championship", "") not in allowed_championships:
+                continue
             rows.append(
                 {
                     "date": row.get("date", ""),
@@ -317,9 +320,27 @@ def build_strategy_configs() -> List[StrategyConfig]:
     return configs
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Simulate betting strategies on hawk_matches_merged.csv")
+    parser.add_argument(
+        "--championship",
+        action="append",
+        dest="championships",
+        help="Limit to specific championship names (repeatable)",
+    )
+    parser.add_argument(
+        "--output",
+        default="strategy_results_hawk.csv",
+        help="Output CSV path",
+    )
+    return parser.parse_args()
+
+
 def main():
+    args = parse_args()
     heroes_wr, win_rates, hero_index = load_cs_data(Path("cs.json"))
-    matches = build_match_book(Path("hawk_matches_merged.csv"), hero_index, win_rates, heroes_wr)
+    allowed = set(args.championships) if args.championships else None
+    matches = build_match_book(Path("hawk_matches_merged.csv"), hero_index, win_rates, heroes_wr, allowed)
     configs = build_strategy_configs()
     results: List[Dict[str, float]] = []
     for cfg in configs:
@@ -327,7 +348,7 @@ def main():
             stats = simulate_strategy(matches, cfg, threshold)
             results.append(stats)
 
-    out_path = Path("strategy_results_hawk.csv")
+    out_path = Path(args.output)
     fieldnames = [
         "strategy_group",
         "hero_filter",
