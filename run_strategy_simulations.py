@@ -263,6 +263,9 @@ def simulate_strategy(matches: List[MatchRecord], strategy_group: str, hero_filt
             max_drawdown = max(max_drawdown, drawdown)
 
     win_pct = (wins / bets * 100.0) if bets else 0.0
+
+    def round_metric(value: float) -> int:
+        return int(round(value))
     return {
         "strategy_group": strategy_group,
         "hero_filter": hero_filter,
@@ -270,10 +273,10 @@ def simulate_strategy(matches: List[MatchRecord], strategy_group: str, hero_filt
         "delta_threshold": threshold,
         "bets": bets,
         "wins": wins,
-        "win_pct": round(win_pct, 2),
-        "final_bank": round(bank, 2),
-        "max_drawdown": round(max_drawdown, 2),
-        "max_stake": round(max_stake, 2),
+        "win_pct": round_metric(win_pct),
+        "final_bank": round_metric(bank),
+        "max_drawdown": round_metric(max_drawdown),
+        "max_stake": round_metric(max_stake),
         "max_step": max_step,
     }
 
