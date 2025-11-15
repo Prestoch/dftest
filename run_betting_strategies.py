@@ -9,9 +9,9 @@ START_BANK = 1000.0
 MAX_BET = 10000.0
 THRESHOLDS = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75]
 
-CS_PATH = Path('cs.json')
 MATCHES_PATH = Path('hawk_matches_merged.csv')
 DEFAULT_OUTPUT_PATH = Path('strategy_results_hawk_bankroll.csv')
+DEFAULT_CS_PATH = Path('cs.json')
 
 RE_HEROES = re.compile(r'var heroes = (\[[\s\S]*?\])\s*,\s*heroes_bg')
 RE_HEROES_WR = re.compile(r'heroes_wr = (\[[\s\S]*?\])\s*,\s*win_rates')
@@ -22,8 +22,9 @@ def normalize(name: str) -> str:
     return re.sub(r'[^a-z0-9]', '', name.lower())
 
 
-def load_cs_data():
-    text = CS_PATH.read_text()
+def load_cs_data(cs_path):
+    cs_path = Path(cs_path)
+    text = cs_path.read_text()
     heroes = json.loads(RE_HEROES.search(text).group(1))
     heroes_wr_raw = json.loads(RE_HEROES_WR.search(text).group(1))
     win_rates_raw = json.loads(RE_WIN_RATES.search(text).group(1))
@@ -276,12 +277,18 @@ def parse_args():
         default=DEFAULT_OUTPUT_PATH,
         help="Path to write the output CSV (default: strategy_results_hawk_bankroll.csv)",
     )
+    parser.add_argument(
+        "--cs-file",
+        type=Path,
+        default=DEFAULT_CS_PATH,
+        help="Path to the cs hero dataset (default: cs.json)",
+    )
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
-    heroes, hero_wr, hero_map, win_rates = load_cs_data()
+    heroes, hero_wr, hero_map, win_rates = load_cs_data(args.cs_file)
     matches = compute_match_records(heroes, hero_wr, hero_map, win_rates, args.championship or None)
     if not matches:
         raise SystemExit("No matches found for the specified filter.")
