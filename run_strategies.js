@@ -12,7 +12,7 @@ const vm = require('vm');
 const START_BANK = 1000;
 const MAX_BET = 10000;
 const DATA_FILE = path.join(__dirname, 'hawk_matches_merged.csv');
-const CS_FILE = path.join(__dirname, 'cs_pro.json');
+const DEFAULT_CS_FILE = path.join(__dirname, 'cs_pro.json');
 const DEFAULT_OUTPUT_FILE = path.join(__dirname, 'strategy_results_latest_cs_pro.csv');
 
 const DELTA_THRESHOLDS = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100, 125, 150, 200, 250, 300, 350, 400];
@@ -96,8 +96,8 @@ function normalize(text) {
   return (text || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 
-function loadCSData() {
-  const content = fs.readFileSync(CS_FILE, 'utf8');
+function loadCSData(csFilePath) {
+  const content = fs.readFileSync(csFilePath, 'utf8');
   const sandbox = {};
   vm.createContext(sandbox);
   vm.runInContext(content, sandbox);
@@ -377,6 +377,7 @@ function parseArgs() {
   const options = {
     output: DEFAULT_OUTPUT_FILE,
     championships: [],
+    csFile: DEFAULT_CS_FILE,
   };
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
@@ -386,6 +387,8 @@ function parseArgs() {
       options.championships.push(args[++i]);
     } else if (arg === '--championships' && i + 1 < args.length) {
       options.championships.push(...args[++i].split(','));
+    } else if ((arg === '--csfile' || arg === '--cs' || arg === '--cs-file') && i + 1 < args.length) {
+      options.csFile = path.resolve(args[++i]);
     }
   }
   return options;
@@ -398,8 +401,9 @@ function main() {
   } else {
     console.log('No championship filter; using entire dataset.');
   }
+  console.log(`Using hero matrix: ${options.csFile}`);
 
-  const csData = loadCSData();
+  const csData = loadCSData(options.csFile);
   const matches = parseMatches(csData, options);
 
   const results = [];
