@@ -13,7 +13,7 @@ const START_BANK = 1000;
 const MAX_BET = 10000;
 const DATA_FILE = path.join(__dirname, 'hawk_matches_merged.csv');
 const CS_FILE = path.join(__dirname, 'cs_pro.json');
-const OUTPUT_FILE = path.join(__dirname, 'strategy_results_latest_cs_pro.csv');
+const DEFAULT_OUTPUT_FILE = path.join(__dirname, 'strategy_results_latest_cs_pro.csv');
 
 const DELTA_THRESHOLDS = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100, 125, 150, 200, 250, 300, 350, 400];
 
@@ -147,12 +147,16 @@ function calcTeamStats(heroIdxs, opponentIdxs, heroesWr, winRates) {
   return { score, pos, neg };
 }
 
-function parseMatches(csData) {
+function parseMatches(csData, options) {
+  const champFilters = (options.championships || []).map((c) => c.trim()).filter(Boolean);
+  const champFilterSet = new Set(champFilters.map((c) => c.toLowerCase()));
+  const useChampFilter = champFilterSet.size > 0;
   const raw = fs.readFileSync(DATA_FILE, 'utf8').trim().split(/\r?\n/);
   const headers = parseCSVLine(raw[0]);
   const matches = [];
   let skippedMissingHero = 0;
   let skippedOdds = 0;
+  let skippedChampionship = 0;
 
   for (let i = 1; i < raw.length; i++) {
     const line = raw[i];
@@ -162,6 +166,14 @@ function parseMatches(csData) {
     headers.forEach((header, idx) => {
       row[header] = values[idx] ?? '';
     });
+
+    if (useChampFilter) {
+      const champName = (row.championship || '').trim();
+      if (!champFilterSet.has(champName.toLowerCase())) {
+        skippedChampionship++;
+        continue;
+      }
+    }
 
     const team1Heroes = (row.team1_heroes || '').split('|').map((h) => h.trim()).filter(Boolean);
     const team2Heroes = (row.team2_heroes || '').split('|').map((h) => h.trim()).filter(Boolean);
@@ -248,6 +260,9 @@ function parseMatches(csData) {
   console.log(`Matches parsed: ${matches.length}`);
   console.log(`Skipped (heroes missing or unmatched): ${skippedMissingHero}`);
   console.log(`Skipped (invalid odds): ${skippedOdds}`);
+  if (useChampFilter) {
+    console.log(`Skipped (filtered championships): ${skippedChampionship}`);
+  }
 
   return matches;
 }
@@ -357,9 +372,35 @@ function runStrategy(matches, config, threshold) {
   };
 }
 
+function parseArgs() {
+  const args = process.argv.slice(2);
+  const options = {
+    output: DEFAULT_OUTPUT_FILE,
+    championships: [],
+  };
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+    if ((arg === '--output' || arg === '-o') && i + 1 < args.length) {
+      options.output = path.resolve(args[++i]);
+    } else if ((arg === '--championship' || arg === '--champ') && i + 1 < args.length) {
+      options.championships.push(args[++i]);
+    } else if (arg === '--championships' && i + 1 < args.length) {
+      options.championships.push(...args[++i].split(','));
+    }
+  }
+  return options;
+}
+
 function main() {
+  const options = parseArgs();
+  if (options.championships.length) {
+    console.log(`Filtering championships: ${options.championships.join(', ')}`);
+  } else {
+    console.log('No championship filter; using entire dataset.');
+  }
+
   const csData = loadCSData();
-  const matches = parseMatches(csData);
+  const matches = parseMatches(csData, options);
 
   const results = [];
   for (const config of STRATEGY_DEFS) {
@@ -395,8 +436,8 @@ function main() {
   );
 
   const csvContent = [header, ...lines].join('\n');
-  fs.writeFileSync(OUTPUT_FILE, csvContent);
-  console.log(`Results written to ${OUTPUT_FILE}`);
+  fs.writeFileSync(options.output, csvContent);
+  console.log(`Results written to ${options.output}`);
 }
 
 main();
