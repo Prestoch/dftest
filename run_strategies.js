@@ -17,13 +17,14 @@ const OUTPUT_FILE = path.join(__dirname, 'strategy_results_latest_cs_pro.csv');
 
 const DELTA_THRESHOLDS = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100, 125, 150, 200, 250, 300, 350, 400];
 
+let CONFIG_ORDER = 0;
 const STRATEGY_DEFS = (() => {
   const base = [];
 
   // Utility to add trio of odds conditions for a strategy definition
   const withOdds = (baseConfig) => {
     ['any', 'underdog', 'favorite'].forEach((odds_condition) => {
-      base.push({ ...baseConfig, odds_condition });
+      base.push({ ...baseConfig, odds_condition, order: CONFIG_ORDER++ });
     });
   };
 
@@ -364,19 +365,14 @@ function main() {
   for (const config of STRATEGY_DEFS) {
     for (const threshold of DELTA_THRESHOLDS) {
       const stats = runStrategy(matches, config, threshold);
+      stats.order = config.order;
       results.push(stats);
     }
   }
 
   results.sort((a, b) => {
-    if (a.strategy_group !== b.strategy_group) {
-      return a.strategy_group.localeCompare(b.strategy_group);
-    }
-    if (a.hero_filter !== b.hero_filter) {
-      return a.hero_filter.localeCompare(b.hero_filter);
-    }
-    if (a.odds_condition !== b.odds_condition) {
-      return a.odds_condition.localeCompare(b.odds_condition);
+    if (a.order !== b.order) {
+      return a.order - b.order;
     }
     return a.delta_threshold - b.delta_threshold;
   });
