@@ -1,0 +1,101 @@
+match_id,date,championship,team1,team2,delta,favored,odds,stake,outcome,payout,bank_after
+71001,2023-01-02,TodayPay Invitational S3,CDUB Esports,KEEPER GAMING,-26.2208,KEEPER GAMING,3.89,26,loss,0,974
+71003,2023-01-02,TodayPay Invitational S3,CDUB Esports,KEEPER GAMING,-209.6752,KEEPER GAMING,5,204,win,1020,1790
+71008,2023-01-02,TodayPay Invitational S3,Paradox Esports,CDUB Esports,7.7892,Paradox Esports,1.55,13,loss,0,1777
+71011,2023-01-02,TodayPay Invitational S3,Paradox Esports,CDUB Esports,165.4194,Paradox Esports,1.6,293,win,468,1952
+71013,2023-01-02,TodayPay Invitational S3,5RATFORCESTAFF,Balrogs e-Sport,-67.4158,Balrogs e-Sport,1.72,131,win,225,2046
+71019,2023-01-02,TodayPay Invitational S3,5RATFORCESTAFF,Balrogs e-Sport,30.6394,5RATFORCESTAFF,1.87,62,loss,0,1984
+70945,2023-01-02,TOP EGAMING,Team Virgo,BELIEVE GAMING,45.7418,Team Virgo,1.4,90,loss,0,1894
+70953,2023-01-02,TOP EGAMING,Team Virgo,BELIEVE GAMING,20.917,Team Virgo,3.5,39,loss,0,1855
+70957,2023-01-02,TOP EGAMING,BELIEVE GAMING,TEAM M11,80.0474,BELIEVE GAMING,1.38,148,win,204,1911
+70964,2023-01-02,TOP EGAMING,BELIEVE GAMING,TEAM M11,174.0782,BELIEVE GAMING,2.7,332,win,896,2475
+70949,2023-01-02,EPL Winter Holidays,Level Up,Creep Gaming,-82.1594,Creep Gaming,2.47,203,win,501,2773
+70979,2023-01-02,EPL Winter Holidays,Level Up,Creep Gaming,-35.3344,Creep Gaming,2.15,97,loss,0,2676
+70987,2023-01-02,EPL Winter Holidays,Level Up,Creep Gaming,5.425,Level Up,1.47,14,win,20,2682
+70992,2023-01-02,EPL Winter Holidays,Water rune enjoyers,IVY,13.0788,Water rune enjoyers,2.48,35,loss,0,2647
+70995,2023-01-02,EPL Winter Holidays,Water rune enjoyers,IVY,-16.776,IVY,1.52,44,win,66,2669
+70998,2023-01-02,EPL Winter Holidays,Water rune enjoyers,Hydra,-20.5538,Hydra,1.32,54,win,71,2686
+71005,2023-01-02,EPL Winter Holidays,Water rune enjoyers,Hydra,-8.6422,Hydra,1.26,23,loss,0,2663
+71006,2023-01-02,EPL Winter Holidays,Water rune enjoyers,Hydra,-22.7302,Hydra,1.58,60,win,94,2697
+70961,2023-01-02,Star Series,Team Mystique,Purple Paradox,-117.6904,Purple Paradox,1.92,317,win,608,2988
+70966,2023-01-02,Star Series,Team Mystique,Purple Paradox,-82.121,Purple Paradox,1.88,245,loss,0,2743
+70969,2023-01-02,Star Series,Team Mystique,Purple Paradox,7.0802,Team Mystique,1.8,19,loss,0,2724
+70972,2023-01-02,Star Series,Team Mystique,Purple Paradox,60.1036,Team Mystique,1.55,163,loss,0,2561
+71016,2023-01-03,TOP EGAMING,KOBOLDS,Team Virgo,-113.7654,Team Virgo,1.39,291,loss,0,2270
+71030,2023-01-03,TOP EGAMING,KOBOLDS,Team Virgo,-29.9338,Team Virgo,1.87,67,loss,0,2203
+71040,2023-01-03,TOP EGAMING,White Cat,BELIEVE GAMING,-82.5782,BELIEVE GAMING,1.21,181,win,219,2241
+71046,2023-01-03,TOP EGAMING,White Cat,BELIEVE GAMING,-4.6878,BELIEVE GAMING,1.17,10,win,11,2242
+71041,2023-01-03,TOP EGAMING,White Cat,Team Virgo,-311.1882,Team Virgo,1.22,697,win,850,2395
+71058,2023-01-03,TOP EGAMING,White Cat,Team Virgo,-9.8876,Team Virgo,1.22,23,win,28,2400
+71082,2023-01-03,TodayPay Invitational S3,5RATFORCESTAFF,KEEPER GAMING,-75.2508,KEEPER GAMING,4.4,180,win,792,3012
+71085,2023-01-03,TodayPay Invitational S3,5RATFORCESTAFF,KEEPER GAMING,31.8098,5RATFORCESTAFF,1.22,95,win,115,3032
+71089,2023-01-03,TodayPay Invitational S3,CDUB Esports,ANOTHER NA TEAM,-140.705,ANOTHER NA TEAM,1.52,426,win,647,3253
+71093,2023-01-03,TodayPay Invitational S3,CDUB Esports,ANOTHER NA TEAM,-223.9088,ANOTHER NA TEAM,1.5,728,loss,0,2525
+71096,2023-01-03,TodayPay Invitational S3,Qhali,CDUB Esports,100.3684,Qhali,1.68,253,win,425,2697
+71097,2023-01-03,TodayPay Invitational S3,Qhali,CDUB Esports,126.5158,Qhali,1.6,341,win,545,2901
+71032,2023-01-03,Moon Studio Campfire,Atlantis,Poke Gaming,-20.0146,Poke Gaming,1.58,58,loss,0,2843
+71045,2023-01-03,Moon Studio Campfire,Atlantis,Poke Gaming,-46.3706,Poke Gaming,1.87,131,loss,0,2712
+71051,2023-01-03,Moon Studio Campfire,iG.Vitality,Meteor Gaming,-44.9894,Meteor Gaming,1.87,122,win,228,2818
+71057,2023-01-03,Moon Studio Campfire,iG.Vitality,Meteor Gaming,256.606,iG.Vitality,1.87,723,win,1352,3447
+71034,2023-01-03,EPL Winter Holidays,IVY,Hydra,166.2186,IVY,2.06,572,win,1178,4053
+71065,2023-01-03,EPL Winter Holidays,IVY,Hydra,153.8246,IVY,1.87,623,loss,0,3430
+71069,2023-01-03,EPL Winter Holidays,IVY,Hydra,91.1838,IVY,2.09,312,win,652,3770
+71072,2023-01-03,EPL Winter Holidays,Level Up,YNT,-65.9206,YNT,1.65,248,win,409,3931
+71075,2023-01-03,EPL Winter Holidays,Level Up,YNT,260.0868,Level Up,2.48,1022,win,2534,5443
+71076,2023-01-03,EPL Winter Holidays,Level Up,YNT,99.965,Level Up,2.16,544,win,1175,6074
+71080,2023-01-03,EPL Winter Holidays,YNT,Creep Gaming,-27.6316,Creep Gaming,2.7,167,win,450,6357
+71083,2023-01-03,EPL Winter Holidays,YNT,Creep Gaming,65.2724,YNT,1.76,414,win,728,6671
+71086,2023-01-03,EPL Winter Holidays,YNT,Creep Gaming,66.8896,YNT,1.45,446,win,646,6871
+71017,2023-01-03,ESEA LEAGUE,Refraction Gaming,Team Balut,69.2376,Refraction Gaming,1.47,475,loss,0,6396
+71037,2023-01-03,ESEA LEAGUE,Refraction Gaming,Team Balut,-145.6792,Team Balut,1.88,931,win,1750,7215
+71042,2023-01-03,ESEA LEAGUE,Refraction Gaming,Team Balut,24.6478,Refraction Gaming,2.05,177,loss,0,7038
+71112,2023-01-04,Moon Studio Campfire,iG.Vitality,Lilgun,100.3788,iG.Vitality,1.84,706,loss,0,6332
+71119,2023-01-04,Moon Studio Campfire,iG.Vitality,Lilgun,-65.5616,Lilgun,1.71,415,loss,0,5917
+71113,2023-01-04,Moon Studio Campfire,iG.Vitality,Dawn Gaming,183.703,iG.Vitality,1.87,1086,loss,0,4831
+71127,2023-01-04,Moon Studio Campfire,iG.Vitality,Dawn Gaming,-108.646,Dawn Gaming,1.87,524,win,979,5286
+71106,2023-01-04,TOP EGAMING,496 Gaming,White Cat,119.4374,496 Gaming,1.6,631,loss,0,4655
+71110,2023-01-04,TOP EGAMING,496 Gaming,White Cat,67.8668,496 Gaming,1.85,315,win,582,4922
+71114,2023-01-04,TOP EGAMING,White Cat,TEAM M11,-61.2014,TEAM M11,1.82,301,loss,0,4621
+71121,2023-01-04,TOP EGAMING,White Cat,TEAM M11,5.8162,White Cat,1.67,26,loss,0,4595
+71115,2023-01-04,TOP EGAMING,Team Tsunami,BELIEVE GAMING,-53.5638,BELIEVE GAMING,1.5,246,loss,0,4349
+71129,2023-01-04,TOP EGAMING,Team Tsunami,BELIEVE GAMING,-23.405,BELIEVE GAMING,3.32,101,loss,0,4248
+71152,2023-01-04,TodayPay Invitational S3,Dreamers Esports,CDUB Esports,22.02,Dreamers Esports,1.3,93,win,120,4275
+71156,2023-01-04,TodayPay Invitational S3,Dreamers Esports,CDUB Esports,5.175,Dreamers Esports,1.2,22,win,26,4279
+71159,2023-01-04,TodayPay Invitational S3,ETERNITY,ANOTHER NA TEAM,-63.5682,ANOTHER NA TEAM,1.31,272,loss,0,4007
+71161,2023-01-04,TodayPay Invitational S3,ETERNITY,ANOTHER NA TEAM,105.3516,ETERNITY,2.08,422,loss,0,3585
+71163,2023-01-04,TodayPay Invitational S3,5RATFORCESTAFF,ANOTHER NA TEAM,31.3908,5RATFORCESTAFF,1.38,112,loss,0,3473
+71165,2023-01-04,TodayPay Invitational S3,5RATFORCESTAFF,ANOTHER NA TEAM,43.0148,5RATFORCESTAFF,1.65,149,win,245,3569
+71145,2023-01-04,EPL Winter Holidays,Level Up,Hydra,-20.102,Hydra,1.57,71,win,111,3609
+71146,2023-01-04,EPL Winter Holidays,Level Up,Hydra,-94.036,Hydra,1.58,339,win,535,3805
+71150,2023-01-04,EPL Winter Holidays,IVY,YNT,60.1574,IVY,1.61,228,win,367,3944
+71154,2023-01-04,EPL Winter Holidays,IVY,YNT,47.392,IVY,1.5,186,loss,0,3758
+71158,2023-01-04,EPL Winter Holidays,IVY,YNT,72.0754,IVY,1.75,270,loss,0,3488
+71182,2023-01-05,TOP EGAMING,Team Tsunami,Team Virgo,26.6628,Team Tsunami,2.63,92,loss,0,3396
+71189,2023-01-05,TOP EGAMING,Team Tsunami,Team Virgo,-128.4504,Team Virgo,1.42,436,win,619,3579
+71169,2023-01-05,SPARTA CUP,EV GaminG,Team Saiyan,-102.4416,Team Saiyan,1.5,366,loss,0,3213
+71170,2023-01-05,SPARTA CUP,EV GaminG,Team Saiyan,147.7986,EV GaminG,1.87,474,loss,0,2739
+71172,2023-01-05,TOP EGAMING,KOBOLDS,BELIEVE GAMING,-50.9276,BELIEVE GAMING,1.65,139,win,229,2829
+71180,2023-01-05,TOP EGAMING,KOBOLDS,BELIEVE GAMING,-2.7226,BELIEVE GAMING,1.45,7,loss,0,2822
+71175,2023-01-05,Moon Studio Campfire,Xerxia,Atlantis,106.6492,Xerxia,1.64,300,win,491,3013
+71190,2023-01-05,Moon Studio Campfire,Xerxia,Atlantis,87.009,Xerxia,1.72,262,win,450,3201
+71176,2023-01-05,Moon Studio Campfire,Xerxia,Lilgun,21.723,Xerxia,1.55,69,loss,0,3132
+71197,2023-01-05,Moon Studio Campfire,Xerxia,Lilgun,-34.0314,Lilgun,1.77,106,win,187,3213
+71177,2023-01-05,DPC CN 2023 Tour 1: Division I,EHOME,Invictus Gaming,42.2494,EHOME,2.33,135,win,314,3392
+71195,2023-01-05,DPC CN 2023 Tour 1: Division I,EHOME,Invictus Gaming,87.6544,EHOME,1.87,297,win,555,3650
+71178,2023-01-05,DPC CN 2023 Tour 1: Division I,LGD Gaming,Dawn Gaming,-58.874,Dawn Gaming,7,214,loss,0,3436
+71209,2023-01-05,DPC CN 2023 Tour 1: Division I,LGD Gaming,Dawn Gaming,71.6436,LGD Gaming,1.08,246,win,265,3455
+71229,2023-01-05,EPL Winter Holidays,Hydra,YNT,6.4672,Hydra,1.58,22,loss,0,3433
+71233,2023-01-05,EPL Winter Holidays,Hydra,YNT,-3.5824,YNT,2.1,12,loss,0,3421
+71240,2023-01-05,EPL Winter Holidays,Hydra,YNT,187.503,Hydra,1.61,641,win,1032,3812
+71243,2023-01-05,EPL Winter Holidays,Hydra,YNT,-125.1768,YNT,2.1,477,win,1001,4336
+71247,2023-01-05,EPL Winter Holidays,Hydra,YNT,-81.9524,YNT,2.1,355,loss,0,3981
+71215,2023-01-05,EPL Winter Holidays,Level Up,IVY,38.7918,Level Up,2.28,154,loss,0,3827
+71221,2023-01-05,EPL Winter Holidays,Level Up,IVY,-141.4958,IVY,1.65,541,loss,0,3286
+71223,2023-01-05,EPL Winter Holidays,Level Up,IVY,-25.6442,IVY,1.77,84,loss,0,3202
+71230,2023-01-05,TodayPay Invitational S3,Qhali,Paradox Esports,-141.2062,Paradox Esports,3.1,452,win,1401,4151
+71236,2023-01-05,TodayPay Invitational S3,Qhali,Paradox Esports,81.314,Qhali,1.47,337,loss,0,3814
+71244,2023-01-05,TodayPay Invitational S3,ANOTHER NA TEAM,Qhali,-189.5232,Qhali,1.48,722,win,1068,4160
+71252,2023-01-05,TodayPay Invitational S3,ANOTHER NA TEAM,Qhali,-109.998,Qhali,1.58,457,win,722,4425
+71286,2023-01-06,Moon Studio Campfire,Xerxia,Dawn Gaming,57.6554,Xerxia,1.82,255,win,464,4634
+71287,2023-01-06,Moon Studio Campfire,Xerxia,Dawn Gaming,-55.6422,Dawn Gaming,2.12,257,win,544,4921
+71264,2023-01-06,Moon Studio Campfire,Lilgun,KOBOLDS,27.4744,Lilgun,2.14,135,win,288,5074
