@@ -1,0 +1,544 @@
+date,match_id,championship,team1,team2,delta,favored,odds,stake,outcome,payout,bank_before,bank_after
+2022-01-01,39597,Asia New Star Cup,Yangon Galacticos,Neptune Gaming,-84.5406,Neptune Gaming,2.04,84,loss,0,1000,916
+2022-01-01,39598,Asia New Star Cup,Yangon Galacticos,Neptune Gaming,-85.4870,Neptune Gaming,1.98,78,loss,0,916,838
+2022-01-01,39599,Asia New Star Cup,Yangon Galacticos,Phoenix Gaming,116.1750,Yangon Galacticos,1.65,97,win,160,838,901
+2022-01-01,39600,Asia New Star Cup,Yangon Galacticos,Phoenix Gaming,18.9334,Yangon Galacticos,1.65,17,win,28,901,912
+2022-01-01,39601,Asia New Star Cup,Crocodile,KOBOLDS,14.9216,Crocodile,1.97,13,win,25,912,924
+2022-01-01,39604,Asia New Star Cup,Crocodile,KOBOLDS,-41.6796,KOBOLDS,2.63,38,win,99,924,985
+2022-01-02,39630,Asia New Star Cup,Neptune Gaming,Rush B,-79.7382,Rush B,2.12,78,loss,0,985,907
+2022-01-02,39632,Asia New Star Cup,Neptune Gaming,Rush B,-83.7178,Rush B,2.16,75,loss,0,907,832
+2022-01-02,39634,Asia New Star Cup,KOBOLDS,Neptune Gaming,35.1164,KOBOLDS,1.88,29,win,54,832,857
+2022-01-02,39635,Asia New Star Cup,KOBOLDS,Neptune Gaming,12.7000,KOBOLDS,1.98,10,loss,0,857,847
+2022-01-02,39636,Asia New Star Cup,Army Geniuses,Crocodile,54.8106,Army Geniuses,1.5,46,win,69,847,870
+2022-01-02,39640,Asia New Star Cup,Army Geniuses,Crocodile,-49.2254,Crocodile,2.14,42,win,89,870,917
+2022-01-02,39643,Asia New Star Cup,Yangon Galacticos,Rush B,47.3656,Yangon Galacticos,1.34,43,loss,0,917,874
+2022-01-02,39646,Asia New Star Cup,Yangon Galacticos,Rush B,-111.9306,Rush B,2.23,97,win,216,874,993
+2022-01-03,39671,QH Sports Dota Series 3,496 Gaming,Execration,-155.1754,Execration,1.36,154,win,209,993,1048
+2022-01-03,39676,QH Sports Dota Series 3,496 Gaming,Execration,8.6318,496 Gaming,2.81,9,win,25,1048,1064
+2022-01-03,39673,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,Phoenix Gaming,23.8632,EHOME,1.5,25,win,37,1064,1076
+2022-01-03,39678,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,Phoenix Gaming,-93.0046,Phoenix Gaming,2.63,100,loss,0,1076,976
+2022-01-03,39677,Asia New Star Cup,Yangon Galacticos,Army Geniuses,-47.2564,Army Geniuses,1.81,46,loss,0,976,930
+2022-01-03,39680,Asia New Star Cup,Yangon Galacticos,Army Geniuses,39.4910,Yangon Galacticos,1.63,36,loss,0,930,894
+2022-01-03,39684,Asia New Star Cup,Yangon Galacticos,Crocodile,229.4876,Yangon Galacticos,1.61,205,loss,0,894,689
+2022-01-03,39689,Asia New Star Cup,Yangon Galacticos,Crocodile,-119.4518,Crocodile,1.86,82,win,152,689,759
+2022-01-03,39682,QH Sports Dota Series 3,TEAM M11,Red Flower,113.3330,TEAM M11,1.79,86,win,153,759,826
+2022-01-03,39685,QH Sports Dota Series 3,TEAM M11,Red Flower,-49.1362,Red Flower,1.8,40,win,72,826,858
+2022-01-03,39687,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,Team Aster,-75.0998,Team Aster,3.99,64,win,255,858,1049
+2022-01-03,39690,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,Team Aster,-42.4904,Team Aster,3.04,44,loss,0,1049,1005
+2022-01-03,39698,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,Team Aster,81.3656,LGD Gaming,1.35,81,win,109,1005,1033
+2022-01-03,39697,Asia New Star Cup,Army Geniuses,KOBOLDS,188.7814,Army Geniuses,1.67,195,win,325,1033,1163
+2022-01-03,39701,Asia New Star Cup,Army Geniuses,KOBOLDS,-38.7464,KOBOLDS,2.27,45,win,102,1163,1220
+2022-01-03,39694,QH Sports Dota Series 3,Ragdoll,Execration,6.4180,Ragdoll,1.91,7,win,13,1220,1226
+2022-01-03,39699,QH Sports Dota Series 3,Ragdoll,Execration,-54.1858,Execration,1.91,66,win,126,1226,1286
+2022-01-04,39735,QH Sports Dota Series 3,Summit Gaming,Army Geniuses,-1.7874,Army Geniuses,1.49,2,win,2,1286,1286
+2022-01-04,39738,QH Sports Dota Series 3,Summit Gaming,Army Geniuses,-46.7842,Army Geniuses,1.31,60,win,78,1286,1304
+2022-01-04,39737,DPC CN 2021/22 Tour 1: Division I by Perfect World,Vici Gaming,LBZS,-33.8770,LBZS,3.32,44,win,146,1304,1406
+2022-01-04,39741,DPC CN 2021/22 Tour 1: Division I by Perfect World,Vici Gaming,LBZS,75.6506,Vici Gaming,1.45,106,win,153,1406,1453
+2022-01-04,39746,DPC CN 2021/22 Tour 1: Division I by Perfect World,Vici Gaming,LBZS,-32.6726,LBZS,2.81,47,loss,0,1453,1406
+2022-01-04,39742,QH Sports Dota Series 3,Alpha Esports,Red Flower,-5.3190,Red Flower,1.55,7,loss,0,1406,1399
+2022-01-04,39745,QH Sports Dota Series 3,Alpha Esports,Red Flower,46.1484,Alpha Esports,1.87,64,loss,0,1399,1335
+2022-01-04,39743,Asia New Star Cup,496 Gaming,Rush B,145.5560,496 Gaming,1.69,194,loss,0,1335,1141
+2022-01-04,39751,QH Sports Dota Series 3,Alpha Esports,Execration,-198.5438,Execration,1.37,226,win,309,1141,1224
+2022-01-04,39760,QH Sports Dota Series 3,Alpha Esports,Execration,-70.3274,Execration,1.3,86,loss,0,1224,1138
+2022-01-04,39749,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,Phoenix Gaming,66.9588,LGD Gaming,1.12,76,win,85,1138,1147
+2022-01-04,39755,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,Phoenix Gaming,271.2252,LGD Gaming,1.08,311,win,335,1147,1171
+2022-01-04,39750,Asia New Star Cup,Crocodile,Army Geniuses,-157.4926,Army Geniuses,1.61,184,win,296,1171,1283
+2022-01-04,39758,Asia New Star Cup,Crocodile,Army Geniuses,101.5918,Crocodile,2.25,130,loss,0,1283,1153
+2022-01-04,39762,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,Royal Never Give Up,-15.1588,Royal Never Give Up,2.01,17,loss,0,1153,1136
+2022-01-04,39768,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,Royal Never Give Up,-35.8722,Royal Never Give Up,2.05,40,win,82,1136,1178
+2022-01-04,39775,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,Royal Never Give Up,-26.0090,Royal Never Give Up,1.99,30,win,59,1178,1207
+2022-01-04,39763,Asia New Star Cup,Lilgun,KOBOLDS,-136.1278,KOBOLDS,2.36,164,loss,0,1207,1043
+2022-01-04,39767,Asia New Star Cup,Lilgun,KOBOLDS,107.4172,Lilgun,1.5,112,win,168,1043,1099
+2022-01-04,39779,D2CL 2021 S6,COOLGUYS,Nemiga Gaming,-186.4096,Nemiga Gaming,1.69,204,win,344,1099,1239
+2022-01-04,39782,D2CL 2021 S6,COOLGUYS,Nemiga Gaming,-214.9486,Nemiga Gaming,1.7,266,win,452,1239,1425
+2022-01-04,39784,D2CL 2021 S6,Team Tickles,Hydra,-32.3234,Hydra,2.73,46,loss,0,1425,1379
+2022-01-04,39785,D2CL 2021 S6,Team Tickles,Hydra,-252.7030,Hydra,2.81,348,win,977,1379,2008
+2022-01-04,39786,D2CL 2021 S6,Team Tickles,Hydra,-81.0038,Hydra,2.81,162,loss,0,2008,1846
+2022-01-05,39798,QH Sports Dota Series 3,Violet,TEAM M11,-61.4820,TEAM M11,2.01,113,win,227,1846,1960
+2022-01-05,39801,QH Sports Dota Series 3,Violet,TEAM M11,-74.2114,TEAM M11,1.77,145,win,256,1960,2071
+2022-01-05,39799,Asia New Star Cup,Yangon Galacticos,Army Geniuses,21.3768,Yangon Galacticos,2.16,44,loss,0,2071,2027
+2022-01-05,39802,Asia New Star Cup,Yangon Galacticos,Army Geniuses,-14.0380,Army Geniuses,1.55,28,loss,0,2027,1999
+2022-01-05,39805,Asia New Star Cup,Yangon Galacticos,Army Geniuses,-241.7840,Army Geniuses,1.85,483,win,893,1999,2409
+2022-01-05,39804,QH Sports Dota Series 3,TEAM M11,Alpha Esports,149.1538,TEAM M11,1.74,359,win,624,2409,2674
+2022-01-05,39809,QH Sports Dota Series 3,TEAM M11,Alpha Esports,-69.1304,Alpha Esports,1.98,184,loss,0,2674,2490
+2022-01-05,39810,Asia New Star Cup,Violet,Lilgun,11.3392,Violet,1.93,28,loss,0,2490,2462
+2022-01-05,39813,QH Sports Dota Series 3,Ragdoll,InterActive Philippines,49.9034,Ragdoll,1.24,122,win,151,2462,2491
+2022-01-05,39819,QH Sports Dota Series 3,Ragdoll,InterActive Philippines,-29.1420,InterActive Philippines,4.11,72,loss,0,2491,2419
+2022-01-05,39807,DPC SEA 2021/22 Tour 1: Division I,T1,Neon Esports,151.9118,T1,1.44,367,win,528,2419,2580
+2022-01-05,39811,DPC SEA 2021/22 Tour 1: Division I,T1,Neon Esports,-13.6686,Neon Esports,2.94,35,win,102,2580,2647
+2022-01-05,39817,DPC SEA 2021/22 Tour 1: Division I,T1,Neon Esports,18.2644,T1,1.47,48,loss,0,2647,2599
+2022-01-05,39815,DPC SEA 2021/22 Tour 1: Division I,Team SMG,Execration,109.3430,Team SMG,1.53,284,win,434,2599,2749
+2022-01-05,39830,DPC SEA 2021/22 Tour 1: Division I,Team SMG,Execration,-66.8628,Execration,2.63,183,loss,0,2749,2566
+2022-01-05,39827,Asia New Star Cup,KOBOLDS,Rush B,112.1704,KOBOLDS,1.47,287,loss,0,2566,2279
+2022-01-05,39831,Asia New Star Cup,KOBOLDS,Rush B,-149.6880,Rush B,1.55,341,win,528,2279,2466
+2022-01-05,39835,DPC WEU 2021/22 Tour 1: Division I,Alliance,Nigma Galaxy,-186.6700,Nigma Galaxy,1.5,460,win,690,2466,2696
+2022-01-05,39839,DPC WEU 2021/22 Tour 1: Division I,Alliance,Nigma Galaxy,-199.2178,Nigma Galaxy,1.45,537,win,778,2696,2937
+2022-01-05,39840,D2CL 2021 S6,Natus Vincere,Brame,-72.8442,Brame,2.14,213,loss,0,2937,2724
+2022-01-05,39842,D2CL 2021 S6,Natus Vincere,Brame,118.7250,Natus Vincere,1.5,323,win,484,2724,2885
+2022-01-05,39844,DPC WEU 2021/22 Tour 1: Division II,Team Bald,Into the Breach,-148.0736,Into the Breach,1.49,427,loss,0,2885,2458
+2022-01-05,39846,DPC WEU 2021/22 Tour 1: Division II,Team Bald,Into the Breach,15.1670,Team Bald,1.94,37,loss,0,2458,2421
+2022-01-05,39848,DPC WEU 2021/22 Tour 1: Division II,Team Bald,Into the Breach,24.1308,Team Bald,2.25,58,win,130,2421,2493
+2022-01-05,39845,D2CL 2021 S6,Entity,CIS Rejects,-217.9950,CIS Rejects,1.67,543,win,906,2493,2856
+2022-01-05,39847,D2CL 2021 S6,Entity,CIS Rejects,124.5716,Entity,2.48,355,loss,0,2856,2501
+2022-01-05,39849,DPC NA 2021/22 Tour 1: Division I,Black N Yellow,Wildcard,-118.9528,Wildcard,1.43,297,loss,0,2501,2204
+2022-01-05,39851,DPC NA 2021/22 Tour 1: Division I,Black N Yellow,Wildcard,-74.8714,Wildcard,1.5,165,win,247,2204,2286
+2022-01-05,39853,DPC NA 2021/22 Tour 1: Division I,Black N Yellow,Wildcard,-33.3546,Wildcard,1.45,76,win,110,2286,2320
+2022-01-05,39850,DPC WEU 2021/22 Tour 1: Division II,Brame,Ghost frogs,-59.1528,Ghost frogs,3.62,137,loss,0,2320,2183
+2022-01-05,39852,DPC WEU 2021/22 Tour 1: Division II,Brame,Ghost frogs,-161.1776,Ghost frogs,3.09,351,loss,0,2183,1832
+2022-01-06,39854,DPC NA 2021/22 Tour 1: Division I,Simply TOOBASED,Arkosh Gaming,-107.8910,Arkosh Gaming,1.88,197,loss,0,1832,1635
+2022-01-06,39855,DPC NA 2021/22 Tour 1: Division I,Simply TOOBASED,Arkosh Gaming,-69.7686,Arkosh Gaming,2.08,114,loss,0,1635,1521
+2022-01-06,39857,QH Sports Dota Series 3,InterActive Philippines,Execration,77.7472,InterActive Philippines,2.73,118,win,322,1521,1725
+2022-01-06,39861,QH Sports Dota Series 3,InterActive Philippines,Execration,-13.8912,Execration,1.5,23,loss,0,1725,1702
+2022-01-06,39860,DPC SEA 2021/22 Tour 1: Division II,Ragdoll,Talon Esports,-172.4460,Talon Esports,1.85,293,loss,0,1702,1409
+2022-01-06,39863,DPC SEA 2021/22 Tour 1: Division II,Ragdoll,Talon Esports,-110.3860,Talon Esports,1.8,155,loss,0,1409,1254
+2022-01-06,39864,QH Sports Dota Series 3,Violet,Alpha Esports,-43.1148,Alpha Esports,1.73,54,loss,0,1254,1200
+2022-01-06,39867,QH Sports Dota Series 3,Violet,Alpha Esports,102.2230,Violet,1.87,122,win,228,1200,1306
+2022-01-06,39869,DPC SEA 2021/22 Tour 1: Division II,496 Gaming,Lilgun,-16.4442,Lilgun,1.52,21,loss,0,1306,1285
+2022-01-06,39874,DPC SEA 2021/22 Tour 1: Division II,496 Gaming,Lilgun,-175.9560,Lilgun,1.6,226,loss,0,1285,1059
+2022-01-06,39873,Asia New Star Cup,Crocodile,Phoenix Gaming,-155.1018,Phoenix Gaming,1.5,164,win,246,1059,1141
+2022-01-06,39871,QH Sports Dota Series 3,Ragdoll,Summit Gaming,-41.4320,Summit Gaming,5.91,47,win,277,1141,1371
+2022-01-06,39876,QH Sports Dota Series 3,Ragdoll,Summit Gaming,-150.2334,Summit Gaming,6.21,205,loss,0,1371,1166
+2022-01-06,39878,DPC SEA 2021/22 Tour 1: Division I,Fnatic,Motivate.Trust Gaming,8.7172,Fnatic,1.59,10,loss,0,1166,1156
+2022-01-06,39884,DPC SEA 2021/22 Tour 1: Division I,Fnatic,Motivate.Trust Gaming,-18.9464,Motivate.Trust Gaming,1.94,21,loss,0,1156,1135
+2022-01-06,39890,DPC SEA 2021/22 Tour 1: Division I,Fnatic,Motivate.Trust Gaming,170.5362,Fnatic,1.6,193,win,308,1135,1250
+2022-01-06,39879,DPC EEU 2021/22 Tour 1: Division II,Fantastic Five,Hydra,6.2540,Fantastic Five,3.32,7,loss,0,1250,1243
+2022-01-06,39886,DPC EEU 2021/22 Tour 1: Division II,Fantastic Five,Hydra,-55.0564,Hydra,1.25,68,loss,0,1243,1175
+2022-01-06,39891,DPC EEU 2021/22 Tour 1: Division II,Fantastic Five,Hydra,-78.6734,Hydra,1.37,92,win,126,1175,1209
+2022-01-06,39883,Asia New Star Cup,Yangon Galacticos,Rush B,129.8714,Yangon Galacticos,2.77,157,win,434,1209,1486
+2022-01-06,39885,Asia New Star Cup,Yangon Galacticos,Rush B,-70.9884,Rush B,1.87,105,loss,0,1486,1381
+2022-01-06,39894,DPC EEU 2021/22 Tour 1: Division I,Team Spirit,AS Monaco Gambit,128.0260,Team Spirit,1.13,176,win,198,1381,1403
+2022-01-06,39901,DPC EEU 2021/22 Tour 1: Division I,Team Spirit,AS Monaco Gambit,50.0446,Team Spirit,1.11,70,win,77,1403,1410
+2022-01-06,39895,D2CL 2021 S6,Nemiga Gaming,Team Tickles,109.5418,Nemiga Gaming,2.54,154,loss,0,1410,1256
+2022-01-06,39900,D2CL 2021 S6,Nemiga Gaming,Team Tickles,30.7022,Nemiga Gaming,2.94,38,win,111,1256,1329
+2022-01-06,39904,D2CL 2021 S6,Nemiga Gaming,Team Tickles,11.2480,Nemiga Gaming,2.57,14,loss,0,1329,1315
+2022-01-06,39905,DPC EEU 2021/22 Tour 1: Division I,Natus Vincere,HellRaisers,-39.5424,HellRaisers,1.87,51,loss,0,1315,1264
+2022-01-06,39911,DPC EEU 2021/22 Tour 1: Division I,Natus Vincere,HellRaisers,57.7650,Natus Vincere,1.77,73,loss,0,1264,1191
+2022-01-06,39913,DPC EEU 2021/22 Tour 1: Division I,Natus Vincere,HellRaisers,57.5052,Natus Vincere,1.87,68,loss,0,1191,1123
+2022-01-06,39906,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Team Unknown,Balrogs e-Sport,78.0834,Team Unknown,4.81,87,loss,0,1123,1036
+2022-01-06,39909,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Team Unknown,Balrogs e-Sport,112.3880,Team Unknown,4.81,116,loss,0,1036,920
+2022-01-06,39910,D2CL 2021 S6,Brame,Entity,92.2134,Brame,2.16,84,loss,0,920,836
+2022-01-06,39912,D2CL 2021 S6,Brame,Entity,-292.5266,Entity,1.67,244,win,407,836,999
+2022-01-06,39914,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Omega Gaming,Infinity E-sports.,-13.5106,Infinity E-sports.,1.21,13,win,15,999,1001
+2022-01-06,39915,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Omega Gaming,Infinity E-sports.,-39.2382,Infinity E-sports.,1.22,39,win,47,1001,1009
+2022-01-06,39916,DPC SA 2021/22 Tour 1: Division I,Noping VPN,Beastcoast,177.1740,Noping VPN,3.7,178,loss,0,1009,831
+2022-01-06,39917,DPC SA 2021/22 Tour 1: Division I,Noping VPN,Beastcoast,70.0754,Noping VPN,3.04,58,loss,0,831,773
+2022-01-07,39923,QH Sports Dota Series 3,Red Flower,Violet,46.8636,Red Flower,1.68,36,loss,0,773,737
+2022-01-07,39927,QH Sports Dota Series 3,Red Flower,Violet,100.5978,Red Flower,1.87,74,loss,0,737,663
+2022-01-07,39925,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,EHOME,-13.1824,EHOME,3.99,8,win,31,663,686
+2022-01-07,39930,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,EHOME,-89.1822,EHOME,2.81,61,loss,0,686,625
+2022-01-07,39935,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,EHOME,-97.3920,EHOME,3.04,60,win,182,625,747
+2022-01-07,39928,QH Sports Dota Series 3,Army Geniuses,Alpha Esports,43.0972,Army Geniuses,1.49,32,win,47,747,762
+2022-01-07,39941,QH Sports Dota Series 3,Army Geniuses,Alpha Esports,-69.5830,Alpha Esports,3.04,53,loss,0,762,709
+2022-01-07,39937,Asia New Star Cup,Army Geniuses,Lilgun,-53.3340,Lilgun,1.69,37,loss,0,709,672
+2022-01-07,39949,Asia New Star Cup,Army Geniuses,Lilgun,-11.9526,Lilgun,1.87,8,win,14,672,678
+2022-01-07,39952,Asia New Star Cup,Army Geniuses,Lilgun,62.9954,Army Geniuses,1.87,42,loss,0,678,636
+2022-01-07,39938,DPC CN 2021/22 Tour 1: Division I by Perfect World,Vici Gaming,Team Aster,-23.5658,Team Aster,1.68,14,win,23,636,645
+2022-01-07,39947,DPC CN 2021/22 Tour 1: Division I by Perfect World,Vici Gaming,Team Aster,12.8098,Vici Gaming,2.16,8,loss,0,645,637
+2022-01-07,39939,QH Sports Dota Series 3,Summit Gaming,Violet,66.4274,Summit Gaming,1.58,42,loss,0,637,595
+2022-01-07,39950,QH Sports Dota Series 3,Summit Gaming,Violet,175.8792,Summit Gaming,2.08,104,win,216,595,707
+2022-01-07,39954,DPC EEU 2021/22 Tour 1: Division I,Team Empire,Virtus.pro,-98.4042,Virtus.pro,1.3,69,win,89,707,727
+2022-01-07,39959,DPC EEU 2021/22 Tour 1: Division I,Team Empire,Virtus.pro,218.5062,Team Empire,4.11,158,loss,0,727,569
+2022-01-07,39955,Asia New Star Cup,Violet,Phoenix Gaming,-34.1640,Phoenix Gaming,1.54,19,win,29,569,579
+2022-01-07,39963,Asia New Star Cup,Violet,Phoenix Gaming,80.8608,Violet,2.16,46,win,99,579,632
+2022-01-07,39967,DPC EEU 2021/22 Tour 1: Division II,Nemiga Gaming,V-Gaming,258.9432,Nemiga Gaming,1.62,163,win,264,632,733
+2022-01-07,39970,DPC EEU 2021/22 Tour 1: Division II,Nemiga Gaming,V-Gaming,89.5898,Nemiga Gaming,1.65,65,loss,0,733,668
+2022-01-07,39977,DPC EEU 2021/22 Tour 1: Division II,Nemiga Gaming,V-Gaming,72.3718,Nemiga Gaming,1.77,48,loss,0,668,620
+2022-01-07,39973,D2CL 2021 S6,COOLGUYS,Hydra,-201.2388,Hydra,1.5,124,win,186,620,682
+2022-01-07,39976,D2CL 2021 S6,COOLGUYS,Hydra,25.6840,COOLGUYS,2.66,17,win,45,682,710
+2022-01-07,39978,D2CL 2021 S6,COOLGUYS,Hydra,-24.6388,Hydra,1.5,17,loss,0,710,693
+2022-01-07,39979,DPC EEU 2021/22 Tour 1: Division II,Gambit Esports,CIS Rejects,150.6254,Gambit Esports,2.99,104,loss,0,693,589
+2022-01-07,39980,DPC EEU 2021/22 Tour 1: Division II,Gambit Esports,CIS Rejects,-94.1310,CIS Rejects,1.31,55,loss,0,589,534
+2022-01-07,39983,DPC EEU 2021/22 Tour 1: Division II,Gambit Esports,CIS Rejects,108.6692,Gambit Esports,2.99,58,loss,0,534,476
+2022-01-07,39981,DPC NA 2021/22 Tour 1: Division II,felt,The Cut,-168.7562,The Cut,1.29,80,win,103,476,499
+2022-01-07,39984,DPC NA 2021/22 Tour 1: Division II,felt,The Cut,-48.5232,The Cut,1.39,24,win,33,499,508
+2022-01-07,39982,DPC SA 2021/22 Tour 1: Division I,Thunder Predator,APU King of Kings,88.4254,Thunder Predator,1.3,44,win,57,508,521
+2022-01-07,39985,DPC SA 2021/22 Tour 1: Division I,Thunder Predator,APU King of Kings,-20.9922,APU King of Kings,3.32,10,loss,0,521,511
+2022-01-07,39986,DPC SA 2021/22 Tour 1: Division I,Beastcoast,INF.UESPORTS,60.9856,Beastcoast,1.25,31,win,38,511,518
+2022-01-07,39987,DPC SA 2021/22 Tour 1: Division I,Beastcoast,INF.UESPORTS,-150.5314,INF.UESPORTS,3.14,77,win,241,518,682
+2022-01-07,39988,DPC SA 2021/22 Tour 1: Division I,Beastcoast,INF.UESPORTS,46.8760,Beastcoast,1.35,31,loss,0,682,651
+2022-01-08,39994,QH Sports Dota Series 3,Ragdoll,Army Geniuses,-20.6008,Army Geniuses,2.08,13,win,27,651,665
+2022-01-08,39993,DPC SEA 2021/22 Tour 1: Division II,InterActive Philippines,Talon Esports,-70.7772,Talon Esports,1.21,47,win,56,665,674
+2022-01-08,39996,DPC SEA 2021/22 Tour 1: Division II,InterActive Philippines,Talon Esports,-98.3318,Talon Esports,1.25,66,win,82,674,690
+2022-01-08,39998,DPC SEA 2021/22 Tour 1: Division I,TNC Predator,BOOM Esports,-42.2626,BOOM Esports,1.19,29,win,34,690,695
+2022-01-08,40004,DPC SEA 2021/22 Tour 1: Division I,TNC Predator,BOOM Esports,57.4866,TNC Predator,3.7,39,loss,0,695,656
+2022-01-08,39995,QH Sports Dota Series 3,Army Geniuses,Red Flower,-32.6854,Red Flower,2.14,21,win,44,656,679
+2022-01-08,39997,QH Sports Dota Series 3,Army Geniuses,Red Flower,48.6936,Army Geniuses,1.87,33,loss,0,679,646
+2022-01-08,40000,QH Sports Dota Series 3,Alpha Esports,Ragdoll,-91.7904,Ragdoll,1.25,59,win,73,646,660
+2022-01-08,40003,QH Sports Dota Series 3,Alpha Esports,Ragdoll,-52.0840,Ragdoll,1.25,34,win,42,660,668
+2022-01-08,40005,Asia New Star Cup,Yangon Galacticos,Violet,-134.7200,Violet,2.04,89,win,181,668,760
+2022-01-08,40013,Asia New Star Cup,Yangon Galacticos,Violet,-118.9176,Violet,1.65,90,win,148,760,818
+2022-01-08,40007,DPC SEA 2021/22 Tour 1: Division I,T1,Motivate.Trust Gaming,38.4774,T1,1.3,31,win,40,818,827
+2022-01-08,40014,DPC SEA 2021/22 Tour 1: Division I,T1,Motivate.Trust Gaming,-1.5690,Motivate.Trust Gaming,3.04,1,win,3,827,829
+2022-01-08,40017,DPC SEA 2021/22 Tour 1: Division I,T1,Motivate.Trust Gaming,163.1362,T1,1.45,135,win,195,829,889
+2022-01-08,40018,DPC WEU 2021/22 Tour 1: Division I,Tundra Esports,COOLGUYS,97.6218,Tundra Esports,1.12,86,win,96,889,899
+2022-01-08,40022,DPC WEU 2021/22 Tour 1: Division I,Tundra Esports,COOLGUYS,139.5784,Tundra Esports,1.19,125,win,148,899,922
+2022-01-08,40024,D2CL 2021 S6,Natus Vincere,CIS Rejects,158.2488,Natus Vincere,1.98,145,win,287,922,1064
+2022-01-08,40026,D2CL 2021 S6,Natus Vincere,CIS Rejects,-77.8590,CIS Rejects,1.87,82,loss,0,1064,982
+2022-01-08,40031,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Interitus,Wolf Team,-17.7138,Wolf Team,1.4,17,win,23,982,988
+2022-01-08,40033,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Interitus,Wolf Team,58.2670,Interitus,2.81,57,loss,0,988,931
+2022-01-08,40034,D2CL 2021 S6,Nemiga Gaming,Entity,-51.6546,Entity,1.53,48,win,73,931,956
+2022-01-08,40035,D2CL 2021 S6,Nemiga Gaming,Entity,3.1010,Nemiga Gaming,2.81,2,loss,0,956,954
+2022-01-08,40037,DPC NA 2021/22 Tour 1: Division I,Evil Geniuses,4 Zoomers,35.1874,Evil Geniuses,1.5,33,win,49,954,970
+2022-01-08,40030,DPC WEU 2021/22 Tour 1: Division I,OG,Team Tickles,-48.2308,Team Tickles,2.45,46,loss,0,970,924
+2022-01-08,40032,DPC WEU 2021/22 Tour 1: Division I,OG,Team Tickles,99.2926,OG,1.5,91,loss,0,924,833
+2022-01-08,40036,DPC WEU 2021/22 Tour 1: Division I,OG,Team Tickles,-64.9040,Team Tickles,2.25,54,win,121,833,900
+2022-01-08,40038,Bitsler Cup S1,APU King of Kings,SG e-sports,59.4084,APU King of Kings,1.47,53,win,77,900,924
+2022-01-08,40041,Bitsler Cup S1,APU King of Kings,SG e-sports,-29.6194,SG e-sports,2.81,27,loss,0,924,897
+2022-01-08,40042,DPC NA 2021/22 Tour 1: Division I,Quincy Crew,Undying,-51.0046,Undying,1.77,45,loss,0,897,852
+2022-01-08,40044,DPC NA 2021/22 Tour 1: Division I,Quincy Crew,Undying,-268.9908,Undying,1.85,229,win,423,852,1046
+2022-01-08,40046,DPC NA 2021/22 Tour 1: Division I,Quincy Crew,Undying,-73.8870,Undying,1.77,77,loss,0,1046,969
+2022-01-08,40043,Bitsler Cup S1,APU King of Kings,SALCHIPAPA,-133.5614,SALCHIPAPA,6.21,129,loss,0,969,840
+2022-01-08,40045,Bitsler Cup S1,APU King of Kings,SALCHIPAPA,35.9966,APU King of Kings,1.09,30,win,32,840,842
+2022-01-09,40058,QH Sports Dota Series 3,Summit Gaming,TEAM M11,-41.6856,TEAM M11,1.49,35,win,52,842,859
+2022-01-09,40060,QH Sports Dota Series 3,Summit Gaming,TEAM M11,-54.2562,TEAM M11,2.08,46,loss,0,859,813
+2022-01-09,40049,QH Sports Dota Series 3,Violet,496 Gaming,-188.9104,496 Gaming,2.12,153,win,324,813,984
+2022-01-09,40053,QH Sports Dota Series 3,Violet,496 Gaming,-15.4814,496 Gaming,1.87,15,loss,0,984,969
+2022-01-09,40052,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,Phoenix Gaming,-241.0870,Phoenix Gaming,6.21,233,loss,0,969,736
+2022-01-09,40054,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,Phoenix Gaming,-112.4542,Phoenix Gaming,6.21,82,loss,0,736,654
+2022-01-09,40055,QH Sports Dota Series 3,InterActive Philippines,Violet,69.9806,InterActive Philippines,2.01,45,loss,0,654,609
+2022-01-09,40056,QH Sports Dota Series 3,InterActive Philippines,Violet,-21.8988,Violet,1.52,13,win,19,609,615
+2022-01-09,40057,DPC CN 2021/22 Tour 1: Division I by Perfect World,LBZS,Royal Never Give Up,-105.2586,Royal Never Give Up,1.2,64,win,76,615,627
+2022-01-09,40059,DPC CN 2021/22 Tour 1: Division I by Perfect World,LBZS,Royal Never Give Up,-85.9788,Royal Never Give Up,1.2,53,loss,0,627,574
+2022-01-09,40061,DPC CN 2021/22 Tour 1: Division I by Perfect World,LBZS,Royal Never Give Up,-58.5174,Royal Never Give Up,1.3,33,loss,0,574,541
+2022-01-09,40070,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,Vici Gaming,66.7758,LGD Gaming,1.24,36,win,44,541,549
+2022-01-09,40078,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,Vici Gaming,65.3426,LGD Gaming,1.34,35,win,46,549,560
+2022-01-09,40065,DPC EEU 2021/22 Tour 1: Division II,Winstrike Team,B8,-96.2056,B8,3.89,53,loss,0,560,507
+2022-01-09,40071,DPC EEU 2021/22 Tour 1: Division II,Winstrike Team,B8,-53.5386,B8,3.7,27,loss,0,507,480
+2022-01-09,40066,Asia New Star Cup,Army Geniuses,Violet,-107.6140,Violet,1.9,51,win,96,480,525
+2022-01-09,40073,Asia New Star Cup,Army Geniuses,Violet,118.4352,Army Geniuses,2.08,62,loss,0,525,463
+2022-01-09,40080,DPC EEU 2021/22 Tour 1: Division I,Team Unique,PuckChamp,117.2288,Team Unique,2.63,54,win,142,463,551
+2022-01-09,40085,DPC EEU 2021/22 Tour 1: Division I,Team Unique,PuckChamp,-46.7050,PuckChamp,1.5,25,win,37,551,563
+2022-01-09,40086,DPC EEU 2021/22 Tour 1: Division I,Team Unique,PuckChamp,-85.2964,PuckChamp,1.45,48,win,69,563,584
+2022-01-09,40090,DPC EEU 2021/22 Tour 1: Division I,Natus Vincere,Team Spirit,41.8872,Natus Vincere,3.62,24,win,86,584,646
+2022-01-09,40092,DPC EEU 2021/22 Tour 1: Division I,Natus Vincere,Team Spirit,-112.4730,Team Spirit,1.4,72,win,100,646,674
+2022-01-09,40097,DPC EEU 2021/22 Tour 1: Division I,Natus Vincere,Team Spirit,-82.6980,Team Spirit,1.3,55,win,71,674,690
+2022-01-09,40088,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Gorillaz-Pride,Interitus,19.3620,Gorillaz-Pride,1.3,13,win,16,690,693
+2022-01-09,40091,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Gorillaz-Pride,Interitus,-140.9716,Interitus,2.81,97,loss,0,693,596
+2022-01-09,40093,DPC NA 2021/22 Tour 1: Division II,Team Magnus,Team DogChamp,190.7894,Team Magnus,3.62,113,loss,0,596,483
+2022-01-09,40098,DPC NA 2021/22 Tour 1: Division II,Team Magnus,Team DogChamp,13.2008,Team Magnus,4.11,6,loss,0,483,477
+2022-01-09,40096,DPC SA 2021/22 Tour 1: Division I,Lava BestPc,Noping VPN,-32.8898,Noping VPN,2.19,15,loss,0,477,462
+2022-01-09,40099,DPC SA 2021/22 Tour 1: Division I,Lava BestPc,Noping VPN,98.8642,Lava BestPc,1.66,45,win,74,462,491
+2022-01-09,40100,DPC NA 2021/22 Tour 1: Division II,5ManMidas,KBU.US,-107.2682,KBU.US,1.49,52,loss,0,491,439
+2022-01-09,40103,DPC NA 2021/22 Tour 1: Division II,5ManMidas,KBU.US,113.4296,5ManMidas,2.16,49,loss,0,439,390
+2022-01-09,40104,DPC NA 2021/22 Tour 1: Division II,5ManMidas,KBU.US,44.6366,5ManMidas,2.45,17,loss,0,390,373
+2022-01-09,40101,DPC SA 2021/22 Tour 1: Division I,Hokori,SG e-sports,-69.5102,SG e-sports,2.48,25,loss,0,373,348
+2022-01-10,40107,QH Sports Dota Series 3,InterActive Philippines,Alpha Esports,-80.6830,Alpha Esports,2.23,28,win,62,348,382
+2022-01-10,40112,QH Sports Dota Series 3,InterActive Philippines,Alpha Esports,266.6590,InterActive Philippines,1.87,101,win,188,382,469
+2022-01-10,40113,Asia New Star Cup,Lilgun,Violet,80.6608,Lilgun,1.87,37,win,69,469,501
+2022-01-10,40117,Asia New Star Cup,Lilgun,Violet,141.6806,Lilgun,1.87,70,win,130,501,561
+2022-01-10,40120,Asia New Star Cup,Lilgun,Violet,178.9608,Lilgun,2.06,100,loss,0,561,461
+2022-01-10,40126,Asia New Star Cup,Lilgun,Violet,126.7442,Lilgun,1.87,58,win,108,461,511
+2022-01-10,40111,DPC CN 2021/22 Tour 1: Division I by Perfect World,Team Aster,LBZS,-24.4238,LBZS,2.99,12,loss,0,511,499
+2022-01-10,40114,DPC CN 2021/22 Tour 1: Division I by Perfect World,Team Aster,LBZS,-51.8324,LBZS,3.32,25,loss,0,499,474
+2022-01-10,40116,QH Sports Dota Series 3,Execration,Army Geniuses,31.6858,Execration,2.08,15,loss,0,474,459
+2022-01-10,40122,DPC SEA 2021/22 Tour 1: Division II,Army Geniuses,Polaris Esports,-5.3046,Polaris Esports,1.34,2,win,2,459,459
+2022-01-10,40127,DPC SEA 2021/22 Tour 1: Division II,Army Geniuses,Polaris Esports,31.0314,Army Geniuses,3.32,14,loss,0,459,445
+2022-01-10,40123,QH Sports Dota Series 3,InterActive Philippines,496 Gaming,26.4084,InterActive Philippines,2.21,11,loss,0,445,434
+2022-01-10,40130,QH Sports Dota Series 3,InterActive Philippines,496 Gaming,38.5948,InterActive Philippines,2.16,16,loss,0,434,418
+2022-01-10,40124,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,Royal Never Give Up,110.1436,EHOME,2.11,46,win,97,418,469
+2022-01-10,40128,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,Royal Never Give Up,35.1070,EHOME,1.87,16,loss,0,469,453
+2022-01-10,40133,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,Royal Never Give Up,75.5920,EHOME,2.48,34,loss,0,453,419
+2022-01-10,40135,DPC SEA 2021/22 Tour 1: Division II,Lilgun,Ragdoll,32.7726,Lilgun,2.6,13,win,33,419,439
+2022-01-10,40139,DPC SEA 2021/22 Tour 1: Division II,Lilgun,Ragdoll,19.7758,Lilgun,2.48,8,loss,0,439,431
+2022-01-10,40146,DPC EEU 2021/22 Tour 1: Division II,Nemiga Gaming,Fantastic Five,73.3360,Nemiga Gaming,1.42,31,loss,0,431,400
+2022-01-10,40151,DPC EEU 2021/22 Tour 1: Division II,Nemiga Gaming,Fantastic Five,60.1056,Nemiga Gaming,1.45,24,win,34,400,410
+2022-01-10,40155,DPC EEU 2021/22 Tour 1: Division II,Nemiga Gaming,Fantastic Five,23.1946,Nemiga Gaming,1.45,9,win,13,410,414
+2022-01-10,40149,D2CL 2021 S6,CIS Rejects,COOLGUYS,11.3224,CIS Rejects,1.27,4,win,5,414,415
+2022-01-10,40152,D2CL 2021 S6,CIS Rejects,COOLGUYS,-8.0704,COOLGUYS,3.46,3,loss,0,415,412
+2022-01-10,40158,Bitsler Cup S1,Hokori,Noping VPN,108.4046,Hokori,2.48,44,loss,0,412,368
+2022-01-10,40160,Bitsler Cup S1,Hokori,Noping VPN,73.4316,Hokori,2.4,27,win,64,368,405
+2022-01-10,40162,Bitsler Cup S1,SG e-sports,Hokori,124.1266,SG e-sports,2.9,50,loss,0,405,355
+2022-01-10,40164,Bitsler Cup S1,SG e-sports,Hokori,-60.3170,Hokori,1.36,21,win,28,355,362
+2022-01-10,40156,DPC WEU 2021/22 Tour 1: Division II,CHILLAX,Team Bald,-35.8822,Team Bald,1.87,12,loss,0,362,350
+2022-01-10,40157,DPC WEU 2021/22 Tour 1: Division II,CHILLAX,Team Bald,-89.0638,Team Bald,2.08,31,win,64,350,383
+2022-01-10,40159,DPC WEU 2021/22 Tour 1: Division II,CHILLAX,Team Bald,-66.6322,Team Bald,1.89,25,loss,0,383,358
+2022-01-10,40161,DPC NA 2021/22 Tour 1: Division II,felt,5RATFORCESTAFF,-79.1742,5RATFORCESTAFF,1.45,28,win,40,358,370
+2022-01-10,40163,DPC NA 2021/22 Tour 1: Division II,felt,5RATFORCESTAFF,121.0630,felt,2.73,44,win,120,370,446
+2022-01-10,40165,DPC NA 2021/22 Tour 1: Division II,felt,5RATFORCESTAFF,-115.3836,5RATFORCESTAFF,1.41,51,loss,0,446,395
+2022-01-10,40166,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Infinity E-sports.,Wolf Team,-77.8228,Wolf Team,2.9,30,loss,0,395,365
+2022-01-10,40167,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Infinity E-sports.,Wolf Team,136.7066,Infinity E-sports.,1.47,49,win,72,365,388
+2022-01-11,40172,QH Sports Dota Series 3,Violet,Army Geniuses,-98.0164,Army Geniuses,2.38,38,win,90,388,440
+2022-01-11,40173,QH Sports Dota Series 3,Violet,Army Geniuses,-117.6154,Army Geniuses,1.87,51,loss,0,440,389
+2022-01-11,40174,DPC CN 2021/22 Tour 1: Division I by Perfect World,Phoenix Gaming,Royal Never Give Up,-25.5868,Royal Never Give Up,1.12,9,win,10,389,390
+2022-01-11,40176,DPC CN 2021/22 Tour 1: Division I by Perfect World,Phoenix Gaming,Royal Never Give Up,-159.2518,Royal Never Give Up,1.12,62,win,69,390,397
+2022-01-11,40177,QH Sports Dota Series 3,TEAM M11,496 Gaming,-65.7866,496 Gaming,1.94,26,win,50,397,421
+2022-01-11,40180,QH Sports Dota Series 3,TEAM M11,496 Gaming,-149.3416,496 Gaming,1.5,62,win,93,421,452
+2022-01-11,40183,QH Sports Dota Series 3,496 Gaming,Army Geniuses,43.5756,496 Gaming,2.36,19,loss,0,452,433
+2022-01-11,40188,QH Sports Dota Series 3,496 Gaming,Army Geniuses,-36.5494,Army Geniuses,2.25,15,loss,0,433,418
+2022-01-11,40182,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,Team Aster,124.6540,EHOME,2.63,52,loss,0,418,366
+2022-01-11,40186,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,Team Aster,-215.3368,Team Aster,1.45,78,win,113,366,401
+2022-01-11,40194,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,LBZS,30.3952,LGD Gaming,1.15,12,win,13,401,402
+2022-01-11,40198,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,LBZS,-25.5354,LBZS,5.91,10,loss,0,402,392
+2022-01-11,40195,DPC WEU 2021/22 Tour 1: Division II,Chicken Fighters,Entity,147.2384,Chicken Fighters,2.14,57,win,121,392,456
+2022-01-11,40201,DPC WEU 2021/22 Tour 1: Division II,Chicken Fighters,Entity,70.2676,Chicken Fighters,2.12,32,loss,0,456,424
+2022-01-11,40205,DPC WEU 2021/22 Tour 1: Division II,Chicken Fighters,Entity,-45.5166,Entity,1.57,19,win,29,424,434
+2022-01-11,40208,DPC WEU 2021/22 Tour 1: Division I,Team Liquid,Nigma Galaxy,100.9708,Team Liquid,1.58,43,win,67,434,458
+2022-01-11,40212,DPC WEU 2021/22 Tour 1: Division I,Team Liquid,Nigma Galaxy,82.2520,Team Liquid,1.64,37,loss,0,458,421
+2022-01-11,40217,DPC WEU 2021/22 Tour 1: Division I,Team Liquid,Nigma Galaxy,44.1082,Team Liquid,1.7,18,loss,0,421,403
+2022-01-11,40211,D2CL 2021 S6,CIS Rejects,Entity,66.4700,CIS Rejects,1.66,26,loss,0,403,377
+2022-01-11,40215,D2CL 2021 S6,CIS Rejects,Entity,102.7390,CIS Rejects,1.66,38,win,63,377,402
+2022-01-11,40220,D2CL 2021 S6,CIS Rejects,Entity,-24.0218,Entity,2.25,9,win,20,402,413
+2022-01-11,40221,DPC WEU 2021/22 Tour 1: Division I,Team Secret,COOLGUYS,43.3468,Team Secret,1.16,17,win,19,413,415
+2022-01-11,40223,DPC WEU 2021/22 Tour 1: Division I,Team Secret,COOLGUYS,-182.6572,COOLGUYS,5.4,75,loss,0,415,340
+2022-01-11,40222,D2CL 2021 S6,Team Tickles,Natus Vincere,104.0622,Team Tickles,1.78,35,win,62,340,367
+2022-01-11,40224,D2CL 2021 S6,Team Tickles,Natus Vincere,226.4120,Team Tickles,1.8,83,win,149,367,433
+2022-01-11,40225,DPC NA 2021/22 Tour 1: Division I,Quincy Crew,Black N Yellow,7.7500,Quincy Crew,1.16,3,loss,0,433,430
+2022-01-11,40226,DPC NA 2021/22 Tour 1: Division I,Quincy Crew,Black N Yellow,-8.9976,Black N Yellow,4.11,3,loss,0,430,427
+2022-01-11,40227,DPC NA 2021/22 Tour 1: Division I,Quincy Crew,Black N Yellow,230.2918,Quincy Crew,1.19,98,win,116,427,445
+2022-01-11,40228,Bitsler Cup S1,Noping VPN,Lava BestPc,29.3776,Noping VPN,2.12,13,win,27,445,459
+2022-01-11,40230,Bitsler Cup S1,Noping VPN,Lava BestPc,40.2736,Noping VPN,2.35,18,loss,0,459,441
+2022-01-11,40229,DPC NA 2021/22 Tour 1: Division II,Electronic Boys,KBU.US,66.2586,Electronic Boys,2.51,29,loss,0,441,412
+2022-01-11,40231,DPC NA 2021/22 Tour 1: Division II,Electronic Boys,KBU.US,-146.9574,KBU.US,1.65,60,loss,0,412,352
+2022-01-11,40233,DPC NA 2021/22 Tour 1: Division II,Electronic Boys,KBU.US,-40.0972,KBU.US,1.77,14,win,24,352,362
+2022-01-12,40232,Bitsler Cup S1,Balrogs e-Sport,SALCHIPAPA,-143.7862,SALCHIPAPA,3.66,52,loss,0,362,310
+2022-01-12,40234,Bitsler Cup S1,Balrogs e-Sport,SALCHIPAPA,-58.9804,SALCHIPAPA,3.7,18,loss,0,310,292
+2022-01-12,40236,QH Sports Dota Series 3,InterActive Philippines,Summit Gaming,57.9676,InterActive Philippines,1.67,16,loss,0,292,276
+2022-01-12,40239,DPC SEA 2021/22 Tour 1: Division II,496 Gaming,Talon Esports,-7.2028,Talon Esports,1.33,1,win,1,276,276
+2022-01-12,40242,DPC SEA 2021/22 Tour 1: Division II,496 Gaming,Talon Esports,-4.1936,Talon Esports,1.37,1,win,1,276,276
+2022-01-12,40241,QH Sports Dota Series 3,Red Flower,Ragdoll,-84.8308,Ragdoll,1.59,23,loss,0,276,253
+2022-01-12,40245,QH Sports Dota Series 3,Red Flower,Ragdoll,-155.3552,Ragdoll,1.55,39,win,60,253,274
+2022-01-12,40249,QH Sports Dota Series 3,TEAM M11,Ragdoll,13.8054,TEAM M11,1.96,3,loss,0,274,271
+2022-01-12,40252,QH Sports Dota Series 3,TEAM M11,Ragdoll,47.7934,TEAM M11,2.35,12,loss,0,271,259
+2022-01-12,40248,DPC SEA 2021/22 Tour 1: Division I,TNC Predator,Neon Esports,-35.6728,Neon Esports,1.38,9,loss,0,259,250
+2022-01-12,40251,DPC SEA 2021/22 Tour 1: Division I,TNC Predator,Neon Esports,-65.5628,Neon Esports,1.42,16,loss,0,250,234
+2022-01-12,40257,DPC SEA 2021/22 Tour 1: Division I,T1,Execration,59.5842,T1,1.18,13,win,15,234,236
+2022-01-12,40264,DPC SEA 2021/22 Tour 1: Division I,T1,Execration,194.1070,T1,1.15,45,win,51,236,242
+2022-01-12,40263,D2CL 2021 S6,Natus Vincere,Entity,-198.3890,Entity,2.06,48,loss,0,242,194
+2022-01-12,40267,D2CL 2021 S6,Natus Vincere,Entity,88.1096,Natus Vincere,1.75,17,win,29,194,206
+2022-01-12,40270,DPC WEU 2021/22 Tour 1: Division I,Alliance,OG,-54.2510,OG,1.38,11,win,15,206,210
+2022-01-12,40273,DPC WEU 2021/22 Tour 1: Division I,Alliance,OG,-167.5064,OG,1.37,35,win,47,210,222
+2022-01-12,40276,D2CL 2021 S6,Team Tickles,Natus Vincere,87.5672,Team Tickles,1.79,19,win,34,222,237
+2022-01-12,40279,D2CL 2021 S6,Team Tickles,Natus Vincere,161.5236,Team Tickles,1.7,38,loss,0,237,199
+2022-01-12,40281,D2CL 2021 S6,Team Tickles,Natus Vincere,47.6142,Team Tickles,1.85,9,win,16,199,206
+2022-01-12,40283,D2CL 2021 S6,Team Tickles,Natus Vincere,180.8610,Team Tickles,1.74,37,loss,0,206,169
+2022-01-12,40284,D2CL 2021 S6,Team Tickles,Natus Vincere,-57.8650,Natus Vincere,1.92,9,loss,0,169,160
+2022-01-12,40285,DPC NA 2021/22 Tour 1: Division I,Evil Geniuses,Undying,-61.8246,Undying,1.9,9,loss,0,160,151
+2022-01-12,40286,DPC NA 2021/22 Tour 1: Division I,Evil Geniuses,Undying,19.0488,Evil Geniuses,1.57,2,win,3,151,152
+2022-01-12,40288,Bitsler Cup S1,Noping VPN,Infamous Gaming,-82.6560,Infamous Gaming,1.65,12,win,19,152,159
+2022-01-12,40290,Bitsler Cup S1,Infamous Gaming,SALCHIPAPA,28.3206,Infamous Gaming,1.16,4,win,4,159,159
+2022-01-12,40292,Bitsler Cup S1,Infamous Gaming,SALCHIPAPA,138.0166,Infamous Gaming,1.08,21,win,22,159,160
+2022-01-12,40291,DPC NA 2021/22 Tour 1: Division I,Simply TOOBASED,Wildcard,-14.7986,Wildcard,1.29,2,win,2,160,160
+2022-01-13,40294,Bitsler Cup S1,Hokori,Balrogs e-Sport,142.0342,Hokori,1.55,22,win,34,160,172
+2022-01-13,40295,Bitsler Cup S1,Hokori,Balrogs e-Sport,96.4176,Hokori,1.53,16,win,24,172,180
+2022-01-13,40296,QH Sports Dota Series 3,Execration,Red Flower,212.1264,Execration,1.31,38,loss,0,180,142
+2022-01-13,40303,QH Sports Dota Series 3,Execration,Red Flower,10.9898,Execration,2.25,1,win,2,142,143
+2022-01-13,40305,DPC SEA 2021/22 Tour 1: Division II,Army Geniuses,InterActive Philippines,-100.8076,InterActive Philippines,2.63,14,loss,0,143,129
+2022-01-13,40309,DPC SEA 2021/22 Tour 1: Division II,Army Geniuses,InterActive Philippines,-45.6418,InterActive Philippines,2.85,5,loss,0,129,124
+2022-01-13,40308,QH Sports Dota Series 3,TEAM M11,Execration,127.9578,TEAM M11,2.23,15,loss,0,124,109
+2022-01-13,40319,QH Sports Dota Series 3,TEAM M11,Army Geniuses,11.1858,TEAM M11,2.45,1,loss,0,109,108
+2022-01-13,40311,DPC SEA 2021/22 Tour 1: Division II,Nigma Galaxy SEA,Ragdoll,62.4922,Nigma Galaxy SEA,1.94,6,win,11,108,113
+2022-01-13,40317,DPC SEA 2021/22 Tour 1: Division II,Nigma Galaxy SEA,Ragdoll,22.4276,Nigma Galaxy SEA,1.98,2,win,3,113,114
+2022-01-13,40320,DPC EEU 2021/22 Tour 1: Division II,V-Gaming,B8,-161.8628,B8,4.49,18,win,80,114,176
+2022-01-13,40324,DPC EEU 2021/22 Tour 1: Division II,V-Gaming,B8,-22.2744,B8,3.7,3,loss,0,176,173
+2022-01-13,40330,DPC EEU 2021/22 Tour 1: Division II,V-Gaming,B8,-46.9648,B8,3.54,8,loss,0,173,165
+2022-01-13,40321,DPC SEA 2021/22 Tour 1: Division I,TNC Predator,Team SMG,102.0176,TNC Predator,2.99,16,loss,0,165,149
+2022-01-13,40327,DPC SEA 2021/22 Tour 1: Division I,TNC Predator,Team SMG,-106.2258,Team SMG,1.41,15,loss,0,149,134
+2022-01-13,40331,DPC SEA 2021/22 Tour 1: Division I,TNC Predator,Team SMG,63.9882,TNC Predator,2.48,8,loss,0,134,126
+2022-01-13,40334,DPC EEU 2021/22 Tour 1: Division I,HellRaisers,PuckChamp,124.1720,HellRaisers,1.62,15,loss,0,126,111
+2022-01-13,40337,DPC EEU 2021/22 Tour 1: Division I,HellRaisers,PuckChamp,144.7840,HellRaisers,1.7,16,loss,0,111,95
+2022-01-13,40343,DPC EEU 2021/22 Tour 1: Division I,Natus Vincere,AS Monaco Gambit,-12.8378,AS Monaco Gambit,3.39,1,loss,0,95,94
+2022-01-13,40345,DPC EEU 2021/22 Tour 1: Division I,Natus Vincere,AS Monaco Gambit,-84.8948,AS Monaco Gambit,3.7,7,loss,0,94,87
+2022-01-13,40341,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Inverse,Balrogs e-Sport,-86.6144,Balrogs e-Sport,1.16,7,win,8,87,88
+2022-01-13,40347,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Interitus,Omega Gaming,167.2858,Interitus,2.66,14,loss,0,88,74
+2022-01-13,40348,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Interitus,Omega Gaming,137.9062,Interitus,2.81,10,win,28,74,92
+2022-01-13,40349,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Interitus,Omega Gaming,168.4692,Interitus,2.25,15,loss,0,92,77
+2022-01-13,40350,DPC SA 2021/22 Tour 1: Division I,Noping VPN,SG e-sports,-48.3754,SG e-sports,3.04,3,loss,0,77,74
+2022-01-13,40351,DPC SA 2021/22 Tour 1: Division I,Noping VPN,SG e-sports,50.2902,Noping VPN,1.4,3,win,4,74,75
+2022-01-14,40356,QH Sports Dota Series 3,InterActive Philippines,Red Flower,-115.3506,Red Flower,1.41,8,win,11,75,78
+2022-01-14,40360,QH Sports Dota Series 3,InterActive Philippines,Red Flower,52.4064,InterActive Philippines,2.48,4,loss,0,78,74
+2022-01-14,40357,DPC SEA 2021/22 Tour 1: Division II,Lilgun,Talon Esports,-38.1390,Talon Esports,1.45,2,loss,0,74,72
+2022-01-14,40361,DPC SEA 2021/22 Tour 1: Division II,Lilgun,Talon Esports,72.3860,Lilgun,2.35,5,win,11,72,78
+2022-01-14,40358,DPC CN 2021/22 Tour 1: Division I by Perfect World,Phoenix Gaming,LBZS,63.2468,Phoenix Gaming,3.09,4,win,12,78,86
+2022-01-14,40362,DPC CN 2021/22 Tour 1: Division I by Perfect World,Phoenix Gaming,LBZS,-187.3138,LBZS,1.37,16,win,21,86,91
+2022-01-14,40366,DPC CN 2021/22 Tour 1: Division I by Perfect World,Phoenix Gaming,LBZS,138.3086,Phoenix Gaming,3.7,12,loss,0,91,79
+2022-01-14,40364,QH Sports Dota Series 3,Summit Gaming,Alpha Esports,37.9166,Summit Gaming,1.4,2,win,2,79,79
+2022-01-14,40369,QH Sports Dota Series 3,Summit Gaming,Alpha Esports,46.8036,Summit Gaming,1.5,3,win,4,79,80
+2022-01-14,40373,DPC SEA 2021/22 Tour 1: Division I,Team SMG,Neon Esports,-26.0112,Neon Esports,2.08,2,win,4,80,82
+2022-01-14,40380,DPC SEA 2021/22 Tour 1: Division I,Team SMG,Neon Esports,-66.6734,Neon Esports,1.87,5,loss,0,82,77
+2022-01-14,40368,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,Vici Gaming,50.1584,Invictus Gaming,1.55,3,loss,0,77,74
+2022-01-14,40375,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,Vici Gaming,164.4284,Invictus Gaming,1.5,12,loss,0,74,62
+2022-01-14,40385,DPC EEU 2021/22 Tour 1: Division I,Team Empire,Team Mind Games,44.4762,Team Empire,2.23,2,loss,0,62,60
+2022-01-14,40391,DPC EEU 2021/22 Tour 1: Division I,Team Empire,Team Mind Games,-68.1668,Team Mind Games,1.63,4,win,6,60,62
+2022-01-14,40396,DPC EEU 2021/22 Tour 1: Division II,Gambit Esports,Hydra,80.0708,Gambit Esports,2.17,4,loss,0,62,58
+2022-01-14,40401,DPC EEU 2021/22 Tour 1: Division II,Gambit Esports,Hydra,164.7476,Gambit Esports,2.25,9,win,20,58,69
+2022-01-14,40405,DPC EEU 2021/22 Tour 1: Division II,Gambit Esports,Hydra,-42.7562,Hydra,1.77,2,win,3,69,70
+2022-01-14,40412,DPC EEU 2021/22 Tour 1: Division II,Winstrike Team,CIS Rejects,-203.8156,CIS Rejects,1.48,14,win,20,70,76
+2022-01-14,40413,DPC EEU 2021/22 Tour 1: Division II,Winstrike Team,CIS Rejects,-59.6106,CIS Rejects,1.4,4,loss,0,76,72
+2022-01-14,40406,Bitsler Cup S1,SG e-sports,Noping VPN,-177.6058,Noping VPN,1.3,12,win,15,72,75
+2022-01-14,40408,Bitsler Cup S1,SG e-sports,Noping VPN,-158.5112,Noping VPN,1.3,11,win,14,75,78
+2022-01-14,40411,DPC SA 2021/22 Tour 1: Division I,INF.UESPORTS,Lava BestPc,77.6368,INF.UESPORTS,1.6,6,win,9,78,81
+2022-01-14,40416,DPC SA 2021/22 Tour 1: Division I,INF.UESPORTS,Lava BestPc,214.0090,INF.UESPORTS,1.7,17,win,28,81,92
+2022-01-14,40410,DPC NA 2021/22 Tour 1: Division II,Team Magnus,5ManMidas,-193.8030,5ManMidas,1.49,17,win,25,92,100
+2022-01-14,40415,DPC NA 2021/22 Tour 1: Division II,Team Magnus,5ManMidas,54.2404,Team Magnus,2.48,5,loss,0,100,95
+2022-01-14,40417,DPC SA 2021/22 Tour 1: Division I,Hokori,APU King of Kings,-30.9766,APU King of Kings,1.86,2,win,3,95,96
+2022-01-14,40418,DPC SA 2021/22 Tour 1: Division I,Hokori,APU King of Kings,72.7340,Hokori,1.92,6,loss,0,96,90
+2022-01-15,40421,QH Sports Dota Series 3,Red Flower,496 Gaming,126.5080,Red Flower,1.81,11,win,19,90,98
+2022-01-15,40423,QH Sports Dota Series 3,Red Flower,496 Gaming,-231.4546,496 Gaming,1.88,22,loss,0,98,76
+2022-01-15,40422,DPC SEA 2021/22 Tour 1: Division II,Polaris Esports,Nigma Galaxy SEA,79.9478,Polaris Esports,2.14,6,loss,0,76,70
+2022-01-15,40424,DPC SEA 2021/22 Tour 1: Division II,Polaris Esports,Nigma Galaxy SEA,17.2836,Polaris Esports,1.87,1,win,1,70,70
+2022-01-15,40427,DPC SEA 2021/22 Tour 1: Division II,Polaris Esports,Nigma Galaxy SEA,43.3326,Polaris Esports,2.08,3,win,6,70,73
+2022-01-15,40425,QH Sports Dota Series 3,Red Flower,Summit Gaming,65.3996,Red Flower,1.77,4,win,7,73,76
+2022-01-15,40426,QH Sports Dota Series 3,Red Flower,Summit Gaming,-93.8012,Summit Gaming,1.98,7,loss,0,76,69
+2022-01-15,40430,DPC SEA 2021/22 Tour 1: Division I,Execration,Fnatic,72.8814,Execration,3.26,5,loss,0,69,64
+2022-01-15,40429,QH Sports Dota Series 3,Summit Gaming,496 Gaming,85.7876,Summit Gaming,2.43,5,win,12,64,71
+2022-01-15,40433,QH Sports Dota Series 3,Summit Gaming,496 Gaming,-28.1982,496 Gaming,1.65,2,loss,0,71,69
+2022-01-15,40446,Asia New Star Cup S2,Tiger God,Rush B,166.9214,Tiger God,1.88,11,loss,0,69,58
+2022-01-15,40439,DPC WEU 2021/22 Tour 1: Division II,CHILLAX,Ghost frogs,-20.6232,Ghost frogs,2.6,1,win,2,58,59
+2022-01-15,40444,DPC WEU 2021/22 Tour 1: Division II,CHILLAX,Ghost frogs,38.1578,CHILLAX,1.61,2,loss,0,59,57
+2022-01-15,40442,DPC SEA 2021/22 Tour 1: Division I,BOOM Esports,T1,-55.6810,T1,1.99,3,win,5,57,59
+2022-01-15,40449,DPC SEA 2021/22 Tour 1: Division I,BOOM Esports,T1,-114.0132,T1,1.87,6,win,11,59,64
+2022-01-15,40451,DPC WEU 2021/22 Tour 1: Division I,Tundra Esports,Team Tickles,-123.7010,Team Tickles,2.48,7,win,17,64,74
+2022-01-15,40454,DPC WEU 2021/22 Tour 1: Division I,Tundra Esports,Team Tickles,36.9772,Tundra Esports,1.58,2,loss,0,74,72
+2022-01-15,40457,DPC WEU 2021/22 Tour 1: Division I,Nigma Galaxy,COOLGUYS,-92.0002,COOLGUYS,5.65,6,loss,0,72,66
+2022-01-15,40460,DPC WEU 2021/22 Tour 1: Division I,Nigma Galaxy,COOLGUYS,-24.5120,COOLGUYS,4.49,1,loss,0,66,65
+2022-01-15,40459,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Team Unknown,Gorillaz-Pride,-146.3700,Gorillaz-Pride,1.13,9,win,10,65,66
+2022-01-15,40464,DPC NA 2021/22 Tour 1: Division I,4 Zoomers,Arkosh Gaming,46.2882,4 Zoomers,1.18,3,win,3,66,66
+2022-01-15,40463,Bitsler Cup S1,Hokori,APU King of Kings,-64.7048,APU King of Kings,1.87,4,win,7,66,69
+2022-01-15,40466,Bitsler Cup S1,Hokori,APU King of Kings,77.7978,Hokori,1.93,5,win,9,69,73
+2022-01-15,40467,Bitsler Cup S1,INF.UESPORTS,Balrogs e-Sport,80.8930,INF.UESPORTS,1.2,5,win,6,73,74
+2022-01-15,40470,Bitsler Cup S1,INF.UESPORTS,Balrogs e-Sport,-111.2658,Balrogs e-Sport,3.54,8,loss,0,74,66
+2022-01-15,40468,DPC NA 2021/22 Tour 1: Division I,Simply TOOBASED,Black N Yellow,181.8276,Simply TOOBASED,2.4,12,win,28,66,82
+2022-01-15,40469,DPC NA 2021/22 Tour 1: Division I,Simply TOOBASED,Black N Yellow,-43.6164,Black N Yellow,1.6,3,loss,0,82,79
+2022-01-16,40474,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,LBZS,79.3956,Invictus Gaming,1.34,6,loss,0,79,73
+2022-01-16,40476,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,LBZS,63.0500,Invictus Gaming,1.47,4,loss,0,73,69
+2022-01-16,40475,QH Sports Dota Series 3,TEAM M11,InterActive Philippines,20.6482,TEAM M11,1.48,1,win,1,69,69
+2022-01-16,40479,QH Sports Dota Series 3,Execration,Violet,-186.2776,Violet,1.51,12,win,18,69,75
+2022-01-16,40483,QH Sports Dota Series 3,Execration,Violet,-48.5526,Violet,1.5,3,win,4,75,76
+2022-01-16,40478,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,Vici Gaming,29.5402,EHOME,2.23,2,win,4,76,78
+2022-01-16,40481,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,Vici Gaming,165.0156,EHOME,1.99,12,loss,0,78,66
+2022-01-16,40480,Asia New Star Cup S2,KOBOLDS,496 Gaming,45.0568,KOBOLDS,2.09,2,loss,0,66,64
+2022-01-16,40482,Asia New Star Cup S2,KOBOLDS,496 Gaming,-76.0670,496 Gaming,1.6,4,win,6,64,66
+2022-01-16,40492,DPC EEU 2021/22 Tour 1: Division II,Fantastic Five,B8,-73.2374,B8,2.48,4,loss,0,66,62
+2022-01-16,40488,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,Royal Never Give Up,-47.2128,Royal Never Give Up,3.09,2,loss,0,62,60
+2022-01-16,40497,DPC CN 2021/22 Tour 1: Division I by Perfect World,LGD Gaming,Royal Never Give Up,89.5290,LGD Gaming,1.37,5,win,6,60,61
+2022-01-16,40489,Asia New Star Cup S2,Rice Field,Summit Gaming,-38.8362,Summit Gaming,1.54,2,loss,0,61,59
+2022-01-16,40493,Asia New Star Cup S2,Rice Field,Summit Gaming,-166.9228,Summit Gaming,1.5,9,loss,0,59,50
+2022-01-16,40498,DPC EEU 2021/22 Tour 1: Division I,Team Spirit,HellRaisers,-137.5272,HellRaisers,3.79,6,loss,0,50,44
+2022-01-16,40501,DPC EEU 2021/22 Tour 1: Division I,Team Spirit,HellRaisers,-142.6954,HellRaisers,3.99,6,loss,0,44,38
+2022-01-16,40506,DPC EEU 2021/22 Tour 1: Division I,Natus Vincere,Virtus.pro,-229.4256,Virtus.pro,2.06,8,win,16,38,46
+2022-01-16,40507,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Inverse,Wolf Team,-78.9286,Wolf Team,1.13,3,win,3,46,46
+2022-01-16,40514,DPC SA 2021/22 Tour 1: Division I,Noping VPN,Thunder Predator,66.5482,Noping VPN,3.99,3,loss,0,46,43
+2022-01-16,40519,DPC SA 2021/22 Tour 1: Division I,Noping VPN,Thunder Predator,66.9086,Noping VPN,3.7,2,loss,0,43,41
+2022-01-16,40516,DPC NA 2021/22 Tour 1: Division II,Team DogChamp,The Cut,94.5596,Team DogChamp,2.63,3,win,7,41,45
+2022-01-16,40518,DPC NA 2021/22 Tour 1: Division II,Team DogChamp,The Cut,203.2692,Team DogChamp,2.25,9,loss,0,45,36
+2022-01-16,40522,DPC SA 2021/22 Tour 1: Division I,Beastcoast,SG e-sports,100.4422,Beastcoast,1.16,3,loss,0,36,33
+2022-01-16,40523,DPC SA 2021/22 Tour 1: Division I,Beastcoast,SG e-sports,86.4256,Beastcoast,4.49,2,win,8,33,39
+2022-01-16,40525,DPC SA 2021/22 Tour 1: Division I,Beastcoast,SG e-sports,-192.9414,SG e-sports,4.49,7,win,31,39,63
+2022-01-16,40521,DPC NA 2021/22 Tour 1: Division II,felt,KBU.US,67.9672,felt,1.97,4,loss,0,63,59
+2022-01-16,40524,DPC NA 2021/22 Tour 1: Division II,felt,KBU.US,186.8916,felt,2.25,11,loss,0,59,48
+2022-01-17,40527,QH Sports Dota Series 3,Execration,Summit Gaming,-66.2082,Summit Gaming,2.47,3,loss,0,48,45
+2022-01-17,40533,QH Sports Dota Series 3,Execration,Summit Gaming,72.2464,Execration,1.75,3,win,5,45,47
+2022-01-17,40529,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,LBZS,96.3988,EHOME,1.66,4,win,6,47,49
+2022-01-17,40535,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,LBZS,56.5746,EHOME,1.55,2,win,3,49,50
+2022-01-17,40531,Asian Elite League,Dota Geniuses,Apes,-85.2334,Apes,1.87,4,win,7,50,53
+2022-01-17,40536,Asian Elite League,Dota Geniuses,Apes,78.6776,Dota Geniuses,2.94,4,loss,0,53,49
+2022-01-17,40538,QH Sports Dota Series 3,Ragdoll,Violet,-70.2150,Violet,1.87,3,loss,0,49,46
+2022-01-17,40540,QH Sports Dota Series 3,Ragdoll,Violet,-70.2362,Violet,2.19,3,loss,0,46,43
+2022-01-17,40544,Asia New Star Cup S2,Army Geniuses,KOBOLDS,92.8672,Army Geniuses,1.47,3,win,4,43,44
+2022-01-17,40547,Asia New Star Cup S2,Army Geniuses,KOBOLDS,204.8260,Army Geniuses,1.45,9,win,13,44,48
+2022-01-17,40554,DPC SEA 2021/22 Tour 1: Division II,496 Gaming,InterActive Philippines,240.3750,496 Gaming,1.43,11,win,15,48,52
+2022-01-17,40559,DPC SEA 2021/22 Tour 1: Division II,496 Gaming,InterActive Philippines,-66.0454,InterActive Philippines,4.81,3,loss,0,52,49
+2022-01-17,40555,Asia New Star Cup S2,Rush B,Rice Field,116.4292,Rush B,2.07,5,loss,0,49,44
+2022-01-17,40563,Asia New Star Cup S2,Rush B,Rice Field,276.2616,Rush B,1.55,12,win,18,44,50
+2022-01-17,40570,DPC EEU 2021/22 Tour 1: Division II,Nemiga Gaming,Gambit Esports,-100.5084,Gambit Esports,1.65,5,win,8,50,53
+2022-01-17,40580,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Interitus,Balrogs e-Sport,58.7386,Interitus,4.11,3,loss,0,53,50
+2022-01-18,40584,Asia New Star Cup S2,Tiger God,Summit Gaming,-33.1950,Summit Gaming,1.97,1,win,1,50,50
+2022-01-18,40587,Asia New Star Cup S2,Tiger God,Summit Gaming,-131.4716,Summit Gaming,1.98,6,loss,0,50,44
+2022-01-18,40592,Asia New Star Cup S2,Tiger God,Summit Gaming,-47.2664,Summit Gaming,1.98,2,loss,0,44,42
+2022-01-18,40585,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,LGD Gaming,112.8568,EHOME,3.7,4,win,14,42,52
+2022-01-18,40590,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,LGD Gaming,28.4454,EHOME,3.54,1,loss,0,52,51
+2022-01-18,40593,DPC CN 2021/22 Tour 1: Division I by Perfect World,EHOME,LGD Gaming,-73.7488,LGD Gaming,1.37,3,win,4,51,52
+2022-01-18,40597,DPC CN 2021/22 Tour 1: Division I by Perfect World,Vici Gaming,Royal Never Give Up,-77.9378,Royal Never Give Up,1.58,4,win,6,52,54
+2022-01-18,40601,DPC CN 2021/22 Tour 1: Division I by Perfect World,Vici Gaming,Royal Never Give Up,-55.9118,Royal Never Give Up,1.51,3,win,4,54,55
+2022-01-18,40595,Asia New Star Cup S2,496 Gaming,Rush B,-41.0624,Rush B,1.79,2,loss,0,55,53
+2022-01-18,40600,Asia New Star Cup S2,496 Gaming,Rush B,-120.0148,Rush B,2.16,6,win,12,53,59
+2022-01-18,40605,Asia New Star Cup S2,496 Gaming,Rush B,21.6338,496 Gaming,1.77,1,win,1,59,59
+2022-01-18,40617,Asia New Star Cup S2,Rice Field,Army Geniuses,-24.3866,Army Geniuses,1.98,1,win,1,59,59
+2022-01-18,40620,Asia New Star Cup S2,Rice Field,Army Geniuses,44.4912,Rice Field,1.77,2,loss,0,59,57
+2022-01-18,40608,QH Sports Dota Series 3,496 Gaming,TEAM M11,-55.2562,TEAM M11,2.44,3,loss,0,57,54
+2022-01-18,40614,DPC WEU 2021/22 Tour 1: Division II,Team Bald,Chicken Fighters,-31.3336,Chicken Fighters,1.2,1,win,1,54,54
+2022-01-18,40610,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,Team Aster,188.3920,Invictus Gaming,2.51,10,loss,0,54,44
+2022-01-18,40618,DPC CN 2021/22 Tour 1: Division I by Perfect World,Invictus Gaming,Team Aster,-27.1438,Team Aster,1.48,1,win,1,44,44
+2022-01-18,40623,DPC WEU 2021/22 Tour 1: Division I,Team Liquid,Alliance,183.4666,Team Liquid,1.27,8,win,10,44,46
+2022-01-18,40630,DPC WEU 2021/22 Tour 1: Division I,Team Liquid,Alliance,80.5598,Team Liquid,1.25,3,win,3,46,46
+2022-01-18,40633,DPC WEU 2021/22 Tour 1: Division I,Team Secret,Team Tickles,-42.0268,Team Tickles,1.84,1,loss,0,46,45
+2022-01-18,40634,DPC WEU 2021/22 Tour 1: Division I,Team Secret,Team Tickles,150.2968,Team Secret,1.76,6,win,10,45,49
+2022-01-18,40635,DPC NA 2021/22 Tour 1: Division I,4 Zoomers,Wildcard,118.2606,4 Zoomers,1.66,5,win,8,49,52
+2022-01-18,40637,DPC NA 2021/22 Tour 1: Division I,4 Zoomers,Wildcard,-68.1752,Wildcard,1.87,3,loss,0,52,49
+2022-01-18,40636,Bitsler Cup S1,Hokori,SALCHIPAPA,174.1366,Hokori,1.12,8,win,8,49,49
+2022-01-18,40638,Bitsler Cup S1,Hokori,SALCHIPAPA,91.8850,Hokori,1.09,4,win,4,49,49
+2022-01-18,40639,Bitsler Cup S1,APU King of Kings,Lava BestPc,88.5362,APU King of Kings,2.36,4,loss,0,49,45
+2022-01-18,40641,Bitsler Cup S1,APU King of Kings,Lava BestPc,-28.0536,Lava BestPc,1.5,1,win,1,45,45
+2022-01-18,40640,DPC NA 2021/22 Tour 1: Division II,Team Magnus,The Cut,-117.2454,The Cut,1.16,5,loss,0,45,40
+2022-01-18,40642,DPC NA 2021/22 Tour 1: Division II,Team Magnus,The Cut,-169.0348,The Cut,1.3,6,win,7,40,41
+2022-01-18,40645,DPC NA 2021/22 Tour 1: Division II,Team Magnus,The Cut,82.3006,Team Magnus,3.32,3,loss,0,41,38
+2022-01-19,40644,Bitsler Cup S1,INF.UESPORTS,SG e-sports,60.6332,INF.UESPORTS,1.17,2,loss,0,38,36
+2022-01-19,40646,Bitsler Cup S1,INF.UESPORTS,SG e-sports,132.7002,INF.UESPORTS,1.35,4,win,5,36,37
+2022-01-19,40649,Intel World Open Beijing,LGD Gaming,Invictus Gaming,-40.7610,Invictus Gaming,3.7,1,loss,0,37,36
+2022-01-19,40650,DPC SEA 2021/22 Tour 1: Division II,Polaris Esports,Ragdoll,176.5662,Polaris Esports,1.65,6,win,9,36,39
+2022-01-19,40655,DPC SEA 2021/22 Tour 1: Division II,Polaris Esports,Ragdoll,98.3294,Polaris Esports,1.55,3,win,4,39,40
+2022-01-19,40656,Asian Elite League 2022 S1,Dota Geniuses,Team Quantic,31.7060,Dota Geniuses,1.6,1,loss,0,40,39
+2022-01-19,40660,Intel World Open Beijing,ShenZhen,Vici Gaming,146.2760,ShenZhen,2.81,5,loss,0,39,34
+2022-01-19,40658,QH Sports Dota Series 3,Violet,Red Flower,-97.1078,Red Flower,1.75,3,win,5,34,36
+2022-01-19,40662,QH Sports Dota Series 3,Violet,Red Flower,-128.9846,Red Flower,1.3,4,win,5,36,37
+2022-01-19,40665,DPC SEA 2021/22 Tour 1: Division I,BOOM Esports,Execration,44.4288,BOOM Esports,1.12,1,win,1,37,37
+2022-01-19,40670,DPC SEA 2021/22 Tour 1: Division I,BOOM Esports,Execration,-106.5136,Execration,6.21,3,loss,0,37,34
+2022-01-19,40673,Asian Elite League 2022 S1,Shinigami,Dota Geniuses,87.6772,Shinigami,1.87,2,win,3,34,35
+2022-01-19,40679,QH Sports Dota Series 3,TEAM M11,Summit Gaming,-253.1722,Summit Gaming,1.6,8,win,12,35,39
+2022-01-19,40672,Asia New Star Cup S2,Lilgun,Tiger God,-105.9988,Tiger God,2.09,4,loss,0,39,35
+2022-01-19,40674,Intel World Open Beijing,Team Aster,Aster.Aries,34.5776,Team Aster,1.05,1,win,1,35,35
+2022-01-19,40678,Intel World Open Beijing,Team Aster,Aster.Aries,42.4444,Team Aster,1.16,1,loss,0,35,34
+2022-01-19,40686,Intel World Open Beijing,Team Aster,Aster.Aries,-46.8592,Aster.Aries,3.32,1,loss,0,34,33
+2022-01-19,40697,DPC SEA 2021/22 Tour 1: Division I,Fnatic,T1,-41.2236,T1,1.45,1,loss,0,33,32
+2022-01-19,40693,Intel World Open Beijing,Xtreme Gaming,LBZS,-45.8638,LBZS,3.32,1,loss,0,32,31
+2022-01-19,40696,Intel World Open Beijing,Xtreme Gaming,LBZS,-143.1312,LBZS,3.7,4,loss,0,31,27
+2022-01-19,40708,DPC WEU 2021/22 Tour 1: Division II,Brame,Into the Breach,-102.1450,Into the Breach,3.89,2,loss,0,27,25
+2022-01-19,40711,DPC WEU 2021/22 Tour 1: Division II,Brame,Into the Breach,41.1936,Brame,3.04,1,win,3,25,27
+2022-01-19,40713,DPC NA 2021/22 Tour 1: Division I,Arkosh Gaming,Undying,75.2950,Arkosh Gaming,6.94,2,loss,0,27,25
+2022-01-19,40716,DPC NA 2021/22 Tour 1: Division I,Arkosh Gaming,Undying,-111.1404,Undying,1.1,2,win,2,25,25
+2022-01-19,40714,Bitsler Cup S1,Noping VPN,Balrogs e-Sport,-46.5526,Balrogs e-Sport,2.59,1,loss,0,25,24
+2022-01-19,40717,Bitsler Cup S1,Noping VPN,Balrogs e-Sport,55.4438,Noping VPN,1.37,1,loss,0,24,23
+2022-01-19,40687,Asia New Star Cup S2,Army Geniuses,Lilgun,60.6220,Army Geniuses,2.16,1,loss,0,23,22
+2022-01-20,40727,Intel World Open Beijing,LBZS,ShenZhen,-224.0382,ShenZhen,2.35,4,loss,0,22,18
+2022-01-20,40726,Asian Elite League 2022 S1,Shinigami,Team Quantic,110.5296,Shinigami,1.98,1,win,1,18,18
+2022-01-20,40730,Asian Elite League 2022 S1,Shinigami,Team Quantic,88.0424,Shinigami,1.49,1,win,1,18,18
+2022-01-20,40729,DPC SEA 2021/22 Tour 1: Division II,Nigma Galaxy SEA,Lilgun,-79.8772,Lilgun,2.81,1,win,2,18,19
+2022-01-20,40733,DPC SEA 2021/22 Tour 1: Division II,Nigma Galaxy SEA,Lilgun,-134.3856,Lilgun,2.85,2,loss,0,19,17
+2022-01-20,40736,DPC SEA 2021/22 Tour 1: Division II,Nigma Galaxy SEA,Lilgun,-63.2658,Lilgun,3.32,1,win,3,17,19
+2022-01-20,40735,Intel World Open Beijing,Invictus Gaming,Aster.Aries,-94.1074,Aster.Aries,2.24,1,loss,0,19,18
+2022-01-20,40740,Intel World Open Beijing,Invictus Gaming,Aster.Aries,165.2638,Invictus Gaming,1.56,2,win,3,18,19
+2022-01-20,40738,Asian Elite League 2022 S1,Ascension Esports,It's a Prank,-96.3604,It's a Prank,1.24,1,win,1,19,19
+2022-01-20,40743,Asian Elite League 2022 S1,Ascension Esports,It's a Prank,136.4224,Ascension Esports,4.11,2,loss,0,19,17
+2022-01-20,40739,Asia New Star Cup S2,Rush B,Lilgun,112.9366,Rush B,2.12,1,loss,0,17,16
+2022-01-20,40745,Intel World Open Beijing,Xtreme Gaming,Vici Gaming,92.6312,Xtreme Gaming,1.71,1,win,1,16,16
+2022-01-20,40752,Intel World Open Beijing,Xtreme Gaming,Vici Gaming,-146.2764,Vici Gaming,2.48,2,loss,0,16,14
+2022-01-20,40760,DPC EEU 2021/22 Tour 1: Division II,Hydra,CIS Rejects,151.5372,Hydra,2.63,2,loss,0,14,12
+2022-01-20,40754,DPC SEA 2021/22 Tour 1: Division I,Motivate.Trust Gaming,Neon Esports,-132.3832,Neon Esports,3.09,1,loss,0,12,11
+2022-01-20,40761,DPC SEA 2021/22 Tour 1: Division I,Motivate.Trust Gaming,Neon Esports,-150.1336,Neon Esports,2.77,1,win,2,11,12
+2022-01-20,40772,DPC EEU 2021/22 Tour 1: Division I,Team Empire,HellRaisers,107.2264,Team Empire,4.11,1,loss,0,12,11
+2022-01-20,40776,DPC EEU 2021/22 Tour 1: Division I,Team Empire,HellRaisers,146.5282,Team Empire,3.89,1,win,3,11,13
+2022-01-20,40781,DPC EEU 2021/22 Tour 1: Division I,Team Empire,HellRaisers,106.3616,Team Empire,3.04,1,win,3,13,15
+2022-01-20,40783,DPC EEU 2021/22 Tour 1: Division I,Virtus.pro,Team Spirit,134.8872,Virtus.pro,2.99,2,loss,0,15,13
+2022-01-20,40785,DPC SA 2021/22 Tour 1: Division II by 4D Esports,Omega Gaming,Team Unknown,-208.1652,Team Unknown,6.55,2,loss,0,13,11
+2022-01-20,40793,DPC SA 2021/22 Tour 1: Division I,INF.UESPORTS,APU King of Kings,-130.2288,APU King of Kings,2.57,1,win,2,11,12
+2022-01-20,40797,DPC SA 2021/22 Tour 1: Division I,INF.UESPORTS,APU King of Kings,134.4052,INF.UESPORTS,1.6,1,win,1,12,12
+2022-01-20,40789,DPC NA 2021/22 Tour 1: Division I,Evil Geniuses,Undying,-114.5870,Undying,2.48,1,win,2,12,13
+2022-01-20,40794,DPC NA 2021/22 Tour 1: Division I,4 Zoomers,Wildcard,-141.2672,Wildcard,2.63,1,loss,0,13,12
+2022-01-21,40804,Intel World Open Beijing,Team Aster,LBZS,226.3488,Team Aster,1.17,2,loss,0,12,10
+2022-01-21,40815,Asia New Star Cup S2,496 Gaming,Rush B,156.3048,496 Gaming,1.87,1,loss,0,10,9
+2022-01-21,40821,Asia New Star Cup S2,496 Gaming,Rush B,246.8224,496 Gaming,1.87,2,loss,0,9,7
+2022-01-21,40825,Intel World Open Beijing,Vici Gaming,Invictus Gaming,-143.7418,Invictus Gaming,1.71,1,win,1,7,7
+2022-01-21,40845,QH Sports Dota Series 3,Army Geniuses,Execration,193.1108,Army Geniuses,1.87,1,win,1,7,7
+2022-01-21,40822,DPC SEA 2021/22 Tour 1: Division I,Motivate.Trust Gaming,Neon Esports,-187.8706,Neon Esports,2.48,1,win,2,7,8
+2022-01-21,40868,DPC WEU 2021/22 Tour 1: Division I,OG,Team Secret,152.2058,OG,2.7,1,win,2,8,9
+2022-01-21,40876,DPC SA 2021/22 Tour 1: Division I,Thunder Predator,Beastcoast,121.8578,Thunder Predator,1.5,1,win,1,9,9
+2022-01-22,40896,DPC SEA 2021/22 Tour 1: Division II,Nigma Galaxy SEA,Ragdoll,-142.3200,Ragdoll,1.87,1,loss,0,9,8
+2022-01-22,40887,Intel World Open Beijing,LGD Gaming,Team Aster,-155.5098,Team Aster,3.26,1,win,3,8,10
+2022-01-22,40893,Intel World Open Beijing,LGD Gaming,Team Aster,103.6152,LGD Gaming,1.48,1,loss,0,10,9
+2022-01-22,40890,QH Sports Dota Series 3,Execration,Violet,223.4340,Execration,1.69,2,loss,0,9,7
+2022-01-22,40895,QH Sports Dota Series 3,Execration,Violet,176.3400,Execration,1.87,1,loss,0,7,6
+2022-01-22,40908,QH Sports Dota Series 3,Red Flower,Ragdoll,-188.6216,Ragdoll,1.5,1,loss,0,6,5
+2022-01-23,41043,DPC EEU 2021/22 Tour 1: Division II,Winstrike Team,CIS Rejects,-238.6552,CIS Rejects,1.62,1,win,1,5,5
+2022-01-23,41062,DPC EEU 2021/22 Tour 1: Division II,Winstrike Team,Hydra,-231.3846,Hydra,2.4,1,loss,0,5,4
+2022-01-26,41258,Apu League S3,Fusion Gaming,Infinity E-sports.,-288.9896,Infinity E-sports.,1.18,1,loss,0,4,3
+2022-02-22,43052,D2CL 2022 S8,AS Monaco Gambit,B8,-478.2318,B8,3.32,1,loss,0,3,2
