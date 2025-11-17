@@ -13,6 +13,8 @@ const START_BANK = 1000;
 const MAX_BET = 10000;
 const DATA_FILE = path.join(__dirname, 'hawk_matches_merged.csv');
 const MATRIX_FILE = path.join(__dirname, 'cs_pro_from_filtered.json');
+const SUMMARY_FILE = path.join(__dirname, 'delta_pct_strategy_full.csv');
+const FIRST100_FAV_FILE = path.join(__dirname, 'delta_pct_strategy_first100_favorites.csv');
 
 function loadMatrix(file) {
   const sandbox = {};
@@ -99,7 +101,29 @@ function loadMatches(file) {
   return matches;
 }
 
-function simulate() {
+function formatNumber(value, decimals = 2) {
+  return Number.parseFloat(value).toFixed(decimals);
+}
+
+function toCSV(records, columns) {
+  const header = columns;
+  const lines = [header.join(',')];
+  for (const rec of records) {
+    const row = header.map((key) => {
+      let value = rec[key];
+      if (value === undefined || value === null) value = '';
+      const str = String(value);
+      if (str.includes(',') || str.includes('"')) {
+        return `"${str.replace(/"/g, '""')}"`;
+      }
+      return str;
+    });
+    lines.push(row.join(','));
+  }
+  return lines.join('\n') + '\n';
+}
+
+function run() {
   const matrix = loadMatrix(MATRIX_FILE);
   const matches = loadMatches(DATA_FILE);
 
@@ -112,6 +136,7 @@ function simulate() {
   let losses = 0;
   let skipped = 0;
   let maxStake = 0;
+  const betRecords = [];
 
   for (const match of matches) {
     const delta = matrix.delta(match);
@@ -120,25 +145,28 @@ function simulate() {
       continue;
     }
     const favoredTeam = delta > 0 ? match.team1 : match.team2;
-    const oddsStr = delta > 0 ? match.team1_odds : match.team2_odds;
-    const favoredOdds = parseFloat(oddsStr);
-    if (!Number.isFinite(favoredOdds) || favoredOdds <= 1) {
+    const unfavoredTeam = delta > 0 ? match.team2 : match.team1;
+    const favoredOdds = parseFloat(delta > 0 ? match.team1_odds : match.team2_odds);
+    const oppOdds = parseFloat(delta > 0 ? match.team2_odds : match.team1_odds);
+    if (!Number.isFinite(favoredOdds) || favoredOdds <= 1 || !Number.isFinite(oppOdds) || oppOdds <= 1) {
       skipped++;
       continue;
     }
 
-    const pct = Math.min(Math.abs(delta) / 1000, 1); // absolute delta / 10 percent
+    const pct = Math.min(Math.abs(delta) / 1000, 1); // |Δ|/10 percent
     let stake = bank * pct;
     if (stake > MAX_BET) stake = MAX_BET;
     if (stake > bank) stake = bank;
     stake = Math.floor(stake);
     if (stake <= 0) continue;
 
+    const bankBefore = bank;
     bets++;
     bank -= stake;
     const won = match.winner === favoredTeam;
+    let payout = 0;
     if (won) {
-      const payout = Math.floor(stake * favoredOdds);
+      payout = Math.floor(stake * favoredOdds);
       bank += payout;
       wins++;
     } else {
@@ -151,24 +179,89 @@ function simulate() {
     if (drawdown > maxDrawdown) maxDrawdown = drawdown;
     if (stake > maxStake) maxStake = stake;
 
+    betRecords.push({
+      match_id: match.hawk_match_id,
+      date: match.date,
+      championship: match.championship,
+      team1: match.team1,
+      team2: match.team2,
+      delta: delta.toFixed(4),
+      favored: favoredTeam,
+      opponent: unfavoredTeam,
+      odds_favored: favoredOdds,
+      odds_opponent: oppOdds,
+      stake,
+      outcome: won ? 'win' : 'loss',
+      payout,
+      bank_before: bankBefore,
+      bank_after: bank,
+      is_odds_favorite: favoredOdds < oppOdds,
+    });
+
     if (bank <= 0) break;
   }
 
+  const winPct = bets ? (wins / bets) * 100 : 0;
+  const summaryRow = [{
+    strategy_group: 'DeltaPctBankroll',
+    hero_filter: 'none',
+    odds_condition: 'any',
+    delta_threshold: 0,
+    bets,
+    wins,
+    win_pct: winPct.toFixed(2),
+    final_bank: Math.round(bank),
+    max_drawdown: Math.round(maxDrawdown),
+    max_stake: Math.round(maxStake),
+    max_step: 0,
+  }];
+
+  const summaryHeader = [
+    'strategy_group',
+    'hero_filter',
+    'odds_condition',
+    'delta_threshold',
+    'bets',
+    'wins',
+    'win_pct',
+    'final_bank',
+    'max_drawdown',
+    'max_stake',
+    'max_step',
+  ];
+  fs.writeFileSync(SUMMARY_FILE, toCSV(summaryRow, summaryHeader));
+
+  const favBets = betRecords.filter((b) => b.is_odds_favorite).slice(0, 100);
+  const betHeader = [
+    'match_id',
+    'date',
+    'championship',
+    'team1',
+    'team2',
+    'delta',
+    'favored',
+    'opponent',
+    'odds_favored',
+    'odds_opponent',
+    'stake',
+    'payout',
+    'outcome',
+    'bank_before',
+    'bank_after',
+  ];
+  fs.writeFileSync(FIRST100_FAV_FILE, toCSV(favBets, betHeader));
+
   return {
-    starting_bank: START_BANK,
-    ending_bank: bank,
-    max_bank: peak,
-    min_bank: trough,
-    max_drawdown: maxDrawdown,
+    summary_file: SUMMARY_FILE,
+    first100_favorites_file: FIRST100_FAV_FILE,
     bets,
     wins,
     losses,
     skipped,
-    max_stake: maxStake,
   };
 }
 
 if (require.main === module) {
-  console.log(simulate());
+  console.log(run());
 }
 
