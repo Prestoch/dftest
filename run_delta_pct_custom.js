@@ -34,6 +34,7 @@ function parseArgs() {
     monthFrom: null,
     monthTo: null,
     maxBet: 10000,
+    minDelta: 0,
   };
 
   for (let i = 0; i < args.length; i++) {
@@ -61,6 +62,12 @@ function parseArgs() {
         {
           const v = parseFloat(args[++i]);
           opts.maxBet = Number.isFinite(v) ? v : 0;
+        }
+        break;
+      case '--min-delta':
+        {
+          const v = parseFloat(args[++i]);
+          opts.minDelta = Number.isFinite(v) ? v : 0;
         }
         break;
       default:
@@ -205,7 +212,7 @@ function execute(opts) {
 
   for (const match of matches) {
     const delta = matrix.delta(match);
-    if (delta === null || delta === 0) {
+    if (delta === null || delta === 0 || Math.abs(delta) < opts.minDelta) {
       skipped++;
       continue;
     }
