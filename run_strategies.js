@@ -59,6 +59,18 @@ const STRATEGY_DEFS = (() => {
   return base;
 })();
 
+function addDynamicStrategy(baseArray, config) {
+  baseArray.push({ ...config, odds_condition: 'any', order: CONFIG_ORDER++ });
+}
+
+addDynamicStrategy(STRATEGY_DEFS, {
+  strategy_group: 'DeltaPctBankroll',
+  hero_filter: 'none',
+  stakeType: 'delta_pct',
+  minDelta: 50,
+  maxPct: 1.0,
+});
+
 const fibCache = [1, 1];
 function fibValue(index) {
   while (fibCache.length <= index) {
@@ -288,6 +300,10 @@ function computeStake(config, state) {
       const stepValue = fibValue(state.fibIndex);
       return stepValue * config.unit;
     }
+    case 'delta_pct': {
+      const pct = Math.min(Math.abs(state.delta) / 100, config.maxPct || 1);
+      return state.bank * pct;
+    }
     default:
       return 0;
   }
@@ -313,10 +329,11 @@ function runStrategy(matches, config, threshold) {
     if (bank <= 0) break;
     if (!shouldBet(match, config, threshold)) continue;
 
-    let stake = computeStake(config, {
+      let stake = computeStake(config, {
       bank,
       fibIndex,
       flatPercentAmount,
+        delta: match.deltaValue ?? match.absDelta,
     });
     if (!Number.isFinite(stake) || stake <= 0) continue;
 
@@ -329,6 +346,9 @@ function runStrategy(matches, config, threshold) {
     if (config.stakeType === 'fibonacci') {
       maxStep = Math.max(maxStep, fibIndex);
     }
+        if (config.stakeType === 'delta_pct') {
+          maxStep = Math.max(maxStep, Math.abs(match.deltaValue ?? match.absDelta));
+        }
 
     bank -= stake;
     let won = false;
@@ -409,7 +429,7 @@ function main() {
   const results = [];
   for (const config of STRATEGY_DEFS) {
     for (const threshold of DELTA_THRESHOLDS) {
-      const stats = runStrategy(matches, config, threshold);
+    const stats = runStrategy(matches, config, threshold);
       stats.order = config.order;
       results.push(stats);
     }
