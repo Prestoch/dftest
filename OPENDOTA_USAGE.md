@@ -7,9 +7,22 @@ This script fetches all professional Dota 2 matches from the OpenDota API for th
 - ✅ Rate limited to 600 requests/minute (50% of OpenDota's 1200/min limit)
 - ✅ Automatic pagination through all pro matches
 - ✅ Date filtering for last N months
-- ✅ Progress tracking and statistics
+- ✅ **Visual progress bars** showing real-time progress and estimates
+- ✅ Two-phase fetching with separate progress tracking
 - ✅ Optional detailed match data fetching
 - ✅ JSON output with timestamp
+
+## Installation
+
+First, install the required dependencies:
+```bash
+pip3 install -r requirements.txt
+```
+
+Or install manually:
+```bash
+pip3 install requests tqdm
+```
 
 ## Usage
 
@@ -58,6 +71,20 @@ Example: `opendota_pro_matches_3months_summary_20251118_143022.json`
 - **Time estimate**: 
   - Summary: 1-5 minutes for 3 months
   - Detailed: 10-30 minutes for 3 months (depending on match count)
+
+## Progress Tracking
+The script now includes visual progress bars that show:
+
+**Phase 1 (Fetching match list):**
+- Number of pages fetched
+- Total matches found so far
+- Dynamic status updates
+
+**Phase 2 (Fetching details - if enabled):**
+- Current match being fetched / Total matches
+- Success count vs failed count
+- Percentage complete with ETA
+- Processing speed (matches/second)
 
 ## Data Structure
 

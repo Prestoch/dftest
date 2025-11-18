@@ -10,6 +10,7 @@ import time
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 import sys
+from tqdm import tqdm
 
 
 class OpenDotaFetcher:
@@ -126,14 +127,18 @@ class OpenDotaFetcher:
         
         start_time = time.time()
         
+        # Phase 1: Fetch match list with progress bar
+        print("Phase 1: Fetching match list...")
+        pbar = tqdm(desc="Fetching pages", unit=" pages", dynamic_ncols=True)
+        
         while True:
             page += 1
-            print(f"Fetching page {page}...")
+            pbar.set_postfix_str(f"{len(all_matches)} matches found")
             
             matches = self.get_pro_matches(less_than_match_id)
             
             if not matches:
-                print("No more matches returned")
+                pbar.set_postfix_str(f"Complete - {len(all_matches)} total matches")
                 break
                 
             # Filter matches by date
@@ -143,15 +148,15 @@ class OpenDotaFetcher:
                 if match_time >= cutoff_timestamp:
                     recent_matches.append(match)
                 else:
-                    print(f"Reached matches older than {months} months (match time: {datetime.fromtimestamp(match_time).strftime('%Y-%m-%d')})")
+                    pbar.set_postfix_str(f"Reached cutoff date - {len(all_matches)} total matches")
                     break
                     
             if not recent_matches:
-                print("No more recent matches found")
+                pbar.set_postfix_str(f"Complete - {len(all_matches)} total matches")
                 break
                 
             all_matches.extend(recent_matches)
-            print(f"  Found {len(recent_matches)} matches (total so far: {len(all_matches)})")
+            pbar.update(1)
             
             # If we got fewer recent matches than total matches, we've gone past our cutoff
             if len(recent_matches) < len(matches):
@@ -162,32 +167,41 @@ class OpenDotaFetcher:
             
             # Safety check: don't fetch more than 10,000 matches
             if len(all_matches) >= 10000:
-                print("WARNING: Reached 10,000 matches limit")
+                pbar.set_postfix_str(f"Reached 10k limit - {len(all_matches)} matches")
                 break
+        
+        pbar.close()
                 
         elapsed_time = time.time() - start_time
-        print(f"\nFetched {len(all_matches)} pro matches in {elapsed_time:.1f} seconds")
-        print(f"Made {self.request_count} API requests")
-        print(f"Average rate: {self.request_count / (elapsed_time / 60):.1f} requests/minute")
+        print(f"✓ Fetched {len(all_matches)} pro matches in {elapsed_time:.1f} seconds")
+        print(f"  Made {self.request_count} API requests")
+        print(f"  Average rate: {self.request_count / (elapsed_time / 60):.1f} requests/minute")
         
         # Optionally fetch detailed match data
         if include_details and all_matches:
-            print(f"\nFetching detailed data for {len(all_matches)} matches...")
-            print("This will take a while...")
+            print(f"\nPhase 2: Fetching detailed data for {len(all_matches)} matches...")
+            print("This will take a while...\n")
             
             detailed_matches = []
-            for i, match in enumerate(all_matches, 1):
-                if i % 100 == 0:
-                    print(f"  Progress: {i}/{len(all_matches)} matches")
+            failed_matches = []
+            
+            # Progress bar for detailed fetching
+            with tqdm(total=len(all_matches), desc="Fetching details", unit=" matches", dynamic_ncols=True) as pbar:
+                for match in all_matches:
+                    match_id = match['match_id']
+                    details = self.get_match_details(match_id)
+                    if details:
+                        detailed_matches.append(details)
+                    else:
+                        failed_matches.append(match_id)
                     
-                match_id = match['match_id']
-                details = self.get_match_details(match_id)
-                if details:
-                    detailed_matches.append(details)
-                else:
-                    print(f"  Warning: Failed to fetch details for match {match_id}")
+                    pbar.update(1)
+                    pbar.set_postfix_str(f"{len(detailed_matches)} success, {len(failed_matches)} failed")
                     
-            print(f"\nFetched details for {len(detailed_matches)} matches")
+            print(f"\n✓ Fetched details for {len(detailed_matches)}/{len(all_matches)} matches")
+            if failed_matches:
+                print(f"  ⚠ Failed to fetch {len(failed_matches)} matches: {failed_matches[:5]}{'...' if len(failed_matches) > 5 else ''}")
+            
             return detailed_matches
             
         return all_matches
