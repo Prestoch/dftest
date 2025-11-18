@@ -22,6 +22,7 @@ const csCode = fs.readFileSync(path.resolve('cs_pro.json'), 'utf8');
 const csSandbox = {};
 vm.runInNewContext(csCode, csSandbox);
 const baseHeroes = csSandbox.heroes;
+const baseHeroesBg = csSandbox.heroes_bg;
 const size = baseHeroes.length;
 
 const heroIdToIndex = new Map();
@@ -67,6 +68,7 @@ for (let i = 0; i < srcWinRates.length; i++) {
 
 const content = `var heroes = ${JSON.stringify(baseHeroes)};
 var heroes_wr = ${JSON.stringify(heroesWr)};
+var heroes_bg = ${JSON.stringify(baseHeroesBg)};
 var heroes_gpm = ${JSON.stringify(heroesGpm)};
 var heroes_xpm = ${JSON.stringify(heroesXpm)};
 var heroes_hero_damage = ${JSON.stringify(heroesHeroDamage)};
