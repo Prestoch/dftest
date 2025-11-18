@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build_cs_matrix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prestoch/dftest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prestoch/dftest/issues"
+  },
+  "homepage": "https://github.com/Prestoch/dftest#readme",
+  "dependencies": {
+    "stream-json": "^1.9.1"
+  }
+}

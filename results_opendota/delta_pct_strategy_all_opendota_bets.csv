@@ -1,0 +1,263 @@
+month,date,match_id,championship,team1,team2,delta,favored,odds,stake,outcome,payout,bank_before,bank_after
+2023-01,2023-01-02,71001,TodayPay Invitational S3,CDUB Esports,KEEPER GAMING,167.2826,CDUB Esports,1.23,167,win,205,1000,1038
+2023-01,2023-01-02,71003,TodayPay Invitational S3,CDUB Esports,KEEPER GAMING,221.8838,CDUB Esports,1.13,230,loss,0,1038,808
+2023-01,2023-01-02,71008,TodayPay Invitational S3,Paradox Esports,CDUB Esports,-229.5304,CDUB Esports,2.35,185,win,434,808,1057
+2023-01,2023-01-02,71011,TodayPay Invitational S3,Paradox Esports,CDUB Esports,304.9802,Paradox Esports,1.6,322,win,515,1057,1250
+2023-01,2023-01-02,71013,TodayPay Invitational S3,5RATFORCESTAFF,Balrogs e-Sport,-94.6008,Balrogs e-Sport,1.72,118,win,202,1250,1334
+2023-01,2023-01-02,71019,TodayPay Invitational S3,5RATFORCESTAFF,Balrogs e-Sport,182.3150,5RATFORCESTAFF,1.87,243,loss,0,1334,1091
+2023-01,2023-01-02,70945,TOP EGAMING,Team Virgo,BELIEVE GAMING,308.0984,Team Virgo,1.4,336,loss,0,1091,755
+2023-01,2023-01-02,70953,TOP EGAMING,Team Virgo,BELIEVE GAMING,152.8796,Team Virgo,3.5,115,loss,0,755,640
+2023-01,2023-01-02,70957,TOP EGAMING,BELIEVE GAMING,TEAM M11,98.8242,BELIEVE GAMING,1.38,63,win,86,640,663
+2023-01,2023-01-02,70964,TOP EGAMING,BELIEVE GAMING,TEAM M11,-85.5934,TEAM M11,1.4,56,loss,0,663,607
+2023-01,2023-01-02,70949,EPL Winter Holidays,Level Up,Creep Gaming,139.2140,Level Up,1.49,84,loss,0,607,523
+2023-01,2023-01-02,70979,EPL Winter Holidays,Level Up,Creep Gaming,-81.7680,Creep Gaming,2.15,42,loss,0,523,481
+2023-01,2023-01-02,70987,EPL Winter Holidays,Level Up,Creep Gaming,-54.6856,Creep Gaming,2.57,26,loss,0,481,455
+2023-01,2023-01-02,70992,EPL Winter Holidays,Water rune enjoyers,IVY,-182.8896,IVY,1.5,83,win,124,455,496
+2023-01,2023-01-02,70995,EPL Winter Holidays,Water rune enjoyers,IVY,133.7906,Water rune enjoyers,2.43,66,loss,0,496,430
+2023-01,2023-01-02,70998,EPL Winter Holidays,Water rune enjoyers,Hydra,9.0024,Water rune enjoyers,3.2,3,loss,0,430,427
+2023-01,2023-01-02,71005,EPL Winter Holidays,Water rune enjoyers,Hydra,102.5608,Water rune enjoyers,3.62,43,win,155,427,539
+2023-01,2023-01-02,71006,EPL Winter Holidays,Water rune enjoyers,Hydra,73.1830,Water rune enjoyers,2.2,39,loss,0,539,500
+2023-01,2023-01-02,70961,Star Series,Team Mystique,Purple Paradox,91.7652,Team Mystique,1.78,45,loss,0,500,455
+2023-01,2023-01-02,70966,Star Series,Team Mystique,Purple Paradox,-175.9720,Purple Paradox,1.88,80,loss,0,455,375
+2023-01,2023-01-02,70969,Star Series,Team Mystique,Purple Paradox,-128.0144,Purple Paradox,1.94,48,win,93,375,420
+2023-01,2023-01-02,70972,Star Series,Team Mystique,Purple Paradox,-47.2900,Purple Paradox,2.35,19,win,44,420,445
+2023-01,2023-01-03,71016,TOP EGAMING,KOBOLDS,Team Virgo,-47.9428,Team Virgo,1.39,21,loss,0,445,424
+2023-01,2023-01-03,71030,TOP EGAMING,KOBOLDS,Team Virgo,94.7760,KOBOLDS,1.87,40,win,74,424,458
+2023-01,2023-01-03,71040,TOP EGAMING,White Cat,BELIEVE GAMING,-232.0584,BELIEVE GAMING,1.21,106,win,128,458,480
+2023-01,2023-01-03,71046,TOP EGAMING,White Cat,BELIEVE GAMING,437.1242,White Cat,4.64,209,loss,0,480,271
+2023-01,2023-01-03,71041,TOP EGAMING,White Cat,Team Virgo,-656.9002,Team Virgo,1.22,178,win,217,271,310
+2023-01,2023-01-03,71058,TOP EGAMING,White Cat,Team Virgo,-246.6586,Team Virgo,1.22,76,win,92,310,326
+2023-01,2023-01-03,71082,TodayPay Invitational S3,5RATFORCESTAFF,KEEPER GAMING,95.8892,5RATFORCESTAFF,1.17,31,loss,0,326,295
+2023-01,2023-01-03,71085,TodayPay Invitational S3,5RATFORCESTAFF,KEEPER GAMING,94.2272,5RATFORCESTAFF,1.22,27,win,32,295,300
+2023-01,2023-01-03,71089,TodayPay Invitational S3,CDUB Esports,ANOTHER NA TEAM,-419.5794,ANOTHER NA TEAM,1.52,125,win,190,300,365
+2023-01,2023-01-03,71093,TodayPay Invitational S3,CDUB Esports,ANOTHER NA TEAM,-115.1630,ANOTHER NA TEAM,1.5,42,loss,0,365,323
+2023-01,2023-01-03,71097,TodayPay Invitational S3,Qhali,CDUB Esports,-49.0220,CDUB Esports,2.25,15,loss,0,323,308
+2023-01,2023-01-03,71032,Moon Studio Campfire,Atlantis,Poke Gaming,114.8108,Atlantis,2.26,35,win,79,308,352
+2023-01,2023-01-03,71045,Moon Studio Campfire,Atlantis,Poke Gaming,-102.9448,Poke Gaming,1.87,36,loss,0,352,316
+2023-01,2023-01-03,71051,Moon Studio Campfire,iG.Vitality,Meteor Gaming,-17.9926,Meteor Gaming,1.87,5,win,9,316,320
+2023-01,2023-01-03,71057,Moon Studio Campfire,iG.Vitality,Meteor Gaming,-84.4832,Meteor Gaming,1.87,27,loss,0,320,293
+2023-01,2023-01-03,71034,EPL Winter Holidays,IVY,Hydra,99.6536,IVY,2.06,29,win,59,293,323
+2023-01,2023-01-03,71065,EPL Winter Holidays,IVY,Hydra,-54.4068,Hydra,1.87,17,win,31,323,337
+2023-01,2023-01-03,71069,EPL Winter Holidays,IVY,Hydra,-170.4350,Hydra,1.69,57,loss,0,337,280
+2023-01,2023-01-03,71072,EPL Winter Holidays,Level Up,YNT,-83.5800,YNT,1.65,23,win,37,280,294
+2023-01,2023-01-03,71075,EPL Winter Holidays,Level Up,YNT,-96.1760,YNT,1.5,28,loss,0,294,266
+2023-01,2023-01-03,71076,EPL Winter Holidays,Level Up,YNT,410.2328,Level Up,2.16,109,win,235,266,392
+2023-01,2023-01-03,71080,EPL Winter Holidays,YNT,Creep Gaming,156.7706,YNT,1.42,61,loss,0,392,331
+2023-01,2023-01-03,71083,EPL Winter Holidays,YNT,Creep Gaming,-113.6250,Creep Gaming,1.99,37,loss,0,331,294
+2023-01,2023-01-03,71086,EPL Winter Holidays,YNT,Creep Gaming,-228.2788,Creep Gaming,2.6,67,loss,0,294,227
+2023-01,2023-01-03,71017,ESEA LEAGUE,Refraction Gaming,Team Balut,11.1566,Refraction Gaming,1.47,2,loss,0,227,225
+2023-01,2023-01-03,71037,ESEA LEAGUE,Refraction Gaming,Team Balut,72.3800,Refraction Gaming,1.82,16,loss,0,225,209
+2023-01,2023-01-03,71042,ESEA LEAGUE,Refraction Gaming,Team Balut,-148.9866,Team Balut,1.68,31,win,52,209,230
+2023-01,2023-01-04,71112,Moon Studio Campfire,iG.Vitality,Lilgun,117.2782,iG.Vitality,1.84,26,loss,0,230,204
+2023-01,2023-01-04,71119,Moon Studio Campfire,iG.Vitality,Lilgun,-151.3768,Lilgun,1.71,30,loss,0,204,174
+2023-01,2023-01-04,71113,Moon Studio Campfire,iG.Vitality,Dawn Gaming,163.0854,iG.Vitality,1.87,28,loss,0,174,146
+2023-01,2023-01-04,71127,Moon Studio Campfire,iG.Vitality,Dawn Gaming,86.5034,iG.Vitality,1.87,12,loss,0,146,134
+2023-01,2023-01-04,71106,TOP EGAMING,496 Gaming,White Cat,-60.6162,White Cat,2.25,8,win,18,134,144
+2023-01,2023-01-04,71110,TOP EGAMING,496 Gaming,White Cat,-38.8090,White Cat,1.89,5,loss,0,144,139
+2023-01,2023-01-04,71114,TOP EGAMING,White Cat,TEAM M11,27.9536,White Cat,1.88,3,win,5,139,141
+2023-01,2023-01-04,71121,TOP EGAMING,White Cat,TEAM M11,170.4598,White Cat,1.67,24,loss,0,141,117
+2023-01,2023-01-04,71115,TOP EGAMING,Team Tsunami,BELIEVE GAMING,10.9620,Team Tsunami,2.4,1,win,2,117,118
+2023-01,2023-01-04,71129,TOP EGAMING,Team Tsunami,BELIEVE GAMING,77.9114,Team Tsunami,1.3,9,win,11,118,120
+2023-01,2023-01-04,71152,TodayPay Invitational S3,Dreamers Esports,CDUB Esports,89.9518,Dreamers Esports,1.3,10,win,13,120,123
+2023-01,2023-01-04,71156,TodayPay Invitational S3,Dreamers Esports,CDUB Esports,11.6126,Dreamers Esports,1.2,1,win,1,123,123
+2023-01,2023-01-04,71159,TodayPay Invitational S3,ETERNITY,ANOTHER NA TEAM,-117.7412,ANOTHER NA TEAM,1.31,14,loss,0,123,109
+2023-01,2023-01-04,71161,TodayPay Invitational S3,ETERNITY,ANOTHER NA TEAM,79.4840,ETERNITY,2.08,8,loss,0,109,101
+2023-01,2023-01-04,71163,TodayPay Invitational S3,5RATFORCESTAFF,ANOTHER NA TEAM,93.6696,5RATFORCESTAFF,1.38,9,loss,0,101,92
+2023-01,2023-01-04,71165,TodayPay Invitational S3,5RATFORCESTAFF,ANOTHER NA TEAM,29.8104,5RATFORCESTAFF,1.65,2,win,3,92,93
+2023-01,2023-01-04,71146,EPL Winter Holidays,Level Up,Hydra,185.3764,Level Up,2.2,17,loss,0,93,76
+2023-01,2023-01-04,71150,EPL Winter Holidays,IVY,YNT,27.5522,IVY,1.61,2,win,3,76,77
+2023-01,2023-01-04,71154,EPL Winter Holidays,IVY,YNT,49.5108,IVY,1.5,3,loss,0,77,74
+2023-01,2023-01-04,71158,EPL Winter Holidays,IVY,YNT,164.5420,IVY,1.75,12,loss,0,74,62
+2023-01,2023-01-05,71182,TOP EGAMING,Team Tsunami,Team Virgo,170.4374,Team Tsunami,2.63,10,loss,0,62,52
+2023-01,2023-01-05,71170,SPARTA CUP,EV GaminG,Team Saiyan,55.8404,EV GaminG,1.87,2,loss,0,52,50
+2023-01,2023-01-05,71180,TOP EGAMING,KOBOLDS,BELIEVE GAMING,324.6482,KOBOLDS,2.63,16,win,42,50,76
+2023-01,2023-01-05,71175,Moon Studio Campfire,Xerxia,Atlantis,-68.2818,Atlantis,2.14,5,loss,0,76,71
+2023-01,2023-01-05,71190,Moon Studio Campfire,Xerxia,Atlantis,-108.5658,Atlantis,2,7,loss,0,71,64
+2023-01,2023-01-05,71176,Moon Studio Campfire,Xerxia,Lilgun,269.6540,Xerxia,1.55,17,loss,0,64,47
+2023-01,2023-01-05,71197,Moon Studio Campfire,Xerxia,Lilgun,228.7356,Xerxia,1.98,10,loss,0,47,37
+2023-01,2023-01-05,71177,DPC CN 2023 Tour 1: Division I,EHOME,Invictus Gaming,-235.0524,Invictus Gaming,1.56,8,loss,0,37,29
+2023-01,2023-01-05,71195,DPC CN 2023 Tour 1: Division I,EHOME,Invictus Gaming,-111.4810,Invictus Gaming,1.87,3,loss,0,29,26
+2023-01,2023-01-05,71178,DPC CN 2023 Tour 1: Division I,LGD Gaming,Dawn Gaming,-62.1748,Dawn Gaming,7,1,loss,0,26,25
+2023-01,2023-01-05,71229,EPL Winter Holidays,Hydra,YNT,156.6794,Hydra,1.58,3,loss,0,25,22
+2023-01,2023-01-05,71233,EPL Winter Holidays,Hydra,YNT,81.1958,Hydra,1.65,1,win,1,22,22
+2023-01,2023-01-05,71240,EPL Winter Holidays,Hydra,YNT,51.2960,Hydra,1.61,1,win,1,22,22
+2023-01,2023-01-05,71243,EPL Winter Holidays,Hydra,YNT,-248.5154,YNT,2.1,5,win,10,22,27
+2023-01,2023-01-05,71247,EPL Winter Holidays,Hydra,YNT,-49.5200,YNT,2.1,1,loss,0,27,26
+2023-01,2023-01-05,71215,EPL Winter Holidays,Level Up,IVY,74.1804,Level Up,2.28,1,loss,0,26,25
+2023-01,2023-01-05,71221,EPL Winter Holidays,Level Up,IVY,-56.3752,IVY,1.65,1,loss,0,25,24
+2023-01,2023-01-05,71223,EPL Winter Holidays,Level Up,IVY,45.8600,Level Up,1.98,1,win,1,24,24
+2023-01,2023-01-05,71230,TodayPay Invitational S3,Qhali,Paradox Esports,-277.2130,Paradox Esports,3.1,6,win,18,24,36
+2023-01,2023-01-05,71236,TodayPay Invitational S3,Qhali,Paradox Esports,-75.3154,Paradox Esports,2.57,2,win,5,36,39
+2023-01,2023-01-05,71244,TodayPay Invitational S3,ANOTHER NA TEAM,Qhali,-90.7460,Qhali,1.48,3,win,4,39,40
+2023-01,2023-01-05,71252,TodayPay Invitational S3,ANOTHER NA TEAM,Qhali,-219.0380,Qhali,1.58,8,win,12,40,44
+2023-01,2023-01-06,71286,Moon Studio Campfire,Xerxia,Dawn Gaming,197.3956,Xerxia,1.82,8,win,14,44,50
+2023-01,2023-01-06,71287,Moon Studio Campfire,Xerxia,Dawn Gaming,-89.1316,Dawn Gaming,2.12,4,win,8,50,54
+2023-01,2023-01-06,71264,Moon Studio Campfire,Lilgun,KOBOLDS,-87.8132,KOBOLDS,1.64,4,loss,0,54,50
+2023-01,2023-01-06,71303,Moon Studio Campfire,Lilgun,KOBOLDS,-60.4512,KOBOLDS,2.3,3,loss,0,50,47
+2023-01,2023-01-06,71293,DPC CN 2023 Tour 1: Division I,Team Aster,Knights,56.7414,Team Aster,1.37,2,win,2,47,47
+2023-01,2023-01-06,71305,DPC CN 2023 Tour 1: Division I,Team Aster,Knights,-281.3086,Knights,2.94,13,win,38,47,72
+2023-01,2023-01-06,71320,DPC CN 2023 Tour 1: Division I,Team Aster,Knights,-190.0508,Knights,2.7,13,loss,0,72,59
+2023-01,2023-01-06,71266,DPC CN 2023 Tour 1: Division I,Xtreme Gaming,Aster.Aries,-59.6856,Aster.Aries,3.3,3,win,9,59,65
+2023-01,2023-01-06,71330,DPC CN 2023 Tour 1: Division I,Xtreme Gaming,Aster.Aries,-174.2940,Aster.Aries,2.7,11,loss,0,65,54
+2023-01,2023-01-06,71333,DPC CN 2023 Tour 1: Division I,Xtreme Gaming,Aster.Aries,54.5500,Xtreme Gaming,1.31,2,win,2,54,54
+2023-01,2023-01-06,71250,SPARTA CUP,TEAM M11,EV GaminG,147.3384,TEAM M11,1.87,7,loss,0,54,47
+2023-01,2023-01-06,71259,SPARTA CUP,TEAM M11,EV GaminG,159.7302,TEAM M11,1.87,7,win,13,47,53
+2023-01,2023-01-06,71251,TOP EGAMING,BELIEVE GAMING,KOBOLDS,-293.0910,KOBOLDS,1.76,15,loss,0,53,38
+2023-01,2023-01-06,71278,TOP EGAMING,BELIEVE GAMING,KOBOLDS,-206.7268,KOBOLDS,1.87,7,loss,0,38,31
+2023-01,2023-01-06,71267,SPARTA CUP,Team Flow,Neon Esports,-74.8762,Neon Esports,1.56,2,win,3,31,32
+2023-01,2023-01-06,71269,TOP EGAMING,Team Virgo,White Cat,125.9180,Team Virgo,1.82,4,loss,0,32,28
+2023-01,2023-01-06,71296,TOP EGAMING,Team Virgo,White Cat,-279.2916,White Cat,2.45,7,win,17,28,38
+2023-01,2023-01-06,71339,TodayPay Invitational S3,ALPHA,5RATFORCESTAFF,-188.5054,5RATFORCESTAFF,1.87,7,win,13,38,44
+2023-01,2023-01-06,71340,TodayPay Invitational S3,ALPHA,5RATFORCESTAFF,-176.1636,5RATFORCESTAFF,1.65,7,win,11,44,48
+2023-01,2023-01-06,71345,TodayPay Invitational S3,Alpha Pro USA,CDUB Esports,145.7120,Alpha Pro USA,1.52,6,loss,0,48,42
+2023-01,2023-01-06,71347,TodayPay Invitational S3,Alpha Pro USA,CDUB Esports,-33.9392,CDUB Esports,1.94,1,loss,0,42,41
+2023-01,2023-01-06,71349,TodayPay Invitational S3,Alpha Pro USA,CDUB Esports,-61.1042,CDUB Esports,2.33,2,loss,0,41,39
+2023-01,2023-01-07,71248,Mansion Invitational 2023,Blacklist International,Army Geniuses,48.2938,Blacklist International,1.32,1,win,1,39,39
+2023-01,2023-01-07,71262,Mansion Invitational 2023,Blacklist International,Army Geniuses,51.8698,Blacklist International,1.38,2,win,2,39,39
+2023-01,2023-01-07,71369,Mansion Invitational 2023,Blacklist International,Bleed Esports,-195.6618,Bleed Esports,2.8,7,win,19,39,51
+2023-01,2023-01-07,71374,Mansion Invitational 2023,Blacklist International,Bleed Esports,122.5374,Blacklist International,1.58,6,loss,0,51,45
+2023-01,2023-01-07,71356,Mansion Invitational 2023,Army Geniuses,Bleed Esports,79.1068,Army Geniuses,2.1,3,loss,0,45,42
+2023-01,2023-01-07,71360,Mansion Invitational 2023,Army Geniuses,Bleed Esports,430.1150,Army Geniuses,2,18,win,36,42,60
+2023-01,2023-01-07,71353,Mansion Invitational 2023,BOOM Esports,Polaris Esports,119.2212,BOOM Esports,1.48,7,win,10,60,63
+2023-01,2023-01-07,71358,Mansion Invitational 2023,BOOM Esports,Polaris Esports,22.6270,BOOM Esports,1.3,1,loss,0,63,62
+2023-01,2023-01-07,71368,Mansion Invitational 2023,BOOM Esports,Talon Esports,-36.2266,Talon Esports,1.94,2,win,3,62,63
+2023-01,2023-01-07,71375,Mansion Invitational 2023,BOOM Esports,Talon Esports,-85.1092,Talon Esports,1.87,5,loss,0,63,58
+2023-01,2023-01-07,71383,Mansion Invitational 2023,Polaris Esports,Talon Esports,-34.9054,Talon Esports,1.42,2,loss,0,58,56
+2023-01,2023-01-07,71393,Mansion Invitational 2023,Polaris Esports,Talon Esports,-357.1474,Talon Esports,1.68,20,win,33,56,69
+2023-01,2023-01-07,71365,Moon Studio Campfire,Xerxia,Poke Gaming,103.9698,Xerxia,1.38,7,win,9,69,71
+2023-01,2023-01-07,71371,Moon Studio Campfire,Xerxia,Poke Gaming,186.2830,Xerxia,1.5,13,win,19,71,77
+2023-01,2023-01-07,71379,DPC CN 2023 Tour 1: Division I,EHOME,Dawn Gaming,-228.4550,Dawn Gaming,4.8,17,loss,0,77,60
+2023-01,2023-01-07,71384,DPC CN 2023 Tour 1: Division I,EHOME,Dawn Gaming,182.7844,EHOME,1.12,10,win,11,60,61
+2023-01,2023-01-07,71397,DPC CN 2023 Tour 1: Division I,Knights,Invictus Gaming,-179.0476,Invictus Gaming,2.25,10,loss,0,61,51
+2023-01,2023-01-07,71403,DPC CN 2023 Tour 1: Division I,Knights,Invictus Gaming,202.0556,Knights,1.55,10,win,15,51,56
+2023-01,2023-01-07,71352,TOP EGAMING,KOBOLDS,TEAM M11,-108.0688,TEAM M11,1.52,6,loss,0,56,50
+2023-01,2023-01-07,71364,TOP EGAMING,KOBOLDS,TEAM M11,277.0782,KOBOLDS,2.1,13,win,27,50,64
+2023-01,2023-01-07,71363,SPARTA CUP,Neon Esports,Team Saiyan,-78.8832,Team Saiyan,2.05,5,loss,0,64,59
+2023-01,2023-01-07,71367,SPARTA CUP,Neon Esports,Team Saiyan,59.2370,Neon Esports,1.68,3,loss,0,59,56
+2023-01,2023-01-07,71378,TOP EGAMING,Team Virgo,Team Tsunami,91.4396,Team Virgo,1.5,5,win,7,56,58
+2023-01,2023-01-07,71422,TodayPay Invitational S3,Dreamers Esports,Paradox Esports,557.3220,Dreamers Esports,1.45,32,win,46,58,72
+2023-01,2023-01-07,71424,TodayPay Invitational S3,Dreamers Esports,Paradox Esports,230.7048,Dreamers Esports,1.41,16,loss,0,72,56
+2023-01,2023-01-07,71426,TodayPay Invitational S3,Dreamers Esports,Paradox Esports,-63.7434,Paradox Esports,2.63,3,win,7,56,60
+2023-01,2023-01-07,71428,TodayPay Invitational S3,Balrogs e-Sport,5RATFORCESTAFF,-32.0732,5RATFORCESTAFF,2.3,1,loss,0,60,59
+2023-01,2023-01-07,71435,TodayPay Invitational S3,Balrogs e-Sport,5RATFORCESTAFF,57.0328,Balrogs e-Sport,2.35,3,win,7,59,63
+2023-01,2023-01-07,71410,Mansion Invitational 2023,Polaris Esports,Talon Esports,-112.2070,Talon Esports,1.5,7,loss,0,63,56
+2023-01,2023-01-07,71407,Mansion Invitational 2023,Talon Esports,BOOM Esports,37.4160,Talon Esports,1.87,2,win,3,56,57
+2023-01,2023-01-07,71414,Mansion Invitational 2023,Polaris Esports,BOOM Esports,-140.7706,BOOM Esports,1.65,8,win,13,57,62
+2023-01,2023-01-07,71421,Mansion Invitational 2023,Blacklist International,Talon Esports,31.2482,Blacklist International,1.87,1,loss,0,62,61
+2023-01,2023-01-08,71447,DPC CN 2023 Tour 1: Division I,Invictus Gaming,Dawn Gaming,31.0240,Invictus Gaming,1.32,1,win,1,61,61
+2023-01,2023-01-08,71459,DPC CN 2023 Tour 1: Division I,Invictus Gaming,Dawn Gaming,58.8370,Invictus Gaming,1.26,3,win,3,61,61
+2023-01,2023-01-08,71450,DPC CN 2023 Tour 1: Division I,LGD Gaming,Aster.Aries,-116.3860,Aster.Aries,3.3,7,loss,0,61,54
+2023-01,2023-01-08,71471,DPC CN 2023 Tour 1: Division I,LGD Gaming,Aster.Aries,398.8636,LGD Gaming,1.28,21,win,26,54,59
+2023-01,2023-01-08,71451,DPC CN 2023 Tour 1: Division I,Xtreme Gaming,Team Aster,-319.6412,Team Aster,1.78,18,win,32,59,73
+2023-01,2023-01-08,71486,DPC CN 2023 Tour 1: Division I,Xtreme Gaming,Team Aster,-122.5766,Team Aster,1.65,8,loss,0,73,65
+2023-01,2023-01-08,71490,DPC CN 2023 Tour 1: Division I,Xtreme Gaming,Team Aster,-469.6074,Team Aster,1.76,30,win,52,65,87
+2023-01,2023-01-08,71495,DPC EEU 2023 Tour 1: Division I,Darkside,Natus Vincere,-88.9850,Natus Vincere,1.95,7,win,13,87,93
+2023-01,2023-01-08,71499,DPC EEU 2023 Tour 1: Division I,Darkside,Natus Vincere,41.7026,Darkside,1.88,3,win,5,93,95
+2023-01,2023-01-08,71503,DPC EEU 2023 Tour 1: Division I,Darkside,Natus Vincere,-163.0966,Natus Vincere,1.98,15,loss,0,95,80
+2023-01,2023-01-08,71433,Mansion Invitational 2023,Bleed Esports,BOOM Esports,-368.3256,BOOM Esports,1.58,29,win,45,80,96
+2023-01,2023-01-08,71454,Mansion Invitational 2023,Talon Esports,Army Geniuses,390.6846,Talon Esports,1.5,37,loss,0,96,59
+2023-01,2023-01-08,71465,Mansion Invitational 2023,Talon Esports,Army Geniuses,-71.4460,Army Geniuses,2.54,4,win,10,59,65
+2023-01,2023-01-08,71434,TOP EGAMING,KOBOLDS,Team Virgo,233.6984,KOBOLDS,1.79,15,win,26,65,76
+2023-01,2023-01-08,71449,TOP EGAMING,KOBOLDS,Team Virgo,-289.7966,Team Virgo,2.1,22,win,46,76,100
+2023-01,2023-01-08,71460,TOP EGAMING,KOBOLDS,Team Virgo,-183.6050,Team Virgo,1.92,18,win,34,100,116
+2023-01,2023-01-08,71453,SPARTA CUP,EV GaminG,Neon Esports,47.9184,EV GaminG,2.5,5,loss,0,116,111
+2023-01,2023-01-08,71458,SPARTA CUP,EV GaminG,Neon Esports,-62.2944,Neon Esports,1.38,6,win,8,111,113
+2023-01,2023-01-08,71455,TOP EGAMING,BELIEVE GAMING,White Cat,90.7056,BELIEVE GAMING,1.58,10,win,15,113,118
+2023-01,2023-01-08,71467,TOP EGAMING,BELIEVE GAMING,White Cat,103.1710,BELIEVE GAMING,1.42,12,win,17,118,123
+2023-01,2023-01-08,71452,DPC EEU 2023 Tour 1: Division I,HellRaisers,Nemiga Gaming,-205.9594,Nemiga Gaming,1.5,25,loss,0,123,98
+2023-01,2023-01-08,71487,DPC EEU 2023 Tour 1: Division I,HellRaisers,Nemiga Gaming,355.8256,HellRaisers,2.25,34,loss,0,98,64
+2023-01,2023-01-08,71491,DPC EEU 2023 Tour 1: Division I,HellRaisers,Nemiga Gaming,253.4836,HellRaisers,2.25,16,win,36,64,84
+2023-01,2023-01-08,71505,TodayPay Invitational S3,Dreamers Esports,Qhali,323.2942,Dreamers Esports,1.52,27,win,41,84,98
+2023-01,2023-01-08,71507,TodayPay Invitational S3,Dreamers Esports,Qhali,-349.9934,Qhali,2.35,34,win,79,98,143
+2023-01,2023-01-08,71509,TodayPay Invitational S3,Dreamers Esports,Qhali,-453.3162,Qhali,1.95,64,loss,0,143,79
+2023-01,2023-01-08,71511,TodayPay Invitational S3,5RATFORCESTAFF,ALPHA,221.9696,5RATFORCESTAFF,1.53,17,win,26,79,88
+2023-01,2023-01-08,71515,TodayPay Invitational S3,5RATFORCESTAFF,ALPHA,-64.3394,ALPHA,2.15,5,loss,0,88,83
+2023-01,2023-01-08,71469,Mansion Invitational 2023,Bleed Esports,Army Geniuses,674.7780,Bleed Esports,1.75,56,win,98,83,125
+2023-01,2023-01-08,71476,Mansion Invitational 2023,Bleed Esports,Army Geniuses,-107.3828,Army Geniuses,2.16,13,loss,0,125,112
+2023-01,2023-01-08,71481,Mansion Invitational 2023,Bleed Esports,BOOM Esports,-209.9360,BOOM Esports,1.52,23,loss,0,112,89
+2023-01,2023-01-08,71493,Mansion Invitational 2023,Bleed Esports,BOOM Esports,21.4724,Bleed Esports,2.05,1,win,2,89,90
+2023-01,2023-01-09,71532,DPC SEA 2023 Tour 1: Division I,Execration,Talon Esports,-136.6570,Talon Esports,1.45,12,loss,0,90,78
+2023-01,2023-01-09,71541,DPC SEA 2023 Tour 1: Division I,Execration,Talon Esports,375.7574,Execration,2.2,29,win,63,78,112
+2023-01,2023-01-09,71537,DPC SEA 2023 Tour 1: Division I,Fnatic,Geek Slate,245.1964,Fnatic,1.75,27,loss,0,112,85
+2023-01,2023-01-09,71554,DPC SEA 2023 Tour 1: Division I,Fnatic,Geek Slate,-423.8062,Geek Slate,2,36,win,72,85,121
+2023-01,2023-01-09,71538,DPC SEA 2023 Tour 1: Division I,Blacklist International,Bleed Esports,393.0960,Blacklist International,1.67,47,loss,0,121,74
+2023-01,2023-01-09,71575,DPC SEA 2023 Tour 1: Division I,Blacklist International,Bleed Esports,-75.4970,Bleed Esports,1.75,5,loss,0,74,69
+2023-01,2023-01-09,71582,DPC SEA 2023 Tour 1: Division I,Blacklist International,Bleed Esports,-88.3028,Bleed Esports,1.94,6,loss,0,69,63
+2023-01,2023-01-09,71587,DPC WEU 2023 Tour 1: Division I,OG,Tundra Esports,74.6512,OG,2.51,4,loss,0,63,59
+2023-01,2023-01-09,71592,DPC WEU 2023 Tour 1: Division I,OG,Tundra Esports,-80.4394,Tundra Esports,1.5,4,win,6,59,61
+2023-01,2023-01-09,71597,DPC WEU 2023 Tour 1: Division I,Team Liquid,Team Secret,102.8022,Team Liquid,1.75,6,win,10,61,65
+2023-01,2023-01-09,71601,DPC WEU 2023 Tour 1: Division I,Team Liquid,Team Secret,-63.9396,Team Secret,2.48,4,loss,0,65,61
+2023-01,2023-01-09,71513,TOP EGAMING,White Cat,Team Virgo,-354.0252,Team Virgo,1.74,21,win,36,61,76
+2023-01,2023-01-09,71540,TOP EGAMING,White Cat,Team Virgo,183.6682,White Cat,2.3,13,loss,0,76,63
+2023-01,2023-01-09,71535,SPARTA CUP,TEAM M11,Neon Esports,-78.6788,Neon Esports,1.62,4,win,6,63,65
+2023-01,2023-01-09,71543,SPARTA CUP,TEAM M11,Neon Esports,292.9264,TEAM M11,2.7,19,loss,0,65,46
+2023-01,2023-01-09,71598,TodayPay Invitational S3,Paradox Esports,Balrogs e-Sport,-80.0886,Balrogs e-Sport,1.48,3,win,4,46,47
+2023-01,2023-01-09,71603,TodayPay Invitational S3,Paradox Esports,Balrogs e-Sport,102.2992,Paradox Esports,2.48,4,loss,0,47,43
+2023-01,2023-01-09,71608,DPC WEU 2023 Tour 1: Division I,Entity,Gaimin Gladiators,-68.8440,Gaimin Gladiators,1.45,2,loss,0,43,41
+2023-01,2023-01-09,71613,DPC WEU 2023 Tour 1: Division I,Entity,Gaimin Gladiators,578.6168,Entity,2.16,23,loss,0,41,18
+2023-01,2023-01-09,71621,DPC WEU 2023 Tour 1: Division I,Entity,Gaimin Gladiators,180.4890,Entity,2.25,3,loss,0,18,15
+2023-01,2023-01-09,71611,TodayPay Invitational S3,Dreamers Esports,5RATFORCESTAFF,110.2698,Dreamers Esports,2.23,1,loss,0,15,14
+2023-01,2023-01-09,71617,DPC NA 2023 Tour 1: Division I,Wildcard,TSM,83.2560,Wildcard,4.99,1,loss,0,14,13
+2023-01,2023-01-09,71623,DPC NA 2023 Tour 1: Division I,Wildcard,TSM,-160.3820,TSM,1.2,2,win,2,13,13
+2023-01,2023-01-10,71618,DPC NA 2023 Tour 1: Division I,Shopify Rebellion,Thiuth Gaming,278.7836,Shopify Rebellion,1.06,3,win,3,13,13
+2023-01,2023-01-10,71636,Moon Studio Campfire,Neon Esports,Dawn Gaming,-155.9522,Dawn Gaming,2.22,2,win,4,13,15
+2023-01,2023-01-10,71652,Moon Studio Campfire,Neon Esports,Dawn Gaming,-233.3174,Dawn Gaming,1.87,3,loss,0,15,12
+2023-01,2023-01-10,71674,Moon Studio Campfire,Xerxia,Lilgun,144.0072,Xerxia,1.72,1,win,1,12,12
+2023-01,2023-01-10,71638,DPC CN 2023 Tour 1: Division I,Xtreme Gaming,EHOME,-156.5844,EHOME,2.7,1,loss,0,12,11
+2023-01,2023-01-10,71675,DPC CN 2023 Tour 1: Division I,LGD Gaming,Knights,-504.9670,Knights,2.33,5,win,11,11,17
+2023-01,2023-01-10,71619,SPARTA CUP,EV GaminG,496 Gaming,-72.5328,496 Gaming,1.96,1,loss,0,17,16
+2023-01,2023-01-10,71627,SPARTA CUP,EV GaminG,496 Gaming,147.9852,EV GaminG,1.92,2,win,3,16,17
+2023-01,2023-01-10,71620,TOP EGAMING,BELIEVE GAMING,Team Virgo,202.2962,BELIEVE GAMING,1.65,3,win,4,17,18
+2023-01,2023-01-10,71633,TOP EGAMING,BELIEVE GAMING,Team Virgo,141.4880,BELIEVE GAMING,4.11,2,loss,0,18,16
+2023-01,2023-01-10,71643,TOP EGAMING,BELIEVE GAMING,Team Virgo,-96.5106,Team Virgo,6.3,1,loss,0,16,15
+2023-01,2023-01-10,71647,TOP EGAMING,BELIEVE GAMING,Team Virgo,-173.1530,Team Virgo,4.23,2,loss,0,15,13
+2023-01,2023-01-10,71635,SPARTA CUP,Team Flow,Team Saiyan,-89.4606,Team Saiyan,2.14,1,win,2,13,14
+2023-01,2023-01-10,71648,SPARTA CUP,Team Flow,Team Saiyan,176.4024,Team Flow,1.2,2,win,2,14,14
+2023-01,2023-01-10,71640,DPC EEU 2023 Tour 1: Division I,Natus Vincere,Team Spirit,420.4484,Natus Vincere,3.46,5,win,17,14,26
+2023-01,2023-01-10,71678,DPC EEU 2023 Tour 1: Division I,Natus Vincere,Team Spirit,-103.3238,Team Spirit,1.38,2,win,2,26,26
+2023-01,2023-01-10,71681,DPC EEU 2023 Tour 1: Division I,Natus Vincere,Team Spirit,386.9582,Natus Vincere,3.6,10,loss,0,26,16
+2023-01,2023-01-10,71686,DPC EEU 2023 Tour 1: Division I,Darkside,Nemiga Gaming,69.2132,Darkside,1.86,1,win,1,16,16
+2023-01,2023-01-10,71697,TodayPay Invitational S3,Paradox Esports,5RATFORCESTAFF,300.2930,Paradox Esports,2.5,4,loss,0,16,12
+2023-01,2023-01-10,71702,TodayPay Invitational S3,Paradox Esports,5RATFORCESTAFF,97.0026,Paradox Esports,2.48,1,loss,0,12,11
+2023-01,2023-01-10,71701,DPC SA 2023 Tour 1: Division I,Beastcoast,Keyd Stars,-263.2732,Keyd Stars,2.8,2,loss,0,11,9
+2023-01,2023-01-10,71710,DPC SA 2023 Tour 1: Division I,Thunder Awaken,Ravens,297.7680,Thunder Awaken,1.26,2,win,2,9,9
+2023-01,2023-01-10,71714,DPC SA 2023 Tour 1: Division I,Thunder Awaken,Ravens,528.2670,Thunder Awaken,1.37,4,win,5,9,10
+2023-01,2023-01-10,71726,DPC SA 2023 Tour 1: Division I,Alliance.LATAM,Infinity,156.8480,Alliance.LATAM,1.86,1,loss,0,10,9
+2023-01,2023-01-10,71680,European Pro League Season 6,MonaspA,Creep Gaming,-214.7322,Creep Gaming,2.81,1,loss,0,9,8
+2023-01,2023-01-10,71699,European Pro League Season 6,Ooredoo Thunders,Water rune enjoyers,485.6192,Ooredoo Thunders,1.5,3,loss,0,8,5
+2023-01,2023-01-10,71705,European Pro League Season 6,Ooredoo Thunders,Water rune enjoyers,221.7426,Ooredoo Thunders,1.53,1,win,1,5,5
+2023-01,2023-01-10,71713,TodayPay Invitational S3,Balrogs e-Sport,5RATFORCESTAFF,279.8602,Balrogs e-Sport,1.65,1,loss,0,5,4
+2023-01,2023-01-11,71737,DPC SEA 2023 Tour 1: Division I,Team SMG,Execration,-329.0180,Execration,1.65,1,win,1,4,4
+2023-01,2023-01-11,71762,DPC SEA 2023 Tour 1: Division I,Bleed Esports,Fnatic,401.7202,Bleed Esports,1.88,1,win,1,4,4
+2023-01,2023-01-11,71778,DPC SEA 2023 Tour 1: Division I,BOOM Esports,Talon Esports,267.4962,BOOM Esports,1.75,1,loss,0,4,3
+2023-01,2023-01-11,71745,SPARTA CUP,TEAM M11,496 Gaming,-421.2036,496 Gaming,2.26,1,win,2,3,4
+2023-01,2023-01-11,71764,Moon Studio Campfire,Atlantis,KOBOLDS,408.4644,Atlantis,1.6,1,win,1,4,4
+2023-01,2023-01-11,71790,European Pro League Season 6,Ooredoo Thunders,D2 HUSTLERS,-638.0270,D2 HUSTLERS,2.73,2,win,5,4,7
+2023-01,2023-01-11,71795,European Pro League Season 6,Ooredoo Thunders,D2 HUSTLERS,148.2224,Ooredoo Thunders,1.6,1,win,1,7,7
+2023-01,2023-01-11,71799,European Pro League Season 6,Ooredoo Thunders,D2 HUSTLERS,-302.5656,D2 HUSTLERS,2.81,2,win,5,7,10
+2023-01,2023-01-11,71779,European Pro League Season 6,Monte,Creep Gaming,-397.2492,Creep Gaming,1.38,3,win,4,10,11
+2023-01,2023-01-11,71787,European Pro League Season 6,Monte,Creep Gaming,346.0918,Monte,2.33,3,win,6,11,14
+2023-01,2023-01-11,71786,DPC WEU 2023 Tour 1: Division I,OG,Team Secret,356.4318,OG,1.77,4,win,7,14,17
+2023-01,2023-01-11,71793,DPC WEU 2023 Tour 1: Division I,Entity,Into the Breach,181.6546,Entity,1.4,3,win,4,17,18
+2023-01,2023-01-11,71798,DPC WEU 2023 Tour 1: Division I,Entity,Into the Breach,-275.5422,Into the Breach,2.94,4,loss,0,18,14
+2023-01,2023-01-11,71794,EPL World AM S3,Paradox Esports,Balrogs e-Sport,-110.9802,Balrogs e-Sport,1.46,1,win,1,14,14
+2023-01,2023-01-11,71807,EPL World AM S3,Qhali,Balrogs e-Sport,242.3250,Qhali,2.65,3,win,7,14,18
+2023-01,2023-01-11,71810,EPL World AM S3,Qhali,Balrogs e-Sport,298.6372,Qhali,2.8,5,loss,0,18,13
+2023-01,2023-01-11,71813,EPL World AM S3,Qhali,Balrogs e-Sport,-166.9108,Balrogs e-Sport,1.48,2,loss,0,13,11
+2023-01,2023-01-11,71806,DPC WEU 2023 Tour 1: Division I,Tundra Esports,Nigma Galaxy,130.6156,Tundra Esports,1.3,1,win,1,11,11
+2023-01,2023-01-11,71809,DPC WEU 2023 Tour 1: Division I,Tundra Esports,Nigma Galaxy,-147.7192,Nigma Galaxy,3.79,1,win,3,11,13
+2023-01,2023-01-11,71812,DPC WEU 2023 Tour 1: Division I,Tundra Esports,Nigma Galaxy,-487.9436,Nigma Galaxy,2.99,6,loss,0,13,7
+2023-01,2023-01-11,71815,DPC NA 2023 Tour 1: Division I,Nouns,Alpha Pro USA,-180.1064,Alpha Pro USA,3.4,1,loss,0,7,6
+2023-01,2023-01-12,71841,Moon Studio Campfire,Lilgun,iG.Vitality,-366.4194,iG.Vitality,2.1,2,win,4,6,8
+2023-01,2023-01-12,71845,Moon Studio Campfire,Lilgun,iG.Vitality,208.5504,Lilgun,1.82,1,win,1,8,8
+2023-01,2023-01-12,71829,DPC CN 2023 Tour 1: Division I,Team Aster,Aster.Aries,-222.4868,Aster.Aries,3.7,1,loss,0,8,7
+2023-01,2023-01-12,71870,DPC CN 2023 Tour 1: Division I,Team Aster,Aster.Aries,-230.1888,Aster.Aries,4.23,1,loss,0,7,6
+2023-01,2023-01-12,71878,European Pro League Season 6,Creep Gaming,Sigma.YNT,380.7600,Creep Gaming,2.35,2,win,4,6,8
+2023-01,2023-01-12,71892,European Pro League Season 6,MonaspA,No Bounty Hunter,-241.8920,No Bounty Hunter,3.8,1,loss,0,8,7
+2023-01,2023-01-12,71881,DPC EEU 2023 Tour 1: Division I,HellRaisers,One Move,-392.5428,One Move,2.8,2,loss,0,7,5
+2023-01,2023-01-12,71882,DPC EEU 2023 Tour 1: Division I,HellRaisers,One Move,304.0912,HellRaisers,1.45,1,win,1,5,5
+2023-01,2023-01-12,71911,DPC SA 2023 Tour 1: Division I,INFAMOUS U.ESPORTS,Beastcoast,-220.2080,Beastcoast,1.3,1,win,1,5,5
+2023-01,2023-01-13,71978,DPC WEU 2023 Tour 1: Division I,Team Secret,Gaimin Gladiators,204.0074,Team Secret,2.16,1,loss,0,5,4
+2023-01,2023-01-13,71935,DPC SEA 2023 Tour 1: Division I,Geek Slate,BOOM Esports,-444.9856,BOOM Esports,1.7,1,loss,0,4,3
+2023-01,2023-01-13,71947,Moon Studio Campfire,Lilgun,Dawn Gaming,402.9916,Lilgun,1.87,1,loss,0,3,2
+2023-01,2023-01-13,71929,DPC SEA 2023 Tour 1: Division I,Fnatic,Blacklist International,-598.4594,Blacklist International,1.62,1,loss,0,2,1
