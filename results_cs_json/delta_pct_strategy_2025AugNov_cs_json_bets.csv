@@ -1,0 +1,1435 @@
+month,date,match_id,championship,team1,team2,delta,favored,odds,stake,outcome,payout,bank_before,bank_after
+2025-08,2025-08-01,172132,Clavision Masters 2025: Snow-Ruyi,Nigma Galaxy,Tundra Esports,-7.3730,Tundra Esports,1.72,7,loss,0,1000,993
+2025-08,2025-08-01,172224,Clavision Masters 2025: Snow-Ruyi,Nigma Galaxy,Tundra Esports,5.2859,Nigma Galaxy,2,5,loss,0,993,988
+2025-08,2025-08-01,172232,Clavision Masters 2025: Snow-Ruyi,Nigma Galaxy,Tundra Esports,14.4822,Nigma Galaxy,2.13,14,loss,0,988,974
+2025-08,2025-08-01,172136,Clavision Masters 2025: Snow-Ruyi,Team Tidebound,Gaimin Gladiators,5.7271,Team Tidebound,1.88,5,win,9,974,978
+2025-08,2025-08-01,172250,Clavision Masters 2025: Snow-Ruyi,Team Tidebound,Gaimin Gladiators,11.2341,Team Tidebound,1.78,10,win,17,978,985
+2025-08,2025-08-01,172134,Clavision Masters 2025: Snow-Ruyi,PARIVISION,Xtreme Gaming,-2.7009,Xtreme Gaming,2.65,2,win,5,985,988
+2025-08,2025-08-01,172179,Clavision Masters 2025: Snow-Ruyi,PARIVISION,Xtreme Gaming,12.7860,PARIVISION,1.44,12,loss,0,988,976
+2025-08,2025-08-01,172133,Clavision Masters 2025: Snow-Ruyi,BetBoom Team,BOOM Esports,-1.8308,BOOM Esports,3.78,1,loss,0,976,975
+2025-08,2025-08-01,172195,Clavision Masters 2025: Snow-Ruyi,BetBoom Team,BOOM Esports,19.4179,BetBoom Team,1.23,18,loss,0,975,957
+2025-08,2025-08-01,172206,Clavision Masters 2025: Snow-Ruyi,BetBoom Team,BOOM Esports,21.7935,BetBoom Team,1.33,20,win,26,957,963
+2025-08,2025-08-01,172220,CCT Season 2 Series 3,Passion UA,1win Team,3.9634,Passion UA,2.53,3,win,7,963,967
+2025-08,2025-08-01,172223,CCT Season 2 Series 3,Passion UA,1win Team,3.9288,Passion UA,2.28,3,loss,0,967,964
+2025-08,2025-08-01,172233,CCT Season 2 Series 3,Passion UA,1win Team,-16.0122,1win Team,1.43,15,win,21,964,970
+2025-08,2025-08-01,172239,CCT Season 2 Series 3,Passion UA,1win Team,5.3706,Passion UA,2.42,5,win,12,970,977
+2025-08,2025-08-01,172249,CCT Season 2 Series 3,Passion UA,1win Team,19.9601,Passion UA,2.38,19,loss,0,977,958
+2025-08,2025-08-01,172246,European Pro League 28,Zero Tenacity,Yellow Submarine,-51.4395,Yellow Submarine,1.82,49,loss,0,958,909
+2025-08,2025-08-01,172253,European Pro League 28,Zero Tenacity,Yellow Submarine,-6.1498,Yellow Submarine,1.84,5,loss,0,909,904
+2025-08,2025-08-01,172259,European Pro League 28,Zero Tenacity,Yellow Submarine,-22.4325,Yellow Submarine,1.89,20,loss,0,904,884
+2025-08,2025-08-02,172341,CIS Battle 2,Zero Tenacity,Yellow Submarine,16.9793,Zero Tenacity,1.72,15,loss,0,884,869
+2025-08,2025-08-02,172344,CIS Battle 2,Zero Tenacity,Yellow Submarine,-2.0499,Yellow Submarine,2.05,1,win,2,869,870
+2025-08,2025-08-02,172351,CIS Battle 2,Yellow Submarine,Level Up,-5.2602,Level Up,2.15,4,loss,0,870,866
+2025-08,2025-08-02,172356,CIS Battle 2,Yellow Submarine,Level Up,6.7685,Yellow Submarine,1.48,5,loss,0,866,861
+2025-08,2025-08-02,172359,CIS Battle 2,Yellow Submarine,Level Up,-26.7592,Level Up,2.35,23,loss,0,861,838
+2025-08,2025-08-02,172248,Clavision Masters 2025: Snow-Ruyi,Nigma Galaxy,Xtreme Gaming,-25.6100,Xtreme Gaming,1.88,21,win,39,838,856
+2025-08,2025-08-02,172311,Clavision Masters 2025: Snow-Ruyi,BetBoom Team,Gaimin Gladiators,-8.9722,Gaimin Gladiators,2.15,7,loss,0,856,849
+2025-08,2025-08-02,172324,Clavision Masters 2025: Snow-Ruyi,Tundra Esports,Team Tidebound,12.5461,Tundra Esports,1.88,10,win,18,849,857
+2025-08,2025-08-02,172320,Clavision Masters 2025: Snow-Ruyi,Xtreme Gaming,BetBoom Team,6.7158,Xtreme Gaming,2.05,5,loss,0,857,852
+2025-08,2025-08-02,172333,Clavision Masters 2025: Snow-Ruyi,Xtreme Gaming,BetBoom Team,-1.3245,BetBoom Team,1.55,1,loss,0,852,851
+2025-08,2025-08-02,172338,Clavision Masters 2025: Snow-Ruyi,Xtreme Gaming,BetBoom Team,-14.5963,BetBoom Team,1.6,12,loss,0,851,839
+2025-08,2025-08-03,172422,CIS Battle 2,Nemiga Gaming,Zero Tenacity,4.0643,Nemiga Gaming,2.2,3,win,6,839,842
+2025-08,2025-08-03,172427,CIS Battle 2,Nemiga Gaming,Zero Tenacity,-4.5345,Zero Tenacity,1.62,3,win,4,842,843
+2025-08,2025-08-03,172430,CIS Battle 2,Nemiga Gaming,Zero Tenacity,-14.5644,Zero Tenacity,1.65,12,loss,0,843,831
+2025-08,2025-08-03,172431,CIS Battle 2,Zero Tenacity,Level Up,-24.3688,Level Up,2,20,loss,0,831,811
+2025-08,2025-08-03,172437,CIS Battle 2,Zero Tenacity,Level Up,-17.1749,Level Up,2.15,13,loss,0,811,798
+2025-08,2025-08-03,172397,Clavision Masters 2025: Snow-Ruyi,Team Tidebound,Xtreme Gaming,-5.9770,Xtreme Gaming,1.93,4,loss,0,798,794
+2025-08,2025-08-03,172401,Clavision Masters 2025: Snow-Ruyi,Team Tidebound,Tundra Esports,16.3084,Team Tidebound,2.35,12,loss,0,794,782
+2025-08,2025-08-03,172408,Clavision Masters 2025: Snow-Ruyi,Team Tidebound,Tundra Esports,-3.8235,Tundra Esports,1.65,2,loss,0,782,780
+2025-08,2025-08-03,172416,Clavision Masters 2025: Snow-Ruyi,Team Tidebound,Tundra Esports,-4.3860,Tundra Esports,1.7,3,loss,0,780,777
+2025-08,2025-08-03,172417,Clavision Masters 2025: Snow-Ruyi,Team Tidebound,Tundra Esports,-33.5955,Tundra Esports,1.7,26,win,44,777,795
+2025-08,2025-08-03,172426,Clavision Masters 2025: Snow-Ruyi,Team Tidebound,Tundra Esports,-8.1700,Tundra Esports,1.71,6,loss,0,795,789
+2025-08,2025-08-04,172439,EPL World Series: Southeast Asia S7,Yangon Galacticos,Kopite,-22.5664,Kopite,2.2,17,loss,0,789,772
+2025-08,2025-08-04,172490,EPL World Series: Southeast Asia S7,REKONIX,Ivory,-5.4625,Ivory,2.6,4,loss,0,772,768
+2025-08,2025-08-04,172498,EPL World Series: Southeast Asia S7,REKONIX,Ivory,-24.3768,Ivory,2.86,18,loss,0,768,750
+2025-08,2025-08-04,172504,CIS Battle 2,Zero Tenacity,eSpoiled,41.2652,Zero Tenacity,1.58,30,loss,0,750,720
+2025-08,2025-08-04,172512,CIS Battle 2,Zero Tenacity,eSpoiled,-2.3759,eSpoiled,2.2,1,loss,0,720,719
+2025-08,2025-08-04,172517,CIS Battle 2,Zero Tenacity,eSpoiled,5.5964,Zero Tenacity,1.52,4,win,6,719,721
+2025-08,2025-08-04,172511,CIS Battle 2,Runa Team,Yellow Submarine,9.1643,Runa Team,1.79,6,loss,0,721,715
+2025-08,2025-08-04,172529,CIS Battle 2,Runa Team,Yellow Submarine,11.6015,Runa Team,1.94,8,loss,0,715,707
+2025-08,2025-08-04,172535,CIS Battle 2,4Pirates,Kalmychata,4.1112,4Pirates,1.42,2,win,2,707,707
+2025-08,2025-08-04,172543,CIS Battle 2,4Pirates,Kalmychata,-2.9468,Kalmychata,2.58,2,loss,0,707,705
+2025-08,2025-08-05,172549,EPL World Series: Southeast Asia S7,Ivory,Carstensz Esports,-10.8687,Carstensz Esports,3,7,win,21,705,719
+2025-08,2025-08-05,172585,EPL World Series: Southeast Asia S7,Ivory,Carstensz Esports,-28.6668,Carstensz Esports,2.52,20,loss,0,719,699
+2025-08,2025-08-05,172591,EPL World Series: Southeast Asia S7,Ivory,Carstensz Esports,-10.6319,Carstensz Esports,2.68,7,loss,0,699,692
+2025-08,2025-08-05,172550,EPL World Series: Southeast Asia S7,Kopite,InterActive Philippines,12.9491,Kopite,1.3,8,loss,0,692,684
+2025-08,2025-08-05,172607,EPL World Series: Southeast Asia S7,Kopite,InterActive Philippines,-6.2530,InterActive Philippines,3.05,4,loss,0,684,680
+2025-08,2025-08-05,172615,EPL World Series: Southeast Asia S7,Kopite,InterActive Philippines,-5.0644,InterActive Philippines,2.48,3,loss,0,680,677
+2025-08,2025-08-05,172556,CIS Battle 2,Nemiga Gaming,4Pirates,21.6715,Nemiga Gaming,2.5,14,loss,0,677,663
+2025-08,2025-08-05,172617,CIS Battle 2,Nemiga Gaming,4Pirates,-14.7641,4Pirates,1.41,9,win,12,663,666
+2025-08,2025-08-05,172623,CIS Battle 2,Kalmychata,eSpoiled,10.5759,Kalmychata,1.92,7,win,13,666,672
+2025-08,2025-08-05,172634,CIS Battle 2,Kalmychata,eSpoiled,15.2912,Kalmychata,1.89,10,win,18,672,680
+2025-08,2025-08-05,172644,CIS Battle 2,Runa Team,Level Up,4.2319,Runa Team,1.62,2,loss,0,680,678
+2025-08,2025-08-05,172649,CIS Battle 2,Runa Team,Level Up,-2.3362,Level Up,2.12,1,loss,0,678,677
+2025-08,2025-08-06,172653,CIS Battle 2,Zero Tenacity,4Pirates,4.9494,Zero Tenacity,2.25,3,win,6,677,680
+2025-08,2025-08-06,172723,CIS Battle 2,Zero Tenacity,4Pirates,8.5704,Zero Tenacity,2.2,5,win,11,680,686
+2025-08,2025-08-06,172661,CIS Battle 2,Yellow Submarine,Kalmychata,-6.0401,Kalmychata,2.65,4,loss,0,686,682
+2025-08,2025-08-06,172737,CIS Battle 2,Yellow Submarine,Kalmychata,-6.7068,Kalmychata,3,4,win,12,682,690
+2025-08,2025-08-06,172744,CIS Battle 2,Yellow Submarine,Kalmychata,10.8179,Yellow Submarine,1.32,7,win,9,690,692
+2025-08,2025-08-06,172754,CIS Battle 2,Runa Team,eSpoiled,15.3284,Runa Team,1.37,10,win,13,692,695
+2025-08,2025-08-06,172757,CIS Battle 2,Runa Team,eSpoiled,5.6297,Runa Team,1.32,3,win,3,695,695
+2025-08,2025-08-06,172670,EPL World Series: Southeast Asia S7,Ivory,Kopite,12.7220,Ivory,1.5,8,win,12,695,699
+2025-08,2025-08-06,172689,EPL World Series: Southeast Asia S7,Ivory,Kopite,-50.2522,Kopite,2.5,35,win,87,699,751
+2025-08,2025-08-06,172696,EPL World Series: Southeast Asia S7,Ivory,Kopite,-15.3757,Kopite,2.46,11,loss,0,751,740
+2025-08,2025-08-06,172702,EPL World Series: Southeast Asia S7,REKONIX,Yangon Galacticos,2.6666,REKONIX,1.45,1,win,1,740,740
+2025-08,2025-08-06,172714,EPL World Series: Southeast Asia S7,REKONIX,Yangon Galacticos,-12.6809,Yangon Galacticos,2.75,9,win,24,740,755
+2025-08,2025-08-06,172720,EPL World Series: Southeast Asia S7,REKONIX,Yangon Galacticos,-19.9856,Yangon Galacticos,2.81,15,loss,0,755,740
+2025-08,2025-08-07,172792,CIS Battle 2,Zero Tenacity,Kalmychata,7.4572,Zero Tenacity,1.52,5,win,7,740,742
+2025-08,2025-08-07,172837,CIS Battle 2,Zero Tenacity,Kalmychata,3.4179,Zero Tenacity,1.41,2,loss,0,742,740
+2025-08,2025-08-07,172748,CIS Battle 2,Runa Team,Nemiga Gaming,-12.8191,Nemiga Gaming,2.61,9,loss,0,740,731
+2025-08,2025-08-07,172848,CIS Battle 2,Runa Team,Nemiga Gaming,4.5119,Runa Team,1.41,3,win,4,731,732
+2025-08,2025-08-07,172793,CIS Battle 2,Level Up,eSpoiled,-6.8493,eSpoiled,1.91,5,win,9,732,736
+2025-08,2025-08-07,172860,CIS Battle 2,Level Up,eSpoiled,-10.7171,eSpoiled,1.87,7,win,13,736,742
+2025-08,2025-08-07,172775,EPL World Series: Southeast Asia S7,Yangon Galacticos,Ivory,21.4292,Yangon Galacticos,2.04,15,win,30,742,757
+2025-08,2025-08-07,172795,EPL World Series: Southeast Asia S7,Yangon Galacticos,Ivory,-1.7636,Ivory,1.66,1,win,1,757,757
+2025-08,2025-08-07,172812,EPL World Series: Southeast Asia S7,Yangon Galacticos,REKONIX,30.3689,Yangon Galacticos,2.4,22,loss,0,757,735
+2025-08,2025-08-07,172821,EPL World Series: Southeast Asia S7,Yangon Galacticos,REKONIX,11.6305,Yangon Galacticos,2.6,8,loss,0,735,727
+2025-08,2025-08-07,172827,EPL World Series: Southeast Asia S7,Yangon Galacticos,REKONIX,-28.1820,REKONIX,1.42,20,loss,0,727,707
+2025-08,2025-08-07,172835,EPL World Series: Southeast Asia S7,Yangon Galacticos,REKONIX,5.8976,Yangon Galacticos,2.17,4,loss,0,707,703
+2025-08,2025-08-08,172867,Lunar Snake Trophy 2,Yangon Galacticos,Protocol 20,25.8648,Yangon Galacticos,1.49,18,win,26,703,711
+2025-08,2025-08-08,172901,Lunar Snake Trophy 2,Yangon Galacticos,Protocol 20,-29.3055,Protocol 20,2.75,20,win,55,711,746
+2025-08,2025-08-08,172907,Lunar Snake Trophy 2,Yangon Galacticos,Protocol 20,-1.8269,Protocol 20,2.53,1,loss,0,746,745
+2025-08,2025-08-08,172913,Lunar Snake Trophy 2,Excel Esports,Carstensz Esports,-32.7015,Carstensz Esports,2.25,24,win,54,745,775
+2025-08,2025-08-08,172921,Lunar Snake Trophy 2,Excel Esports,Carstensz Esports,3.6714,Excel Esports,1.64,2,win,3,775,776
+2025-08,2025-08-08,172926,Lunar Snake Trophy 2,Excel Esports,Carstensz Esports,20.5590,Excel Esports,1.6,15,win,24,776,785
+2025-08,2025-08-08,172872,CIS Battle 2,Yellow Submarine,eSpoiled,-26.6852,eSpoiled,3.3,20,loss,0,785,765
+2025-08,2025-08-08,172929,CIS Battle 2,Yellow Submarine,eSpoiled,-7.9485,eSpoiled,3.4,6,loss,0,765,759
+2025-08,2025-08-08,172935,CIS Battle 2,Runa Team,Zero Tenacity,4.6309,Runa Team,1.55,3,loss,0,759,756
+2025-08,2025-08-08,172945,CIS Battle 2,Runa Team,Zero Tenacity,34.7758,Runa Team,1.6,26,win,41,756,771
+2025-08,2025-08-08,172951,CIS Battle 2,Runa Team,Zero Tenacity,-9.1119,Zero Tenacity,2.6,7,loss,0,771,764
+2025-08,2025-08-08,172956,CIS Battle 2,Level Up,Kalmychata,-20.4491,Kalmychata,1.81,15,loss,0,764,749
+2025-08,2025-08-08,172966,CIS Battle 2,Level Up,Kalmychata,-5.7715,Kalmychata,1.6,4,win,6,749,751
+2025-08,2025-08-08,172973,CIS Battle 2,Level Up,Kalmychata,12.8032,Level Up,2.49,9,loss,0,751,742
+2025-08,2025-08-09,173040,CIS Battle 2,Level Up,4Pirates,-7.0547,4Pirates,1.28,5,win,6,742,743
+2025-08,2025-08-09,173043,CIS Battle 2,Level Up,4Pirates,-14.3209,4Pirates,1.26,10,win,12,743,745
+2025-08,2025-08-09,172958,CIS Battle 2,Nemiga Gaming,Level Up,-9.8358,Level Up,1.92,7,loss,0,745,738
+2025-08,2025-08-09,173030,CIS Battle 2,Nemiga Gaming,Level Up,-5.4365,Level Up,2.2,4,loss,0,738,734
+2025-08,2025-08-09,172959,CIS Battle 2,Runa Team,4Pirates,11.4874,Runa Team,1.85,8,win,14,734,740
+2025-08,2025-08-09,173055,CIS Battle 2,Runa Team,4Pirates,11.7929,Runa Team,1.65,8,win,13,740,745
+2025-08,2025-08-09,172984,Lunar Snake Trophy 2,Protocol 20,Kopite,-20.2316,Kopite,1.82,15,win,27,745,757
+2025-08,2025-08-09,173009,Lunar Snake Trophy 2,Protocol 20,Kopite,29.3136,Protocol 20,1.75,22,win,38,757,773
+2025-08,2025-08-09,173013,Lunar Snake Trophy 2,Protocol 20,Kopite,13.4217,Protocol 20,1.78,10,win,17,773,780
+2025-08,2025-08-09,173016,Lunar Snake Trophy 2,Carstensz,Future Esport,10.7929,Carstensz,1.85,8,loss,0,780,772
+2025-08,2025-08-09,173023,Lunar Snake Trophy 2,Carstensz,Future Esport,15.8330,Carstensz,1.66,12,win,19,772,779
+2025-08,2025-08-09,173028,Lunar Snake Trophy 2,Carstensz,Future Esport,7.7182,Carstensz,1.64,6,loss,0,779,773
+2025-08,2025-08-09,173024,European Pro League 29,team lynx,Passion UA,33.5859,team lynx,3.2,25,loss,0,773,748
+2025-08,2025-08-09,173032,European Pro League 29,team lynx,Passion UA,13.0021,team lynx,2.8,9,win,25,748,764
+2025-08,2025-08-09,173038,European Pro League 29,team lynx,Passion UA,15.7907,team lynx,2.7,12,loss,0,764,752
+2025-08,2025-08-09,173042,European Pro League 29,Zero Tenacity,Kalmychata,3.1897,Zero Tenacity,1.67,2,loss,0,752,750
+2025-08,2025-08-09,173049,European Pro League 29,Zero Tenacity,Kalmychata,-17.3231,Kalmychata,2.13,12,win,25,750,763
+2025-08,2025-08-09,173052,European Pro League 29,TEAM NEXT LEVEL,Zero Tenacity,-9.0364,Zero Tenacity,2.05,6,win,12,763,769
+2025-08,2025-08-09,173056,European Pro League 29,TEAM NEXT LEVEL,Zero Tenacity,-4.4225,Zero Tenacity,2.12,3,loss,0,769,766
+2025-08,2025-08-09,173059,European Pro League 29,TEAM NEXT LEVEL,Zero Tenacity,-61.4836,Zero Tenacity,2.37,47,win,111,766,830
+2025-08,2025-08-09,173061,European Pro League 29,Odium,Aim Possible,-16.9704,Aim Possible,2.45,14,loss,0,830,816
+2025-08,2025-08-09,173065,European Pro League 29,Odium,Aim Possible,4.4682,Odium,1.4,3,win,4,816,817
+2025-08,2025-08-10,173070,CIS Battle 2,4Pirates,eSpoiled,20.9657,4Pirates,1.3,17,win,22,817,822
+2025-08,2025-08-10,173106,CIS Battle 2,4Pirates,eSpoiled,24.8378,4Pirates,1.15,20,win,23,822,825
+2025-08,2025-08-10,173116,CIS Battle 2,Runa Team,Kalmychata,-5.1533,Kalmychata,2.8,4,win,11,825,832
+2025-08,2025-08-10,173122,CIS Battle 2,Runa Team,Kalmychata,22.3987,Runa Team,1.4,18,loss,0,832,814
+2025-08,2025-08-10,173131,CIS Battle 2,Nemiga Gaming,Yellow Submarine,-5.2774,Yellow Submarine,1.22,4,loss,0,814,810
+2025-08,2025-08-10,173133,CIS Battle 2,Nemiga Gaming,Yellow Submarine,12.7816,Nemiga Gaming,3.11,10,loss,0,810,800
+2025-08,2025-08-10,173137,CIS Battle 2,Nemiga Gaming,Yellow Submarine,-11.5816,Yellow Submarine,1.26,9,win,11,800,802
+2025-08,2025-08-10,173069,Lunar Snake Trophy 2,Excel Esports,Yangon Galacticos,-13.6343,Yangon Galacticos,1.75,10,win,17,802,809
+2025-08,2025-08-10,173095,European Pro League 29,Kalmychata,Runa Team,6.9222,Kalmychata,2.78,5,win,13,809,817
+2025-08,2025-08-10,173117,European Pro League 29,Nemiga Gaming,4Pirates,-22.7808,4Pirates,1.45,18,loss,0,817,799
+2025-08,2025-08-10,173121,European Pro League 29,Nemiga Gaming,4Pirates,-37.6720,4Pirates,1.46,30,win,43,799,812
+2025-08,2025-08-10,173127,European Pro League 29,Nemiga Gaming,4Pirates,1.8227,Nemiga Gaming,2.45,1,loss,0,812,811
+2025-08,2025-08-10,173130,European Pro League 29,Level Up,Odium,44.1554,Level Up,2.15,35,win,75,811,851
+2025-08,2025-08-10,173134,European Pro League 29,Level Up,Odium,-21.3288,Odium,1.65,18,loss,0,851,833
+2025-08,2025-08-10,173138,European Pro League 29,Wildcard,Aim Possible,-10.8563,Aim Possible,3.89,9,win,35,833,859
+2025-08,2025-08-10,173142,European Pro League 29,Wildcard,Aim Possible,-84.5874,Aim Possible,2.81,72,win,202,859,989
+2025-08,2025-08-11,173153,Lunar Snake Trophy 2,Protocol 20,Future Esport,-5.5482,Future Esport,2.06,5,loss,0,989,984
+2025-08,2025-08-11,173176,Lunar Snake Trophy 2,Protocol 20,Future Esport,16.0909,Protocol 20,1.7,15,loss,0,984,969
+2025-08,2025-08-11,173182,Lunar Snake Trophy 2,Protocol 20,Future Esport,-26.6652,Future Esport,2.13,25,loss,0,969,944
+2025-08,2025-08-11,173149,European Pro League 29,4Pirates,Odium,-2.5272,Odium,2.27,2,loss,0,944,942
+2025-08,2025-08-11,173214,European Pro League 29,4Pirates,Odium,13.7411,4Pirates,1.38,12,win,16,942,946
+2025-08,2025-08-11,173146,European Pro League 29,Zero Tenacity,Runa Team,22.2353,Zero Tenacity,2.33,21,win,48,946,973
+2025-08,2025-08-11,173225,European Pro League 29,Zero Tenacity,Runa Team,36.4600,Zero Tenacity,2.17,35,win,75,973,1013
+2025-08,2025-08-11,173238,European Pro League 29,team lynx,Zero Tenacity,-47.2444,Zero Tenacity,1.48,47,win,69,1013,1035
+2025-08,2025-08-11,173241,European Pro League 29,team lynx,Zero Tenacity,-20.3785,Zero Tenacity,1.55,21,win,32,1035,1046
+2025-08,2025-08-11,173246,European Pro League 29,Level Up,Wildcard,-33.8751,Wildcard,1.55,35,loss,0,1046,1011
+2025-08,2025-08-11,173255,European Pro League 29,Level Up,Wildcard,-3.3997,Wildcard,1.67,3,loss,0,1011,1008
+2025-08,2025-08-11,173195,CIS Battle 2,Nemiga Gaming,eSpoiled,2.9439,Nemiga Gaming,1.45,2,win,2,1008,1008
+2025-08,2025-08-11,173203,CIS Battle 2,Nemiga Gaming,eSpoiled,13.6549,Nemiga Gaming,1.3,13,win,16,1008,1011
+2025-08,2025-08-11,173217,CIS Battle 2,Nemiga Gaming,Kalmychata,-33.0698,Kalmychata,1.65,33,win,54,1011,1032
+2025-08,2025-08-11,173223,CIS Battle 2,Nemiga Gaming,Kalmychata,-27.3952,Kalmychata,1.59,28,loss,0,1032,1004
+2025-08,2025-08-11,173229,CIS Battle 2,Nemiga Gaming,Kalmychata,1.4256,Nemiga Gaming,2,1,win,2,1004,1005
+2025-08,2025-08-11,173239,CIS Battle 2,Yellow Submarine,4Pirates,8.8768,Yellow Submarine,1.67,8,loss,0,1005,997
+2025-08,2025-08-11,173245,CIS Battle 2,Yellow Submarine,4Pirates,-10.9098,4Pirates,2.01,10,loss,0,997,987
+2025-08,2025-08-11,173250,CIS Battle 2,Yellow Submarine,4Pirates,9.9390,Yellow Submarine,1.68,9,loss,0,987,978
+2025-08,2025-08-12,173261,European Pro League 29,4Pirates,Level Up,6.0792,4Pirates,1.33,5,loss,0,978,973
+2025-08,2025-08-12,173327,European Pro League 29,4Pirates,Level Up,5.8353,4Pirates,1.36,5,loss,0,973,968
+2025-08,2025-08-12,173338,European Pro League 29,TEAM NEXT LEVEL,team lynx,11.4943,TEAM NEXT LEVEL,1.38,11,loss,0,968,957
+2025-08,2025-08-12,173344,European Pro League 29,TEAM NEXT LEVEL,team lynx,-9.6955,team lynx,2.59,9,loss,0,957,948
+2025-08,2025-08-12,173353,European Pro League 29,TEAM NEXT LEVEL,team lynx,16.0565,TEAM NEXT LEVEL,1.46,15,win,21,948,954
+2025-08,2025-08-12,173359,European Pro League 29,Wildcard,Nemiga Gaming,-20.9320,Nemiga Gaming,2.11,19,win,40,954,975
+2025-08,2025-08-12,173363,European Pro League 29,Wildcard,Nemiga Gaming,-8.8780,Nemiga Gaming,1.66,8,loss,0,975,967
+2025-08,2025-08-12,173366,European Pro League 29,Wildcard,Nemiga Gaming,33.6112,Wildcard,1.83,32,loss,0,967,935
+2025-08,2025-08-12,173368,European Pro League 29,TEAM NEXT LEVEL,Kalmychata,24.3559,TEAM NEXT LEVEL,1.9,22,win,41,935,954
+2025-08,2025-08-12,173372,European Pro League 29,TEAM NEXT LEVEL,Kalmychata,-7.8204,Kalmychata,1.85,7,win,12,954,959
+2025-08,2025-08-12,173376,European Pro League 29,TEAM NEXT LEVEL,Kalmychata,-3.4200,Kalmychata,1.81,3,win,5,959,961
+2025-08,2025-08-12,173265,CIS Battle 2,1win Team,Yellow Submarine,-12.6110,Yellow Submarine,2.36,12,loss,0,961,949
+2025-08,2025-08-12,173328,CIS Battle 2,1win Team,Yellow Submarine,7.6997,1win Team,1.42,7,win,9,949,951
+2025-08,2025-08-12,173266,CIS Battle 2,Odium,Runa Team,-6.6719,Runa Team,1.35,6,win,8,951,953
+2025-08,2025-08-12,173345,CIS Battle 2,Odium,Runa Team,-12.9253,Runa Team,1.17,12,win,14,953,955
+2025-08,2025-08-13,173403,Lunar Snake Trophy 2,Yangon Galacticos,Protocol 20,-11.6679,Protocol 20,2.42,11,loss,0,955,944
+2025-08,2025-08-13,173411,Lunar Snake Trophy 2,Yangon Galacticos,Protocol 20,-2.2651,Protocol 20,1.95,2,loss,0,944,942
+2025-08,2025-08-13,173417,Lunar Snake Trophy 2,Yangon Galacticos,Protocol 20,12.1593,Yangon Galacticos,1.71,11,loss,0,942,931
+2025-08,2025-08-13,173424,Lunar Snake Trophy 2,Yangon Galacticos,Protocol 20,13.0818,Yangon Galacticos,1.45,12,win,17,931,936
+2025-08,2025-08-13,173420,European Pro League 29,Zero Tenacity,Passion UA,29.5283,Zero Tenacity,2.02,27,loss,0,936,909
+2025-08,2025-08-13,173430,European Pro League 29,Zero Tenacity,Passion UA,17.1951,Zero Tenacity,1.9,15,loss,0,909,894
+2025-08,2025-08-13,173440,European Pro League 29,Level Up,Nemiga Gaming,5.1638,Level Up,2.11,4,loss,0,894,890
+2025-08,2025-08-13,173447,European Pro League 29,Level Up,Nemiga Gaming,-11.2460,Nemiga Gaming,1.66,10,loss,0,890,880
+2025-08,2025-08-13,173458,European Pro League 29,Level Up,Nemiga Gaming,-15.4991,Nemiga Gaming,1.72,13,win,22,880,889
+2025-08,2025-08-13,173456,European Pro League 29,Runa Team,team lynx,-8.8587,team lynx,2.8,7,win,19,889,901
+2025-08,2025-08-13,173467,European Pro League 29,Runa Team,team lynx,16.4414,Runa Team,1.47,14,loss,0,901,887
+2025-08,2025-08-13,173457,European Pro League 29,Odium,Wildcard,-2.8342,Wildcard,1.42,2,loss,0,887,885
+2025-08,2025-08-13,173476,European Pro League 29,Odium,Wildcard,-6.4082,Wildcard,1.48,5,loss,0,885,880
+2025-08,2025-08-13,173347,CIS Battle 2,Yellow Submarine,4Pirates,17.4706,Yellow Submarine,2.02,15,win,30,880,895
+2025-08,2025-08-13,173448,CIS Battle 2,Yellow Submarine,4Pirates,5.6441,Yellow Submarine,1.78,5,loss,0,895,890
+2025-08,2025-08-13,173454,CIS Battle 2,Yellow Submarine,4Pirates,-16.0094,4Pirates,1.88,14,win,26,890,902
+2025-08,2025-08-13,173351,CIS Battle 2,Odium,Nemiga Gaming,19.0053,Odium,4.4,17,loss,0,902,885
+2025-08,2025-08-13,173466,CIS Battle 2,Odium,Nemiga Gaming,10.2358,Odium,4.2,9,loss,0,885,876
+2025-08,2025-08-14,173350,CIS Battle 2,1win Team,Runa Team,-24.8155,Runa Team,2.76,21,win,57,876,912
+2025-08,2025-08-14,173574,CIS Battle 2,1win Team,Runa Team,-16.0587,Runa Team,3,14,win,42,912,940
+2025-08,2025-08-14,173531,European Pro League 29,Passion UA,TEAM NEXT LEVEL,17.6410,Passion UA,1.62,16,loss,0,940,924
+2025-08,2025-08-14,173541,European Pro League 29,Passion UA,TEAM NEXT LEVEL,-5.6170,TEAM NEXT LEVEL,1.96,5,loss,0,924,919
+2025-08,2025-08-14,173546,European Pro League 29,Passion UA,TEAM NEXT LEVEL,3.9251,Passion UA,1.7,3,loss,0,919,916
+2025-08,2025-08-14,173549,European Pro League 29,Kalmychata,team lynx,22.0935,Kalmychata,1.48,20,loss,0,916,896
+2025-08,2025-08-14,173563,European Pro League 29,Kalmychata,team lynx,4.8370,Kalmychata,1.57,4,win,6,896,898
+2025-08,2025-08-14,173570,European Pro League 29,Kalmychata,team lynx,27.6733,Kalmychata,1.62,24,win,38,898,912
+2025-08,2025-08-14,173575,European Pro League 29,Aim Possible,Nemiga Gaming,-12.8198,Nemiga Gaming,1.32,11,win,14,912,915
+2025-08,2025-08-14,173495,CIS Battle 2,4Pirates,Nemiga Gaming,11.7664,4Pirates,1.45,10,win,14,915,919
+2025-08,2025-08-14,173555,CIS Battle 2,4Pirates,Nemiga Gaming,-9.6997,Nemiga Gaming,2.62,8,loss,0,919,911
+2025-08,2025-08-15,173674,European Pro League 29,Passion UA,Kalmychata,-8.9446,Kalmychata,2.05,8,loss,0,911,903
+2025-08,2025-08-15,173679,European Pro League 29,Passion UA,Kalmychata,-35.6812,Kalmychata,1.99,32,win,63,903,934
+2025-08,2025-08-15,173686,European Pro League 29,Passion UA,Kalmychata,-8.4297,Kalmychata,1.9,7,win,13,934,940
+2025-08,2025-08-15,173645,European Pro League 29,Level Up,Aim Possible,9.7522,Level Up,1.52,9,win,13,940,944
+2025-08,2025-08-15,173654,European Pro League 29,Level Up,Aim Possible,1.4495,Level Up,1.41,1,win,1,944,944
+2025-08,2025-08-15,173587,CIS Battle 2,1win Team,4Pirates,31.9772,1win Team,1.5,30,win,45,944,959
+2025-08,2025-08-15,173652,CIS Battle 2,1win Team,4Pirates,6.0861,1win Team,1.42,5,loss,0,959,954
+2025-08,2025-08-15,173659,CIS Battle 2,1win Team,4Pirates,-8.3026,4Pirates,2.38,7,loss,0,954,947
+2025-08,2025-08-15,173669,CIS Battle 2,Runa Team,1win Team,-11.9150,1win Team,1.75,11,loss,0,947,936
+2025-08,2025-08-15,173681,CIS Battle 2,Runa Team,1win Team,-40.6647,1win Team,1.65,38,loss,0,936,898
+2025-08,2025-08-16,173497,CCT Season 2 Series 4,Yellow Submarine,Zero Tenacity,-62.9304,Zero Tenacity,1.9,56,win,106,898,948
+2025-08,2025-08-16,173756,CCT Season 2 Series 4,Yellow Submarine,Zero Tenacity,-23.4333,Zero Tenacity,1.87,22,win,41,948,967
+2025-08,2025-08-16,173498,CCT Season 2 Series 4,L1ga Team,Kalmychata,-8.2856,Kalmychata,2.25,8,loss,0,967,959
+2025-08,2025-08-16,173779,CCT Season 2 Series 4,L1ga Team,Kalmychata,26.1664,L1ga Team,1.48,25,win,37,959,971
+2025-08,2025-08-16,173791,CCT Season 2 Series 4,eSpoiled,TEAM NEXT LEVEL,30.7495,eSpoiled,2.7,29,loss,0,971,942
+2025-08,2025-08-16,173761,European Pro League 29,Nemiga Gaming,Odium,-5.0488,Odium,4.4,4,win,17,942,955
+2025-08,2025-08-16,173793,European Pro League 29,Nemiga Gaming,Odium,-2.3583,Odium,3.4,2,win,6,955,959
+2025-08,2025-08-16,173689,CCT Season 2 Series 4,Team Yandex,Aim Possible,2.3265,Team Yandex,1.17,2,win,2,959,959
+2025-08,2025-08-16,173729,CCT Season 2 Series 4,Team Yandex,Aim Possible,9.9417,Team Yandex,1.08,9,win,9,959,959
+2025-08,2025-08-17,173787,CCT Season 2 Series 4,Aim Possible,Yellow Submarine,13.7348,Aim Possible,2.82,13,loss,0,959,946
+2025-08,2025-08-17,173841,CCT Season 2 Series 4,Aim Possible,Yellow Submarine,-29.1626,Yellow Submarine,1.16,27,win,31,946,950
+2025-08,2025-08-17,173786,CCT Season 2 Series 4,Team Yandex,Zero Tenacity,-6.7027,Zero Tenacity,2.01,6,win,12,950,956
+2025-08,2025-08-17,173869,CCT Season 2 Series 4,Team Yandex,Zero Tenacity,-13.7253,Zero Tenacity,2.11,13,loss,0,956,943
+2025-08,2025-08-17,173878,CCT Season 2 Series 4,Team Yandex,Zero Tenacity,-14.9616,Zero Tenacity,2.16,14,win,30,943,959
+2025-08,2025-08-17,173840,European Pro League 29,Level Up,Zero Tenacity,14.0675,Level Up,2.27,13,loss,0,959,946
+2025-08,2025-08-17,173848,European Pro League 29,Level Up,Zero Tenacity,-9.1678,Zero Tenacity,1.53,8,win,12,946,950
+2025-08,2025-08-17,173858,European Pro League 29,4Pirates,TEAM NEXT LEVEL,13.4249,4Pirates,1.53,12,loss,0,950,938
+2025-08,2025-08-17,173862,European Pro League 29,4Pirates,TEAM NEXT LEVEL,-3.2986,TEAM NEXT LEVEL,2.22,3,win,6,938,941
+2025-08,2025-08-17,173871,European Pro League 29,Passion UA,Odium,-31.7995,Odium,3.1,29,loss,0,941,912
+2025-08,2025-08-17,173888,European Pro League 29,Passion UA,Odium,12.4593,Passion UA,1.3,11,win,14,912,915
+2025-08,2025-08-17,173872,European Pro League 29,Kalmychata,Nemiga Gaming,-25.0617,Nemiga Gaming,2.17,22,win,47,915,940
+2025-08,2025-08-17,173876,European Pro League 29,Kalmychata,Nemiga Gaming,-11.8937,Nemiga Gaming,2.4,11,loss,0,940,929
+2025-08,2025-08-17,173881,European Pro League 29,Kalmychata,Nemiga Gaming,-7.1518,Nemiga Gaming,2.27,6,loss,0,929,923
+2025-08,2025-08-17,173802,CCT Season 2 Series 4,L1ga Team,TEAM NEXT LEVEL,-18.7036,TEAM NEXT LEVEL,2.5,17,win,42,923,948
+2025-08,2025-08-17,173886,CCT Season 2 Series 4,L1ga Team,TEAM NEXT LEVEL,23.5976,L1ga Team,1.66,22,loss,0,948,926
+2025-08,2025-08-18,173899,CCT Season 2 Series 4,Yellow Submarine,Team Yandex,20.1509,Yellow Submarine,2.44,18,win,43,926,951
+2025-08,2025-08-18,173940,CCT Season 2 Series 4,Yellow Submarine,Team Yandex,-36.2439,Team Yandex,1.62,34,loss,0,951,917
+2025-08,2025-08-18,173900,CCT Season 2 Series 4,Kalmychata,L1ga Team,33.8835,Kalmychata,2.92,31,loss,0,917,886
+2025-08,2025-08-18,173963,CCT Season 2 Series 4,Kalmychata,L1ga Team,5.3495,Kalmychata,3.08,4,loss,0,886,882
+2025-08,2025-08-18,173935,European Pro League 29,Level Up,4Pirates,2.6442,Level Up,2.8,2,win,5,882,885
+2025-08,2025-08-18,173952,European Pro League 29,Level Up,4Pirates,3.7371,Level Up,2.7,3,win,8,885,890
+2025-08,2025-08-18,173962,European Pro League 29,Odium,Nemiga Gaming,16.4903,Odium,2.4,14,loss,0,890,876
+2025-08,2025-08-18,173970,European Pro League 29,Odium,Nemiga Gaming,-14.9964,Nemiga Gaming,1.35,13,win,17,876,880
+2025-08,2025-08-18,173968,European Pro League 29,Zero Tenacity,TEAM NEXT LEVEL,28.3620,Zero Tenacity,1.82,24,win,43,880,899
+2025-08,2025-08-18,173987,European Pro League 29,Zero Tenacity,TEAM NEXT LEVEL,-10.2795,TEAM NEXT LEVEL,1.88,9,win,16,899,906
+2025-08,2025-08-18,173994,European Pro League 29,Zero Tenacity,TEAM NEXT LEVEL,-20.3910,TEAM NEXT LEVEL,1.87,18,win,33,906,921
+2025-08,2025-08-18,173969,European Pro League 29,Passion UA,Kalmychata,27.2063,Passion UA,1.79,25,loss,0,921,896
+2025-08,2025-08-18,174007,European Pro League 29,Passion UA,Kalmychata,17.1619,Passion UA,1.72,15,loss,0,896,881
+2025-08,2025-08-19,173782,FISSURE Universe: Episode 6,Team Spirit,Team Falcons,-13.8961,Team Falcons,2.63,12,loss,0,881,869
+2025-08,2025-08-19,174088,FISSURE Universe: Episode 6,Team Spirit,Team Falcons,-11.9055,Team Falcons,2.22,10,loss,0,869,859
+2025-08,2025-08-19,173783,FISSURE Universe: Episode 6,PARIVISION,Team Liquid,-26.3173,Team Liquid,1.8,22,loss,0,859,837
+2025-08,2025-08-19,174109,FISSURE Universe: Episode 6,PARIVISION,Team Liquid,37.3975,PARIVISION,1.78,31,loss,0,837,806
+2025-08,2025-08-19,173784,FISSURE Universe: Episode 6,BetBoom Team,Gaimin Gladiators,11.5111,BetBoom Team,1.63,9,win,14,806,811
+2025-08,2025-08-19,174126,FISSURE Universe: Episode 6,BetBoom Team,Gaimin Gladiators,-26.0174,Gaimin Gladiators,2.3,21,loss,0,811,790
+2025-08,2025-08-19,173785,FISSURE Universe: Episode 6,Aurora,Team Tidebound,3.2382,Aurora,1.87,2,win,3,790,791
+2025-08,2025-08-19,174139,FISSURE Universe: Episode 6,Aurora,Team Tidebound,7.2636,Aurora,1.87,5,win,9,791,795
+2025-08,2025-08-19,174063,European Pro League 29,Passion UA,Level Up,-4.6722,Level Up,2.2,3,loss,0,795,792
+2025-08,2025-08-19,174079,European Pro League 29,Passion UA,Level Up,11.3551,Passion UA,1.55,8,win,12,792,796
+2025-08,2025-08-19,174096,European Pro League 29,Zero Tenacity,Nemiga Gaming,3.3058,Zero Tenacity,1.55,2,loss,0,796,794
+2025-08,2025-08-19,174119,European Pro League 29,Zero Tenacity,Nemiga Gaming,4.6260,Zero Tenacity,1.48,3,win,4,794,795
+2025-08,2025-08-19,174112,European Pro League 29,TEAM NEXT LEVEL,Kalmychata,2.1015,TEAM NEXT LEVEL,1.58,1,loss,0,795,794
+2025-08,2025-08-19,174131,European Pro League 29,TEAM NEXT LEVEL,Kalmychata,-24.1045,Kalmychata,2.2,19,loss,0,794,775
+2025-08,2025-08-20,173816,FISSURE Universe: Episode 6,Team Spirit,Gaimin Gladiators,40.0308,Team Spirit,1.45,31,win,44,775,788
+2025-08,2025-08-20,174214,FISSURE Universe: Episode 6,Team Spirit,Gaimin Gladiators,-38.0280,Gaimin Gladiators,3.1,29,loss,0,788,759
+2025-08,2025-08-20,173815,FISSURE Universe: Episode 6,PARIVISION,Aurora,3.5844,PARIVISION,1.46,2,loss,0,759,757
+2025-08,2025-08-20,174231,FISSURE Universe: Episode 6,PARIVISION,Aurora,7.1641,PARIVISION,1.78,5,win,8,757,760
+2025-08,2025-08-20,173814,FISSURE Universe: Episode 6,AVULUS,Team Spirit,15.2935,AVULUS,8,11,loss,0,760,749
+2025-08,2025-08-20,174253,FISSURE Universe: Episode 6,AVULUS,Team Spirit,5.8444,AVULUS,5.97,4,loss,0,749,745
+2025-08,2025-08-20,173817,FISSURE Universe: Episode 6,Aurora,Team Liquid,16.6658,Aurora,2.3,12,loss,0,745,733
+2025-08,2025-08-20,174266,FISSURE Universe: Episode 6,Aurora,Team Liquid,27.2726,Aurora,2.15,19,loss,0,733,714
+2025-08,2025-08-20,174279,FISSURE Universe: Episode 6,Team Falcons,AVULUS,-10.9547,AVULUS,4.07,7,loss,0,714,707
+2025-08,2025-08-20,173813,FISSURE Universe: Episode 6,Virtus.pro,Team Liquid,24.8051,Virtus.pro,4.5,17,loss,0,707,690
+2025-08,2025-08-20,174210,FISSURE Universe: Episode 6,Virtus.pro,Team Liquid,29.4138,Virtus.pro,4,20,loss,0,690,670
+2025-08,2025-08-20,173812,FISSURE Universe: Episode 6,Team Falcons,BetBoom Team,-22.1327,BetBoom Team,1.85,14,loss,0,670,656
+2025-08,2025-08-20,174227,FISSURE Universe: Episode 6,Team Falcons,BetBoom Team,-3.1601,BetBoom Team,1.85,2,loss,0,656,654
+2025-08,2025-08-20,173811,FISSURE Universe: Episode 6,Team Tidebound,Virtus.pro,-11.0234,Virtus.pro,3.53,7,loss,0,654,647
+2025-08,2025-08-20,174248,FISSURE Universe: Episode 6,Team Tidebound,Virtus.pro,-3.0228,Virtus.pro,3.82,1,loss,0,647,646
+2025-08,2025-08-20,174267,CCT Season 2 Series 4,MOUZ,L1ga Team,36.6573,MOUZ,1.7,23,loss,0,646,623
+2025-08,2025-08-20,174273,CCT Season 2 Series 4,MOUZ,L1ga Team,-46.8715,L1ga Team,2,29,loss,0,623,594
+2025-08,2025-08-20,174280,CCT Season 2 Series 4,MOUZ,L1ga Team,12.0581,MOUZ,1.57,7,loss,0,594,587
+2025-08,2025-08-20,174205,CCT Season 2 Series 4,4Pirates,Zero Tenacity,3.7194,4Pirates,1.94,2,win,3,587,588
+2025-08,2025-08-20,174212,CCT Season 2 Series 4,4Pirates,Zero Tenacity,6.1107,4Pirates,2,3,loss,0,588,585
+2025-08,2025-08-20,174217,CCT Season 2 Series 4,4Pirates,Zero Tenacity,16.4095,4Pirates,2,9,win,18,585,594
+2025-08,2025-08-20,174239,CCT Season 2 Series 4,OG,Yellow Submarine,29.2534,OG,1.66,17,loss,0,594,577
+2025-08,2025-08-20,174258,CCT Season 2 Series 4,OG,Yellow Submarine,-1.9675,Yellow Submarine,1.71,1,win,1,577,577
+2025-08,2025-08-20,174225,CCT Season 2 Series 4,Passion UA,TEAM NEXT LEVEL,-8.2200,TEAM NEXT LEVEL,1.84,4,win,7,577,580
+2025-08,2025-08-20,174236,CCT Season 2 Series 4,Passion UA,TEAM NEXT LEVEL,3.2081,Passion UA,2.05,1,win,2,580,581
+2025-08,2025-08-20,174245,CCT Season 2 Series 4,Passion UA,TEAM NEXT LEVEL,-33.0231,TEAM NEXT LEVEL,1.87,19,win,35,581,597
+2025-08,2025-08-20,174257,European Pro League 29,Passion UA,Zero Tenacity,-17.2170,Zero Tenacity,1.89,10,win,18,597,605
+2025-08,2025-08-20,174261,European Pro League 29,Passion UA,Zero Tenacity,-33.8027,Zero Tenacity,1.82,20,loss,0,605,585
+2025-08,2025-08-20,174268,European Pro League 29,Passion UA,Zero Tenacity,12.4881,Passion UA,1.85,7,win,12,585,590
+2025-08,2025-08-20,174281,European Pro League 29,TEAM NEXT LEVEL,Passion UA,-12.1177,Passion UA,2.13,7,loss,0,590,583
+2025-08,2025-08-21,173810,FISSURE Universe: Episode 6,Team Liquid,Team Tidebound,13.7651,Team Liquid,1.62,8,win,12,583,587
+2025-08,2025-08-21,174346,FISSURE Universe: Episode 6,Team Liquid,Team Tidebound,36.3935,Team Liquid,1.6,21,win,33,587,599
+2025-08,2025-08-21,173809,FISSURE Universe: Episode 6,Virtus.pro,PARIVISION,-4.2501,PARIVISION,1.17,2,win,2,599,599
+2025-08,2025-08-21,174369,FISSURE Universe: Episode 6,Virtus.pro,PARIVISION,10.4522,Virtus.pro,5.14,6,loss,0,599,593
+2025-08,2025-08-21,173808,FISSURE Universe: Episode 6,Gaimin Gladiators,Team Falcons,24.9963,Gaimin Gladiators,2.08,14,loss,0,593,579
+2025-08,2025-08-21,173807,FISSURE Universe: Episode 6,BetBoom Team,Team Spirit,21.4681,BetBoom Team,2.34,12,loss,0,579,567
+2025-08,2025-08-21,173806,FISSURE Universe: Episode 6,Gaimin Gladiators,AVULUS,-7.5915,AVULUS,3.5,4,loss,0,567,563
+2025-08,2025-08-21,174414,FISSURE Universe: Episode 6,Gaimin Gladiators,AVULUS,-10.4094,AVULUS,3.2,5,loss,0,563,558
+2025-08,2025-08-21,174335,CCT Season 2 Series 4,MOUZ,Zero Tenacity,-32.2814,Zero Tenacity,2.1,18,loss,0,558,540
+2025-08,2025-08-21,174342,CCT Season 2 Series 4,MOUZ,Zero Tenacity,23.2992,MOUZ,1.61,12,loss,0,540,528
+2025-08,2025-08-21,174351,CCT Season 2 Series 4,MOUZ,Zero Tenacity,-18.7630,Zero Tenacity,2.05,9,loss,0,528,519
+2025-08,2025-08-21,174336,CCT Season 2 Series 4,OG,Passion UA,-5.3475,Passion UA,1.85,2,win,3,519,520
+2025-08,2025-08-21,174371,CCT Season 2 Series 4,OG,Passion UA,-12.3662,Passion UA,1.83,6,loss,0,520,514
+2025-08,2025-08-21,174383,CCT Season 2 Series 4,OG,Passion UA,13.7816,OG,1.9,7,win,13,514,520
+2025-08,2025-08-21,174352,CCT Season 2 Series 4,L1ga Team,4Pirates,6.8795,L1ga Team,1.74,3,win,5,520,522
+2025-08,2025-08-21,174403,CCT Season 2 Series 4,L1ga Team,4Pirates,11.5793,L1ga Team,1.52,6,win,9,522,525
+2025-08,2025-08-21,174353,CCT Season 2 Series 4,Yellow Submarine,TEAM NEXT LEVEL,-21.0495,TEAM NEXT LEVEL,1.98,11,win,21,525,535
+2025-08,2025-08-21,174411,CCT Season 2 Series 4,Yellow Submarine,TEAM NEXT LEVEL,4.1389,Yellow Submarine,1.86,2,loss,0,535,533
+2025-08,2025-08-21,174370,European Pro League 29,Kalmychata,TEAM NEXT LEVEL,22.6527,Kalmychata,2.04,12,win,24,533,545
+2025-08,2025-08-21,174379,European Pro League 29,Kalmychata,TEAM NEXT LEVEL,-39.2747,TEAM NEXT LEVEL,1.78,21,win,37,545,561
+2025-08,2025-08-21,174389,European Pro League 29,Kalmychata,TEAM NEXT LEVEL,-5.2563,TEAM NEXT LEVEL,1.71,2,win,3,561,562
+2025-08,2025-08-21,174397,European Pro League 29,Kalmychata,TEAM NEXT LEVEL,10.6482,Kalmychata,2.29,5,loss,0,562,557
+2025-08,2025-08-22,173805,FISSURE Universe: Episode 6,Aurora,Virtus.pro,31.4298,Aurora,1.22,17,win,20,557,560
+2025-08,2025-08-22,174475,FISSURE Universe: Episode 6,Aurora,Virtus.pro,38.5914,Aurora,1.1,21,loss,0,560,539
+2025-08,2025-08-22,173804,FISSURE Universe: Episode 6,Team Tidebound,PARIVISION,-23.7350,PARIVISION,1.82,12,loss,0,539,527
+2025-08,2025-08-22,174494,FISSURE Universe: Episode 6,Team Tidebound,PARIVISION,-21.0556,PARIVISION,1.61,11,win,17,527,533
+2025-08,2025-08-22,173803,FISSURE Universe: Episode 6,AVULUS,BetBoom Team,7.1254,AVULUS,4.2,3,loss,0,533,530
+2025-08,2025-08-22,174515,FISSURE Universe: Episode 6,AVULUS,BetBoom Team,3.1733,AVULUS,4.8,1,loss,0,530,529
+2025-08,2025-08-22,174502,CCT Season 2 Series 4,Yellow Submarine,MOUZ,47.7298,Yellow Submarine,2.4,25,loss,0,529,504
+2025-08,2025-08-22,174521,CCT Season 2 Series 4,Yellow Submarine,MOUZ,22.7395,Yellow Submarine,2.42,11,win,26,504,519
+2025-08,2025-08-22,174527,CCT Season 2 Series 4,Yellow Submarine,MOUZ,8.0179,Yellow Submarine,2.31,4,win,9,519,524
+2025-08,2025-08-22,174489,CCT Season 2 Series 4,4Pirates,OG,14.7359,4Pirates,1.92,7,loss,0,524,517
+2025-08,2025-08-22,174495,CCT Season 2 Series 4,4Pirates,OG,18.4149,4Pirates,2.01,9,loss,0,517,508
+2025-08,2025-08-22,174536,CCT Season 2 Series 4,L1ga Team,TEAM NEXT LEVEL,5.3263,L1ga Team,1.81,2,loss,0,508,506
+2025-08,2025-08-23,174484,FISSURE Universe: Episode 6,Team Spirit,Team Liquid,-23.9209,Team Liquid,2.2,12,loss,0,506,494
+2025-08,2025-08-23,174625,FISSURE Universe: Episode 6,Team Spirit,Team Liquid,-14.4323,Team Liquid,2.24,7,win,15,494,502
+2025-08,2025-08-23,174628,FISSURE Universe: Episode 6,Team Spirit,Team Liquid,-17.7796,Team Liquid,2.08,8,loss,0,502,494
+2025-08,2025-08-23,174503,FISSURE Universe: Episode 6,Team Falcons,Aurora,-4.2899,Aurora,2.4,2,loss,0,494,492
+2025-08,2025-08-23,174604,FISSURE Universe: Episode 6,Team Falcons,Aurora,-27.8677,Aurora,2.59,13,loss,0,492,479
+2025-08,2025-08-23,174616,FISSURE Universe: Episode 6,PARIVISION,BetBoom Team,-12.6281,BetBoom Team,2.25,6,loss,0,479,473
+2025-08,2025-08-23,174543,EPL World Series: Southeast Asia S8,The MongolZ,InterActive Philippines,7.3460,The MongolZ,2.41,3,win,7,473,477
+2025-08,2025-08-23,174559,EPL World Series: Southeast Asia S8,The MongolZ,InterActive Philippines,14.2772,The MongolZ,2.03,6,win,12,477,483
+2025-08,2025-08-23,174586,EPL World Series: Southeast Asia S8,Kopite,Carstensz Esports,-9.6092,Carstensz Esports,2.18,4,loss,0,483,479
+2025-08,2025-08-23,174593,EPL World Series: Southeast Asia S8,Kopite,Carstensz Esports,8.7860,Kopite,1.69,4,win,6,479,481
+2025-08,2025-08-23,174610,CCT Season 2 Series 4,Yellow Submarine,OG,-4.3632,OG,1.92,2,win,3,481,482
+2025-08,2025-08-23,174613,CCT Season 2 Series 4,Yellow Submarine,OG,-16.5310,OG,1.89,7,win,13,482,488
+2025-08,2025-08-23,174620,CCT Season 2 Series 4,OG,L1ga Team,-8.0038,L1ga Team,1.83,3,loss,0,488,485
+2025-08,2025-08-23,174624,CCT Season 2 Series 4,OG,L1ga Team,-10.0684,L1ga Team,1.95,4,win,7,485,488
+2025-08,2025-08-23,174631,CCT Season 2 Series 4,OG,L1ga Team,-9.8495,L1ga Team,1.97,4,loss,0,488,484
+2025-08,2025-08-23,174627,FISSURE Universe: Episode 6,Team Falcons,PARIVISION,-47.4408,PARIVISION,1.85,22,win,40,484,502
+2025-08,2025-08-23,174637,FISSURE Universe: Episode 6,Team Falcons,PARIVISION,-26.9740,PARIVISION,1.7,13,loss,0,502,489
+2025-08,2025-08-23,174640,FISSURE Universe: Episode 6,Team Falcons,PARIVISION,-3.7534,PARIVISION,1.78,1,loss,0,489,488
+2025-08,2025-08-24,174642,EPL World Series: Southeast Asia S8,InterActive Philippines,Kopite,-3.0911,Kopite,1.35,1,loss,0,488,487
+2025-08,2025-08-24,174656,EPL World Series: Southeast Asia S8,InterActive Philippines,Kopite,-24.0952,Kopite,1.43,11,win,15,487,491
+2025-08,2025-08-24,174663,EPL World Series: Southeast Asia S8,InterActive Philippines,Kopite,-33.8795,Kopite,1.35,16,win,21,491,496
+2025-08,2025-08-24,174670,EPL World Series: Southeast Asia S8,Carstensz Esports,The MongolZ,-3.3014,The MongolZ,1.38,1,win,1,496,496
+2025-08,2025-08-24,174696,CCT Season 2 Series 4,TEAM NEXT LEVEL,OG,3.1678,TEAM NEXT LEVEL,1.83,1,loss,0,496,495
+2025-08,2025-08-24,174701,CCT Season 2 Series 4,TEAM NEXT LEVEL,OG,5.5584,TEAM NEXT LEVEL,1.99,2,win,3,495,496
+2025-08,2025-08-24,174707,CCT Season 2 Series 4,TEAM NEXT LEVEL,OG,20.0286,TEAM NEXT LEVEL,1.86,9,loss,0,496,487
+2025-08,2025-08-24,174648,FISSURE Universe: Episode 6,Team Liquid,Team Falcons,-8.9168,Team Falcons,1.92,4,win,7,487,490
+2025-08,2025-08-24,174697,FISSURE Universe: Episode 6,Team Liquid,Team Falcons,-17.0390,Team Falcons,1.95,8,win,15,490,497
+2025-08,2025-08-24,174704,FISSURE Universe: Episode 6,Team Spirit,Team Falcons,-17.7320,Team Falcons,2.9,8,win,23,497,512
+2025-08,2025-08-24,174714,FISSURE Universe: Episode 6,Team Spirit,Team Falcons,-16.4520,Team Falcons,2.28,8,win,18,512,522
+2025-08,2025-08-24,174719,FISSURE Universe: Episode 6,Team Spirit,Team Falcons,-24.2143,Team Falcons,2.12,12,win,25,522,535
+2025-08,2025-08-25,174729,EPL World Series: Southeast Asia S8,REKONIX,InterActive Philippines,2.4595,REKONIX,1.28,1,win,1,535,535
+2025-08,2025-08-25,174749,EPL World Series: Southeast Asia S8,REKONIX,InterActive Philippines,-32.5806,InterActive Philippines,4.43,17,loss,0,535,518
+2025-08,2025-08-25,174721,EPL World Series: Southeast Asia S8,The MongolZ,Ivory,-20.9661,Ivory,1.84,10,win,18,518,526
+2025-08,2025-08-25,174776,EPL World Series: Southeast Asia S8,The MongolZ,Ivory,-7.4734,Ivory,1.68,3,win,5,526,528
+2025-08,2025-08-25,174730,CIS Battle 2,BanyaPivoSamogon,L1ga Team,42.6450,BanyaPivoSamogon,3,22,loss,0,528,506
+2025-08,2025-08-25,174780,CIS Battle 2,BanyaPivoSamogon,L1ga Team,10.2626,BanyaPivoSamogon,3.2,5,loss,0,506,501
+2025-08,2025-08-25,174731,CIS Battle 2,Zero Tenacity,Kalmychata,-2.2271,Kalmychata,2.03,1,loss,0,501,500
+2025-08,2025-08-25,174793,CIS Battle 2,Zero Tenacity,Kalmychata,-6.5539,Kalmychata,2.2,3,loss,0,500,497
+2025-08,2025-08-25,174732,CIS Battle 2,Yellow Submarine,eSpoiled,2.0502,Yellow Submarine,1.29,1,win,1,497,497
+2025-08,2025-08-25,174804,CIS Battle 2,Yellow Submarine,eSpoiled,-3.6758,eSpoiled,3.5,1,loss,0,497,496
+2025-08,2025-08-25,174733,CIS Battle 2,Runa Team,eSpoiled,-14.1821,eSpoiled,3.38,7,loss,0,496,489
+2025-08,2025-08-25,174814,CIS Battle 2,Runa Team,eSpoiled,-8.5760,eSpoiled,5.05,4,win,20,489,505
+2025-08,2025-08-25,174820,CIS Battle 2,Runa Team,eSpoiled,25.5686,Runa Team,1.4,12,loss,0,505,493
+2025-08,2025-08-26,174798,CIS Battle 2,Kalmychata,eSpoiled,4.7738,Kalmychata,1.71,2,win,3,493,494
+2025-08,2025-08-26,174879,CIS Battle 2,Kalmychata,eSpoiled,9.1009,Kalmychata,1.52,4,win,6,494,496
+2025-08,2025-08-26,174890,CIS Battle 2,Zero Tenacity,eSpoiled,-5.1461,eSpoiled,2.8,2,loss,0,496,494
+2025-08,2025-08-26,174907,CIS Battle 2,Runa Team,Zero Tenacity,-10.2439,Zero Tenacity,1.65,5,loss,0,494,489
+2025-08,2025-08-26,174915,CIS Battle 2,Runa Team,BanyaPivoSamogon,-13.1185,BanyaPivoSamogon,3.32,6,win,19,489,502
+2025-08,2025-08-26,174827,EPL World Series: Southeast Asia S8,Carstensz Esports,REKONIX,2.8856,Carstensz Esports,3.55,1,loss,0,502,501
+2025-08,2025-08-26,174849,EPL World Series: Southeast Asia S8,Carstensz Esports,REKONIX,-16.6890,REKONIX,1.21,8,win,9,501,502
+2025-08,2025-08-26,174857,EPL World Series: Southeast Asia S8,Veroja,Kopite,-4.1465,Kopite,1.35,2,win,2,502,502
+2025-08,2025-08-26,174867,EPL World Series: Southeast Asia S8,Veroja,Kopite,-16.2869,Kopite,1.4,8,loss,0,502,494
+2025-08,2025-08-26,174873,EPL World Series: Southeast Asia S8,Veroja,Kopite,-12.1254,Kopite,1.45,5,win,7,494,496
+2025-08,2025-08-27,174899,CIS Battle 2,L1ga Team,eSpoiled,15.7337,L1ga Team,1.63,7,win,11,496,500
+2025-08,2025-08-27,174972,CIS Battle 2,L1ga Team,eSpoiled,8.5039,L1ga Team,1.16,4,win,4,500,500
+2025-08,2025-08-27,174900,CIS Battle 2,Yellow Submarine,Zero Tenacity,-22.9857,Zero Tenacity,1.63,11,loss,0,500,489
+2025-08,2025-08-27,174983,CIS Battle 2,Yellow Submarine,Zero Tenacity,-2.3557,Zero Tenacity,1.94,1,loss,0,489,488
+2025-08,2025-08-27,174989,CIS Battle 2,L1ga Team,Runa Team,-24.9704,Runa Team,2.3,12,loss,0,488,476
+2025-08,2025-08-27,174997,CIS Battle 2,L1ga Team,Runa Team,-17.6048,Runa Team,2.5,8,loss,0,476,468
+2025-08,2025-08-27,174931,CIS Battle 2,Runa Team,Kalmychata,15.5626,Runa Team,1.65,7,win,11,468,472
+2025-08,2025-08-27,175005,CIS Battle 2,Runa Team,Kalmychata,-23.5380,Kalmychata,1.94,11,loss,0,472,461
+2025-08,2025-08-27,174923,EPL World Series: Southeast Asia S8,Carstensz Esports,InterActive Philippines,6.2652,Carstensz Esports,1.64,2,win,3,461,462
+2025-08,2025-08-27,174940,EPL World Series: Southeast Asia S8,Carstensz Esports,InterActive Philippines,-3.5643,InterActive Philippines,2.11,1,loss,0,462,461
+2025-08,2025-08-27,174955,EPL World Series: Southeast Asia S8,Veroja,Carstensz Esports,22.5177,Veroja,1.89,10,loss,0,461,451
+2025-08,2025-08-27,174961,EPL World Series: Southeast Asia S8,Veroja,Carstensz Esports,22.3658,Veroja,2.09,10,loss,0,451,441
+2025-08,2025-08-28,175032,EPL World Series: Southeast Asia S8,InterActive Philippines,Ivory,-14.4524,Ivory,1.34,6,win,8,441,443
+2025-08,2025-08-28,175039,EPL World Series: Southeast Asia S8,InterActive Philippines,Ivory,11.5707,InterActive Philippines,2.9,5,loss,0,443,438
+2025-08,2025-08-28,175023,EPL World Series: Southeast Asia S8,REKONIX,The MongolZ,15.3252,REKONIX,1.33,6,win,7,438,439
+2025-08,2025-08-28,175055,EPL World Series: Southeast Asia S8,REKONIX,The MongolZ,-19.8199,The MongolZ,3.2,8,win,25,439,456
+2025-08,2025-08-28,175059,EPL World Series: Southeast Asia S8,REKONIX,The MongolZ,28.6651,REKONIX,1.47,13,win,19,456,462
+2025-08,2025-08-28,174930,CIS Battle 2,Runa Team,Yellow Submarine,15.5169,Runa Team,2.05,7,loss,0,462,455
+2025-08,2025-08-28,175066,CIS Battle 2,Runa Team,Yellow Submarine,8.9914,Runa Team,2.7,4,win,10,455,461
+2025-08,2025-08-28,175075,CIS Battle 2,Runa Team,Yellow Submarine,7.6323,Runa Team,2.48,3,win,7,461,465
+2025-08,2025-08-28,174929,CIS Battle 2,Zero Tenacity,BanyaPivoSamogon,-14.4486,BanyaPivoSamogon,2.4,6,loss,0,465,459
+2025-08,2025-08-28,175069,CIS Battle 2,Zero Tenacity,BanyaPivoSamogon,-12.3916,BanyaPivoSamogon,2.7,5,win,13,459,467
+2025-08,2025-08-28,175076,CIS Battle 2,Zero Tenacity,BanyaPivoSamogon,-18.7968,BanyaPivoSamogon,2.5,8,win,20,467,479
+2025-08,2025-08-28,174928,CIS Battle 2,L1ga Team,Zero Tenacity,-25.5813,Zero Tenacity,2.8,12,loss,0,479,467
+2025-08,2025-08-28,175106,CIS Battle 2,4Pirates,Kalmychata,7.1941,4Pirates,1.7,3,loss,0,467,464
+2025-08,2025-08-29,175158,EPL World Series: Southeast Asia S8,Carstensz Esports,Ivory,-54.4693,Ivory,1.28,25,win,32,464,471
+2025-08,2025-08-29,175087,CIS Battle 2,4Pirates,eSpoiled,5.4661,4Pirates,1.55,2,win,3,471,472
+2025-08,2025-08-29,175176,CIS Battle 2,4Pirates,Zero Tenacity,-7.3701,Zero Tenacity,1.8,3,loss,0,472,469
+2025-08,2025-08-29,175181,CIS Battle 2,4Pirates,Zero Tenacity,-28.5377,Zero Tenacity,1.82,13,loss,0,469,456
+2025-08,2025-08-29,175185,CIS Battle 2,L1ga Team,Yellow Submarine,-6.8411,Yellow Submarine,2.12,3,loss,0,456,453
+2025-08,2025-08-29,175196,CIS Battle 2,L1ga Team,Yellow Submarine,36.1028,L1ga Team,1.62,16,win,25,453,462
+2025-08,2025-08-29,175202,CIS Battle 2,Yellow Submarine,Kalmychata,-10.4491,Kalmychata,3.34,4,win,13,462,471
+2025-08,2025-08-29,175205,CIS Battle 2,Yellow Submarine,Kalmychata,-6.9387,Kalmychata,2.6,3,win,7,471,475
+2025-08,2025-08-29,175124,EPL World Series: Southeast Asia S8,The MongolZ,Veroja,-11.2510,Veroja,3.1,5,win,15,475,485
+2025-08,2025-08-29,175138,EPL World Series: Southeast Asia S8,The MongolZ,Veroja,-3.5900,Veroja,3.1,1,loss,0,485,484
+2025-08,2025-08-29,175142,EPL World Series: Southeast Asia S8,The MongolZ,Veroja,12.4835,The MongolZ,1.26,6,win,7,484,485
+2025-08,2025-08-30,175279,CIS Battle 2,eSpoiled,BanyaPivoSamogon,-33.2792,BanyaPivoSamogon,1.48,16,win,23,485,492
+2025-08,2025-08-30,175284,CIS Battle 2,eSpoiled,BanyaPivoSamogon,5.3861,eSpoiled,2.71,2,loss,0,492,490
+2025-08,2025-08-30,175292,CIS Battle 2,Yellow Submarine,BanyaPivoSamogon,-10.7178,BanyaPivoSamogon,2.45,5,win,12,490,497
+2025-08,2025-08-30,175211,CIS Battle 2,L1ga Team,4Pirates,-18.4708,4Pirates,3.3,9,loss,0,497,488
+2025-08,2025-08-30,175306,CIS Battle 2,L1ga Team,4Pirates,25.3218,L1ga Team,1.33,12,win,15,488,491
+2025-08,2025-08-30,175212,CIS Battle 2,4Pirates,Yellow Submarine,27.8352,4Pirates,2.05,13,loss,0,491,478
+2025-08,2025-08-30,175310,CIS Battle 2,4Pirates,Yellow Submarine,-10.2206,Yellow Submarine,1.51,4,win,6,478,480
+2025-08,2025-08-30,175217,EPL World Series: Southeast Asia S8,Veroja,Ivory,9.8510,Veroja,2.69,4,loss,0,480,476
+2025-08,2025-08-30,175238,EPL World Series: Southeast Asia S8,Veroja,Ivory,23.3113,Veroja,3,11,loss,0,476,465
+2025-08,2025-08-30,175263,EPL World Series: Southeast Asia S8,REKONIX,Kopite,-26.1011,Kopite,3.2,12,win,38,465,491
+2025-08,2025-08-30,175274,EPL World Series: Southeast Asia S8,REKONIX,Kopite,-4.8610,Kopite,2.69,2,win,5,491,494
+2025-08,2025-08-31,175316,EPL World Series: Southeast Asia S8,The MongolZ,Kopite,-10.1778,Kopite,1.58,5,loss,0,494,489
+2025-08,2025-08-31,175332,EPL World Series: Southeast Asia S8,The MongolZ,Kopite,-8.7850,Kopite,1.58,4,win,6,489,491
+2025-08,2025-08-31,175338,EPL World Series: Southeast Asia S8,The MongolZ,Kopite,11.3871,The MongolZ,2.17,5,win,10,491,496
+2025-08,2025-08-31,175296,CIS Battle 2,Runa Team,4Pirates,16.0595,Runa Team,1.77,7,loss,0,496,489
+2025-08,2025-08-31,175354,CIS Battle 2,Runa Team,4Pirates,-35.6489,4Pirates,2.38,17,win,40,489,512
+2025-08,2025-08-31,175297,CIS Battle 2,4Pirates,BanyaPivoSamogon,25.6856,4Pirates,1.55,13,loss,0,512,499
+2025-08,2025-08-31,175366,CIS Battle 2,4Pirates,BanyaPivoSamogon,16.7498,4Pirates,1.56,8,loss,0,499,491
+2025-08,2025-08-31,175298,CIS Battle 2,Kalmychata,BanyaPivoSamogon,-22.5193,BanyaPivoSamogon,2.19,11,loss,0,491,480
+2025-08,2025-08-31,175374,CIS Battle 2,Kalmychata,BanyaPivoSamogon,11.4020,Kalmychata,1.45,5,loss,0,480,475
+2025-08,2025-08-31,175376,CIS Battle 2,Kalmychata,BanyaPivoSamogon,6.6486,Kalmychata,1.54,3,win,4,475,476
+2025-08,2025-08-31,175299,CIS Battle 2,L1ga Team,Kalmychata,-19.0728,Kalmychata,3.04,9,win,27,476,494
+2025-08,2025-08-31,175379,CIS Battle 2,L1ga Team,Kalmychata,-41.9882,Kalmychata,3.2,20,loss,0,494,474
+2025-08,2025-08-31,175382,CIS Battle 2,L1ga Team,Kalmychata,-8.2654,Kalmychata,2.8,3,loss,0,474,471
+2025-09,2025-09-01,174946,EPL World Series: Southeast Asia S8,Veroja,REKONIX,14.4484,Veroja,3.36,6,loss,0,471,465
+2025-09,2025-09-01,175428,EPL World Series: Southeast Asia S8,Veroja,REKONIX,-12.2320,REKONIX,1.25,5,win,6,465,466
+2025-09,2025-09-01,175442,EPL World Series: Southeast Asia S8,Kopite,Ivory,26.8748,Kopite,2.25,12,win,27,466,481
+2025-09,2025-09-01,175447,EPL World Series: Southeast Asia S8,Kopite,Ivory,-9.0305,Ivory,1.6,4,loss,0,481,477
+2025-09,2025-09-01,175385,EPL World Series: Southeast Asia S8,REKONIX,Ivory,-5.8493,Ivory,2.5,2,win,5,477,480
+2025-09,2025-09-01,175408,EPL World Series: Southeast Asia S8,REKONIX,Ivory,-29.8171,Ivory,2.28,14,loss,0,480,466
+2025-09,2025-09-01,175414,EPL World Series: Southeast Asia S8,REKONIX,Ivory,-19.9576,Ivory,2.5,9,loss,0,466,457
+2025-09,2025-09-01,175392,CIS Battle 2,OG,L1ga Team,12.1231,OG,1.82,5,win,9,457,461
+2025-09,2025-09-01,175459,CIS Battle 2,OG,L1ga Team,-9.4139,L1ga Team,1.82,4,loss,0,461,457
+2025-09,2025-09-01,175391,CIS Battle 2,Kalmychata,Yellow Submarine,16.2967,Kalmychata,2.2,7,loss,0,457,450
+2025-09,2025-09-01,175444,CIS Battle 2,Kalmychata,Yellow Submarine,6.7335,Kalmychata,2.25,3,loss,0,450,447
+2025-09,2025-09-01,175457,CIS Battle 2,Kalmychata,4Pirates,-17.0854,4Pirates,1.88,7,loss,0,447,440
+2025-09,2025-09-01,175471,CIS Battle 2,Kalmychata,4Pirates,-26.9200,4Pirates,2.1,11,loss,0,440,429
+2025-09,2025-09-02,175507,EPL World Series: Southeast Asia S8,InterActive Philippines,Veroja,-3.7716,Veroja,1.95,1,loss,0,429,428
+2025-09,2025-09-02,175517,EPL World Series: Southeast Asia S8,InterActive Philippines,Veroja,20.0356,InterActive Philippines,1.9,8,loss,0,428,420
+2025-09,2025-09-02,175523,EPL World Series: Southeast Asia S8,InterActive Philippines,Veroja,-27.2996,Veroja,1.9,11,win,20,420,429
+2025-09,2025-09-02,175545,Americas Convergence Series 2,Team Waska,OG.LATAM,-3.8235,OG.LATAM,2.12,1,win,2,429,430
+2025-09,2025-09-02,175574,Americas Convergence Series 2,Team Waska,OG.LATAM,-18.9172,OG.LATAM,2.12,8,win,16,430,438
+2025-09,2025-09-02,175590,Americas Convergence Series 2,ALLSTARS,Estar backs,-2.7327,Estar backs,1.41,1,win,1,438,438
+2025-09,2025-09-02,175465,CIS Battle 2,L1ga Team,BanyaPivoSamogon,-11.5729,BanyaPivoSamogon,3.4,5,loss,0,438,433
+2025-09,2025-09-02,175540,CIS Battle 2,L1ga Team,BanyaPivoSamogon,-15.8260,BanyaPivoSamogon,3.58,6,loss,0,433,427
+2025-09,2025-09-02,175484,CIS Battle 2,OG,Yellow Submarine,-16.9461,Yellow Submarine,1.96,7,loss,0,427,420
+2025-09,2025-09-02,175554,CIS Battle 2,OG,Yellow Submarine,-16.9182,Yellow Submarine,2.31,7,loss,0,420,413
+2025-09,2025-09-02,175565,CIS Battle 2,L1ga Team,Kalmychata,9.1766,L1ga Team,1.48,3,win,4,413,414
+2025-09,2025-09-02,175568,CIS Battle 2,L1ga Team,Kalmychata,-20.7637,Kalmychata,2.68,8,win,21,414,427
+2025-09,2025-09-02,175571,CIS Battle 2,L1ga Team,Kalmychata,-27.3803,Kalmychata,2.32,11,loss,0,427,416
+2025-09,2025-09-03,175652,Americas Convergence Series 2,Tortu Ninjas,Team Waska,-9.2227,Team Waska,1.51,3,win,4,416,417
+2025-09,2025-09-03,175681,Americas Convergence Series 2,TeamCompromiso,Pacific eSports,7.3082,TeamCompromiso,1.5,3,loss,0,417,414
+2025-09,2025-09-03,175684,Americas Convergence Series 2,TeamCompromiso,Pacific eSports,24.0774,TeamCompromiso,1.49,9,win,13,414,418
+2025-09,2025-09-03,175689,Americas Convergence Series 2,TeamCompromiso,Pacific eSports,6.5686,TeamCompromiso,1.47,2,loss,0,418,416
+2025-09,2025-09-03,175575,CIS Battle 2,Yellow Submarine,L1ga Team,-31.9620,L1ga Team,1.65,13,win,21,416,424
+2025-09,2025-09-03,175646,CIS Battle 2,Yellow Submarine,L1ga Team,32.6421,Yellow Submarine,2.33,13,loss,0,424,411
+2025-09,2025-09-03,175584,EPL World Series: Southeast Asia S8,Kopite,Ivory,-8.9339,Ivory,1.7,3,win,5,411,413
+2025-09,2025-09-03,175634,EPL World Series: Southeast Asia S8,Kopite,Ivory,-19.6262,Ivory,2.01,8,win,16,413,421
+2025-09,2025-09-03,175583,EPL World Series: Southeast Asia S8,REKONIX,The MongolZ,2.9790,REKONIX,1.22,1,win,1,421,421
+2025-09,2025-09-03,175604,EPL World Series: Southeast Asia S8,REKONIX,The MongolZ,-14.7828,The MongolZ,2.88,6,win,17,421,432
+2025-09,2025-09-03,175611,EPL World Series: Southeast Asia S8,REKONIX,The MongolZ,9.8283,REKONIX,1.71,4,win,6,432,434
+2025-09,2025-09-03,175653,CIS Battle 2,OG,L1ga Team,9.7687,OG,1.7,4,win,6,434,436
+2025-09,2025-09-03,175666,CIS Battle 2,OG,L1ga Team,7.8948,OG,1.41,3,win,4,436,437
+2025-09,2025-09-03,175672,CIS Battle 2,OG,L1ga Team,-26.1698,L1ga Team,2.8,11,loss,0,437,426
+2025-09,2025-09-04,175813,Americas Convergence Series 2,Estar backs,TeamCompromiso,-29.9471,TeamCompromiso,2.14,12,win,25,426,439
+2025-09,2025-09-04,175822,Americas Convergence Series 2,Estar backs,TeamCompromiso,-5.4160,TeamCompromiso,1.92,2,win,3,439,440
+2025-09,2025-09-04,175556,The International 2025,Aurora,Xtreme Gaming,-15.5686,Xtreme Gaming,2.1,6,win,12,440,446
+2025-09,2025-09-04,175557,The International 2025,Team Spirit,Wildcard,-29.6295,Wildcard,6.15,13,loss,0,446,433
+2025-09,2025-09-04,175730,The International 2025,Team Spirit,Wildcard,-2.5886,Wildcard,6.6,1,loss,0,433,432
+2025-09,2025-09-04,175558,The International 2025,Team Falcons,Team Nemesis,-6.2993,Team Nemesis,4.82,2,loss,0,432,430
+2025-09,2025-09-04,175728,The International 2025,Team Falcons,Team Nemesis,-5.9311,Team Nemesis,4.64,2,win,9,430,437
+2025-09,2025-09-04,175736,The International 2025,Team Falcons,Team Nemesis,-21.0280,Team Nemesis,3.46,9,loss,0,437,428
+2025-09,2025-09-04,175729,The International 2025,Tundra Esports,Yakutou Brothers,-14.0032,Yakutou Brothers,3.3,5,win,16,428,439
+2025-09,2025-09-04,175560,The International 2025,PARIVISION,Heroic,18.8355,PARIVISION,1.3,8,win,10,439,441
+2025-09,2025-09-04,175747,The International 2025,PARIVISION,Heroic,-10.3166,Heroic,3.3,4,loss,0,441,437
+2025-09,2025-09-04,175561,The International 2025,Team Liquid,BOOM Esports,-27.9381,BOOM Esports,4.5,12,loss,0,437,425
+2025-09,2025-09-04,175745,The International 2025,Team Liquid,BOOM Esports,22.5017,Team Liquid,1.2,9,loss,0,425,416
+2025-09,2025-09-04,175759,The International 2025,Team Liquid,BOOM Esports,-2.8206,BOOM Esports,4.4,1,loss,0,416,415
+2025-09,2025-09-04,175562,The International 2025,BetBoom Team,Nigma Galaxy,10.3603,BetBoom Team,1.5,4,loss,0,415,411
+2025-09,2025-09-04,175761,The International 2025,BetBoom Team,Nigma Galaxy,7.8942,BetBoom Team,1.55,3,win,4,411,412
+2025-09,2025-09-04,175773,The International 2025,BetBoom Team,Nigma Galaxy,19.3647,BetBoom Team,1.58,7,loss,0,412,405
+2025-09,2025-09-04,175563,The International 2025,Team Tidebound,Natus Vincere,-16.1903,Natus Vincere,2.61,6,loss,0,405,399
+2025-09,2025-09-04,175753,The International 2025,Team Tidebound,Natus Vincere,-11.6224,Natus Vincere,2.34,4,win,9,399,404
+2025-09,2025-09-04,175760,The International 2025,Team Tidebound,Natus Vincere,34.7250,Team Tidebound,1.65,14,win,23,404,413
+2025-09,2025-09-04,175749,The International 2025,Team Falcons,Tundra Esports,11.9940,Team Falcons,1.58,4,win,6,413,415
+2025-09,2025-09-04,175769,The International 2025,Team Falcons,Tundra Esports,-36.5608,Tundra Esports,2.32,15,win,34,415,434
+2025-09,2025-09-04,175779,The International 2025,Team Falcons,Tundra Esports,-22.9477,Tundra Esports,2.16,9,loss,0,434,425
+2025-09,2025-09-04,175793,The International 2025,Aurora,Wildcard,8.1440,Aurora,1.15,3,win,3,425,425
+2025-09,2025-09-04,175751,The International 2025,Yakutou Brothers,Team Nemesis,-4.0440,Team Nemesis,2.25,1,loss,0,425,424
+2025-09,2025-09-04,175778,The International 2025,Yakutou Brothers,Team Nemesis,13.0700,Yakutou Brothers,1.71,5,loss,0,424,419
+2025-09,2025-09-04,175783,The International 2025,Yakutou Brothers,Team Nemesis,-9.7709,Team Nemesis,1.87,4,loss,0,419,415
+2025-09,2025-09-04,175752,The International 2025,Team Spirit,Xtreme Gaming,-24.6941,Xtreme Gaming,2.8,10,win,28,415,433
+2025-09,2025-09-04,175775,The International 2025,Team Spirit,Xtreme Gaming,-8.4274,Xtreme Gaming,2.63,3,loss,0,433,430
+2025-09,2025-09-04,175782,The International 2025,Team Spirit,Xtreme Gaming,27.9773,Team Spirit,1.47,12,loss,0,430,418
+2025-09,2025-09-04,175785,The International 2025,PARIVISION,Nigma Galaxy,8.6126,PARIVISION,1.3,3,win,3,418,418
+2025-09,2025-09-04,175796,The International 2025,PARIVISION,Nigma Galaxy,-16.3371,Nigma Galaxy,3.01,6,loss,0,418,412
+2025-09,2025-09-04,175786,The International 2025,Team Liquid,Team Tidebound,-4.7314,Team Tidebound,2.35,1,win,2,412,413
+2025-09,2025-09-04,175799,The International 2025,Team Liquid,Team Tidebound,17.0032,Team Liquid,1.6,7,loss,0,413,406
+2025-09,2025-09-04,175787,The International 2025,BOOM Esports,BetBoom Team,6.2382,BOOM Esports,3.18,2,loss,0,406,404
+2025-09,2025-09-04,175804,The International 2025,BOOM Esports,BetBoom Team,18.7983,BOOM Esports,2.89,7,loss,0,404,397
+2025-09,2025-09-04,175788,The International 2025,Natus Vincere,Heroic,-21.1727,Heroic,1.9,8,loss,0,397,389
+2025-09,2025-09-05,175807,The International 2025,Xtreme Gaming,Team Falcons,7.3095,Xtreme Gaming,2.35,2,loss,0,389,387
+2025-09,2025-09-05,175862,The International 2025,Xtreme Gaming,Team Falcons,-10.2447,Team Falcons,1.86,3,loss,0,387,384
+2025-09,2025-09-05,175874,The International 2025,Xtreme Gaming,Team Falcons,21.9482,Xtreme Gaming,1.88,8,win,15,384,391
+2025-09,2025-09-05,175809,The International 2025,Team Spirit,Tundra Esports,-30.0819,Tundra Esports,2.41,11,win,26,391,406
+2025-09,2025-09-05,175859,The International 2025,Team Spirit,Tundra Esports,21.5175,Team Spirit,1.55,8,win,12,406,410
+2025-09,2025-09-05,175869,The International 2025,Team Spirit,Tundra Esports,-41.2245,Tundra Esports,2.9,16,loss,0,410,394
+2025-09,2025-09-05,175808,The International 2025,Aurora,Yakutou Brothers,24.8574,Aurora,1.63,9,win,14,394,399
+2025-09,2025-09-05,175858,The International 2025,Aurora,Yakutou Brothers,-8.1730,Yakutou Brothers,2.66,3,loss,0,399,396
+2025-09,2025-09-05,175810,The International 2025,Team Nemesis,Wildcard,27.4902,Team Nemesis,1.7,10,loss,0,396,386
+2025-09,2025-09-05,175856,The International 2025,Team Nemesis,Wildcard,-44.3068,Wildcard,2.25,17,win,38,386,407
+2025-09,2025-09-05,175811,The International 2025,PARIVISION,Team Tidebound,-10.0217,Team Tidebound,2.41,4,win,9,407,412
+2025-09,2025-09-05,175891,The International 2025,PARIVISION,Team Tidebound,-10.6523,Team Tidebound,2.1,4,win,8,412,416
+2025-09,2025-09-05,175818,The International 2025,BOOM Esports,Heroic,-8.8083,Heroic,1.88,3,win,5,416,418
+2025-09,2025-09-05,175870,The International 2025,BOOM Esports,Heroic,14.7265,BOOM Esports,2.12,6,loss,0,418,412
+2025-09,2025-09-05,175817,The International 2025,Natus Vincere,BetBoom Team,-29.8992,BetBoom Team,1.58,12,win,18,412,418
+2025-09,2025-09-05,175875,The International 2025,Natus Vincere,BetBoom Team,2.8349,Natus Vincere,2.57,1,loss,0,418,417
+2025-09,2025-09-05,175816,The International 2025,Nigma Galaxy,Team Liquid,9.9387,Nigma Galaxy,2.53,4,win,10,417,423
+2025-09,2025-09-05,175892,The International 2025,Nigma Galaxy,Team Liquid,-7.4941,Team Liquid,1.45,3,win,4,423,424
+2025-09,2025-09-05,175883,The International 2025,BOOM Esports,Team Nemesis,6.6967,BOOM Esports,1.88,2,win,3,424,425
+2025-09,2025-09-05,175905,The International 2025,BOOM Esports,Team Nemesis,-11.4559,Team Nemesis,2.19,4,loss,0,425,421
+2025-09,2025-09-05,175898,The International 2025,Tundra Esports,Natus Vincere,-6.5673,Natus Vincere,2.6,2,win,5,421,424
+2025-09,2025-09-05,175909,The International 2025,Tundra Esports,Natus Vincere,12.8593,Tundra Esports,1.53,5,win,7,424,426
+2025-09,2025-09-05,175918,The International 2025,Tundra Esports,Natus Vincere,15.3769,Tundra Esports,1.4,6,win,8,426,428
+2025-09,2025-09-05,175899,The International 2025,Yakutou Brothers,Nigma Galaxy,4.3327,Yakutou Brothers,3,1,loss,0,428,427
+2025-09,2025-09-05,175907,The International 2025,Yakutou Brothers,Nigma Galaxy,-22.7324,Nigma Galaxy,1.45,9,loss,0,427,418
+2025-09,2025-09-05,175906,The International 2025,Wildcard,Heroic,-14.6333,Heroic,1.4,6,win,8,418,420
+2025-09,2025-09-06,175957,The International 2025,Xtreme Gaming,Team Tidebound,20.2643,Xtreme Gaming,1.7,8,win,13,420,425
+2025-09,2025-09-06,175915,The International 2025,Team Spirit,PARIVISION,16.7526,Team Spirit,1.75,7,loss,0,425,418
+2025-09,2025-09-06,175961,The International 2025,Team Spirit,PARIVISION,-4.7806,PARIVISION,2.2,1,win,2,418,419
+2025-09,2025-09-06,175914,The International 2025,Team Falcons,Team Liquid,10.0267,Team Falcons,1.75,4,win,7,419,422
+2025-09,2025-09-06,175960,The International 2025,Team Falcons,Team Liquid,7.3499,Team Falcons,1.6,3,win,4,422,423
+2025-09,2025-09-06,175958,The International 2025,Aurora,BetBoom Team,-10.8943,BetBoom Team,1.65,4,win,6,423,425
+2025-09,2025-09-06,175923,The International 2025,Wildcard,BOOM Esports,-33.3224,BOOM Esports,1.42,14,win,19,425,430
+2025-09,2025-09-06,175974,The International 2025,Wildcard,BOOM Esports,-7.3629,BOOM Esports,1.45,3,loss,0,430,427
+2025-09,2025-09-06,175981,The International 2025,Wildcard,BOOM Esports,38.1285,Wildcard,2.35,16,win,37,427,448
+2025-09,2025-09-06,175922,The International 2025,Nigma Galaxy,Natus Vincere,11.4798,Nigma Galaxy,1.7,5,loss,0,448,443
+2025-09,2025-09-06,175980,The International 2025,Nigma Galaxy,Natus Vincere,3.8775,Nigma Galaxy,1.8,1,win,1,443,443
+2025-09,2025-09-06,175986,The International 2025,Nigma Galaxy,Natus Vincere,-27.5304,Natus Vincere,2.14,12,loss,0,443,431
+2025-09,2025-09-06,175968,The International 2025,Tundra Esports,Heroic,-8.1688,Heroic,2.6,3,win,7,431,435
+2025-09,2025-09-06,175978,The International 2025,Tundra Esports,Heroic,4.0808,Tundra Esports,1.45,1,loss,0,435,434
+2025-09,2025-09-06,175969,The International 2025,Yakutou Brothers,Team Liquid,14.1309,Yakutou Brothers,2.9,6,win,17,434,445
+2025-09,2025-09-06,175979,The International 2025,Yakutou Brothers,Team Liquid,-16.5190,Team Liquid,1.45,7,win,10,445,448
+2025-09,2025-09-06,175985,The International 2025,Yakutou Brothers,Team Liquid,-7.6462,Team Liquid,1.4,3,win,4,448,449
+2025-09,2025-09-06,175970,The International 2025,Team Spirit,Aurora,-12.2343,Aurora,2.36,5,win,11,449,455
+2025-09,2025-09-06,175990,The International 2025,Team Spirit,Aurora,-18.1290,Aurora,2.45,8,win,19,455,466
+2025-09,2025-09-06,175973,The International 2025,PARIVISION,BetBoom Team,29.7650,PARIVISION,1.7,13,loss,0,466,453
+2025-09,2025-09-06,175972,The International 2025,Team Tidebound,Team Falcons,24.4574,Team Tidebound,2.3,11,loss,0,453,442
+2025-09,2025-09-06,175993,The International 2025,Team Tidebound,Team Falcons,-27.0056,Team Falcons,1.62,11,loss,0,442,431
+2025-09,2025-09-06,175999,The International 2025,Team Tidebound,Team Falcons,-32.3335,Team Falcons,1.75,13,loss,0,431,418
+2025-09,2025-09-06,176000,The International 2025,Heroic,Yakutou Brothers,-10.1224,Yakutou Brothers,1.95,4,loss,0,418,414
+2025-09,2025-09-06,176008,The International 2025,Heroic,Yakutou Brothers,-9.6564,Yakutou Brothers,2.17,3,loss,0,414,411
+2025-09,2025-09-07,176005,The International 2025,Aurora,Nigma Galaxy,-24.3664,Nigma Galaxy,2.4,10,loss,0,411,401
+2025-09,2025-09-07,176038,The International 2025,Aurora,Nigma Galaxy,-18.2259,Nigma Galaxy,2.4,7,win,16,401,410
+2025-09,2025-09-07,176044,The International 2025,Aurora,Nigma Galaxy,-4.3907,Nigma Galaxy,2.35,1,win,2,410,411
+2025-09,2025-09-07,176004,The International 2025,PARIVISION,Wildcard,3.6909,PARIVISION,1.06,1,win,1,411,411
+2025-09,2025-09-07,176006,The International 2025,Team Liquid,Tundra Esports,13.1411,Team Liquid,1.7,5,loss,0,411,406
+2025-09,2025-09-07,176060,The International 2025,Team Liquid,Tundra Esports,28.2948,Team Liquid,1.68,11,win,18,406,413
+2025-09,2025-09-07,176065,The International 2025,Team Liquid,Tundra Esports,7.3163,Team Liquid,1.65,3,loss,0,413,410
+2025-09,2025-09-07,176007,The International 2025,Team Falcons,Team Spirit,-20.5020,Team Spirit,2,8,loss,0,410,402
+2025-09,2025-09-07,176074,The International 2025,Team Falcons,Team Spirit,8.9498,Team Falcons,1.73,3,win,5,402,404
+2025-09,2025-09-08,176091,Americas Convergence Series 2,Team Waska,ALLSTARS,-21.0532,ALLSTARS,2.9,8,loss,0,404,396
+2025-09,2025-09-08,176171,Americas Convergence Series 2,Team Waska,ALLSTARS,-13.5572,ALLSTARS,3.33,5,win,16,396,407
+2025-09,2025-09-08,176175,Americas Convergence Series 2,Team Waska,ALLSTARS,-9.3535,ALLSTARS,2.71,3,loss,0,407,404
+2025-09,2025-09-08,176070,EPL World Series: Southeast Asia S8,Carstensz Esports,Kopite,11.7203,Carstensz Esports,3.22,4,win,12,404,412
+2025-09,2025-09-08,176100,EPL World Series: Southeast Asia S8,Carstensz Esports,Kopite,10.3315,Carstensz Esports,2.5,4,loss,0,412,408
+2025-09,2025-09-08,176105,EPL World Series: Southeast Asia S8,Carstensz Esports,Kopite,-19.5273,Kopite,1.42,7,loss,0,408,401
+2025-09,2025-09-08,176090,EPL World Series: Southeast Asia S8,The MongolZ,Veroja,-23.0662,Veroja,3.6,9,loss,0,401,392
+2025-09,2025-09-08,176121,EPL World Series: Southeast Asia S8,The MongolZ,Veroja,14.7913,The MongolZ,1.28,5,win,6,392,393
+2025-09,2025-09-08,176142,European Pro League 30,L1ga Team,Passion UA,10.0096,L1ga Team,1.45,3,loss,0,393,390
+2025-09,2025-09-08,176156,European Pro League 30,L1ga Team,Passion UA,-16.5289,Passion UA,2.5,6,loss,0,390,384
+2025-09,2025-09-08,176147,European Pro League 30,Level Up,Passion UA,-4.5327,Passion UA,1.63,1,win,1,384,384
+2025-09,2025-09-08,176164,European Pro League 30,Level Up,Passion UA,-5.1782,Passion UA,1.51,1,win,1,384,384
+2025-09,2025-09-09,176215,EPL World Series: Southeast Asia S8,Ivory,REKONIX,2.6586,Ivory,2.83,1,loss,0,384,383
+2025-09,2025-09-09,176177,EPL World Series: Southeast Asia S8,Carstensz Esports,The MongolZ,11.2331,Carstensz Esports,3.2,4,loss,0,383,379
+2025-09,2025-09-09,176196,EPL World Series: Southeast Asia S8,Carstensz Esports,The MongolZ,-10.2699,The MongolZ,1.33,3,win,3,379,379
+2025-09,2025-09-09,176225,European Pro League 30,team lynx,Level Up,10.8970,team lynx,2.1,4,win,8,379,383
+2025-09,2025-09-09,176233,European Pro League 30,team lynx,Level Up,15.3873,team lynx,1.95,5,win,9,383,387
+2025-09,2025-09-09,176244,European Pro League 30,Passion UA,eSpoiled,12.4605,Passion UA,1.41,4,loss,0,387,383
+2025-09,2025-09-09,176255,European Pro League 30,Nemiga Gaming,Pipsqueak+4,-12.2943,Pipsqueak+4,1.52,4,win,6,383,385
+2025-09,2025-09-09,176258,European Pro League 30,Nemiga Gaming,Pipsqueak+4,-12.0767,Pipsqueak+4,1.59,4,win,6,385,387
+2025-09,2025-09-09,176261,European Pro League 30,TEAM NEXT LEVEL,VP.Prodigy,17.4889,TEAM NEXT LEVEL,1.35,6,win,8,387,389
+2025-09,2025-09-09,176263,European Pro League 30,TEAM NEXT LEVEL,VP.Prodigy,-6.2624,VP.Prodigy,3.3,2,loss,0,389,387
+2025-09,2025-09-10,176272,EPL World Series: Southeast Asia S8,Ivory,The MongolZ,5.6025,Ivory,1.85,2,win,3,387,388
+2025-09,2025-09-10,176292,EPL World Series: Southeast Asia S8,Ivory,The MongolZ,17.0287,Ivory,2.25,6,win,13,388,395
+2025-09,2025-09-10,176308,European Pro League 30,Ukrainian Boys,Nemiga Gaming,14.6382,Ukrainian Boys,4.34,5,loss,0,395,390
+2025-09,2025-09-10,176323,European Pro League 30,L1ga Team,Level Up,-10.9461,Level Up,3.93,4,win,15,390,401
+2025-09,2025-09-10,176328,European Pro League 30,Winter Bear,Passion UA,27.7810,Winter Bear,3.03,11,loss,0,401,390
+2025-09,2025-09-10,176329,European Pro League 30,team lynx,eSpoiled,-7.0148,eSpoiled,1.59,2,win,3,390,391
+2025-09,2025-09-10,176348,European Pro League 30,team lynx,eSpoiled,-14.6112,eSpoiled,1.58,5,loss,0,391,386
+2025-09,2025-09-10,176351,European Pro League 30,team lynx,eSpoiled,-3.3603,eSpoiled,1.68,1,loss,0,386,385
+2025-09,2025-09-10,176303,EPL World Series: Southeast Asia S8,REKONIX,Ivory,-37.6760,Ivory,2.6,14,loss,0,385,371
+2025-09,2025-09-10,176309,EPL World Series: Southeast Asia S8,REKONIX,Ivory,5.1438,REKONIX,1.38,1,win,1,371,371
+2025-09,2025-09-10,176313,EPL World Series: Southeast Asia S8,REKONIX,Ivory,10.8004,REKONIX,1.42,4,win,5,371,372
+2025-09,2025-09-11,176068,The International 2025,PARIVISION,Heroic,-45.7710,Heroic,3.18,17,loss,0,372,355
+2025-09,2025-09-11,176417,The International 2025,PARIVISION,Heroic,-18.2053,Heroic,2.83,6,loss,0,355,349
+2025-09,2025-09-11,176082,The International 2025,Xtreme Gaming,Tundra Esports,-24.0494,Tundra Esports,2.7,8,loss,0,349,341
+2025-09,2025-09-11,176402,The International 2025,Xtreme Gaming,Tundra Esports,-6.0634,Tundra Esports,2.52,2,loss,0,341,339
+2025-09,2025-09-11,176081,The International 2025,BetBoom Team,Nigma Galaxy,6.2087,BetBoom Team,1.67,2,loss,0,339,337
+2025-09,2025-09-11,176442,The International 2025,BetBoom Team,Nigma Galaxy,13.9356,BetBoom Team,1.55,4,win,6,337,339
+2025-09,2025-09-11,176448,The International 2025,BetBoom Team,Nigma Galaxy,28.3392,BetBoom Team,1.45,9,win,13,339,343
+2025-09,2025-09-11,176080,The International 2025,Team Tidebound,Team Falcons,31.8507,Team Tidebound,1.75,10,loss,0,343,333
+2025-09,2025-09-11,176428,The International 2025,Team Tidebound,Team Falcons,-17.6018,Team Falcons,1.71,5,win,8,333,336
+2025-09,2025-09-11,176368,Lunar Snake Trophy 3,Carstensz,InterActive Philippines,-13.5588,InterActive Philippines,2.25,4,loss,0,336,332
+2025-09,2025-09-11,176373,Lunar Snake Trophy 3,Carstensz,InterActive Philippines,-9.5588,InterActive Philippines,2.4,3,win,7,332,336
+2025-09,2025-09-11,176380,Lunar Snake Trophy 3,Carstensz,InterActive Philippines,-15.5603,InterActive Philippines,2.1,5,win,10,336,341
+2025-09,2025-09-11,176447,Americas Convergence Series 2,Flame,HunterZ,-16.2059,HunterZ,1.62,5,win,8,341,344
+2025-09,2025-09-12,176452,Lunar Snake Trophy 3,Emperor,Yangon Galacticos,4.8799,Emperor,2.02,1,loss,0,344,343
+2025-09,2025-09-12,176479,Lunar Snake Trophy 3,Emperor,Yangon Galacticos,-23.0774,Yangon Galacticos,1.61,7,loss,0,343,336
+2025-09,2025-09-12,176429,The International 2025,Xtreme Gaming,PARIVISION,17.5211,Xtreme Gaming,1.65,5,loss,0,336,331
+2025-09,2025-09-12,176516,The International 2025,Xtreme Gaming,PARIVISION,-17.8854,PARIVISION,2.1,5,win,10,331,336
+2025-09,2025-09-12,176498,The International 2025,Tundra Esports,Heroic,-16.5236,Heroic,2.33,5,win,11,336,342
+2025-09,2025-09-12,176526,The International 2025,Team Falcons,BetBoom Team,-7.0926,BetBoom Team,2.6,2,loss,0,342,340
+2025-09,2025-09-12,176529,The International 2025,Team Falcons,BetBoom Team,-12.5868,BetBoom Team,2.4,4,loss,0,340,336
+2025-09,2025-09-12,176454,The International 2025,Team Tidebound,Nigma Galaxy,-25.3849,Nigma Galaxy,2.63,8,win,21,336,349
+2025-09,2025-09-12,176508,The International 2025,Team Tidebound,Nigma Galaxy,10.1439,Team Tidebound,1.62,3,loss,0,349,346
+2025-09,2025-09-13,176539,Lunar Snake Trophy 3,BuyBack Bros,Yangon Galacticos,4.5393,BuyBack Bros,3.72,1,loss,0,346,345
+2025-09,2025-09-13,176556,Lunar Snake Trophy 3,BuyBack Bros,Yangon Galacticos,9.1227,BuyBack Bros,3.02,3,loss,0,345,342
+2025-09,2025-09-13,176521,The International 2025,Xtreme Gaming,Nigma Galaxy,3.7411,Xtreme Gaming,1.4,1,win,1,342,342
+2025-09,2025-09-13,176533,The International 2025,PARIVISION,Team Falcons,-6.9842,Team Falcons,1.85,2,loss,0,342,340
+2025-09,2025-09-13,176593,The International 2025,PARIVISION,Team Falcons,40.4652,PARIVISION,1.9,13,loss,0,340,327
+2025-09,2025-09-13,176534,The International 2025,Heroic,BetBoom Team,-37.6782,BetBoom Team,1.6,12,win,19,327,334
+2025-09,2025-09-13,176583,The International 2025,Heroic,BetBoom Team,3.1377,Heroic,2.7,1,win,2,334,335
+2025-09,2025-09-13,176587,The International 2025,Heroic,BetBoom Team,18.0563,Heroic,2.25,6,loss,0,335,329
+2025-09,2025-09-13,176590,The International 2025,Xtreme Gaming,BetBoom Team,-11.6509,BetBoom Team,2.06,3,loss,0,329,326
+2025-09,2025-09-13,176602,The International 2025,Xtreme Gaming,BetBoom Team,6.5895,Xtreme Gaming,1.56,2,win,3,326,327
+2025-09,2025-09-14,176604,Lunar Snake Trophy 3,Carstensz Esports,Veroja,-7.6060,Veroja,3.63,2,loss,0,327,325
+2025-09,2025-09-14,176617,Lunar Snake Trophy 3,Carstensz Esports,Veroja,13.8994,Carstensz Esports,1.31,4,loss,0,325,321
+2025-09,2025-09-14,176622,Lunar Snake Trophy 3,Carstensz Esports,Veroja,30.5054,Carstensz Esports,1.36,9,loss,0,321,312
+2025-09,2025-09-14,176606,The International 2025,PARIVISION,Xtreme Gaming,3.6095,PARIVISION,1.87,1,win,1,312,312
+2025-09,2025-09-14,176633,The International 2025,PARIVISION,Xtreme Gaming,-8.9674,Xtreme Gaming,1.97,2,win,3,312,313
+2025-09,2025-09-14,176638,The International 2025,PARIVISION,Xtreme Gaming,-33.4572,Xtreme Gaming,2.01,10,win,20,313,323
+2025-09,2025-09-14,176644,The International 2025,Xtreme Gaming,Team Falcons,17.8383,Xtreme Gaming,2.13,5,win,10,323,328
+2025-09,2025-09-14,176651,The International 2025,Xtreme Gaming,Team Falcons,27.6289,Xtreme Gaming,1.98,9,loss,0,328,319
+2025-09,2025-09-14,176654,The International 2025,Xtreme Gaming,Team Falcons,-6.1126,Team Falcons,1.74,1,loss,0,319,318
+2025-09,2025-09-14,176656,The International 2025,Xtreme Gaming,Team Falcons,13.4746,Xtreme Gaming,1.87,4,loss,0,318,314
+2025-09,2025-09-14,176659,The International 2025,Xtreme Gaming,Team Falcons,-10.7171,Team Falcons,1.76,3,win,5,314,316
+2025-09,2025-09-15,176731,European Pro League 30,L1ga Team,eSpoiled,3.9173,L1ga Team,1.28,1,loss,0,316,315
+2025-09,2025-09-15,176751,European Pro League 30,L1ga Team,eSpoiled,-22.7437,eSpoiled,2.78,7,loss,0,315,308
+2025-09,2025-09-15,176753,European Pro League 30,L1ga Team,eSpoiled,-32.9894,eSpoiled,3.2,10,loss,0,308,298
+2025-09,2025-09-15,176662,European Pro League 30,team lynx,Passion UA,8.4558,team lynx,2.5,2,loss,0,298,296
+2025-09,2025-09-15,176736,European Pro League 30,team lynx,Passion UA,14.6497,team lynx,2.1,4,loss,0,296,292
+2025-09,2025-09-15,176749,European Pro League 30,TEAM NEXT LEVEL,Kalmychata,-6.5082,Kalmychata,2.19,1,win,2,292,293
+2025-09,2025-09-15,176668,Lunar Snake Trophy 3,Veroja,Yangon Galacticos,6.6479,Veroja,3.7,1,win,3,293,295
+2025-09,2025-09-15,176691,Lunar Snake Trophy 3,Veroja,Yangon Galacticos,34.6555,Veroja,2.2,10,loss,0,295,285
+2025-09,2025-09-15,176696,Lunar Snake Trophy 3,Veroja,Yangon Galacticos,-11.5422,Yangon Galacticos,1.47,3,win,4,285,286
+2025-09,2025-09-15,176712,Lunar Snake Trophy 3,Carstensz Esports,Emperor,-7.3599,Emperor,1.82,2,win,3,286,287
+2025-09,2025-09-15,176719,Lunar Snake Trophy 3,Carstensz Esports,Emperor,-32.9345,Emperor,1.9,9,loss,0,287,278
+2025-09,2025-09-16,176767,Lunar Snake Trophy 3,BuyBack Bros,Carstensz Esports,25.1888,BuyBack Bros,2.17,7,win,15,278,286
+2025-09,2025-09-16,176796,Lunar Snake Trophy 3,BuyBack Bros,Carstensz Esports,-26.5667,Carstensz Esports,1.31,7,win,9,286,288
+2025-09,2025-09-16,176806,Lunar Snake Trophy 3,Emperor,InterActive Philippines,5.5157,Emperor,1.76,1,loss,0,288,287
+2025-09,2025-09-16,176823,Lunar Snake Trophy 3,Ivory,The MongolZ,7.8774,Ivory,1.65,2,loss,0,287,285
+2025-09,2025-09-16,176828,Lunar Snake Trophy 3,Ivory,The MongolZ,-23.8317,The MongolZ,2.04,6,loss,0,285,279
+2025-09,2025-09-16,176830,Lunar Snake Trophy 3,Ivory,The MongolZ,30.3203,Ivory,1.55,8,loss,0,279,271
+2025-09,2025-09-16,176768,European Pro League 30,L1ga Team,team lynx,15.3991,L1ga Team,1.46,4,loss,0,271,267
+2025-09,2025-09-16,176820,European Pro League 30,L1ga Team,team lynx,-7.1971,team lynx,2.5,1,win,2,267,268
+2025-09,2025-09-16,176750,European Pro League 30,VP.Prodigy,Nemiga Gaming,-4.7522,Nemiga Gaming,1.33,1,loss,0,268,267
+2025-09,2025-09-16,176836,European Pro League 30,VP.Prodigy,Nemiga Gaming,-12.1402,Nemiga Gaming,1.72,3,win,5,267,269
+2025-09,2025-09-16,176842,European Pro League 30,VP.Prodigy,Nemiga Gaming,18.8315,VP.Prodigy,2.01,5,loss,0,269,264
+2025-09,2025-09-16,176849,European Pro League 30,Pipsqueak+4,TEAM NEXT LEVEL,20.4203,Pipsqueak+4,1.5,5,win,7,264,266
+2025-09,2025-09-16,176739,European Pro League 30,Level Up,Winter Bear,-15.7197,Winter Bear,2.99,4,win,11,266,273
+2025-09,2025-09-16,176861,European Pro League 30,Level Up,Winter Bear,-52.8202,Winter Bear,2.45,14,win,34,273,293
+2025-09,2025-09-16,176855,Americas Convergence Series 2,ALLSTARS,TeamCompromiso,-7.8481,TeamCompromiso,1.55,2,win,3,293,294
+2025-09,2025-09-16,176859,Americas Convergence Series 2,ALLSTARS,TeamCompromiso,3.6931,ALLSTARS,2.38,1,loss,0,294,293
+2025-09,2025-09-16,176865,Americas Convergence Series 2,Flame,OG.LATAM,20.1378,Flame,3.25,5,win,16,293,304
+2025-09,2025-09-16,176874,Americas Convergence Series 2,Flame,OG.LATAM,13.9914,Flame,3,4,loss,0,304,300
+2025-09,2025-09-16,176880,Americas Convergence Series 2,Flame,OG.LATAM,16.2494,Flame,4.17,4,win,16,300,312
+2025-09,2025-09-17,176929,Lunar Snake Trophy 3,Carstensz Esports,Ivory,7.3459,Carstensz Esports,3.38,2,win,6,312,316
+2025-09,2025-09-17,176938,Lunar Snake Trophy 3,Carstensz Esports,Ivory,-37.8579,Ivory,1.43,11,win,15,316,320
+2025-09,2025-09-17,176952,Lunar Snake Trophy 3,Carstensz Esports,Ivory,-7.6110,Ivory,1.39,2,win,2,320,320
+2025-09,2025-09-18,177040,Lunar Snake Trophy 3,Emperor,The MongolZ,15.3829,Emperor,2.5,4,win,10,320,326
+2025-09,2025-09-18,177042,Lunar Snake Trophy 3,Emperor,The MongolZ,8.9183,Emperor,2.41,2,win,4,326,328
+2025-09,2025-09-18,177081,Lunar Snake Trophy 3,The MongolZ,Yangon Galacticos,16.9176,The MongolZ,2.25,5,loss,0,328,323
+2025-09,2025-09-18,177105,Lunar Snake Trophy 3,The MongolZ,Yangon Galacticos,34.0145,The MongolZ,2,10,loss,0,323,313
+2025-09,2025-09-18,177111,European Pro League 30,Winter Bear,team lynx,6.3125,Winter Bear,2.34,1,win,2,313,314
+2025-09,2025-09-18,177118,European Pro League 30,Winter Bear,team lynx,17.2361,Winter Bear,2.25,5,win,11,314,320
+2025-09,2025-09-18,177122,European Pro League 30,Pipsqueak+4,VP.Prodigy,-25.5636,VP.Prodigy,3.67,8,loss,0,320,312
+2025-09,2025-09-18,177125,European Pro League 30,Pipsqueak+4,VP.Prodigy,28.7723,Pipsqueak+4,1.15,8,win,9,312,313
+2025-09,2025-09-19,177144,European Pro League 30,Kalmychata,Nemiga Gaming,24.6917,Kalmychata,1.63,7,loss,0,313,306
+2025-09,2025-09-19,177261,European Pro League 30,Kalmychata,Nemiga Gaming,29.8819,Kalmychata,1.85,9,win,16,306,313
+2025-09,2025-09-19,177263,European Pro League 30,Kalmychata,Nemiga Gaming,16.5440,Kalmychata,1.8,5,loss,0,313,308
+2025-09,2025-09-19,177145,Lunar Snake Trophy 3,BuyBack Bros,The MongolZ,-13.0302,The MongolZ,1.33,4,win,5,308,309
+2025-09,2025-09-19,177182,Lunar Snake Trophy 3,BuyBack Bros,The MongolZ,17.3720,BuyBack Bros,2.58,5,loss,0,309,304
+2025-09,2025-09-19,177207,Lunar Snake Trophy 3,The MongolZ,Veroja,20.9667,The MongolZ,1.28,6,loss,0,304,298
+2025-09,2025-09-19,177216,Lunar Snake Trophy 3,The MongolZ,Veroja,-15.8525,Veroja,2.35,4,win,9,298,303
+2025-09,2025-09-19,177219,Lunar Snake Trophy 3,InterActive Philippines,Yangon Galacticos,27.3336,InterActive Philippines,3.5,8,loss,0,303,295
+2025-09,2025-09-19,177231,Lunar Snake Trophy 3,InterActive Philippines,Yangon Galacticos,-8.4587,Yangon Galacticos,1.26,2,win,2,295,295
+2025-09,2025-09-19,177185,Zeinternacional 2,The Monstters,Psycho Panther,9.4814,The Monstters,1.68,2,win,3,295,296
+2025-09,2025-09-19,177281,Zeinternacional 2,High Skills,Rising Rage,5.9341,High Skills,1.75,1,win,1,296,296
+2025-09,2025-09-20,177336,European Pro League 30,Pipsqueak+4,Kalmychata,24.2581,Pipsqueak+4,1.51,7,loss,0,296,289
+2025-09,2025-09-20,177283,Lunar Snake Trophy 3,Emperor,BuyBack Bros,-4.3207,BuyBack Bros,2.26,1,win,2,289,290
+2025-09,2025-09-20,177304,Lunar Snake Trophy 3,Emperor,BuyBack Bros,-6.3886,BuyBack Bros,2.32,1,loss,0,290,289
+2025-09,2025-09-20,177308,Lunar Snake Trophy 3,Emperor,BuyBack Bros,15.0064,Emperor,1.54,4,loss,0,289,285
+2025-09,2025-09-20,177314,Lunar Snake Trophy 3,Emperor,Veroja,-13.7462,Veroja,1.88,3,loss,0,285,282
+2025-09,2025-09-20,177325,Lunar Snake Trophy 3,Emperor,Veroja,-22.2814,Veroja,1.95,6,win,11,282,287
+2025-09,2025-09-20,177287,Zeinternacional 2,Admiral Crew,Los Bemboyz,-8.2287,Los Bemboyz,1.71,2,loss,0,287,285
+2025-09,2025-09-20,177291,Zeinternacional 2,The Lyons,Parker y 4 Infieles,17.0824,The Lyons,1.76,4,win,7,285,288
+2025-09,2025-09-20,177442,Zeinternacional 2,Los Bemboyz,Osos Barberos,8.6894,Los Bemboyz,1.65,2,win,3,288,289
+2025-09,2025-09-20,177450,Zeinternacional 2,Rata P,Admiral Crew,-4.3904,Admiral Crew,1.87,1,win,1,289,289
+2025-09,2025-09-20,177458,Zeinternacional 2,La vecindad del chavosor,Parker y 4 Infieles,21.7487,La vecindad del chavosor,2.56,6,win,15,289,298
+2025-09,2025-09-21,176841,European Pro League 30,Winter Bear,eSpoiled,9.9204,Winter Bear,2.13,2,loss,0,298,296
+2025-09,2025-09-21,177550,European Pro League 30,Winter Bear,eSpoiled,11.3830,Winter Bear,2.6,3,loss,0,296,293
+2025-09,2025-09-21,177244,European Pro League 30,Kalmychata,VP.Prodigy,16.4980,Kalmychata,1.52,4,loss,0,293,289
+2025-09,2025-09-21,177510,European Pro League 30,Kalmychata,VP.Prodigy,19.2051,Kalmychata,1.41,5,win,7,289,291
+2025-09,2025-09-21,177520,European Pro League 30,Kalmychata,VP.Prodigy,-16.3173,VP.Prodigy,2.78,4,loss,0,291,287
+2025-09,2025-09-21,177490,Lunar Snake Trophy 3,BuyBack Bros,Ivory,10.0705,BuyBack Bros,4.07,2,win,8,287,293
+2025-09,2025-09-21,177496,Lunar Snake Trophy 3,BuyBack Bros,Ivory,-28.3678,Ivory,1.3,8,win,10,293,295
+2025-09,2025-09-21,177501,Lunar Snake Trophy 3,BuyBack Bros,Ivory,33.8234,BuyBack Bros,3.28,9,win,29,295,315
+2025-09,2025-09-21,177463,Zeinternacional 2,The Blacklist,High Skills,10.1380,The Blacklist,1.77,3,win,5,315,317
+2025-09,2025-09-21,177464,Zeinternacional 2,Rising Rage,Psycho Panther,-16.0795,Psycho Panther,2.2,5,loss,0,317,312
+2025-09,2025-09-21,177465,Zeinternacional 2,The Lyons,The Monstters,-4.2599,The Monstters,2.2,1,loss,0,312,311
+2025-09,2025-09-21,177578,Zeinternacional 2,The Monstters,Rata P,22.8698,The Monstters,1.82,7,win,12,311,316
+2025-09,2025-09-22,177674,Lunar Snake Trophy 3,Ivory,Yangon Galacticos,-18.9864,Yangon Galacticos,1.77,5,win,8,316,319
+2025-09,2025-09-22,177686,Lunar Snake Trophy 3,Ivory,Yangon Galacticos,4.1349,Ivory,2.06,1,win,2,319,320
+2025-09,2025-09-22,177588,Zeinternacional 2,La vecindad del chavosor,The Monstters,7.7727,La vecindad del chavosor,1.85,2,win,3,320,321
+2025-09,2025-09-22,177593,Zeinternacional 2,The Lyons,Rising Rage,21.3435,The Lyons,1.65,6,loss,0,321,315
+2025-09,2025-09-22,177598,Zeinternacional 2,Psycho Panther,Los Bemboyz,28.2085,Psycho Panther,2.03,8,loss,0,315,307
+2025-09,2025-09-22,177770,Zeinternacional 2,Rising Rage,Admiral Crew,-13.8679,Admiral Crew,2.03,4,loss,0,307,303
+2025-09,2025-09-22,177792,Zeinternacional 2,The Blacklist,La vecindad del chavosor,7.1737,The Blacklist,1.85,2,win,3,303,304
+2025-09,2025-09-22,177802,Zeinternacional 2,Rata P,High Skills,28.6859,Rata P,1.85,8,loss,0,304,296
+2025-09,2025-09-23,177243,European Pro League 30,TEAM NEXT LEVEL,Nemiga Gaming,-9.3949,Nemiga Gaming,2.74,2,loss,0,296,294
+2025-09,2025-09-23,177934,European Pro League 30,TEAM NEXT LEVEL,Nemiga Gaming,-21.5247,Nemiga Gaming,2.1,6,loss,0,294,288
+2025-09,2025-09-23,177852,Lunar Snake Trophy 3,Carstensz Esports,Yangon Galacticos,-3.9346,Yangon Galacticos,1.35,1,win,1,288,288
+2025-09,2025-09-23,177862,Lunar Snake Trophy 3,Carstensz Esports,Yangon Galacticos,-7.5915,Yangon Galacticos,1.34,2,loss,0,288,286
+2025-09,2025-09-23,177870,Lunar Snake Trophy 3,Carstensz Esports,Yangon Galacticos,-14.7494,Yangon Galacticos,1.35,4,win,5,286,287
+2025-09,2025-09-23,177800,Zeinternacional 2,Osos Barberos,Admiral Crew,-33.8836,Admiral Crew,1.65,9,loss,0,287,278
+2025-09,2025-09-23,177799,Zeinternacional 2,The Monstters,Parker y 4 Infieles,-26.1649,Parker y 4 Infieles,2.09,7,win,14,278,285
+2025-09,2025-09-23,177850,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,L1ga Team,Team Tea,35.3737,L1ga Team,2.27,10,win,22,285,297
+2025-09,2025-09-23,177857,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,L1ga Team,Team Tea,14.6019,L1ga Team,2.25,4,win,9,297,302
+2025-09,2025-09-23,177840,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,1win Team,eSpoiled,-15.2796,eSpoiled,3,4,loss,0,302,298
+2025-09,2025-09-23,177892,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,1win Team,eSpoiled,-11.0317,eSpoiled,3.3,3,loss,0,298,295
+2025-09,2025-09-23,177842,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Runa Team,20Twice,9.8236,Runa Team,1.17,2,win,2,295,295
+2025-09,2025-09-23,177920,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Runa Team,20Twice,11.4903,Runa Team,1.17,3,win,3,295,295
+2025-09,2025-09-23,177843,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Kalmychata,Yellow Submarine,-5.4674,Yellow Submarine,1.59,1,win,1,295,295
+2025-09,2025-09-23,177937,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Kalmychata,Yellow Submarine,28.2734,Kalmychata,2.25,8,loss,0,295,287
+2025-09,2025-09-23,177898,FISSURE PLAYGROUND 2: Americas Closed Qualifier,TaiLung Mafia,HunterZ,-21.6398,HunterZ,1.74,6,win,10,287,291
+2025-09,2025-09-23,177932,FISSURE PLAYGROUND 2: Americas Closed Qualifier,TaiLung Mafia,HunterZ,-4.7814,HunterZ,1.6,1,loss,0,291,290
+2025-09,2025-09-23,177940,FISSURE PLAYGROUND 2: Americas Closed Qualifier,TaiLung Mafia,HunterZ,-5.3709,HunterZ,1.71,1,loss,0,290,289
+2025-09,2025-09-23,177943,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,Sentinel Esports,11.1675,OG.LATAM,1.42,3,loss,0,289,286
+2025-09,2025-09-23,177966,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,Sentinel Esports,9.6396,OG.LATAM,1.46,2,win,2,286,286
+2025-09,2025-09-23,177951,Zeinternacional 2,Osos Barberos,Parker y 4 Infieles,22.4571,Osos Barberos,1.82,6,win,10,286,290
+2025-09,2025-09-23,177962,Zeinternacional 2,Parker y 4 Infieles,Rata P,-15.0765,Rata P,1.83,4,win,7,290,293
+2025-09,2025-09-24,177948,FISSURE PLAYGROUND 2: Americas Closed Qualifier,Perrito Panzon,Estar backs,-15.3505,Estar backs,2.34,4,loss,0,293,289
+2025-09,2025-09-24,177899,DreamLeague S27 SEA CQ,Execration,Kukuys,36.5688,Execration,1.62,10,win,16,289,295
+2025-09,2025-09-24,177990,DreamLeague S27 SEA CQ,Execration,Kukuys,-5.8315,Kukuys,2.04,1,loss,0,295,294
+2025-09,2025-09-24,177958,DreamLeague S27 SEA CQ,Ivory,Yangon Galacticos,-8.2561,Yangon Galacticos,1.98,2,loss,0,294,292
+2025-09,2025-09-24,177992,DreamLeague S27 SEA CQ,Ivory,Yangon Galacticos,11.4717,Ivory,1.61,3,loss,0,292,289
+2025-09,2025-09-24,178005,DreamLeague S27 SEA CQ,Ivory,Yangon Galacticos,-9.0686,Yangon Galacticos,2.05,2,win,4,289,291
+2025-09,2025-09-24,178013,DreamLeague S27 SEA CQ,Team Nemesis,REKONIX,-11.5625,REKONIX,1.92,3,win,5,291,293
+2025-09,2025-09-24,178031,DreamLeague S27 SEA CQ,Team Nemesis,REKONIX,-30.3624,REKONIX,1.88,8,win,15,293,300
+2025-09,2025-09-24,178014,DreamLeague S27 SEA CQ,BOOM Esports,Team Aureus,22.1259,BOOM Esports,1.78,6,loss,0,300,294
+2025-09,2025-09-24,178033,DreamLeague S27 SEA CQ,BOOM Esports,Team Aureus,17.9848,BOOM Esports,2,5,win,10,294,299
+2025-09,2025-09-24,178046,DreamLeague S27 SEA CQ,BOOM Esports,Team Aureus,6.6713,BOOM Esports,1.77,1,win,1,299,299
+2025-09,2025-09-24,177960,DreamLeague S27 CN CQ,Yakutou Brothers,ToLight,-27.3091,ToLight,5.34,8,loss,0,299,291
+2025-09,2025-09-24,177993,DreamLeague S27 CN CQ,Yakutou Brothers,ToLight,-4.3813,ToLight,4.57,1,loss,0,291,290
+2025-09,2025-09-24,177961,DreamLeague S27 CN CQ,Roar Gaming,Tearlaments,8.0609,Roar Gaming,2.63,2,loss,0,290,288
+2025-09,2025-09-24,177996,DreamLeague S27 CN CQ,Roar Gaming,Tearlaments,-17.0236,Tearlaments,1.34,4,win,5,288,289
+2025-09,2025-09-24,178015,DreamLeague S27 CN CQ,Hong shi zhang zui,Thriving,-9.4795,Thriving,3.91,2,loss,0,289,287
+2025-09,2025-09-24,178024,DreamLeague S27 CN CQ,Hong shi zhang zui,Thriving,14.6466,Hong shi zhang zui,1.23,4,win,4,287,287
+2025-09,2025-09-24,178029,DreamLeague S27 CN CQ,Cloud Rising,Surge Gaming,12.2336,Cloud Rising,1.89,3,win,5,287,289
+2025-09,2025-09-24,178017,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,L1ga Team,1win Team,8.6561,L1ga Team,2.35,2,win,4,289,291
+2025-09,2025-09-24,178117,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,L1ga Team,1win Team,-31.7093,1win Team,1.67,9,win,15,291,297
+2025-09,2025-09-24,178077,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Runa Team,Yellow Submarine,19.6530,Runa Team,2.6,5,win,13,297,305
+2025-09,2025-09-24,178139,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Runa Team,Yellow Submarine,42.9406,Runa Team,2.2,13,win,28,305,320
+2025-09,2025-09-24,178074,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Team Tea,eSpoiled,-13.7365,eSpoiled,2.35,4,win,9,320,325
+2025-09,2025-09-24,178096,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Team Tea,eSpoiled,-10.9441,eSpoiled,1.98,3,win,5,325,327
+2025-09,2025-09-24,178047,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,20Twice,Kalmychata,11.1492,20Twice,4.88,3,loss,0,327,324
+2025-09,2025-09-24,178049,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,20Twice,Kalmychata,24.9060,20Twice,6.53,8,loss,0,324,316
+2025-09,2025-09-24,177972,Zeinternacional 2,The Blacklist,Rising Rage,-12.6287,Rising Rage,1.83,3,win,5,316,318
+2025-09,2025-09-24,177978,Zeinternacional 2,Psycho Panther,Admiral Crew,-6.1269,Admiral Crew,1.77,1,win,1,318,318
+2025-09,2025-09-24,177979,Zeinternacional 2,La vecindad del chavosor,High Skills,6.0670,La vecindad del chavosor,2.09,1,win,2,318,319
+2025-09,2025-09-24,178025,DreamLeague S27 EEU CQ,Inner Circle,eSpoiled,17.5540,Inner Circle,1.61,5,loss,0,319,314
+2025-09,2025-09-24,178039,DreamLeague S27 EEU CQ,Inner Circle,eSpoiled,-49.6360,eSpoiled,2.14,15,win,32,314,331
+2025-09,2025-09-24,178026,DreamLeague S27 EEU CQ,4Pirates,Yellow Submarine,-4.3630,Yellow Submarine,1.4,1,win,1,331,331
+2025-09,2025-09-24,178037,DreamLeague S27 EEU CQ,4Pirates,Yellow Submarine,14.5200,4Pirates,2.9,4,win,11,331,338
+2025-09,2025-09-24,178051,DreamLeague S27 EEU CQ,4Pirates,Yellow Submarine,-12.0963,Yellow Submarine,1.48,4,loss,0,338,334
+2025-09,2025-09-24,178001,DreamLeague S27 EEU CQ,1win Team,Kalmychata,-22.3963,Kalmychata,2.35,7,loss,0,334,327
+2025-09,2025-09-24,178088,DreamLeague S27 EEU CQ,1win Team,Kalmychata,13.9959,1win Team,1.49,4,loss,0,327,323
+2025-09,2025-09-24,178089,DreamLeague S27 EEU CQ,Runa Team,Nemiga Gaming,-30.5967,Nemiga Gaming,2.46,9,loss,0,323,314
+2025-09,2025-09-24,178095,DreamLeague S27 EEU CQ,Runa Team,Nemiga Gaming,5.9464,Runa Team,1.55,1,win,1,314,314
+2025-09,2025-09-24,178042,DreamLeague S27 WEU CQ,Natus Vincere,MOUZ,-12.5054,MOUZ,2.41,3,loss,0,314,311
+2025-09,2025-09-24,178050,DreamLeague S27 WEU CQ,Natus Vincere,MOUZ,50.4393,Natus Vincere,1.54,15,win,23,311,319
+2025-09,2025-09-24,178041,DreamLeague S27 WEU CQ,Zero Tenacity,OG,23.2622,Zero Tenacity,2.48,7,loss,0,319,312
+2025-09,2025-09-24,178052,DreamLeague S27 WEU CQ,Zero Tenacity,OG,-5.2506,OG,1.47,1,loss,0,312,311
+2025-09,2025-09-24,178068,DreamLeague S27 WEU CQ,Zero Tenacity,OG,16.1505,Zero Tenacity,2.35,5,win,11,311,317
+2025-09,2025-09-24,178075,DreamLeague S27 WEU CQ,AVULUS,Passion UA,-21.6874,Passion UA,2.78,6,loss,0,317,311
+2025-09,2025-09-24,178102,DreamLeague S27 WEU CQ,AVULUS,Passion UA,-22.9987,Passion UA,2.8,7,loss,0,311,304
+2025-09,2025-09-24,178113,DreamLeague S27 WEU CQ,Virtus.pro,Pipsqueak+4,-23.2688,Pipsqueak+4,2.24,7,loss,0,304,297
+2025-09,2025-09-24,178057,DreamLeague S27 SEA CQ,Execration,Yangon Galacticos,20.0162,Execration,1.37,5,win,6,297,298
+2025-09,2025-09-24,178071,DreamLeague S27 SEA CQ,Execration,Yangon Galacticos,9.5417,Execration,1.32,2,loss,0,298,296
+2025-09,2025-09-24,178099,DreamLeague S27 SEA CQ,Execration,Yangon Galacticos,14.8507,Execration,1.44,4,win,5,296,297
+2025-09,2025-09-24,178056,DreamLeague S27 SEA CQ,REKONIX,BOOM Esports,22.3817,REKONIX,1.78,6,loss,0,297,291
+2025-09,2025-09-24,178078,DreamLeague S27 SEA CQ,REKONIX,BOOM Esports,10.7415,REKONIX,1.89,3,loss,0,291,288
+2025-09,2025-09-24,178062,DreamLeague S27 CN CQ,Tearlaments,Yakutou Brothers,24.9793,Tearlaments,2.77,7,win,19,288,300
+2025-09,2025-09-24,178072,DreamLeague S27 CN CQ,Tearlaments,Yakutou Brothers,13.8609,Tearlaments,2.44,4,loss,0,300,296
+2025-09,2025-09-24,178063,DreamLeague S27 CN CQ,Cloud Rising,Hong shi zhang zui,-14.1812,Hong shi zhang zui,1.32,4,win,5,296,297
+2025-09,2025-09-24,178070,DreamLeague S27 CN CQ,Cloud Rising,Hong shi zhang zui,-18.8366,Hong shi zhang zui,1.32,5,loss,0,297,292
+2025-09,2025-09-24,178094,DreamLeague S27 CN CQ,Cloud Rising,Hong shi zhang zui,-14.4176,Hong shi zhang zui,1.32,4,win,5,292,293
+2025-09,2025-09-24,178082,DreamLeague S27 SA CQ,OG.LATAM,Flame,37.4032,OG.LATAM,1.4,10,loss,0,293,283
+2025-09,2025-09-24,178083,DreamLeague S27 SA CQ,Chimpanzini Bananini,Peru Rejects,11.4346,Chimpanzini Bananini,2.96,3,loss,0,283,280
+2025-09,2025-09-24,178122,DreamLeague S27 SA CQ,Chimpanzini Bananini,Peru Rejects,14.3807,Chimpanzini Bananini,3.11,4,win,12,280,288
+2025-09,2025-09-24,178143,DreamLeague S27 SA CQ,HunterZ,Estar backs,22.0214,HunterZ,1.8,6,win,10,288,292
+2025-09,2025-09-24,178085,DreamLeague S27 EEU CQ,eSpoiled,4Pirates,4.8455,eSpoiled,2.37,1,win,2,292,293
+2025-09,2025-09-24,178123,DreamLeague S27 EEU CQ,eSpoiled,4Pirates,22.9231,eSpoiled,1.9,6,win,11,293,298
+2025-09,2025-09-24,178079,FISSURE PLAYGROUND 2: Americas Closed Qualifier,ALLSTARS,HunterZ,14.0896,ALLSTARS,2.6,4,loss,0,298,294
+2025-09,2025-09-24,178101,FISSURE PLAYGROUND 2: Americas Closed Qualifier,ALLSTARS,HunterZ,14.7677,ALLSTARS,2.6,4,win,10,294,300
+2025-09,2025-09-24,178109,FISSURE PLAYGROUND 2: Americas Closed Qualifier,ALLSTARS,HunterZ,10.8914,ALLSTARS,2.4,3,loss,0,300,297
+2025-09,2025-09-24,178086,FISSURE PLAYGROUND 2: Americas Closed Qualifier,Sentinel Esports,Estar backs,-20.9811,Estar backs,2.05,6,win,12,297,303
+2025-09,2025-09-24,178129,FISSURE PLAYGROUND 2: Americas Closed Qualifier,Sentinel Esports,Estar backs,6.5527,Sentinel Esports,1.7,1,win,1,303,303
+2025-09,2025-09-24,178134,FISSURE PLAYGROUND 2: Americas Closed Qualifier,Sentinel Esports,Estar backs,6.6382,Sentinel Esports,1.67,2,loss,0,303,301
+2025-09,2025-09-24,178158,FISSURE PLAYGROUND 2: Americas Closed Qualifier,Wildcard,TaiLung Mafia,16.0631,Wildcard,1.22,4,loss,0,301,297
+2025-09,2025-09-24,178104,DreamLeague S27 WEU CQ,Natus Vincere,Zero Tenacity,-5.2619,Zero Tenacity,3.4,1,loss,0,297,296
+2025-09,2025-09-24,178130,DreamLeague S27 WEU CQ,Natus Vincere,Zero Tenacity,-19.3844,Zero Tenacity,4.04,5,loss,0,296,291
+2025-09,2025-09-24,178114,DreamLeague S27 EEU CQ,Runa Team,Kalmychata,-6.5221,Kalmychata,2.06,1,loss,0,291,290
+2025-09,2025-09-24,178120,DreamLeague S27 EEU CQ,Runa Team,Kalmychata,16.6713,Runa Team,1.58,4,win,6,290,292
+2025-09,2025-09-25,178233,DreamLeague S27 EEU CQ,Inner Circle,Yellow Submarine,-46.3324,Yellow Submarine,1.51,13,win,19,292,298
+2025-09,2025-09-25,178246,DreamLeague S27 EEU CQ,Inner Circle,Yellow Submarine,-12.7329,Yellow Submarine,1.4,3,loss,0,298,295
+2025-09,2025-09-25,178254,DreamLeague S27 EEU CQ,Inner Circle,Yellow Submarine,11.5718,Inner Circle,2.68,3,win,8,295,300
+2025-09,2025-09-25,178169,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,Perrito Panzon,4.0189,OG.LATAM,2.26,1,loss,0,300,299
+2025-09,2025-09-25,178177,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,Perrito Panzon,4.3780,OG.LATAM,2.1,1,loss,0,299,298
+2025-09,2025-09-25,178103,DreamLeague S27 WEU CQ,MOUZ,OG,9.9968,MOUZ,2.3,2,win,4,298,300
+2025-09,2025-09-25,178255,DreamLeague S27 WEU CQ,MOUZ,OG,20.5007,MOUZ,1.64,6,win,9,300,303
+2025-09,2025-09-25,178232,DreamLeague S27 EEU CQ,1win Team,Nemiga Gaming,-13.7505,Nemiga Gaming,3.2,4,loss,0,303,299
+2025-09,2025-09-25,178127,DreamLeague S27 WEU CQ,AVULUS,Virtus.pro,25.8219,AVULUS,1.85,7,loss,0,299,292
+2025-09,2025-09-25,178328,DreamLeague S27 WEU CQ,AVULUS,Virtus.pro,-10.8428,Virtus.pro,1.88,3,loss,0,292,289
+2025-09,2025-09-25,178339,DreamLeague S27 WEU CQ,AVULUS,Virtus.pro,7.6197,AVULUS,1.78,2,loss,0,289,287
+2025-09,2025-09-25,178167,DreamLeague S27 SA CQ,HunterZ,ALLSTARS,-12.1071,ALLSTARS,2.57,3,loss,0,287,284
+2025-09,2025-09-25,178173,DreamLeague S27 SA CQ,HunterZ,ALLSTARS,42.6189,HunterZ,1.45,12,win,17,284,289
+2025-09,2025-09-25,178181,DreamLeague S27 CN CQ,ToLight TEAM,Roar Gaming,7.2375,ToLight TEAM,3.7,2,loss,0,289,287
+2025-09,2025-09-25,178191,DreamLeague S27 CN CQ,ToLight TEAM,Roar Gaming,8.9050,ToLight TEAM,3.85,2,loss,0,287,285
+2025-09,2025-09-25,178185,DreamLeague S27 SEA CQ,Kukuys,Ivory,-4.6567,Ivory,2.4,1,loss,0,285,284
+2025-09,2025-09-25,178183,DreamLeague S27 SEA CQ,Team Nemesis,Team Aureus,21.1437,Team Nemesis,2.15,6,loss,0,284,278
+2025-09,2025-09-25,178210,DreamLeague S27 SEA CQ,Team Nemesis,Team Aureus,-11.1958,Team Aureus,1.77,3,win,5,278,280
+2025-09,2025-09-25,178221,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Yellow Submarine,eSpoiled,-30.7594,eSpoiled,2.5,8,win,20,280,292
+2025-09,2025-09-25,178287,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Yellow Submarine,eSpoiled,-13.5714,eSpoiled,2.13,3,win,6,292,295
+2025-09,2025-09-25,178251,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Kalmychata,1win Team,-7.7219,1win Team,1.69,2,win,3,295,296
+2025-09,2025-09-25,178261,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Kalmychata,1win Team,21.6492,Kalmychata,2.06,6,win,12,296,302
+2025-09,2025-09-25,178271,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Kalmychata,1win Team,12.6664,Kalmychata,2.11,3,win,6,302,305
+2025-09,2025-09-25,178288,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Runa Team,L1ga Team,-18.0067,L1ga Team,1.98,5,loss,0,305,300
+2025-09,2025-09-25,178308,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Runa Team,L1ga Team,10.4744,Runa Team,1.58,3,win,4,300,301
+2025-09,2025-09-25,178279,DreamLeague S27 WEU CQ,Passion UA,Pipsqueak+4,26.6333,Passion UA,2.36,8,win,18,301,311
+2025-09,2025-09-25,178306,DreamLeague S27 WEU CQ,Passion UA,Pipsqueak+4,10.6420,Passion UA,2.17,3,loss,0,311,308
+2025-09,2025-09-25,178314,DreamLeague S27 WEU CQ,Passion UA,Pipsqueak+4,-8.3304,Pipsqueak+4,1.63,2,win,3,308,309
+2025-09,2025-09-25,178218,DreamLeague S27 CN CQ,Cloud Rising,Roar Gaming,10.3409,Cloud Rising,3.15,3,loss,0,309,306
+2025-09,2025-09-25,178220,DreamLeague S27 SEA CQ,REKONIX,Team Kukuys,36.8631,REKONIX,1.6,11,win,17,306,312
+2025-09,2025-09-25,178247,DreamLeague S27 SEA CQ,REKONIX,Team Kukuys,-10.8924,Team Kukuys,2.13,3,loss,0,312,309
+2025-09,2025-09-25,178227,DreamLeague S27 SEA CQ,Yangon Galacticos,Team Aureus,-10.4785,Team Aureus,1.24,3,win,3,309,309
+2025-09,2025-09-25,178244,DreamLeague S27 SEA CQ,Yangon Galacticos,Team Aureus,3.5121,Yangon Galacticos,3.4,1,loss,0,309,308
+2025-09,2025-09-25,178265,DreamLeague S27 CN CQ,Tearlaments,Roar Gaming,5.2884,Tearlaments,1.39,1,win,1,308,308
+2025-09,2025-09-25,178274,DreamLeague S27 CN CQ,Yakutou Brothers,Hong shi zhang zui,-13.9827,Hong shi zhang zui,3.6,4,win,14,308,318
+2025-09,2025-09-25,178295,DreamLeague S27 CN CQ,Yakutou Brothers,Hong shi zhang zui,-19.2102,Hong shi zhang zui,2.89,6,win,17,318,329
+2025-09,2025-09-25,178266,DreamLeague S27 SEA CQ,Execration,BOOM Esports,18.9500,Execration,2.15,6,win,12,329,335
+2025-09,2025-09-25,178272,DreamLeague S27 SEA CQ,Execration,BOOM Esports,-16.4215,BOOM Esports,1.72,5,win,8,335,338
+2025-09,2025-09-25,178294,DreamLeague S27 SEA CQ,Execration,BOOM Esports,-14.6317,BOOM Esports,1.72,4,win,6,338,340
+2025-09,2025-09-25,178260,DreamLeague S27 SEA CQ,REKONIX,Team Aureus,-10.3143,Team Aureus,1.72,3,win,5,340,342
+2025-09,2025-09-25,178275,DreamLeague S27 SEA CQ,REKONIX,Team Aureus,-12.6634,Team Aureus,1.6,4,win,6,342,344
+2025-09,2025-09-25,178276,DreamLeague S27 EEU CQ,Kalmychata,Inner Circle,-8.7782,Inner Circle,1.91,3,win,5,344,346
+2025-09,2025-09-25,178296,DreamLeague S27 EEU CQ,Kalmychata,Inner Circle,3.4110,Kalmychata,1.88,1,win,1,346,346
+2025-09,2025-09-25,178297,DreamLeague S27 EEU CQ,4Pirates,1win Team,11.0619,4Pirates,2.99,3,loss,0,346,343
+2025-09,2025-09-25,178278,DreamLeague S27 EEU CQ,eSpoiled,Runa Team,-6.4013,Runa Team,1.58,2,loss,0,343,341
+2025-09,2025-09-25,178325,DreamLeague S27 EEU CQ,eSpoiled,Runa Team,12.3898,eSpoiled,2.13,4,loss,0,341,337
+2025-09,2025-09-25,178280,FISSURE PLAYGROUND 2: Americas Closed Qualifier,Wildcard,Estar backs,3.6091,Wildcard,1.45,1,win,1,337,337
+2025-09,2025-09-25,178303,FISSURE PLAYGROUND 2: Americas Closed Qualifier,Wildcard,Estar backs,-15.6383,Estar backs,4.94,5,loss,0,337,332
+2025-09,2025-09-25,178298,FISSURE PLAYGROUND 2: Americas Closed Qualifier,TaiLung Mafia,Perrito Panzon,-15.8263,Perrito Panzon,1.62,5,loss,0,332,327
+2025-09,2025-09-25,178359,FISSURE PLAYGROUND 2: Americas Closed Qualifier,TaiLung Mafia,Perrito Panzon,-4.6856,Perrito Panzon,1.71,1,loss,0,327,326
+2025-09,2025-09-25,178289,BetBoom Streamers Battle 11,Goodwin Team,YBN Team,-15.3941,YBN Team,2.4,5,loss,0,326,321
+2025-09,2025-09-25,178311,BetBoom Streamers Battle 11,Goodwin Team,YBN Team,6.7141,Goodwin Team,1.48,2,loss,0,321,319
+2025-09,2025-09-25,178318,BetBoom Streamers Battle 11,Goodwin Team,YBN Team,-3.2485,YBN Team,2.4,1,win,2,319,320
+2025-09,2025-09-25,178290,BetBoom Streamers Battle 11,Cooman Team,Stray Team,-13.7252,Stray Team,2.6,4,win,10,320,326
+2025-09,2025-09-25,178345,BetBoom Streamers Battle 11,Cooman Team,Stray Team,-57.0524,Stray Team,2.2,18,win,39,326,347
+2025-09,2025-09-25,178341,DreamLeague S27 NA CQ,TEAM SLAYERS,Team KaranDotes,23.4639,TEAM SLAYERS,1.77,8,loss,0,347,339
+2025-09,2025-09-25,178291,DreamLeague S27 SA CQ,OG.LATAM,Peru Rejects,31.2325,OG.LATAM,1.97,10,loss,0,339,329
+2025-09,2025-09-25,178322,DreamLeague S27 SA CQ,OG.LATAM,Peru Rejects,15.8944,OG.LATAM,2.47,5,win,12,329,336
+2025-09,2025-09-25,178330,DreamLeague S27 SA CQ,OG.LATAM,Peru Rejects,-14.6313,Peru Rejects,1.68,4,loss,0,336,332
+2025-09,2025-09-25,178292,DreamLeague S27 SA CQ,Sentinel Esports,Estar backs,-5.6885,Estar backs,1.78,1,loss,0,332,331
+2025-09,2025-09-25,178323,DreamLeague S27 SA CQ,Sentinel Esports,Estar backs,5.5918,Sentinel Esports,1.89,1,loss,0,331,330
+2025-09,2025-09-25,178313,DreamLeague S27 EEU CQ,Inner Circle,1win Team,-22.9639,1win Team,2,7,win,14,330,337
+2025-09,2025-09-25,178321,DreamLeague S27 EEU CQ,Inner Circle,1win Team,-16.4377,1win Team,1.88,5,win,9,337,341
+2025-09,2025-09-25,178346,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Kalmychata,eSpoiled,-27.9593,eSpoiled,1.78,9,loss,0,341,332
+2025-09,2025-09-25,178358,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Kalmychata,eSpoiled,-23.8883,eSpoiled,1.98,7,loss,0,332,325
+2025-09,2025-09-25,178349,DreamLeague S27 SA CQ,ALLSTARS,OG.LATAM,-4.9433,OG.LATAM,1.05,1,win,1,325,325
+2025-09,2025-09-25,178354,DreamLeague S27 SA CQ,ALLSTARS,OG.LATAM,29.5084,ALLSTARS,2.6,9,loss,0,325,316
+2025-09,2025-09-25,178367,Zeinternacional 2,Los Bemboyz,High Skills,-27.0795,High Skills,2.11,8,win,16,316,324
+2025-09,2025-09-26,178281,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,HunterZ,17.2886,OG.LATAM,1.7,5,loss,0,324,319
+2025-09,2025-09-26,178513,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,HunterZ,-12.5484,HunterZ,2.1,4,loss,0,319,315
+2025-09,2025-09-26,178526,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,HunterZ,6.5192,OG.LATAM,1.6,2,win,3,315,316
+2025-09,2025-09-26,178342,DreamLeague S27 SA CQ,Chimpanzini Bananini,HunterZ,11.2436,Chimpanzini Bananini,1.82,3,win,5,316,318
+2025-09,2025-09-26,178381,DreamLeague S27 SA CQ,Chimpanzini Bananini,HunterZ,25.5596,Chimpanzini Bananini,1.81,8,loss,0,318,310
+2025-09,2025-09-26,178389,DreamLeague S27 SA CQ,Chimpanzini Bananini,HunterZ,22.7972,Chimpanzini Bananini,1.96,7,win,13,310,316
+2025-09,2025-09-26,178343,BLAST Slam IV: China Closed Qualifier,Yakutou Brothers,Hong shi zhang zui,6.9318,Yakutou Brothers,1.42,2,loss,0,316,314
+2025-09,2025-09-26,178384,BLAST Slam IV: China Closed Qualifier,Yakutou Brothers,Hong shi zhang zui,-6.2611,Hong shi zhang zui,2.65,1,loss,0,314,313
+2025-09,2025-09-26,178402,BLAST Slam IV: China Closed Qualifier,Roar Gaming,Cloud Rising,18.2280,Roar Gaming,1.32,5,win,6,313,314
+2025-09,2025-09-26,178412,BLAST Slam IV: China Closed Qualifier,Roar Gaming,Cloud Rising,13.8880,Roar Gaming,1.32,4,win,5,314,315
+2025-09,2025-09-26,178368,RES Unchained BLAST SEA CQ,BOOM Esports,InterActive Philippines,8.6274,BOOM Esports,1.05,2,win,2,315,315
+2025-09,2025-09-26,178390,RES Unchained BLAST SEA CQ,BOOM Esports,InterActive Philippines,-18.5659,InterActive Philippines,6.22,5,loss,0,315,310
+2025-09,2025-09-26,178369,RES Unchained BLAST SEA CQ,Team Nemesis,Kopite,-13.5345,Kopite,3.1,4,loss,0,310,306
+2025-09,2025-09-26,178410,RES Unchained BLAST SEA CQ,The MongolZ,REKONIX,-27.4186,REKONIX,1.32,8,win,10,306,308
+2025-09,2025-09-26,178439,RES Unchained BLAST EU CQ,Natus Vincere,Aim Possible,-39.0996,Aim Possible,7.29,12,loss,0,308,296
+2025-09,2025-09-26,178451,RES Unchained BLAST EU CQ,Natus Vincere,Aim Possible,-28.4207,Aim Possible,7.34,8,loss,0,296,288
+2025-09,2025-09-26,178476,RES Unchained BLAST EU CQ,OG,Kalmychata,-43.3289,Kalmychata,2.13,12,loss,0,288,276
+2025-09,2025-09-26,178491,RES Unchained BLAST EU CQ,OG,Kalmychata,-13.7897,Kalmychata,2.1,3,win,6,276,279
+2025-09,2025-09-26,178510,RES Unchained BLAST EU CQ,OG,Kalmychata,-7.1633,Kalmychata,1.98,1,win,1,279,279
+2025-09,2025-09-26,178449,DreamLeague S27 WEU CQ,AVULUS,MOUZ,-28.2621,MOUZ,1.68,7,loss,0,279,272
+2025-09,2025-09-26,178469,DreamLeague S27 WEU CQ,AVULUS,MOUZ,-35.4389,MOUZ,1.72,9,loss,0,272,263
+2025-09,2025-09-26,178450,DreamLeague S27 WEU CQ,Zero Tenacity,Pipsqueak+4,-28.0683,Pipsqueak+4,1.8,7,win,12,263,268
+2025-09,2025-09-26,178467,DreamLeague S27 WEU CQ,Zero Tenacity,Pipsqueak+4,-32.6892,Pipsqueak+4,1.78,8,win,14,268,274
+2025-09,2025-09-26,178440,DreamLeague S27 EEU CQ,eSpoiled,1win Team,-15.8785,1win Team,1.29,4,win,5,274,275
+2025-09,2025-09-26,178461,DreamLeague S27 EEU CQ,eSpoiled,1win Team,-42.5179,1win Team,1.3,11,loss,0,275,264
+2025-09,2025-09-26,178479,DreamLeague S27 EEU CQ,eSpoiled,1win Team,25.6663,eSpoiled,2.75,6,win,16,264,274
+2025-09,2025-09-26,178364,DreamLeague S27 SA CQ,OG.LATAM,Flame,23.1497,OG.LATAM,1.63,6,win,9,274,277
+2025-09,2025-09-26,178378,DreamLeague S27 SA CQ,OG.LATAM,Flame,-12.3913,Flame,2.48,3,loss,0,277,274
+2025-09,2025-09-26,178418,DreamLeague S27 CN CQ,Yakutou Brothers,Tearlaments,-11.3359,Tearlaments,2.77,3,win,8,274,279
+2025-09,2025-09-26,178434,DreamLeague S27 CN CQ,Yakutou Brothers,Tearlaments,12.3954,Yakutou Brothers,1.41,3,win,4,279,280
+2025-09,2025-09-26,178392,DreamLeague S27 SEA CQ,Execration,Team Aureus,-17.6620,Team Aureus,1.71,4,win,6,280,282
+2025-09,2025-09-26,178400,DreamLeague S27 SEA CQ,Execration,Team Aureus,-18.0607,Team Aureus,1.64,5,loss,0,282,277
+2025-09,2025-09-26,178414,DreamLeague S27 SEA CQ,Execration,Team Aureus,32.6486,Execration,2.1,9,loss,0,277,268
+2025-09,2025-09-26,178424,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Kalmychata,L1ga Team,8.5137,Kalmychata,1.95,2,loss,0,268,266
+2025-09,2025-09-26,178456,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Kalmychata,L1ga Team,35.2925,Kalmychata,1.82,9,loss,0,266,257
+2025-09,2025-09-26,178448,DreamLeague S27 SEA CQ,BOOM Esports,Team Aureus,-4.8199,Team Aureus,1.8,1,loss,0,257,256
+2025-09,2025-09-26,178431,BLAST Slam IV: China Closed Qualifier,Hong shi zhang zui,Cloud Rising,8.9850,Hong shi zhang zui,1.32,2,win,2,256,256
+2025-09,2025-09-26,178442,RES Unchained BLAST SEA CQ,Kopite,InterActive Philippines,-9.7190,InterActive Philippines,2.48,2,loss,0,256,254
+2025-09,2025-09-26,178455,RES Unchained BLAST SEA CQ,Kopite,InterActive Philippines,14.3444,Kopite,1.47,3,win,4,254,255
+2025-09,2025-09-26,178443,RES Unchained BLAST SEA CQ,REKONIX,Execration,30.1666,REKONIX,1.91,7,loss,0,255,248
+2025-09,2025-09-26,178454,RES Unchained BLAST SEA CQ,REKONIX,Execration,55.8934,REKONIX,1.84,13,loss,0,248,235
+2025-09,2025-09-26,178459,DreamLeague S27 CN CQ,Hong shi zhang zui,Yakutou Brothers,29.6268,Hong shi zhang zui,2.3,6,loss,0,235,229
+2025-09,2025-09-26,178466,DreamLeague S27 CN CQ,Hong shi zhang zui,Yakutou Brothers,-7.0260,Yakutou Brothers,1.52,1,win,1,229,229
+2025-09,2025-09-26,178480,DreamLeague S27 CN CQ,Hong shi zhang zui,Yakutou Brothers,25.1249,Hong shi zhang zui,2.85,5,win,14,229,238
+2025-09,2025-09-26,178503,DreamLeague S27 CN CQ,Hong shi zhang zui,Yakutou Brothers,17.2149,Hong shi zhang zui,2.57,4,loss,0,238,234
+2025-09,2025-09-26,178473,RES Unchained BLAST SEA CQ,BOOM Esports,Team Nemesis,-16.8414,Team Nemesis,2.43,3,loss,0,234,231
+2025-09,2025-09-26,178508,RES Unchained BLAST SEA CQ,BOOM Esports,Team Nemesis,13.0320,BOOM Esports,1.48,3,win,4,231,232
+2025-09,2025-09-26,178490,RES Unchained BLAST SEA CQ,The MongolZ,Team Aureus,-40.2335,Team Aureus,1.28,9,win,11,232,234
+2025-09,2025-09-26,178475,BetBoom Streamers Battle 11,Team by_Owl,Travoman Team,-13.6667,Travoman Team,2.4,3,win,7,234,238
+2025-09,2025-09-26,178506,BetBoom Streamers Battle 11,Team by_Owl,Travoman Team,12.5458,Team by_Owl,1.52,2,win,3,238,239
+2025-09,2025-09-26,178523,RES Unchained BLAST EU CQ,Natus Vincere,Aurora,5.4585,Natus Vincere,2.44,1,loss,0,239,238
+2025-09,2025-09-26,178532,RES Unchained BLAST EU CQ,Natus Vincere,Aurora,-33.9231,Aurora,1.52,8,loss,0,238,230
+2025-09,2025-09-26,178546,RES Unchained BLAST EU CQ,Aim Possible,Runa Team,16.6996,Aim Possible,5.06,3,win,15,230,242
+2025-09,2025-09-26,178551,RES Unchained BLAST EU CQ,Aim Possible,Runa Team,14.6072,Aim Possible,3.68,3,loss,0,242,239
+2025-09,2025-09-26,178495,BetBoom Streamers Battle 11,Travoman Team,Stray Team,-19.9355,Stray Team,2,4,win,8,239,243
+2025-09,2025-09-26,178530,BetBoom Streamers Battle 11,Travoman Team,Stray Team,-17.9450,Stray Team,1.85,4,win,7,243,246
+2025-09,2025-09-26,178489,DreamLeague S27 WEU CQ,AVULUS,Pipsqueak+4,-8.8147,Pipsqueak+4,2.52,2,loss,0,246,244
+2025-09,2025-09-26,178512,DreamLeague S27 WEU CQ,AVULUS,Pipsqueak+4,-5.3668,Pipsqueak+4,2.8,1,win,2,244,245
+2025-09,2025-09-26,178521,DreamLeague S27 WEU CQ,AVULUS,Pipsqueak+4,-5.0798,Pipsqueak+4,2.48,1,loss,0,245,244
+2025-09,2025-09-26,178487,BLAST Slam IV: China Closed Qualifier,Yakutou Brothers,Roar Gaming,46.3092,Yakutou Brothers,1.29,11,win,14,244,247
+2025-09,2025-09-26,178519,BLAST Slam IV: China Closed Qualifier,Yakutou Brothers,Roar Gaming,-12.9162,Roar Gaming,3.35,3,loss,0,247,244
+2025-09,2025-09-26,178488,DreamLeague S27 EEU CQ,Runa Team,eSpoiled,-6.5318,eSpoiled,2.17,1,win,2,244,245
+2025-09,2025-09-26,178514,DreamLeague S27 EEU CQ,Runa Team,eSpoiled,-40.4496,eSpoiled,2.41,9,loss,0,245,236
+2025-09,2025-09-26,178522,DreamLeague S27 EEU CQ,Runa Team,eSpoiled,-5.7208,eSpoiled,2.32,1,loss,0,236,235
+2025-09,2025-09-26,178493,DreamLeague S27 NA CQ,the bug,Team KaranDotes,-10.2494,Team KaranDotes,5.98,2,loss,0,235,233
+2025-09,2025-09-26,178529,DreamLeague S27 NA CQ,the bug,Team KaranDotes,-11.5431,Team KaranDotes,7.04,2,loss,0,233,231
+2025-09,2025-09-26,178542,DreamLeague S27 SA CQ,HunterZ,OG.LATAM,28.3443,HunterZ,2.07,6,loss,0,231,225
+2025-09,2025-09-26,178524,RES Unchained BLAST EU CQ,Kalmychata,Yellow Submarine,-28.1184,Yellow Submarine,1.84,6,win,11,225,230
+2025-09,2025-09-26,178531,RES Unchained BLAST EU CQ,Kalmychata,Yellow Submarine,5.8328,Kalmychata,2.2,1,win,2,230,231
+2025-09,2025-09-26,178539,RES Unchained BLAST EU CQ,Kalmychata,Yellow Submarine,-17.5036,Yellow Submarine,1.72,4,win,6,231,233
+2025-09,2025-09-26,178553,DreamLeague S27 NA CQ,Wildcard,the bug,-5.1079,the bug,9.28,1,loss,0,233,232
+2025-09,2025-09-26,178565,DreamLeague S27 NA CQ,Wildcard,the bug,8.6847,Wildcard,1.01,2,win,2,232,232
+2025-09,2025-09-26,178555,RES Unchained BLAST EU CQ,OG,AVULUS,-7.2573,AVULUS,1.42,1,loss,0,232,231
+2025-09,2025-09-26,178567,RES Unchained BLAST EU CQ,OG,AVULUS,-33.0716,AVULUS,1.66,7,loss,0,231,224
+2025-09,2025-09-26,178538,European Pro League 30,Passion UA,Inner Circle,-9.6000,Inner Circle,2.13,2,loss,0,224,222
+2025-09,2025-09-26,178557,DreamLeague S27 SA CQ,Chimpanzini Bananini,OG.LATAM,16.1690,Chimpanzini Bananini,1.85,3,win,5,222,224
+2025-09,2025-09-26,178569,DreamLeague S27 SA CQ,Chimpanzini Bananini,OG.LATAM,18.8355,Chimpanzini Bananini,1.74,4,win,6,224,226
+2025-09,2025-09-26,178573,DreamLeague S27 SA CQ,Chimpanzini Bananini,OG.LATAM,12.5563,Chimpanzini Bananini,1.61,2,loss,0,226,224
+2025-09,2025-09-26,178580,DreamLeague S27 SA CQ,Chimpanzini Bananini,OG.LATAM,7.3306,Chimpanzini Bananini,1.73,1,loss,0,224,223
+2025-09,2025-09-27,178497,RES Unchained BLAST SEA CQ,REKONIX,Kopite,25.2764,REKONIX,1.19,5,win,5,223,223
+2025-09,2025-09-27,178598,RES Unchained BLAST SEA CQ,REKONIX,Kopite,-18.2187,Kopite,3.82,4,win,15,223,234
+2025-09,2025-09-27,178606,RES Unchained BLAST SEA CQ,REKONIX,Kopite,10.9198,REKONIX,1.28,2,win,2,234,234
+2025-09,2025-09-27,178611,BLAST Slam IV: China Closed Qualifier,Dong,Hong shi zhang zui,29.0157,Dong,6.64,6,loss,0,234,228
+2025-09,2025-09-27,178581,BLAST Slam IV: China Closed Qualifier,Yakutou Brothers,Tearlaments,4.8130,Yakutou Brothers,1.32,1,loss,0,228,227
+2025-09,2025-09-27,178649,BLAST Slam IV: China Closed Qualifier,Yakutou Brothers,Tearlaments,-24.4642,Tearlaments,2.87,5,loss,0,227,222
+2025-09,2025-09-27,178558,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,Wildcard,22.8435,OG.LATAM,2.1,5,win,10,222,227
+2025-09,2025-09-27,178597,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,Wildcard,-31.8735,Wildcard,1.48,7,win,10,227,230
+2025-09,2025-09-27,178613,FISSURE PLAYGROUND 2: Americas Closed Qualifier,OG.LATAM,Wildcard,7.0680,OG.LATAM,2.7,1,loss,0,230,229
+2025-09,2025-09-27,178563,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Team Nemesis,Team Aureus,33.2126,Team Nemesis,2.2,7,win,15,229,237
+2025-09,2025-09-27,178589,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Team Nemesis,Team Aureus,-20.3852,Team Aureus,1.65,4,win,6,237,239
+2025-09,2025-09-27,178594,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Team Nemesis,Team Aureus,-9.5118,Team Aureus,1.55,2,loss,0,239,237
+2025-09,2025-09-27,178607,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,BOOM Esports,29.1574,Talon Esports,1.66,6,win,9,237,240
+2025-09,2025-09-27,178619,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,BOOM Esports,-11.8288,BOOM Esports,2.2,2,win,4,240,242
+2025-09,2025-09-27,178665,RES Unchained BLAST EU CQ,Kalmychata,Runa Team,-9.7755,Runa Team,1.62,2,win,3,242,243
+2025-09,2025-09-27,178672,RES Unchained BLAST EU CQ,Kalmychata,Runa Team,-18.2966,Runa Team,1.43,4,win,5,243,244
+2025-09,2025-09-27,178684,RES Unchained BLAST EU CQ,Natus Vincere,Yellow Submarine,15.9935,Natus Vincere,1.28,3,win,3,244,244
+2025-09,2025-09-27,178721,RES Unchained BLAST EU CQ,Natus Vincere,Yellow Submarine,-18.3834,Yellow Submarine,4.32,4,loss,0,244,240
+2025-09,2025-09-27,178632,FISSURE PG2 WEU CQ,MOUZ,sifr00,21.1874,MOUZ,1.05,5,win,5,240,240
+2025-09,2025-09-27,178660,FISSURE PG2 WEU CQ,AVULUS,OG,-10.9308,OG,2.38,2,win,4,240,242
+2025-09,2025-09-27,178673,FISSURE PG2 WEU CQ,AVULUS,OG,-5.3832,OG,2.27,1,loss,0,242,241
+2025-09,2025-09-27,178689,FISSURE PG2 WEU CQ,AVULUS,OG,-7.5536,OG,2.3,1,loss,0,241,240
+2025-09,2025-09-27,178685,FISSURE PG2 WEU CQ,Virtus.pro,Zero Tenacity,6.1342,Virtus.pro,1.35,1,win,1,240,240
+2025-09,2025-09-27,178727,FISSURE PG2 WEU CQ,Virtus.pro,Zero Tenacity,16.4246,Virtus.pro,1.3,3,loss,0,240,237
+2025-09,2025-09-27,178738,FISSURE PG2 WEU CQ,Virtus.pro,Zero Tenacity,5.4923,Virtus.pro,1.42,1,win,1,237,237
+2025-09,2025-09-27,178686,FISSURE PG2 WEU CQ,Winter Bear,Pipsqueak+4,13.3121,Winter Bear,4,3,loss,0,237,234
+2025-09,2025-09-27,178624,RES Unchained BLAST SEA CQ,Team Nemesis,Team Aureus,33.6345,Team Nemesis,2.03,7,loss,0,234,227
+2025-09,2025-09-27,178638,RES Unchained BLAST SEA CQ,BOOM Esports,Execration,-20.6232,Execration,2.46,4,win,9,227,232
+2025-09,2025-09-27,178650,RES Unchained BLAST SEA CQ,BOOM Esports,Execration,-9.1075,Execration,2.42,2,win,4,232,234
+2025-09,2025-09-27,178640,European Pro League 30,Pipsqueak+4,Lynx,6.6521,Pipsqueak+4,1.38,1,loss,0,234,233
+2025-09,2025-09-27,178648,European Pro League 30,Pipsqueak+4,Lynx,11.3155,Pipsqueak+4,1.42,2,win,2,233,233
+2025-09,2025-09-27,178661,European Pro League 30,Pipsqueak+4,Lynx,22.9433,Pipsqueak+4,1.37,5,loss,0,233,228
+2025-09,2025-09-27,178657,BB Streamers Battle 11,Goodwin Team,Solo Team,8.7591,Goodwin Team,2.15,1,win,2,228,229
+2025-09,2025-09-27,178669,BB Streamers Battle 11,Goodwin Team,Solo Team,-6.3805,Solo Team,1.85,1,win,1,229,229
+2025-09,2025-09-27,178681,BB Streamers Battle 11,Goodwin Team,Solo Team,26.4966,Goodwin Team,2.25,6,win,13,229,236
+2025-09,2025-09-27,178666,BLAST Slam IV: China Closed Qualifier,Roar Gaming,Hong shi zhang zui,-18.0487,Hong shi zhang zui,1.48,4,loss,0,236,232
+2025-09,2025-09-27,178675,BLAST Slam IV: China Closed Qualifier,Roar Gaming,Hong shi zhang zui,14.7721,Roar Gaming,2.42,3,win,7,232,236
+2025-09,2025-09-27,178668,RES Unchained BLAST SEA CQ,REKONIX,Team Aureus,26.7029,REKONIX,2.32,6,loss,0,236,230
+2025-09,2025-09-27,178680,RES Unchained BLAST SEA CQ,REKONIX,Team Aureus,-8.6785,Team Aureus,1.51,1,loss,0,230,229
+2025-09,2025-09-27,178694,RES Unchained BLAST SEA CQ,REKONIX,Team Aureus,18.8062,REKONIX,2.34,4,loss,0,229,225
+2025-09,2025-09-27,178691,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Execration,Yakutou Brothers,-12.8052,Yakutou Brothers,1.62,2,loss,0,225,223
+2025-09,2025-09-27,178712,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Execration,Yakutou Brothers,17.5983,Execration,2.1,3,loss,0,223,220
+2025-09,2025-09-27,178683,BB Streamers Battle 11,Team by_Owl,Stray Team,6.2032,Team by_Owl,1.62,1,win,1,220,220
+2025-09,2025-09-27,178716,BB Streamers Battle 11,Team by_Owl,Stray Team,-22.3739,Stray Team,2.1,4,win,8,220,224
+2025-09,2025-09-27,178731,BB Streamers Battle 11,Team by_Owl,Stray Team,11.5178,Team by_Owl,1.9,2,win,3,224,225
+2025-09,2025-09-27,178687,FISSURE PLAYGROUND 2: Americas Closed Qualifier,Perrito Panzon,Wildcard,20.3623,Perrito Panzon,2.05,4,loss,0,225,221
+2025-09,2025-09-27,178757,FISSURE PLAYGROUND 2: Americas Closed Qualifier,Perrito Panzon,Wildcard,-15.2946,Wildcard,1.75,3,loss,0,221,218
+2025-09,2025-09-27,178751,RES Unchained BLAST EU CQ,Runa Team,Aurora,-23.0328,Aurora,1.2,5,win,6,218,219
+2025-09,2025-09-27,178789,Zeinternacional 2,Rising Rage,The Monstters,21.0186,Rising Rage,1.64,4,loss,0,219,215
+2025-09,2025-09-28,178688,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Runa Team,L1ga Team,19.0365,Runa Team,1.71,4,win,6,215,217
+2025-09,2025-09-28,178853,FISSURE PLAYGROUND 2: Eastern Europe Closed Qualifier,Runa Team,L1ga Team,-15.1792,L1ga Team,2.3,3,loss,0,217,214
+2025-09,2025-09-28,178765,RES Unchained BLAST SEA CQ,BOOM Esports,Team Aureus,-9.2990,Team Aureus,2.05,1,win,2,214,215
+2025-09,2025-09-28,178822,RES Unchained BLAST SEA CQ,BOOM Esports,Team Aureus,-30.4525,Team Aureus,2.3,6,loss,0,215,209
+2025-09,2025-09-28,178832,BLAST Slam IV: China Closed Qualifier,Tearlaments,Roar Gaming,-12.4844,Roar Gaming,3.53,2,loss,0,209,207
+2025-09,2025-09-28,178802,Zeinternacional 2,The Blacklist,The Monstters,-20.5542,The Monstters,2,4,win,8,207,211
+2025-09,2025-09-28,178806,Zeinternacional 2,High Skills,Parker y 4 Infieles,-12.4794,Parker y 4 Infieles,2.63,2,loss,0,211,209
+2025-09,2025-09-28,178845,European Pro League 30,Nemiga Gaming,eSpoiled,-14.4488,eSpoiled,1.72,3,loss,0,209,206
+2025-09,2025-09-28,178858,European Pro League 30,Nemiga Gaming,eSpoiled,-40.2747,eSpoiled,1.78,8,win,14,206,212
+2025-09,2025-09-28,178840,RES Unchained BLAST SEA CQ,Team Aureus,Execration,-13.3469,Execration,1.9,2,loss,0,212,210
+2025-09,2025-09-28,178843,RES Unchained BLAST SEA CQ,Team Aureus,Execration,-60.9407,Execration,1.85,12,win,22,210,220
+2025-09,2025-09-28,178854,RES Unchained BLAST SEA CQ,Team Aureus,Execration,-12.3418,Execration,1.85,2,loss,0,220,218
+2025-09,2025-09-28,178859,BLAST Slam IV: China Closed Qualifier,Yakutou Brothers,Tearlaments,46.8347,Yakutou Brothers,1.48,10,win,14,218,222
+2025-09,2025-09-28,178873,BLAST Slam IV: China Closed Qualifier,Yakutou Brothers,Tearlaments,-8.6210,Tearlaments,2.7,1,loss,0,222,221
+2025-09,2025-09-28,178891,RES Unchained BLAST EU CQ,Yellow Submarine,Aurora,21.2675,Yellow Submarine,3.66,4,loss,0,221,217
+2025-09,2025-09-28,178897,RES Unchained BLAST EU CQ,Yellow Submarine,Aurora,-25.1331,Aurora,1.26,5,win,6,217,218
+2025-09,2025-09-28,178912,Zeinternacional 2,The Lyons,Psycho Panther,13.8121,The Lyons,1.54,3,win,4,218,219
+2025-09,2025-09-28,178920,Zeinternacional 2,High Skills,Psycho Panther,6.1869,High Skills,1.31,1,win,1,219,219
+2025-09,2025-09-29,178932,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Team Aureus,Hong shi zhang zui,-6.4544,Hong shi zhang zui,3.3,1,loss,0,219,218
+2025-09,2025-09-29,178911,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,BOOM Esports,Execration,-16.9479,Execration,2.08,3,win,6,218,221
+2025-09,2025-09-29,178953,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,BOOM Esports,Execration,-15.2703,Execration,2.1,3,win,6,221,224
+2025-09,2025-09-29,178976,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Team Nemesis,REKONIX,-15.4853,REKONIX,2,3,win,6,224,227
+2025-09,2025-09-29,178992,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Team Nemesis,REKONIX,41.7351,Team Nemesis,1.85,9,loss,0,227,218
+2025-09,2025-09-29,179009,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,Yakutou Brothers,-36.9289,Yakutou Brothers,2,8,win,16,218,226
+2025-09,2025-09-29,179017,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,Yakutou Brothers,-29.2371,Yakutou Brothers,2.15,6,win,12,226,232
+2025-09,2025-09-29,178967,FISSURE PG2 WEU CQ,sifr00,OG,-12.4310,OG,1.04,2,win,2,232,232
+2025-09,2025-09-29,178975,FISSURE PG2 WEU CQ,sifr00,OG,16.1605,sifr00,7.5,3,loss,0,232,229
+2025-09,2025-09-29,178997,FISSURE PG2 WEU CQ,Zero Tenacity,Winter Bear,-4.7461,Winter Bear,4,1,loss,0,229,228
+2025-09,2025-09-29,179008,FISSURE PG2 WEU CQ,Zero Tenacity,Winter Bear,11.8590,Zero Tenacity,1.2,2,win,2,228,228
+2025-09,2025-09-29,178965,FISSURE PG2 WEU CQ,MOUZ,AVULUS,-20.5281,AVULUS,1.85,4,loss,0,228,224
+2025-09,2025-09-29,179049,FISSURE PG2 WEU CQ,MOUZ,AVULUS,-17.0208,AVULUS,1.93,3,win,5,224,226
+2025-09,2025-09-29,179063,FISSURE PG2 WEU CQ,MOUZ,AVULUS,-10.1277,AVULUS,1.85,2,win,3,226,227
+2025-09,2025-09-29,179088,FISSURE PG2 WEU CQ,Virtus.pro,Pipsqueak+4,-8.7622,Pipsqueak+4,2.4,1,loss,0,227,226
+2025-09,2025-09-29,179090,FISSURE PG2 WEU CQ,Virtus.pro,Pipsqueak+4,27.1602,Virtus.pro,1.42,6,win,8,226,228
+2025-09,2025-09-29,178928,Zeinternacional 2,Osos Barberos,The Blacklist,-18.7522,The Blacklist,1.87,4,win,7,228,231
+2025-09,2025-09-29,178934,Zeinternacional 2,Osos Barberos,Rising Rage,24.3832,Osos Barberos,1.87,5,loss,0,231,226
+2025-09,2025-09-29,178977,European Pro League 30,L1ga Team,Kalmychata,-9.3497,Kalmychata,2.05,2,win,4,226,228
+2025-09,2025-09-29,178989,BetBoom Streamers Battle 11,Solo Team,YBN Team,-19.7742,YBN Team,1.65,4,loss,0,228,224
+2025-09,2025-09-29,179002,BetBoom Streamers Battle 11,Solo Team,YBN Team,-4.6016,YBN Team,1.6,1,win,1,224,224
+2025-09,2025-09-29,179014,BetBoom Streamers Battle 11,Solo Team,YBN Team,-14.0194,YBN Team,1.52,3,win,4,224,225
+2025-09,2025-09-29,179036,BetBoom Streamers Battle 11,Travoman Team,Cooman Team,12.8055,Travoman Team,1.47,2,win,2,225,225
+2025-09,2025-09-29,179013,BetBoom Streamers Battle 11,Morphilina Team,Travoman Team,-6.9957,Travoman Team,1.82,1,win,1,225,225
+2025-09,2025-09-29,179077,BetBoom Streamers Battle 11,Morphilina Team,Travoman Team,10.5553,Morphilina Team,2.7,2,loss,0,225,223
+2025-09,2025-09-29,179098,Zeinternacional 2,Rising Rage,High Skills,-23.3564,High Skills,2,5,loss,0,223,218
+2025-09,2025-09-29,179127,Zeinternacional 2,Rising Rage,High Skills,17.9342,Rising Rage,1.78,3,win,5,218,220
+2025-09,2025-09-30,179210,BetBoom Streamers Battle 11,Team by_Owl,Cooman Team,18.1873,Team by_Owl,1.26,4,loss,0,220,216
+2025-09,2025-09-30,179224,BetBoom Streamers Battle 11,Team by_Owl,Cooman Team,-10.4190,Cooman Team,2.7,2,loss,0,216,214
+2025-09,2025-09-30,179242,BetBoom Streamers Battle 11,Rostik Team,Goodwin Team,16.6955,Rostik Team,1.47,3,win,4,214,215
+2025-09,2025-09-30,179216,BetBoom Streamers Battle 11,VooDooSh Team,YBN Team,-21.3450,YBN Team,2.25,4,win,9,215,220
+2025-09,2025-09-30,179252,BetBoom Streamers Battle 11,VooDooSh Team,YBN Team,28.6289,VooDooSh Team,2.25,6,loss,0,220,214
+2025-09,2025-09-30,179099,Zeinternacional 2,The Monstters,The Blacklist,6.1435,The Monstters,1.84,1,loss,0,214,213
+2025-09,2025-09-30,179140,Zeinternacional 2,The Monstters,The Blacklist,12.7966,The Monstters,1.74,2,win,3,213,214
+2025-09,2025-09-30,179144,Zeinternacional 2,The Monstters,The Blacklist,6.3578,The Monstters,1.69,1,win,1,214,214
+2025-09,2025-09-30,179101,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,Team Aureus,-6.0174,Team Aureus,2.37,1,loss,0,214,213
+2025-09,2025-09-30,179146,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,Team Aureus,-13.4761,Team Aureus,2.31,2,loss,0,213,211
+2025-09,2025-09-30,179163,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Execration,Team Nemesis,-7.5682,Team Nemesis,2.29,1,win,2,211,212
+2025-09,2025-09-30,179172,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Execration,Team Nemesis,-4.9094,Team Nemesis,2.1,1,loss,0,212,211
+2025-09,2025-09-30,179178,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,REKONIX,Yakutou Brothers,-45.0795,Yakutou Brothers,1.34,9,loss,0,211,202
+2025-09,2025-09-30,179191,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,REKONIX,Yakutou Brothers,-11.0251,Yakutou Brothers,1.42,2,win,2,202,202
+2025-09,2025-09-30,179199,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,REKONIX,Yakutou Brothers,-7.8358,Yakutou Brothers,1.43,1,win,1,202,202
+2025-09,2025-09-30,179169,FISSURE PG2 WEU CQ,Pipsqueak+4,OG,-25.8992,OG,1.81,5,win,9,202,206
+2025-09,2025-09-30,179196,FISSURE PG2 WEU CQ,Pipsqueak+4,OG,18.7756,Pipsqueak+4,1.85,3,loss,0,206,203
+2025-09,2025-09-30,179195,FISSURE PG2 WEU CQ,MOUZ,Zero Tenacity,32.6324,MOUZ,1.49,6,win,8,203,205
+2025-09,2025-09-30,179209,FISSURE PG2 WEU CQ,MOUZ,Zero Tenacity,19.2795,MOUZ,1.38,3,win,4,205,206
+2025-09,2025-09-30,179192,FISSURE PG2 WEU CQ,AVULUS,Virtus.pro,4.9846,AVULUS,1.92,1,loss,0,206,205
+2025-09,2025-09-30,179232,FISSURE PG2 WEU CQ,AVULUS,Virtus.pro,-38.1109,Virtus.pro,1.78,7,loss,0,205,198
+2025-09,2025-09-30,179237,FISSURE PG2 WEU CQ,AVULUS,Virtus.pro,12.1178,AVULUS,1.92,2,loss,0,198,196
+2025-09,2025-09-30,179164,European Pro League 30,eSpoiled,Passion UA,20.0344,eSpoiled,2,3,loss,0,196,193
+2025-09,2025-09-30,179187,European Pro League 30,eSpoiled,Passion UA,-13.1798,Passion UA,1.77,2,loss,0,193,191
+2025-09,2025-09-30,179198,European Pro League 30,eSpoiled,Passion UA,17.7395,eSpoiled,1.94,3,loss,0,191,188
+2025-09,2025-09-30,179218,European Pro League 30,team lynx,Kalmychata,-35.1200,Kalmychata,1.63,6,win,9,188,191
+2025-09,2025-09-30,179186,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,Execration,-16.0636,Execration,2.28,3,loss,0,191,188
+2025-09,2025-09-30,179220,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,Execration,11.3492,Talon Esports,1.48,2,win,2,188,188
+2025-09,2025-09-30,179223,FISSURE PG2 WEU CQ,OG,MOUZ,-12.3883,MOUZ,1.67,2,win,3,188,189
+2025-09,2025-09-30,179250,FISSURE PG2 WEU CQ,OG,MOUZ,11.9128,OG,2.58,2,win,5,189,192
+2025-09,2025-09-30,179256,FISSURE PG2 WEU CQ,OG,MOUZ,-35.2835,MOUZ,1.61,6,win,9,192,195
+2025-09,2025-09-30,179263,Zeinternacional 2,Admiral Crew,High Skills,-17.3749,High Skills,1.79,3,win,5,195,197
+2025-10,2025-10-01,179336,BetBoom Streamers Battle 11,Rostik Team,Solo Team,-10.8016,Solo Team,3.47,2,win,6,197,201
+2025-10,2025-10-01,179348,BetBoom Streamers Battle 11,Rostik Team,Solo Team,8.9840,Rostik Team,1.32,1,loss,0,201,200
+2025-10,2025-10-01,179366,BetBoom Streamers Battle 11,VooDooSh Team,Solo Team,-13.3964,Solo Team,1.47,2,win,2,200,200
+2025-10,2025-10-01,179352,BetBoom Streamers Battle 11,VooDooSh Team,Goodwin Team,-26.8903,Goodwin Team,1.6,5,loss,0,200,195
+2025-10,2025-10-01,179382,BetBoom Streamers Battle 11,VooDooSh Team,Goodwin Team,-16.8243,Goodwin Team,1.35,3,win,4,195,196
+2025-10,2025-10-01,179387,BetBoom Streamers Battle 11,VooDooSh Team,Goodwin Team,-12.0267,Goodwin Team,1.38,2,win,2,196,196
+2025-10,2025-10-01,179251,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,REKONIX,Talon Esports,39.2535,REKONIX,3.2,7,loss,0,196,189
+2025-10,2025-10-01,179299,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,REKONIX,Talon Esports,-7.3842,Talon Esports,1.25,1,loss,0,189,188
+2025-10,2025-10-01,179306,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,REKONIX,Talon Esports,-15.9247,Talon Esports,1.4,2,win,2,188,188
+2025-10,2025-10-01,179269,FISSURE PG2 WEU CQ,AVULUS,MOUZ,23.9555,AVULUS,1.84,4,win,7,188,191
+2025-10,2025-10-01,179337,FISSURE PG2 WEU CQ,AVULUS,MOUZ,-17.5641,MOUZ,2.03,3,win,6,191,194
+2025-10,2025-10-01,179345,FISSURE PG2 WEU CQ,AVULUS,MOUZ,-10.0882,MOUZ,1.88,1,win,1,194,194
+2025-10,2025-10-01,179273,Zeinternacional 2,The Blacklist,Los Bemboyz,16.4833,The Blacklist,1.85,3,win,5,194,196
+2025-10,2025-10-01,179283,Zeinternacional 2,The Blacklist,Los Bemboyz,-7.2835,Los Bemboyz,2.18,1,win,2,196,197
+2025-10,2025-10-01,179311,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,Yakutou Brothers,-35.0631,Yakutou Brothers,1.95,6,win,11,197,202
+2025-10,2025-10-01,179323,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,Yakutou Brothers,5.3298,Talon Esports,2.22,1,loss,0,202,201
+2025-10,2025-10-01,179335,FISSURE PLAYGROUND 2: Southeast Asia and China Closed Qualifier,Talon Esports,Yakutou Brothers,-17.1028,Yakutou Brothers,1.58,3,win,4,201,202
+2025-10,2025-10-01,179349,European Pro League 30,Passion UA,Kalmychata,15.8297,Passion UA,2.13,3,loss,0,202,199
+2025-10,2025-10-01,179374,European Pro League 30,Passion UA,Kalmychata,38.3720,Passion UA,2.08,7,loss,0,199,192
+2025-10,2025-10-01,179379,European Pro League 30,Nemiga Gaming,Inner Circle,-9.3175,Inner Circle,1.72,1,loss,0,192,191
+2025-10,2025-10-01,179354,FISSURE PLAYGROUND 2: Americas Closed Qualifier,TaiLung Mafia,Perrito Panzon,26.2935,TaiLung Mafia,1.66,5,win,8,191,194
+2025-10,2025-10-01,179375,FISSURE PLAYGROUND 2: Americas Closed Qualifier,TaiLung Mafia,Perrito Panzon,25.9750,TaiLung Mafia,1.63,5,loss,0,194,189
+2025-10,2025-10-01,179378,FISSURE PLAYGROUND 2: Americas Closed Qualifier,TaiLung Mafia,Perrito Panzon,35.4923,TaiLung Mafia,1.68,6,loss,0,189,183
+2025-10,2025-10-01,179385,FISSURE PLAYGROUND 2: Americas Closed Qualifier,TaiLung Mafia,Perrito Panzon,-43.2376,Perrito Panzon,2.05,7,win,14,183,190
+2025-10,2025-10-01,179386,Zeinternacional 2,High Skills,The Blacklist,33.9532,High Skills,1.73,6,loss,0,190,184
+2025-10,2025-10-01,179390,Zeinternacional 2,High Skills,The Blacklist,10.1723,High Skills,1.62,1,win,1,184,184
+2025-10,2025-10-02,179480,BetBoom Streamers Battle 11,Morphilina Team,Stray Team,-16.8068,Stray Team,1.39,3,win,4,184,185
+2025-10,2025-10-02,179493,BetBoom Streamers Battle 11,Morphilina Team,Stray Team,-13.9594,Stray Team,1.28,2,win,2,185,185
+2025-10,2025-10-02,179479,BetBoom Streamers Battle 11,Morphilina Team,Cooman Team,-11.1950,Cooman Team,1.78,2,win,3,185,186
+2025-10,2025-10-02,179505,BetBoom Streamers Battle 11,Morphilina Team,Cooman Team,-10.6918,Cooman Team,1.28,1,win,1,186,186
+2025-10,2025-10-02,179430,PGL Wallachia Season 6: Western Europe Closed Qualifier,AVULUS,Virtus.pro,-34.7774,Virtus.pro,1.68,6,loss,0,186,180
+2025-10,2025-10-02,179450,PGL Wallachia Season 6: Western Europe Closed Qualifier,AVULUS,Virtus.pro,21.6759,AVULUS,2.09,3,loss,0,180,177
+2025-10,2025-10-02,179458,PGL Wallachia Season 6: Western Europe Closed Qualifier,AVULUS,Virtus.pro,15.5669,AVULUS,2.23,2,win,4,177,179
+2025-10,2025-10-02,179467,PGL Wallachia Season 6: Western Europe Closed Qualifier,balaclavas,Zero Tenacity,13.0863,balaclavas,3.4,2,loss,0,179,177
+2025-10,2025-10-02,179485,PGL Wallachia Season 6: Western Europe Closed Qualifier,balaclavas,Zero Tenacity,-9.3952,Zero Tenacity,1.25,1,win,1,177,177
+2025-10,2025-10-02,179478,PGL Wallachia Season 6: Western Europe Closed Qualifier,MOUZ,DOGSENT,5.6654,MOUZ,1.08,1,win,1,177,177
+2025-10,2025-10-02,179496,PGL Wallachia Season 6: Western Europe Closed Qualifier,MOUZ,DOGSENT,9.4442,MOUZ,1.03,1,win,1,177,177
+2025-10,2025-10-02,179483,PGL Wallachia Season 6: Western Europe Closed Qualifier,OG,Pipsqueak+4,18.0525,OG,1.72,3,loss,0,177,174
+2025-10,2025-10-02,179504,PGL Wallachia Season 6: Western Europe Closed Qualifier,OG,Pipsqueak+4,12.0984,OG,1.7,2,win,3,174,175
+2025-10,2025-10-02,179512,PGL Wallachia Season 6: Western Europe Closed Qualifier,OG,Pipsqueak+4,-21.0888,Pipsqueak+4,2.13,3,win,6,175,178
+2025-10,2025-10-02,179427,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,1win Team,Runa Team,-16.0277,Runa Team,1.81,2,win,3,178,179
+2025-10,2025-10-02,179449,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Yellow Submarine,BIKINI BOTTOM,29.4769,Yellow Submarine,1.63,5,loss,0,179,174
+2025-10,2025-10-02,179471,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Yellow Submarine,BIKINI BOTTOM,-14.8819,BIKINI BOTTOM,2.4,2,loss,0,174,172
+2025-10,2025-10-02,179489,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Inner Circle,Passion UA,7.1897,Inner Circle,2.07,1,loss,0,172,171
+2025-10,2025-10-02,179482,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Natus Vincere,Team Tea,-10.6643,Team Tea,4.17,1,loss,0,171,170
+2025-10,2025-10-02,179515,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Natus Vincere,Team Tea,-11.6970,Team Tea,3.35,1,loss,0,170,169
+2025-10,2025-10-02,179403,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Aureus,Veroja,37.1525,Team Aureus,1.12,6,win,6,169,169
+2025-10,2025-10-02,179408,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Nemesis,Ivory,16.3280,Team Nemesis,1.3,2,loss,0,169,167
+2025-10,2025-10-02,179413,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Nemesis,Ivory,23.0972,Team Nemesis,1.41,3,win,4,167,168
+2025-10,2025-10-02,179421,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Nemesis,Ivory,-14.9492,Ivory,3.3,2,win,6,168,172
+2025-10,2025-10-02,179431,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Execration,Tekla,17.5557,Execration,1.35,3,loss,0,172,169
+2025-10,2025-10-02,179452,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Execration,Tekla,10.3256,Execration,1.42,1,win,1,169,169
+2025-10,2025-10-02,179468,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,BOOM Esports,InterActive Philippines,-15.6709,InterActive Philippines,8.57,2,loss,0,169,167
+2025-10,2025-10-02,179405,Zeinternacional 2,Rising Rage,The Blacklist,-21.9355,The Blacklist,2.04,3,win,6,167,170
+2025-10,2025-10-02,179441,European Pro League 30,team lynx,Nemiga Gaming,17.7540,team lynx,1.74,3,win,5,170,172
+2025-10,2025-10-02,179487,European Pro League 30,team lynx,Nemiga Gaming,6.6030,team lynx,1.75,1,loss,0,172,171
+2025-10,2025-10-02,179492,European Pro League 30,team lynx,Nemiga Gaming,-18.3594,Nemiga Gaming,1.85,3,loss,0,171,168
+2025-10,2025-10-02,179511,PGL Wallachia Season 6: Americas Closed Qualifier,Peru Rejects,Flame,10.6775,Peru Rejects,1.16,1,loss,0,168,167
+2025-10,2025-10-02,179484,PGL Wallachia Season 6: Americas Closed Qualifier,HunterZ,ALLSTARS,15.0718,HunterZ,1.34,2,loss,0,167,165
+2025-10,2025-10-02,179521,PGL Wallachia Season 6: Americas Closed Qualifier,HunterZ,ALLSTARS,-7.9633,ALLSTARS,2.74,1,loss,0,165,164
+2025-10,2025-10-02,179530,PGL Wallachia Season 6: Americas Closed Qualifier,HunterZ,ALLSTARS,-10.9394,ALLSTARS,2.74,1,loss,0,164,163
+2025-10,2025-10-02,179529,PGL Wallachia Season 6: Americas Closed Qualifier,TaiLung Mafia,Demonios,22.1963,TaiLung Mafia,1.22,3,win,3,163,163
+2025-10,2025-10-02,179540,PGL Wallachia Season 6: Americas Closed Qualifier,TaiLung Mafia,Demonios,-39.3625,Demonios,5.53,6,loss,0,163,157
+2025-10,2025-10-03,179503,PGL Wallachia Season 6: Americas Closed Qualifier,OG.LATAM,Perros angryy,6.9398,OG.LATAM,1.27,1,win,1,157,157
+2025-10,2025-10-03,179600,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Aureus,Ivory,13.5869,Team Aureus,1.28,2,win,2,157,157
+2025-10,2025-10-03,179609,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Execration,BOOM Esports,-22.5672,BOOM Esports,1.79,3,loss,0,157,154
+2025-10,2025-10-03,179614,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Execration,BOOM Esports,-12.0935,BOOM Esports,1.83,1,loss,0,154,153
+2025-10,2025-10-03,179545,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Veroja,Team Nemesis,-11.3742,Team Nemesis,1.23,1,win,1,153,153
+2025-10,2025-10-03,179550,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Tekla,InterActive Philippines,-12.7711,InterActive Philippines,2.8,1,loss,0,153,152
+2025-10,2025-10-03,179557,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Tekla,InterActive Philippines,14.4760,Tekla,1.48,2,loss,0,152,150
+2025-10,2025-10-03,179574,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Tekla,InterActive Philippines,-10.0512,InterActive Philippines,2.3,1,loss,0,150,149
+2025-10,2025-10-03,179604,European Pro League 30,eSpoiled,team lynx,-17.7637,team lynx,2.26,2,loss,0,149,147
+2025-10,2025-10-03,179556,PGL Wallachia Season 6: China Closed Qualifier,Tearlaments,ToLight,10.9909,Tearlaments,1.08,1,win,1,147,147
+2025-10,2025-10-03,179562,PGL Wallachia Season 6: China Closed Qualifier,Tearlaments,ToLight,-22.2945,ToLight,6.57,3,loss,0,147,144
+2025-10,2025-10-03,179587,PGL Wallachia Season 6: China Closed Qualifier,Hong shi zhang zui,Roar Gaming,-18.3030,Roar Gaming,2.15,2,win,4,144,146
+2025-10,2025-10-03,179579,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,BIKINI BOTTOM,1win Team,24.2418,BIKINI BOTTOM,2.55,3,loss,0,146,143
+2025-10,2025-10-03,179599,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Inner Circle,Team Tea,-11.1406,Team Tea,1.63,1,win,1,143,143
+2025-10,2025-10-03,179617,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Inner Circle,Team Tea,11.1574,Inner Circle,1.94,1,win,1,143,143
+2025-10,2025-10-03,179527,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Runa Team,Yellow Submarine,-11.3435,Yellow Submarine,2.22,1,loss,0,143,142
+2025-10,2025-10-03,179634,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Runa Team,Yellow Submarine,-33.9409,Yellow Submarine,2.8,4,win,11,142,149
+2025-10,2025-10-03,179641,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Runa Team,Yellow Submarine,-9.0699,Yellow Submarine,2.74,1,loss,0,149,148
+2025-10,2025-10-03,179524,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Passion UA,Natus Vincere,16.7734,Passion UA,3.22,2,loss,0,148,146
+2025-10,2025-10-03,179656,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Passion UA,Natus Vincere,9.0643,Passion UA,3.4,1,loss,0,146,145
+2025-10,2025-10-03,179606,PGL Wallachia Season 6: Western Europe Closed Qualifier,DOGSENT,OG,35.9557,DOGSENT,6.95,5,loss,0,145,140
+2025-10,2025-10-03,179613,PGL Wallachia Season 6: Western Europe Closed Qualifier,DOGSENT,OG,21.9380,DOGSENT,7.31,3,loss,0,140,137
+2025-10,2025-10-03,179633,PGL Wallachia Season 6: Western Europe Closed Qualifier,MOUZ,Pipsqueak+4,31.8835,MOUZ,1.48,4,win,5,137,138
+2025-10,2025-10-03,179563,CCT S2 Series 5,Zero Tenacity,Runa Team,13.7736,Zero Tenacity,2.7,1,loss,0,138,137
+2025-10,2025-10-03,179564,CCT S2 Series 5,NAVI Junior,OxinGame,-20.4287,OxinGame,2.4,2,win,4,137,139
+2025-10,2025-10-03,179566,CCT S2 Series 5,eSpoiled,Yellow Submarine,30.0460,eSpoiled,2.25,4,loss,0,139,135
+2025-10,2025-10-03,179655,CCT S2 Series 5,eSpoiled,Yellow Submarine,27.9570,eSpoiled,2.39,3,loss,0,135,132
+2025-10,2025-10-03,179616,BetBoom Streamers Battle 11,Goodwin Team,Cooman Team,-14.1149,Cooman Team,2.4,1,win,2,132,133
+2025-10,2025-10-03,179615,European Pro League 30,Passion UA,eSpoiled,30.2734,Passion UA,1.75,4,win,7,133,136
+2025-10,2025-10-03,179624,European Pro League 30,Passion UA,eSpoiled,16.5197,Passion UA,1.72,2,loss,0,136,134
+2025-10,2025-10-03,179623,BetBoom Streamers Battle 11,Travoman Team,Solo Team,-42.5519,Solo Team,2.15,5,loss,0,134,129
+2025-10,2025-10-03,179638,BetBoom Streamers Battle 11,Travoman Team,Solo Team,12.4731,Travoman Team,1.61,1,loss,0,129,128
+2025-10,2025-10-03,179644,BetBoom Streamers Battle 11,Travoman Team,Solo Team,-61.0735,Solo Team,2.1,7,win,14,128,135
+2025-10,2025-10-03,179654,PGL Wallachia Season 6: Americas Closed Qualifier,Flame,ALLSTARS,25.2648,Flame,1.82,3,win,5,135,137
+2025-10,2025-10-03,179660,PGL Wallachia Season 6: Americas Closed Qualifier,Flame,ALLSTARS,-11.3889,ALLSTARS,2.2,1,loss,0,137,136
+2025-10,2025-10-03,179681,PGL Wallachia Season 6: Americas Closed Qualifier,Peru Rejects,HunterZ,15.6107,Peru Rejects,1.38,2,loss,0,136,134
+2025-10,2025-10-03,179687,PGL Wallachia Season 6: Americas Closed Qualifier,Peru Rejects,HunterZ,22.8187,Peru Rejects,1.38,3,win,4,134,135
+2025-10,2025-10-04,179631,PGL Wallachia Season 6: Americas Closed Qualifier,TaiLung Mafia,OG.LATAM,13.6114,TaiLung Mafia,1.64,1,win,1,135,135
+2025-10,2025-10-04,179697,PGL Wallachia Season 6: Americas Closed Qualifier,TaiLung Mafia,OG.LATAM,15.8737,TaiLung Mafia,1.62,2,loss,0,135,133
+2025-10,2025-10-04,179714,PGL Wallachia Season 6: China Closed Qualifier,Tearlaments,Roar Gaming,8.0456,Tearlaments,1.29,1,win,1,133,133
+2025-10,2025-10-04,179719,PGL Wallachia Season 6: China Closed Qualifier,Tearlaments,Roar Gaming,-24.3806,Roar Gaming,3.58,3,loss,0,133,130
+2025-10,2025-10-04,179750,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Passion UA,1win Team,-8.8909,1win Team,1.7,1,win,1,130,130
+2025-10,2025-10-04,179722,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Yellow Submarine,Inner Circle,14.5699,Yellow Submarine,1.71,1,loss,0,130,129
+2025-10,2025-10-04,179775,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Runa Team,Natus Vincere,9.1495,Runa Team,2.47,1,loss,0,129,128
+2025-10,2025-10-04,179699,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Ivory,Tekla,-10.9673,Tekla,1.82,1,win,1,128,128
+2025-10,2025-10-04,179704,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,BOOM Esports,Team Nemesis,-16.1704,Team Nemesis,2.41,2,win,4,128,130
+2025-10,2025-10-04,179730,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Aureus,Execration,-41.2701,Execration,2,5,loss,0,130,125
+2025-10,2025-10-04,179739,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Aureus,Execration,13.1345,Team Aureus,1.75,1,loss,0,125,124
+2025-10,2025-10-04,179748,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Aureus,Execration,-11.2762,Execration,1.92,1,loss,0,124,123
+2025-10,2025-10-04,179721,PGL Wallachia Season 6: Western Europe Closed Qualifier,Pipsqueak+4,Virtus.pro,23.9560,Pipsqueak+4,2.4,2,loss,0,123,121
+2025-10,2025-10-04,179731,PGL Wallachia Season 6: Western Europe Closed Qualifier,Pipsqueak+4,Virtus.pro,10.0124,Pipsqueak+4,2.41,1,loss,0,121,120
+2025-10,2025-10-04,179738,PGL Wallachia Season 6: Western Europe Closed Qualifier,AVULUS,OG,16.0216,AVULUS,1.64,1,loss,0,120,119
+2025-10,2025-10-04,179745,PGL Wallachia Season 6: Western Europe Closed Qualifier,AVULUS,OG,21.8322,AVULUS,1.65,2,loss,0,119,117
+2025-10,2025-10-04,179756,PGL Wallachia Season 6: Western Europe Closed Qualifier,Zero Tenacity,MOUZ,-32.6849,MOUZ,1.42,3,win,4,117,118
+2025-10,2025-10-04,179769,PGL Wallachia Season 6: Western Europe Closed Qualifier,Zero Tenacity,MOUZ,-25.0591,MOUZ,1.33,2,win,2,118,118
+2025-10,2025-10-04,179720,CCT Season 2 Series 5,Zero Tenacity,NAVI Junior,-12.8550,NAVI Junior,4.2,1,loss,0,118,117
+2025-10,2025-10-04,179733,CCT Season 2 Series 5,Zero Tenacity,NAVI Junior,18.5334,Zero Tenacity,1.22,2,win,2,117,117
+2025-10,2025-10-04,179724,BetBoom Streamers Battle 11,Solo Team,Stray Team,16.3378,Solo Team,1.75,1,win,1,117,117
+2025-10,2025-10-04,179752,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,BOOM Esports,Tekla,-22.7707,Tekla,2.56,2,loss,0,117,115
+2025-10,2025-10-04,179746,BetBoom Streamers Battle 11,Cooman Team,by Owl Team,-46.2071,by Owl Team,1.53,5,loss,0,115,110
+2025-10,2025-10-04,179747,CCT Season 2 Series 5,VP.Prodigy,eSpoiled,-20.9113,eSpoiled,1.41,2,win,2,110,110
+2025-10,2025-10-04,179755,CCT Season 2 Series 5,VP.Prodigy,eSpoiled,14.7070,VP.Prodigy,3.09,1,loss,0,110,109
+2025-10,2025-10-04,179766,PGL Wallachia Season 6: Western Europe Closed Qualifier,Virtus.pro,OG,17.6331,Virtus.pro,1.6,1,win,1,109,109
+2025-10,2025-10-04,179783,PGL Wallachia Season 6: Western Europe Closed Qualifier,Virtus.pro,OG,12.7812,Virtus.pro,1.48,1,loss,0,109,108
+2025-10,2025-10-04,179758,CCT Season 2 Series 5,Team Tea,Yellow Submarine,22.3786,Team Tea,1.82,2,win,3,108,109
+2025-10,2025-10-04,179759,CCT Season 2 Series 5,Runa Team,OxinGame,15.9425,Runa Team,1.12,1,win,1,109,109
+2025-10,2025-10-04,179760,BetBoom Streamers Battle 11,Rostik Team,YBN Team,-20.3936,YBN Team,2.5,2,loss,0,109,107
+2025-10,2025-10-04,179762,PGL Wallachia Season 6: Americas Closed Qualifier,OG.LATAM,Flame,10.4231,OG.LATAM,1.4,1,loss,0,107,106
+2025-10,2025-10-04,179803,PGL Wallachia Season 6: Americas Closed Qualifier,OG.LATAM,Flame,14.0502,OG.LATAM,1.44,1,win,1,106,106
+2025-10,2025-10-04,179794,PGL Wallachia Season 6: Americas Closed Qualifier,HunterZ,Demonios,-26.9353,Demonios,2.55,2,loss,0,106,104
+2025-10,2025-10-04,179764,PGL Wallachia Season 6: Americas Closed Qualifier,Peru Rejects,TaiLung Mafia,-27.8604,TaiLung Mafia,1.9,2,win,3,104,105
+2025-10,2025-10-04,179818,PGL Wallachia Season 6: Americas Closed Qualifier,Peru Rejects,TaiLung Mafia,22.1521,Peru Rejects,1.98,2,win,3,105,106
+2025-10,2025-10-04,179822,PGL Wallachia Season 6: Americas Closed Qualifier,Peru Rejects,TaiLung Mafia,-28.9053,TaiLung Mafia,1.77,3,loss,0,106,103
+2025-10,2025-10-04,179808,Zeinternacional 2,The Monstters,The Blacklist,12.7382,The Monstters,1.64,1,loss,0,103,102
+2025-10,2025-10-04,179820,Zeinternacional 2,The Monstters,The Blacklist,16.9593,The Monstters,1.64,1,loss,0,102,101
+2025-10,2025-10-04,179823,Zeinternacional 2,The Monstters,The Blacklist,29.7226,The Monstters,1.94,3,loss,0,101,98
+2025-10,2025-10-04,179787,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,1win Team,Inner Circle,-10.6977,Inner Circle,2.1,1,loss,0,98,97
+2025-10,2025-10-04,179793,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,1win Team,Inner Circle,11.0026,1win Team,1.65,1,win,1,97,97
+2025-10,2025-10-04,179786,European Pro League 30,eSpoiled,Kalmychata,19.2514,eSpoiled,1.75,1,win,1,97,97
+2025-10,2025-10-04,179795,European Pro League 30,eSpoiled,Kalmychata,-38.2191,Kalmychata,1.92,3,win,5,97,99
+2025-10,2025-10-05,179767,PGL Wallachia Season 6: China Closed Qualifier,Roar Gaming,ToLight,-13.0312,ToLight,3.7,1,loss,0,99,98
+2025-10,2025-10-05,179841,PGL Wallachia Season 6: China Closed Qualifier,Roar Gaming,ToLight,-37.9459,ToLight,6.61,3,loss,0,98,95
+2025-10,2025-10-05,179811,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Execration,BOOM Esports,-13.2326,BOOM Esports,1.92,1,loss,0,95,94
+2025-10,2025-10-05,179836,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Execration,BOOM Esports,28.0915,Execration,1.7,2,loss,0,94,92
+2025-10,2025-10-05,179816,FISSURE Universe: Episode 7,AVULUS,OG,-25.1934,OG,1.96,2,loss,0,92,90
+2025-10,2025-10-05,179815,FISSURE Universe: Episode 7,MOUZ,Yellow Submarine,12.8401,MOUZ,1.52,1,win,1,90,90
+2025-10,2025-10-05,179812,FISSURE Universe: Episode 7,Runa Team,Apex Genesis,-20.3192,Apex Genesis,2.35,1,loss,0,90,89
+2025-10,2025-10-05,179827,PGL Wallachia Season 6: Americas Closed Qualifier,OG.LATAM,HunterZ,-14.7375,HunterZ,2.17,1,win,2,89,90
+2025-10,2025-10-05,179839,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Runa Team,1win Team,-19.8298,1win Team,2.05,1,loss,0,90,89
+2025-10,2025-10-05,179864,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Runa Team,1win Team,13.8687,Runa Team,1.58,1,loss,0,89,88
+2025-10,2025-10-05,179845,PGL Wallachia Season 6: China Closed Qualifier,Tearlaments,Roar Gaming,31.3268,Tearlaments,1.32,2,win,2,88,88
+2025-10,2025-10-05,179853,PGL Wallachia Season 6: China Closed Qualifier,Tearlaments,Roar Gaming,28.5246,Tearlaments,1.33,2,win,2,88,88
+2025-10,2025-10-05,179858,PGL Wallachia Season 6: China Closed Qualifier,Tearlaments,Roar Gaming,-26.2981,Roar Gaming,3.9,2,win,7,88,93
+2025-10,2025-10-05,179866,PGL Wallachia Season 6: China Closed Qualifier,Tearlaments,Roar Gaming,-16.2535,Roar Gaming,3.53,1,win,3,93,95
+2025-10,2025-10-05,179863,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Aureus,Execration,17.3833,Team Aureus,1.65,1,win,1,95,95
+2025-10,2025-10-05,179870,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Aureus,Execration,-24.7576,Execration,2.1,2,win,4,95,97
+2025-10,2025-10-05,179882,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Aureus,Execration,14.1566,Team Aureus,1.65,1,loss,0,97,96
+2025-10,2025-10-05,179887,PGL Wallachia Season 6: Southeast Asia Closed Qualifier,Team Aureus,Execration,-22.3530,Execration,1.98,2,loss,0,96,94
+2025-10,2025-10-05,179881,PGL Wallachia Season 6: Western Europe Closed Qualifier,Zero Tenacity,Virtus.pro,24.6340,Zero Tenacity,3.2,2,loss,0,94,92
+2025-10,2025-10-05,179879,BetBoom Streamers Battle 11,YBN Team,Solo Team,-37.0532,Solo Team,1.45,3,loss,0,92,89
+2025-10,2025-10-05,179884,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Natus Vincere,1win Team,-36.3733,1win Team,2.32,3,loss,0,89,86
+2025-10,2025-10-05,179892,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Natus Vincere,1win Team,-37.0859,1win Team,2.88,3,loss,0,86,83
+2025-10,2025-10-05,179896,PGL Wallachia Season 6: Eastern Europe Closed Qualifier,Natus Vincere,1win Team,-20.5355,1win Team,3.27,1,win,3,83,85
+2025-10,2025-10-05,179890,PGL Wallachia Season 6: Western Europe Closed Qualifier,MOUZ,Virtus.pro,50.1404,MOUZ,1.65,4,win,6,85,87
+2025-10,2025-10-05,179894,PGL Wallachia Season 6: Western Europe Closed Qualifier,MOUZ,Virtus.pro,12.7732,MOUZ,1.74,1,win,1,87,87
+2025-10,2025-10-05,179897,PGL Wallachia Season 6: Western Europe Closed Qualifier,MOUZ,Virtus.pro,50.6381,MOUZ,1.49,4,loss,0,87,83
+2025-10,2025-10-05,179901,PGL Wallachia Season 6: Western Europe Closed Qualifier,MOUZ,Virtus.pro,23.2099,MOUZ,1.65,1,win,1,83,83
+2025-10,2025-10-05,179916,BB Streamers Battle 11,Rostik Team,YBN Team,-12.9505,YBN Team,2.8,1,loss,0,83,82
+2025-10,2025-10-05,179921,BB Streamers Battle 11,Rostik Team,YBN Team,-31.1448,YBN Team,3.1,2,win,6,82,86
+2025-10,2025-10-05,179925,BB Streamers Battle 11,Rostik Team,YBN Team,-13.3245,YBN Team,2.25,1,win,2,86,87
+2025-10,2025-10-05,179920,PGL Wallachia Season 6: Americas Closed Qualifier,TaiLung Mafia,HunterZ,-19.4679,HunterZ,2.11,1,loss,0,87,86
+2025-10,2025-10-06,179910,FISSURE Universe: Episode 7,MOUZ,Team Yandex,24.7527,MOUZ,1.68,2,loss,0,86,84
+2025-10,2025-10-06,179983,FISSURE Universe: Episode 7,MOUZ,Team Yandex,24.6554,MOUZ,1.68,2,loss,0,84,82
+2025-10,2025-10-06,179911,FISSURE Universe: Episode 7,AVULUS,1win Team,-19.4102,1win Team,1.93,1,loss,0,82,81
+2025-10,2025-10-06,180037,FISSURE Universe: Episode 7,AVULUS,1win Team,-16.2808,1win Team,2.1,1,win,2,81,82
+2025-10,2025-10-06,179912,FISSURE Universe: Episode 7,Virtus.pro,Yellow Submarine,15.7862,Virtus.pro,1.52,1,win,1,82,82
+2025-10,2025-10-06,179913,FISSURE Universe: Episode 7,Runa Team,OG,-24.2129,OG,2.7,1,loss,0,82,81
+2025-10,2025-10-06,180023,FISSURE Universe: Episode 7,Runa Team,OG,-15.7267,OG,2.6,1,loss,0,81,80
+2025-10,2025-10-06,179914,FISSURE Universe: Episode 7,Virtus.pro,L1ga Team,16.5459,Virtus.pro,1.32,1,win,1,80,80
+2025-10,2025-10-06,179937,PGL Wallachia Season 6: Americas Closed Qualifier,Peru Rejects,TaiLung Mafia,-16.8651,TaiLung Mafia,1.88,1,win,1,80,80
+2025-10,2025-10-06,179962,PGL Wallachia Season 6: Americas Closed Qualifier,Peru Rejects,TaiLung Mafia,20.3376,Peru Rejects,1.75,1,win,1,80,80
+2025-10,2025-10-07,180131,FISSURE Universe: Episode 7,L1ga Team,MOUZ,-41.7805,MOUZ,1.28,3,win,3,80,80
+2025-10,2025-10-07,180051,FISSURE Universe: Episode 7,1win Team,OG,-20.7493,OG,2.45,1,loss,0,80,79
+2025-10,2025-10-07,180143,FISSURE Universe: Episode 7,1win Team,OG,-30.0377,OG,3.1,2,loss,0,79,77
+2025-10,2025-10-07,180052,FISSURE Universe: Episode 7,Virtus.pro,MOUZ,-17.6088,MOUZ,1.88,1,loss,0,77,76
+2025-10,2025-10-07,180154,FISSURE Universe: Episode 7,Virtus.pro,MOUZ,-26.2226,MOUZ,1.77,1,win,1,76,76
+2025-10,2025-10-07,180054,FISSURE Universe: Episode 7,Virtus.pro,Team Yandex,-21.4303,Team Yandex,1.55,1,win,1,76,76
+2025-10,2025-10-08,180224,FISSURE Universe: Episode 7,L1ga Team,Yellow Submarine,13.5798,L1ga Team,2.19,1,loss,0,76,75
+2025-10,2025-10-08,180245,FISSURE Universe: Episode 7,Yellow Submarine,Team Yandex,-20.8327,Team Yandex,1.27,1,loss,0,75,74
+2025-10,2025-10-08,180058,FISSURE Universe: Episode 7,AVULUS,Runa Team,19.3137,AVULUS,2.7,1,win,2,74,75
+2025-10,2025-10-08,180256,FISSURE Universe: Episode 7,MOUZ,Virtus.pro,34.8482,MOUZ,1.8,2,win,3,75,76
+2025-10,2025-10-08,180278,FISSURE Universe: Episode 7,MOUZ,Virtus.pro,29.4122,MOUZ,1.62,2,loss,0,76,74
+2025-10,2025-10-09,180285,FISSURE Universe: Episode 7,Nigma Galaxy,Team Yandex,16.8141,Nigma Galaxy,1.66,1,win,1,74,74
+2025-10,2025-10-09,180343,FISSURE Universe: Episode 7,Nigma Galaxy,Team Yandex,29.2268,Nigma Galaxy,1.67,2,win,3,74,75
+2025-10,2025-10-09,180286,FISSURE Universe: Episode 7,Heroic,1win Team,-37.3447,1win Team,2.09,2,loss,0,75,73
+2025-10,2025-10-09,180389,FISSURE Universe: Episode 7,Heroic,1win Team,27.8073,Heroic,1.65,2,win,3,73,74
+2025-10,2025-10-09,180294,FISSURE Universe: Episode 7,Team Liquid,MOUZ,-23.2990,MOUZ,2.7,1,loss,0,74,73
+2025-10,2025-10-09,180364,FISSURE Universe: Episode 7,Team Liquid,MOUZ,-19.4263,MOUZ,3.16,1,win,3,73,75
+2025-10,2025-10-10,180425,RES Unchained 2: BLAST Slam V SEA CQ,BOOM Esports,BuyBack Bros,27.0750,BOOM Esports,1.15,2,win,2,75,75
+2025-10,2025-10-10,180404,RES Unchained 2: BLAST Slam V SEA CQ,Yangon Galacticos,Ivory,43.0688,Yangon Galacticos,1.75,3,win,5,75,77
+2025-10,2025-10-10,180426,RES Unchained 2: BLAST Slam V SEA CQ,Yangon Galacticos,Ivory,-19.8358,Ivory,1.75,1,win,1,77,77
+2025-10,2025-10-10,180438,RES Unchained 2: BLAST Slam V SEA CQ,Yangon Galacticos,Ivory,-19.5273,Ivory,1.72,1,loss,0,77,76
+2025-10,2025-10-10,180433,RES Unchained 2: BLAST Slam V SEA CQ,Execration,Vici Gaming,-17.7816,Vici Gaming,1.72,1,loss,0,76,75
+2025-10,2025-10-10,180434,RES Unchained 2: BLAST Slam V SEA CQ,Team Nemesis,Kukuys,15.2130,Team Nemesis,1.88,1,win,1,75,75
+2025-10,2025-10-10,180485,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Aurora,Runa Team,18.1900,Aurora,1.36,1,win,1,75,75
+2025-10,2025-10-10,180491,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,OG,Nigma Galaxy,-42.7053,Nigma Galaxy,1.27,3,win,3,75,75
+2025-10,2025-10-10,180508,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,MOUZ,Team Yandex,33.6172,MOUZ,1.58,2,win,3,75,76
+2025-10,2025-10-10,180392,FISSURE Universe: Episode 7,Nigma Galaxy,Team Liquid,-31.3753,Team Liquid,1.75,2,win,3,76,77
+2025-10,2025-10-10,180391,FISSURE Universe: Episode 7,Team Yandex,MOUZ,-19.8929,MOUZ,2.05,1,win,2,77,78
+2025-10,2025-10-10,180405,FISSURE Universe: Episode 7,1win Team,AVULUS,18.8717,1win Team,2.1,1,win,2,78,79
+2025-10,2025-10-10,180496,FISSURE Universe: Episode 7,1win Team,AVULUS,19.1944,1win Team,2.05,1,win,2,79,80
+2025-10,2025-10-10,180536,CCT Season 2 Series 5,4Pirates,Runa Team,17.3610,4Pirates,3.65,1,loss,0,80,79
+2025-10,2025-10-10,180492,CCT Season 2 Series 5,Inner Circle,eSpoiled,-21.1166,eSpoiled,2.06,1,win,2,79,80
+2025-10,2025-10-10,180507,CCT Season 2 Series 5,Inner Circle,eSpoiled,-16.1143,eSpoiled,1.98,1,win,1,80,80
+2025-10,2025-10-10,180479,RES Unchained 2: BLAST Slam V SEA CQ,BuyBack Bros,Ivory,31.8051,BuyBack Bros,2.66,2,loss,0,80,78
+2025-10,2025-10-10,180502,RES Unchained 2: BLAST Slam V SEA CQ,Execration,Kukuys,13.2091,Execration,1.72,1,loss,0,78,77
+2025-10,2025-10-10,180540,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,1win Team,OG,26.4384,1win Team,1.38,2,win,2,77,77
+2025-10,2025-10-10,180513,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Aurora,MOUZ,-39.6858,MOUZ,2.4,3,loss,0,77,74
+2025-10,2025-10-10,180522,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Aurora,MOUZ,-43.4791,MOUZ,2.45,3,win,7,74,78
+2025-10,2025-10-10,180530,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Aurora,MOUZ,-25.1816,MOUZ,2.25,1,win,2,78,79
+2025-10,2025-10-10,180541,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Natus Vincere,Nigma Galaxy,-16.3359,Nigma Galaxy,1.77,1,loss,0,79,78
+2025-10,2025-10-10,180514,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Runa Team,Team Yandex,18.2498,Runa Team,1.85,1,win,1,78,78
+2025-10,2025-10-11,180539,FISSURE Universe: Episode 7,1win Team,Nigma Galaxy,21.9737,1win Team,2.6,1,loss,0,78,77
+2025-10,2025-10-11,180622,FISSURE Universe: Episode 7,1win Team,Nigma Galaxy,28.7372,1win Team,2.5,2,loss,0,77,75
+2025-10,2025-10-11,180606,RES Unchained 2: BLAST Slam V SEA CQ,BOOM Esports,Execration,18.9113,BOOM Esports,1.9,1,loss,0,75,74
+2025-10,2025-10-11,180591,RES Unchained 2: BLAST Slam V SEA CQ,Yangon Galacticos,Vici Gaming,-14.6100,Vici Gaming,1.25,1,win,1,74,74
+2025-10,2025-10-11,180636,FISSURE Universe: Episode 7,Team Liquid,Heroic,-19.2353,Heroic,2.3,1,loss,0,74,73
+2025-10,2025-10-11,180609,FISSURE Universe: Episode 7,Aurora,MOUZ,-23.9050,MOUZ,1.9,1,win,1,73,73
+2025-10,2025-10-11,180603,CCT Season 2 Series 5,Inner Circle,Passion UA,44.9208,Inner Circle,2.03,3,win,6,73,76
+2025-10,2025-10-11,180598,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Nigma Galaxy,Team Yandex,27.8653,Nigma Galaxy,1.51,2,loss,0,76,74
+2025-10,2025-10-11,180607,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Nigma Galaxy,Team Yandex,19.9598,Nigma Galaxy,1.48,1,loss,0,74,73
+2025-10,2025-10-11,180615,RES Unchained 2: BLAST Slam V SEA CQ,Kukuys,Vici Gaming,-13.8408,Vici Gaming,1.55,1,loss,0,73,72
+2025-10,2025-10-11,180621,DreamLeague 27 Division 2 Stage 1,HunterZ,NAVI Junior,-38.3551,NAVI Junior,2.25,2,loss,0,72,70
+2025-10,2025-10-11,180643,DreamLeague 27 Division 2 Stage 1,the bug,Zero Tenacity,17.8756,the bug,8.51,1,loss,0,70,69
+2025-10,2025-10-11,180620,DreamLeague 27 Division 2 Stage 1,Kalmychata,Peru Rejects,47.8106,Kalmychata,1.97,3,win,5,69,71
+2025-10,2025-10-11,180647,DreamLeague 27 Division 2 Stage 1,Kalmychata,Peru Rejects,17.7785,Kalmychata,1.75,1,win,1,71,71
+2025-10,2025-10-11,180644,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Aurora,1win Team,-26.6613,1win Team,2.56,1,loss,0,71,70
+2025-10,2025-10-11,180634,FISSURE Universe: Episode 7,MOUZ,Nigma Galaxy,30.4412,MOUZ,1.8,2,win,3,70,71
+2025-10,2025-10-12,180670,RES Unchained 2: BLAST Slam V SEA CQ,BOOM Esports,Kukuys,-21.1262,Kukuys,2,1,loss,0,71,70
+2025-10,2025-10-12,180688,RES Unchained 2: BLAST Slam V SEA CQ,BOOM Esports,Kukuys,19.4454,BOOM Esports,1.74,1,win,1,70,70
+2025-10,2025-10-12,180733,FISSURE Universe: Episode 7,Team Liquid,MOUZ,-57.3976,MOUZ,1.93,4,win,7,70,73
+2025-10,2025-10-12,180718,RES Unchained 2: BLAST Slam V Europe Closed Qualifier,Natus Vincere,Team Yandex,29.5632,Natus Vincere,1.45,2,win,2,73,73
+2025-10,2025-10-12,180725,CCT Season 2 Series 5,OxinGame,Inner Circle,15.7250,OxinGame,5,1,loss,0,73,72
+2025-10,2025-10-12,180713,CCT Season 2 Series 5,Runa Team,eSpoiled,35.8830,Runa Team,1.4,2,loss,0,72,70
+2025-10,2025-10-12,180726,DreamLeague 27 Division 2 Stage 1,4Pirates,NAVI Junior,-43.0368,NAVI Junior,3.8,3,loss,0,70,67
+2025-10,2025-10-12,180736,DreamLeague 27 Division 2 Stage 1,4Pirates,NAVI Junior,-17.6465,NAVI Junior,4,1,loss,0,67,66
+2025-10,2025-10-12,180727,DreamLeague 27 Division 2 Stage 1,eSpoiled,Pipsqueak+4,-16.0237,Pipsqueak+4,1.62,1,win,1,66,66
+2025-10,2025-10-12,180734,DreamLeague 27 Division 2 Stage 1,eSpoiled,Pipsqueak+4,26.2059,eSpoiled,2.2,1,loss,0,66,65
+2025-10,2025-10-12,180738,DreamLeague 27 Division 2 Stage 1,Passion UA,1win Team,23.8238,Passion UA,3.3,1,loss,0,65,64
+2025-10,2025-10-12,180754,DreamLeague 27 Division 2 Stage 1,OG,Inner Circle,-41.7466,Inner Circle,2.15,2,loss,0,64,62
+2025-10,2025-10-12,180743,DreamLeague 27 Division 2 Stage 1,Kalmychata,the bug,28.5710,Kalmychata,1.06,1,win,1,62,62
+2025-10,2025-10-12,180752,DreamLeague 27 Division 2 Stage 1,Kalmychata,the bug,-17.7611,the bug,8.37,1,loss,0,62,61
+2025-10,2025-10-12,180744,DreamLeague 27 Division 2 Stage 1,Peru Rejects,Zero Tenacity,19.6907,Peru Rejects,1.8,1,win,1,61,61
+2025-10,2025-10-12,180758,DreamLeague 27 Division 2 Stage 1,Peru Rejects,Zero Tenacity,39.8606,Peru Rejects,1.77,2,win,3,61,62
+2025-10,2025-10-12,180759,FISSURE Universe: Episode 7,Heroic,MOUZ,26.3962,Heroic,1.98,1,win,1,62,62
+2025-10,2025-10-13,180847,DreamLeague 27 Division 2 Stage 1,Pipsqueak+4,HunterZ,-18.8612,HunterZ,2.77,1,loss,0,62,61
+2025-10,2025-10-13,180848,DreamLeague 27 Division 2 Stage 1,Team Yandex,eSpoiled,29.0027,Team Yandex,1.21,1,win,1,61,61
+2025-10,2025-10-13,180863,DreamLeague 27 Division 2 Stage 1,Roar Gaming,NAVI Junior,-17.1468,NAVI Junior,2.94,1,loss,0,61,60
+2025-10,2025-10-13,180797,DreamLeague 27 Division 2 Stage 1,1win Team,Kalmychata,-22.7881,Kalmychata,2.07,1,loss,0,60,59
+2025-10,2025-10-13,180873,DreamLeague 27 Division 2 Stage 1,the bug,Peru Rejects,-40.7025,Peru Rejects,1.06,2,win,2,59,59
+2025-10,2025-10-13,180770,CCT Season 2 Series 5,Team Tea,Inner Circle,54.1838,Team Tea,1.78,3,win,5,59,61
+2025-10,2025-10-13,180871,CCT Season 2 Series 5,eSpoiled,Team Tea,-41.4228,Team Tea,1.44,2,loss,0,61,59
+2025-10,2025-10-14,180965,DreamLeague 27 Division 2 Stage 1,eSpoiled,NAVI Junior,21.8737,eSpoiled,1.22,1,win,1,59,59
+2025-10,2025-10-14,180990,DreamLeague 27 Division 2 Stage 1,Team Yandex,4Pirates,-17.9033,4Pirates,4.48,1,loss,0,59,58
+2025-10,2025-10-14,180987,DreamLeague 27 Division 2 Stage 1,Passion UA,the bug,-41.9031,the bug,6.3,2,loss,0,58,56
+2025-10,2025-10-14,181005,DreamLeague 27 Division 2 Stage 1,Kalmychata,Zero Tenacity,18.6647,Kalmychata,1.5,1,loss,0,56,55
+2025-10,2025-10-14,180937,Lunar Snake Trophy 3,Veroja,Ivory,23.8832,Veroja,2.17,1,loss,0,55,54
+2025-10,2025-10-14,180943,Lunar Snake Trophy 3,Veroja,Ivory,42.3189,Veroja,2.05,2,win,4,54,56
+2025-10,2025-10-14,181002,CCT Season 2 Series 5,Runa Team,Team Tea,-70.0509,Team Tea,2.19,3,loss,0,56,53
+2025-10,2025-10-14,181013,CCT Season 2 Series 5,Runa Team,Team Tea,-33.5162,Team Tea,2.7,1,loss,0,53,52
+2025-10,2025-10-14,180904,BLAST Slam IV,Team Falcons,Yakutou Brothers,-22.3154,Yakutou Brothers,3.99,1,loss,0,52,51
+2025-10,2025-10-14,180905,BLAST Slam IV,Aurora,Natus Vincere,26.5130,Aurora,1.73,1,loss,0,51,50
+2025-10,2025-10-14,180910,BLAST Slam IV,Team Liquid,Tundra Esports,-21.8712,Tundra Esports,1.63,1,win,1,50,50
+2025-10,2025-10-14,180913,BLAST Slam IV,Heroic,Execration,-22.7220,Execration,2.78,1,loss,0,50,49
+2025-10,2025-10-15,181071,Lunar Snake Trophy 3,Emperor,Ivory,42.7584,Emperor,2.37,2,win,4,49,51
+2025-10,2025-10-15,181113,DreamLeague 27 Division 2 Stage 1,Team Tea,eSpoiled,25.3869,Team Tea,1.49,1,loss,0,51,50
+2025-10,2025-10-15,181137,DreamLeague 27 Division 2 Stage 1,Team Tea,eSpoiled,-28.2994,eSpoiled,2.65,1,win,2,50,51
+2025-10,2025-10-15,181121,DreamLeague 27 Division 2 Stage 1,Team Yandex,HunterZ,21.2361,Team Yandex,1.08,1,win,1,51,51
+2025-10,2025-10-15,181122,DreamLeague 27 Division 2 Stage 1,1win Team,Peru Rejects,-27.3444,Peru Rejects,2.7,1,loss,0,51,50
+2025-10,2025-10-15,181035,BLAST Slam IV,MOUZ,Execration,-23.9844,Execration,2.48,1,loss,0,50,49
+2025-10,2025-10-15,181036,BLAST Slam IV,Team Falcons,Heroic,27.5589,Team Falcons,1.38,1,loss,0,49,48
+2025-10,2025-10-15,181041,BLAST Slam IV,Heroic,MOUZ,-60.8973,MOUZ,1.98,2,win,3,48,49
+2025-10,2025-10-15,181042,BLAST Slam IV,Team Falcons,Team Liquid,24.7087,Team Falcons,1.4,1,win,1,49,49
+2025-10,2025-10-15,181043,BLAST Slam IV,Tundra Esports,Aurora,21.0318,Tundra Esports,1.6,1,loss,0,49,48
+2025-10,2025-10-15,181078,EPL World Series: Southeast Asia Season 9,Yangon Galacticos,Team Essence,-21.8287,Team Essence,2.33,1,win,2,48,49
+2025-10,2025-10-15,181086,EPL World Series: Southeast Asia Season 9,Yangon Galacticos,Team Essence,21.4727,Yangon Galacticos,1.54,1,win,1,49,49
+2025-10,2025-10-15,181097,EPL World Series: Southeast Asia Season 9,Yangon Galacticos,Team Essence,47.8531,Yangon Galacticos,1.29,2,win,2,49,49
+2025-10,2025-10-16,181212,DreamLeague 27 Division 2 Stage 1,Team Yandex,Pipsqueak+4,-81.0590,Pipsqueak+4,2.77,3,loss,0,49,46
+2025-10,2025-10-16,181215,BLAST Slam IV,Aurora,Yakutou Brothers,-47.6137,Yakutou Brothers,1.93,2,loss,0,46,44
+2025-10,2025-10-16,181220,BLAST Slam IV,Aurora,MOUZ,-30.6862,MOUZ,1.65,1,loss,0,44,43
+2025-10,2025-10-16,181225,BLAST Slam IV,Team Falcons,Natus Vincere,25.9534,Team Falcons,1.33,1,win,1,43,43
+2025-10,2025-10-17,181373,EPL World Series: Southeast Asia Season 9,Team Essence,Ivory,-32.8542,Ivory,1.22,1,win,1,43,43
+2025-10,2025-10-17,181270,DreamLeague 27 Division 2 Stage 1,eSpoiled,4Pirates,-24.7345,4Pirates,2.08,1,loss,0,43,42
+2025-10,2025-10-17,181399,DreamLeague 27 Division 2 Stage 1,Team Yandex,Roar Gaming,42.1087,Team Yandex,1.24,1,win,1,42,42
+2025-10,2025-10-17,181315,BLAST Slam IV,BetBoom Team,MOUZ,-33.9122,MOUZ,2.35,1,win,2,42,43
+2025-10,2025-10-17,181318,BLAST Slam IV,Team Spirit,Yakutou Brothers,24.9033,Team Spirit,1.37,1,win,1,43,43
+2025-10,2025-10-17,181423,European Pro League 31,Winter Bear,balaclavas,25.2478,Winter Bear,1.62,1,loss,0,43,42
+2025-10,2025-10-17,181432,European Pro League 31,Team Tea,20Twice,-25.1540,20Twice,5.93,1,loss,0,42,41
+2025-10,2025-10-17,181411,DreamLeague 27 Division 2 Stage 1,eSpoiled,HunterZ,-81.7927,HunterZ,2.25,3,loss,0,41,38
+2025-10,2025-10-17,181436,DreamLeague 27 Division 2 Stage 1,OG,Kalmychata,29.6736,OG,2.08,1,win,2,38,39
+2025-10,2025-10-18,181521,EPL World Series: Southeast Asia Season 9,Carstensz Esports,The MongolZ,34.5710,Carstensz Esports,2.31,1,loss,0,39,38
+2025-10,2025-10-18,181456,BLAST Slam IV,Team Spirit,MOUZ,27.0696,Team Spirit,1.42,1,loss,0,38,37
+2025-10,2025-10-19,181601,EPL World Series: Southeast Asia Season 9,Kopite,Ivory,33.0456,Kopite,1.73,1,loss,0,37,36
+2025-10,2025-10-19,181573,BLAST Slam IV,MOUZ,Team Aureus,48.5001,MOUZ,1.32,1,win,1,36,36
+2025-10,2025-10-19,181644,BLAST Slam IV,MOUZ,Team Aureus,43.3200,MOUZ,1.3,1,win,1,36,36
+2025-10,2025-10-19,181646,BLAST Slam IV,Aurora,Natus Vincere,-30.7002,Natus Vincere,1.8,1,loss,0,36,35
+2025-10,2025-10-19,181617,European Pro League 31,Most Wanted,robloxmafia,-30.7931,robloxmafia,4.47,1,loss,0,35,34
+2025-10,2025-10-19,181647,European Pro League 31,Team Tea,Kalmychata,-38.4501,Kalmychata,1.9,1,win,1,34,34
+2025-10,2025-10-20,181729,European Pro League 31,Winter Bear,20Twice,30.2497,Winter Bear,1.62,1,win,1,34,34
+2025-10,2025-10-21,181829,EPL World Series: Southeast Asia Season 9,REKONIX,Team Essence,-34.6153,Team Essence,5.49,1,loss,0,34,33
+2025-10,2025-10-21,181939,Americas Convergence Series 2,Flame,Estar backs,33.3123,Flame,1.71,1,loss,0,33,32
+2025-10,2025-10-22,182025,DreamLeague 27 Division 2 Stage 1,Peru Rejects,4Pirates,41.3938,Peru Rejects,1.69,1,loss,0,32,31
+2025-10,2025-10-24,182285,BLAST Slam V: China Closed Qualifier,Boboka fan,Cloud Rising,-59.9362,Cloud Rising,2.15,1,loss,0,31,30
+2025-10,2025-10-24,182306,European Pro League 31,Team Tea,L1ga Team,35.2472,Team Tea,1.56,1,win,1,30,30
+2025-10,2025-10-25,182398,European Pro League 31,Pipsqueak+4,Team Tea,-42.6297,Team Tea,2.2,1,win,2,30,31
+2025-10,2025-10-25,182405,European Pro League 31,Nemiga Gaming,20Twice,37.5408,Nemiga Gaming,1.42,1,win,1,31,31
+2025-10,2025-10-26,182492,FISSURE PLAYGROUND 2,Nigma Galaxy,MOUZ,-38.3672,MOUZ,1.55,1,loss,0,31,30
+2025-10,2025-10-28,182650,FISSURE PLAYGROUND 2,BetBoom Team,Team Liquid,39.3516,BetBoom Team,1.75,1,loss,0,30,29
+2025-10,2025-10-28,182649,FISSURE PLAYGROUND 2,Tundra Esports,Team Yandex,-34.5845,Team Yandex,2.4,1,loss,0,29,28
+2025-10,2025-10-29,182752,FISSURE PLAYGROUND 2,Team Yandex,MOUZ,-38.6358,MOUZ,1.7,1,win,1,28,28
+2025-11,2025-11-01,183082,FISSURE PLAYGROUND 2,MOUZ,Team Liquid,36.9582,MOUZ,1.78,1,loss,0,28,27
+2025-11,2025-11-03,183203,CIS Battle 3,4Pirates,Team Spirit Academy,-38.5620,Team Spirit Academy,3.14,1,loss,0,27,26
+2025-11,2025-11-05,183440,DreamLeague Division 2 Season 2,Most Wanted,eSpoiled,-51.1865,eSpoiled,1.94,1,win,1,26,26
+2025-11,2025-11-05,183477,DreamLeague Division 2 Season 2,Most Wanted,4Pirates,-47.8240,4Pirates,2.34,1,loss,0,26,25
+2025-11,2025-11-06,183568,CIS Battle 3,L1ga Team,Team Spirit Academy,-46.7622,Team Spirit Academy,3.41,1,loss,0,25,24
+2025-11,2025-11-06,183550,DreamLeague Division 2 Season 2,Perrito Panzon,Team Tea,-56.7646,Team Tea,1.2,1,win,1,24,24

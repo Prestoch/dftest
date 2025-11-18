@@ -1,0 +1,2 @@
+strategy_group,hero_filter,odds_condition,delta_threshold,bets,wins,win_pct,final_bank,max_drawdown,max_stake,max_step
+DeltaPctBankroll,none,any,0,1434,703,49.02,24,1022,72,0
