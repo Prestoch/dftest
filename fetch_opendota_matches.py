@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fetch pro matches from OpenDota API for the last 3 months.
+Fetch pro matches from OpenDota API with specific data fields.
 Rate limited to stay well below 1200 calls/minute (targeting ~600 calls/min).
 """
 
@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 import sys
 from tqdm import tqdm
+import os
 
 
 class OpenDotaFetcher:
@@ -31,6 +32,30 @@ class OpenDotaFetcher:
         self.last_request_time = 0
         self.request_count = 0
         self.session = requests.Session()
+        self.hero_names = self._load_hero_names()
+        
+    def _load_hero_names(self) -> Dict[int, str]:
+        """Load hero ID to name mapping."""
+        # Try to load from local file first
+        if os.path.exists('hero_id_map.json'):
+            try:
+                with open('hero_id_map.json', 'r') as f:
+                    hero_map = json.load(f)
+                    # Convert string keys to integers
+                    return {int(k): v for k, v in hero_map.items()}
+            except Exception as e:
+                print(f"Warning: Could not load hero_id_map.json: {e}")
+        
+        # Fallback: fetch from API
+        print("Fetching hero list from OpenDota API...")
+        try:
+            response = self.session.get(f"{self.base_url}/heroes", timeout=30)
+            response.raise_for_status()
+            heroes = response.json()
+            return {hero['id']: hero['localized_name'] for hero in heroes}
+        except Exception as e:
+            print(f"Warning: Could not fetch heroes from API: {e}")
+            return {}
         
     def _rate_limit_wait(self):
         """Ensure we don't exceed rate limit."""
@@ -100,6 +125,97 @@ class OpenDotaFetcher:
             Match details or None if failed
         """
         return self._make_request(f"matches/{match_id}")
+    
+    def _get_role_name(self, lane_role: Optional[int]) -> str:
+        """Convert lane role number to descriptive name."""
+        role_map = {
+            1: "Carry (pos 1)",
+            2: "Mid (pos 2)",
+            3: "Offlane (pos 3)",
+            4: "Support (pos 4)",
+            5: "Hard Support (pos 5)"
+        }
+        return role_map.get(lane_role, "Unknown")
+    
+    def extract_match_data(self, match_details: Dict) -> Optional[Dict]:
+        """
+        Extract only the required fields from match details.
+        
+        Args:
+            match_details: Full match details from API
+            
+        Returns:
+            Dictionary with only required fields
+        """
+        if not match_details:
+            return None
+        
+        try:
+            # Extract match-level information
+            match_id = match_details.get('match_id')
+            duration = match_details.get('duration', 0)
+            radiant_win = match_details.get('radiant_win', False)
+            
+            # Extract team/tournament information
+            league_name = match_details.get('league', {}).get('name', 'Unknown')
+            radiant_team_name = match_details.get('radiant_team', {}).get('name', 'Radiant')
+            dire_team_name = match_details.get('dire_team', {}).get('name', 'Dire')
+            
+            # Extract player/hero data
+            players_data = []
+            players = match_details.get('players', [])
+            
+            for i, player in enumerate(players):
+                hero_id = player.get('hero_id')
+                hero_name = self.hero_names.get(hero_id, f"Hero {hero_id}")
+                
+                # Determine team
+                is_radiant = player.get('isRadiant', i < 5)
+                team_name = radiant_team_name if is_radiant else dire_team_name
+                
+                # Determine if this player won
+                player_won = (is_radiant and radiant_win) or (not is_radiant and not radiant_win)
+                
+                # Extract lane advantages (from laning phase)
+                lane_efficiency = player.get('lane_efficiency_pct')
+                lane_data = player.get('lane', {})
+                
+                player_data = {
+                    'hero_name': hero_name,
+                    'hero_id': hero_id,
+                    'team': team_name,
+                    'role': self._get_role_name(player.get('lane_role')),
+                    'gpm': player.get('gold_per_min', 0),
+                    'xpm': player.get('xp_per_min', 0),
+                    'tower_damage': player.get('tower_damage', 0),
+                    'hero_healing': player.get('hero_healing', 0),
+                    'lane_efficiency_pct': lane_efficiency,
+                    'kills': player.get('kills', 0),
+                    'deaths': player.get('deaths', 0),
+                    'assists': player.get('assists', 0),
+                    'won': player_won
+                }
+                
+                players_data.append(player_data)
+            
+            # Compile final match data
+            extracted_data = {
+                'match_id': match_id,
+                'tournament': league_name,
+                'radiant_team': radiant_team_name,
+                'dire_team': dire_team_name,
+                'duration_seconds': duration,
+                'duration_minutes': round(duration / 60, 2),
+                'radiant_win': radiant_win,
+                'winner': radiant_team_name if radiant_win else dire_team_name,
+                'players': players_data
+            }
+            
+            return extracted_data
+            
+        except Exception as e:
+            print(f"Error extracting data from match {match_details.get('match_id', 'unknown')}: {e}")
+            return None
         
     def fetch_recent_pro_matches(self, months: int = 3, include_details: bool = False) -> List[Dict]:
         """
@@ -182,7 +298,7 @@ class OpenDotaFetcher:
             print(f"\nPhase 2: Fetching detailed data for {len(all_matches)} matches...")
             print("This will take a while...\n")
             
-            detailed_matches = []
+            extracted_matches = []
             failed_matches = []
             
             # Progress bar for detailed fetching
@@ -190,19 +306,25 @@ class OpenDotaFetcher:
                 for match in all_matches:
                     match_id = match['match_id']
                     details = self.get_match_details(match_id)
+                    
                     if details:
-                        detailed_matches.append(details)
+                        # Extract only the required fields
+                        extracted = self.extract_match_data(details)
+                        if extracted:
+                            extracted_matches.append(extracted)
+                        else:
+                            failed_matches.append(match_id)
                     else:
                         failed_matches.append(match_id)
                     
                     pbar.update(1)
-                    pbar.set_postfix_str(f"{len(detailed_matches)} success, {len(failed_matches)} failed")
+                    pbar.set_postfix_str(f"{len(extracted_matches)} success, {len(failed_matches)} failed")
                     
-            print(f"\n✓ Fetched details for {len(detailed_matches)}/{len(all_matches)} matches")
+            print(f"\n✓ Fetched details for {len(extracted_matches)}/{len(all_matches)} matches")
             if failed_matches:
                 print(f"  ⚠ Failed to fetch {len(failed_matches)} matches: {failed_matches[:5]}{'...' if len(failed_matches) > 5 else ''}")
             
-            return detailed_matches
+            return extracted_matches
             
         return all_matches
         
@@ -211,6 +333,47 @@ class OpenDotaFetcher:
         with open(filename, 'w') as f:
             json.dump(matches, f, indent=2)
         print(f"\nSaved {len(matches)} matches to {filename}")
+    
+    def save_matches_csv(self, matches: List[Dict], filename: str):
+        """Save matches to CSV file with flattened player data."""
+        import csv
+        
+        if not matches:
+            print("No matches to save to CSV")
+            return
+        
+        csv_filename = filename.replace('.json', '.csv')
+        
+        with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
+            # Define CSV columns
+            fieldnames = [
+                'match_id', 'tournament', 'radiant_team', 'dire_team',
+                'duration_minutes', 'winner', 'radiant_win',
+                'hero_name', 'hero_id', 'team', 'role',
+                'gpm', 'xpm', 'tower_damage', 'hero_healing',
+                'lane_efficiency_pct', 'kills', 'deaths', 'assists', 'won'
+            ]
+            
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            
+            # Flatten data: one row per player
+            for match in matches:
+                match_info = {
+                    'match_id': match['match_id'],
+                    'tournament': match['tournament'],
+                    'radiant_team': match['radiant_team'],
+                    'dire_team': match['dire_team'],
+                    'duration_minutes': match['duration_minutes'],
+                    'winner': match['winner'],
+                    'radiant_win': match['radiant_win']
+                }
+                
+                for player in match['players']:
+                    row = {**match_info, **player}
+                    writer.writerow(row)
+        
+        print(f"Saved {len(matches)} matches to CSV: {csv_filename}")
         
 
 def main():
@@ -220,12 +383,21 @@ def main():
         print("Usage: python fetch_opendota_matches.py <API_KEY> [months] [include_details]")
         print("  API_KEY: Your OpenDota API key")
         print("  months: Number of months to look back (default: 3)")
-        print("  include_details: 'yes' to fetch full match details (default: no)")
+        print("  include_details: 'yes' to fetch detailed match data (default: yes)")
+        print("\nFetched data includes:")
+        print("  - Match ID, Team/Tournament Names")
+        print("  - Hero names, roles (Carry, Mid, Offlane, Support)")
+        print("  - GPM, XPM, Tower Damage, Healing")
+        print("  - Lane advantages, K/D/A")
+        print("  - Game Duration, Match Winner")
         sys.exit(1)
         
     api_key = sys.argv[1]
     months = int(sys.argv[2]) if len(sys.argv) > 2 else 3
-    include_details = len(sys.argv) > 3 and sys.argv[3].lower() in ['yes', 'true', '1']
+    # Default to fetching details (include_details=True by default)
+    include_details = True
+    if len(sys.argv) > 3:
+        include_details = sys.argv[3].lower() not in ['no', 'false', '0']
     
     # Create fetcher with rate limit of 600 req/min (50% of max)
     fetcher = OpenDotaFetcher(api_key, rate_limit=600)
@@ -243,16 +415,40 @@ def main():
     # Save to file
     fetcher.save_matches(matches, filename)
     
+    # Also save as CSV if we have detailed data
+    if include_details and matches:
+        fetcher.save_matches_csv(matches, filename)
+    
     # Print some statistics
     if matches:
         print("\nMatch Statistics:")
         print(f"  Total matches: {len(matches)}")
-        if matches:
-            first_match = matches[0]
-            last_match = matches[-1]
-            print(f"  Newest match: {datetime.fromtimestamp(first_match.get('start_time', 0)).strftime('%Y-%m-%d %H:%M:%S')}")
-            print(f"  Oldest match: {datetime.fromtimestamp(last_match.get('start_time', 0)).strftime('%Y-%m-%d %H:%M:%S')}")
-            print(f"  Match ID range: {first_match.get('match_id')} to {last_match.get('match_id')}")
+        
+        if include_details and matches:
+            # Statistics for detailed data
+            total_players = sum(len(m.get('players', [])) for m in matches)
+            print(f"  Total players/heroes: {total_players}")
+            
+            # Count unique tournaments
+            tournaments = set(m.get('tournament', 'Unknown') for m in matches)
+            print(f"  Unique tournaments: {len(tournaments)}")
+            
+            # Show sample of data structure
+            if matches[0].get('players'):
+                print(f"\n  Sample data from first match (ID: {matches[0]['match_id']}):")
+                print(f"    Tournament: {matches[0]['tournament']}")
+                print(f"    Teams: {matches[0]['radiant_team']} vs {matches[0]['dire_team']}")
+                print(f"    Winner: {matches[0]['winner']}")
+                print(f"    Duration: {matches[0]['duration_minutes']} minutes")
+                print(f"    Players: {len(matches[0]['players'])} heroes")
+        else:
+            # Statistics for summary data
+            if matches:
+                first_match = matches[0]
+                last_match = matches[-1]
+                print(f"  Newest match: {datetime.fromtimestamp(first_match.get('start_time', 0)).strftime('%Y-%m-%d %H:%M:%S')}")
+                print(f"  Oldest match: {datetime.fromtimestamp(last_match.get('start_time', 0)).strftime('%Y-%m-%d %H:%M:%S')}")
+                print(f"  Match ID range: {first_match.get('match_id')} to {last_match.get('match_id')}")
     
     print("\nDone!")
     
