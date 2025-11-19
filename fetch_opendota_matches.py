@@ -226,14 +226,10 @@ class OpenDotaFetcher:
                 # Extract lane advantages (from laning phase)
                 lane_efficiency = player.get('lane_efficiency_pct')
                 
-                # Get player slot
-                player_slot = player.get('player_slot', i)
-                
                 player_data = {
                     'hero_name': hero_name,
                     'hero_id': hero_id,
                     'team': team_name,
-                    'player_slot': player_slot,
                     'gpm': player.get('gold_per_min', 0),
                     'xpm': player.get('xp_per_min', 0),
                     'tower_damage': player.get('tower_damage', 0),
@@ -454,7 +450,7 @@ class OpenDotaFetcher:
             fieldnames = [
                 'match_id', 'tournament', 'radiant_team', 'dire_team',
                 'duration_minutes', 'winner', 'radiant_win',
-                'hero_name', 'hero_id', 'team', 'player_slot',
+                'hero_name', 'hero_id', 'team',
                 'gpm', 'xpm', 'tower_damage', 'hero_healing',
                 'lane_efficiency_pct', 'kills', 'deaths', 'assists',
                 'last_hits', 'denies', 'net_worth', 'hero_damage', 
