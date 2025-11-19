@@ -214,7 +214,9 @@ def export_to_csv(json_file: str, csv_file: str = None):
             }
             
             for player in match.get('players', []):
-                row = {**match_info, **player}
+                # Filter out fields not in fieldnames
+                player_filtered = {k: v for k, v in player.items() if k in fieldnames}
+                row = {**match_info, **player_filtered}
                 writer.writerow(row)
     
     print(f"✓ CSV export complete: {csv_file}")
