@@ -126,16 +126,52 @@ class OpenDotaFetcher:
         """
         return self._make_request(f"matches/{match_id}")
     
-    def _get_role_name(self, lane_role: Optional[int]) -> str:
-        """Convert lane role number to descriptive name."""
-        role_map = {
-            1: "Carry (pos 1)",
-            2: "Mid (pos 2)",
-            3: "Offlane (pos 3)",
-            4: "Support (pos 4)",
-            5: "Hard Support (pos 5)"
+    def _get_role_name(self, lane_role: Optional[int], player_slot: int, is_roaming: bool = False) -> str:
+        """
+        Determine role name from available data.
+        
+        In OpenDota API:
+        - lane_role: 1=Safe Lane, 2=Mid, 3=Off Lane, 4=Jungle
+        - player_slot: 0-4 for Radiant, 128-132 for Dire (encoded)
+        - Players within each team are typically ordered by farm priority (pos 1-5)
+        
+        Args:
+            lane_role: Lane role from API (1-4)
+            player_slot: Player slot number (0-9 or encoded)
+            is_roaming: Whether player was roaming
+        """
+        # Decode player_slot to get position within team (0-4)
+        if player_slot < 128:
+            team_position = player_slot  # Radiant: 0-4
+        else:
+            team_position = player_slot - 128  # Dire: 128-132 -> 0-4
+        
+        # Try to determine role from lane_role first
+        if lane_role == 1:
+            return "Carry (pos 1)"
+        elif lane_role == 2:
+            return "Mid (pos 2)"
+        elif lane_role == 3:
+            return "Offlane (pos 3)"
+        elif lane_role == 4 or is_roaming:
+            # Jungle or roaming - could be pos 4 or 5
+            # Use team position to distinguish
+            if team_position >= 4:
+                return "Hard Support (pos 5)"
+            else:
+                return "Support (pos 4)"
+        
+        # Fallback: use team position (farm priority order)
+        # Players are typically ordered by position within their team
+        position_map = {
+            0: "Carry (pos 1)",
+            1: "Mid (pos 2)",
+            2: "Offlane (pos 3)",
+            3: "Support (pos 4)",
+            4: "Hard Support (pos 5)"
         }
-        return role_map.get(lane_role, "Unknown")
+        
+        return position_map.get(team_position, f"Unknown (slot {player_slot})")
     
     def extract_match_data(self, match_details: Dict) -> Optional[Dict]:
         """
