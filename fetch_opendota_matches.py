@@ -17,13 +17,14 @@ import os
 class OpenDotaFetcher:
     """Fetches pro matches from OpenDota API with rate limiting."""
     
-    def __init__(self, api_key: str, rate_limit: int = 600):
+    def __init__(self, api_key: str, rate_limit: int = 600, skip_tournaments: List[str] = None):
         """
         Initialize the fetcher.
         
         Args:
             api_key: OpenDota API key
             rate_limit: Maximum requests per minute (default 600, well below 1200 limit)
+            skip_tournaments: List of tournament names to skip (saves API credits)
         """
         self.api_key = api_key
         self.base_url = "https://api.opendota.com/api"
@@ -33,6 +34,8 @@ class OpenDotaFetcher:
         self.request_count = 0
         self.session = requests.Session()
         self.hero_names = self._load_hero_names()
+        self.skip_tournaments = [t.lower() for t in (skip_tournaments or [])]
+        self.skipped_matches = 0
         
     def _load_hero_names(self) -> Dict[int, str]:
         """Load hero ID to name mapping."""
@@ -126,102 +129,12 @@ class OpenDotaFetcher:
         """
         return self._make_request(f"matches/{match_id}")
     
-    def _get_role_name(self, lane_role: Optional[int], player_slot: int, is_roaming: bool = False) -> str:
-        """
-        Determine role name from available data.
-        
-        In OpenDota API:
-        - lane_role: 1=Safe Lane, 2=Mid, 3=Off Lane, 4=Jungle
-        - player_slot: Can be 0-9 (sequential) or 0-4, 128-132 (encoded)
-        - Players within each team are typically ordered by farm priority (pos 1-5)
-        
-        Args:
-            lane_role: Lane role from API (1-4)
-            player_slot: Player slot number (0-9 or encoded 0-4, 128-132)
-            is_roaming: Whether player was roaming
-        """
-        # Decode player_slot to get position within team (0-4)
-        if player_slot >= 128:
-            # Encoded format: Dire is 128-132
-            team_position = player_slot - 128
-        elif player_slot >= 5:
-            # Sequential format: Dire is 5-9
-            team_position = player_slot - 5
-        else:
-            # Radiant is always 0-4
-            team_position = player_slot
-        
-        # Try to determine role from lane_role first
-        if lane_role == 1:
-            return "Carry (pos 1)"
-        elif lane_role == 2:
-            return "Mid (pos 2)"
-        elif lane_role == 3:
-            return "Offlane (pos 3)"
-        elif lane_role == 4 or is_roaming:
-            # Jungle or roaming - could be pos 4 or 5
-            # Use team position to distinguish
-            if team_position >= 4:
-                return "Hard Support (pos 5)"
-            else:
-                return "Support (pos 4)"
-        
-        # Fallback: use team position (farm priority order)
-        # Players are typically ordered by position within their team
-        position_map = {
-            0: "Carry (pos 1)",
-            1: "Mid (pos 2)",
-            2: "Offlane (pos 3)",
-            3: "Support (pos 4)",
-            4: "Hard Support (pos 5)"
-        }
-        
-        return position_map.get(team_position, f"Unknown (slot {player_slot})")
-    
-    def _determine_role_by_stats(self, player: Dict, team_players: List[Dict]) -> str:
-        """
-        Determine role based on actual game statistics (farm priority).
-        
-        Args:
-            player: Player data
-            team_players: All players on the same team
-            
-        Returns:
-            Role name based on farm priority
-        """
-        # If lane_role is available and valid for cores, use it
-        lane_role = player.get('lane_role')
-        if lane_role in [1, 2, 3]:
-            role_map = {
-                1: "Carry (pos 1)",
-                2: "Mid (pos 2)",
-                3: "Offlane (pos 3)"
-            }
-            return role_map[lane_role]
-        
-        # Sort team by farm priority (GPM weighted more than XPM)
-        sorted_team = sorted(
-            team_players,
-            key=lambda p: (p.get('gold_per_min', 0) * 2 + p.get('xp_per_min', 0)),
-            reverse=True
-        )
-        
-        # Find this player's position in farm priority (0-4)
-        try:
-            farm_position = sorted_team.index(player)
-        except ValueError:
-            farm_position = 0
-        
-        # Map farm priority to role
-        position_map = {
-            0: "Carry (pos 1)",      # Highest farm
-            1: "Mid (pos 2)",         # Second highest farm
-            2: "Offlane (pos 3)",     # Third highest farm
-            3: "Support (pos 4)",     # Fourth highest farm
-            4: "Hard Support (pos 5)" # Lowest farm
-        }
-        
-        return position_map.get(farm_position, "Unknown")
+    def _should_skip_tournament(self, league_name: str) -> bool:
+        """Check if tournament should be skipped."""
+        if not self.skip_tournaments:
+            return False
+        league_lower = league_name.lower()
+        return any(skip_term in league_lower for skip_term in self.skip_tournaments)
     
     def extract_match_data(self, match_details: Dict) -> Optional[Dict]:
         """
@@ -231,7 +144,7 @@ class OpenDotaFetcher:
             match_details: Full match details from API
             
         Returns:
-            Dictionary with only required fields
+            Dictionary with only required fields, or None if tournament should be skipped
         """
         if not match_details:
             return None
@@ -247,10 +160,13 @@ class OpenDotaFetcher:
             radiant_team_name = match_details.get('radiant_team', {}).get('name', 'Radiant')
             dire_team_name = match_details.get('dire_team', {}).get('name', 'Dire')
             
-            # Extract player/hero data - first pass to collect all data
+            # Check if we should skip this tournament
+            if self._should_skip_tournament(league_name):
+                self.skipped_matches += 1
+                return None
+            
+            # Extract player/hero data
             players_data = []
-            radiant_players = []
-            dire_players = []
             players = match_details.get('players', [])
             
             for i, player in enumerate(players):
@@ -274,11 +190,7 @@ class OpenDotaFetcher:
                     'hero_name': hero_name,
                     'hero_id': hero_id,
                     'team': team_name,
-                    'is_radiant': is_radiant,
-                    'lane_role': player.get('lane_role'),
                     'player_slot': player_slot,
-                    'gold_per_min': player.get('gold_per_min', 0),
-                    'xp_per_min': player.get('xp_per_min', 0),
                     'gpm': player.get('gold_per_min', 0),
                     'xpm': player.get('xp_per_min', 0),
                     'tower_damage': player.get('tower_damage', 0),
@@ -291,25 +203,6 @@ class OpenDotaFetcher:
                 }
                 
                 players_data.append(player_data)
-                
-                if is_radiant:
-                    radiant_players.append(player_data)
-                else:
-                    dire_players.append(player_data)
-            
-            # Second pass: assign roles based on farm priority within each team
-            for player_data in players_data:
-                if player_data['is_radiant']:
-                    role = self._determine_role_by_stats(player_data, radiant_players)
-                else:
-                    role = self._determine_role_by_stats(player_data, dire_players)
-                
-                player_data['role'] = role
-                # Clean up temporary fields
-                del player_data['is_radiant']
-                del player_data['lane_role']
-                del player_data['gold_per_min']
-                del player_data['xp_per_min']
             
             # Compile final match data
             extracted_data = {
@@ -462,7 +355,7 @@ class OpenDotaFetcher:
             fieldnames = [
                 'match_id', 'tournament', 'radiant_team', 'dire_team',
                 'duration_minutes', 'winner', 'radiant_win',
-                'hero_name', 'hero_id', 'team', 'role', 'player_slot',
+                'hero_name', 'hero_id', 'team', 'player_slot',
                 'gpm', 'xpm', 'tower_damage', 'hero_healing',
                 'lane_efficiency_pct', 'kills', 'deaths', 'assists', 'won'
             ]
@@ -493,16 +386,24 @@ def main():
     """Main function to fetch pro matches."""
     # Check for API key
     if len(sys.argv) < 2:
-        print("Usage: python fetch_opendota_matches.py <API_KEY> [months] [include_details]")
+        print("Usage: python fetch_opendota_matches.py <API_KEY> [months] [include_details] [skip_tournaments]")
         print("  API_KEY: Your OpenDota API key")
         print("  months: Number of months to look back (default: 3)")
         print("  include_details: 'yes' to fetch detailed match data (default: yes)")
+        print("  skip_tournaments: Comma-separated list of tournament names to skip (optional)")
         print("\nFetched data includes:")
         print("  - Match ID, Team/Tournament Names")
-        print("  - Hero names, roles (Carry, Mid, Offlane, Support)")
+        print("  - Hero names")
         print("  - GPM, XPM, Tower Damage, Healing")
         print("  - Lane advantages, K/D/A")
         print("  - Game Duration, Match Winner")
+        print("\nExamples:")
+        print("  python fetch_opendota_matches.py YOUR_KEY")
+        print("  python fetch_opendota_matches.py YOUR_KEY 6")
+        print("  python fetch_opendota_matches.py YOUR_KEY 3 yes \"DPC,BTS\"")
+        print("\nTo skip tournaments (saves API credits):")
+        print("  Use partial names, comma-separated: \"DPC,Regional,Qualifier\"")
+        print("  Case-insensitive: 'dpc' matches 'DPC WEU 2023'")
         sys.exit(1)
         
     api_key = sys.argv[1]
@@ -512,13 +413,25 @@ def main():
     if len(sys.argv) > 3:
         include_details = sys.argv[3].lower() not in ['no', 'false', '0']
     
+    # Parse skip tournaments list
+    skip_tournaments = []
+    if len(sys.argv) > 4:
+        skip_tournaments = [t.strip() for t in sys.argv[4].split(',') if t.strip()]
+    
     # Create fetcher with rate limit of 600 req/min (50% of max)
-    fetcher = OpenDotaFetcher(api_key, rate_limit=600)
+    fetcher = OpenDotaFetcher(api_key, rate_limit=600, skip_tournaments=skip_tournaments)
     
     # Fetch matches
     print("="*60)
+    if skip_tournaments:
+        print(f"Skipping tournaments containing: {', '.join(skip_tournaments)}")
+        print()
     matches = fetcher.fetch_recent_pro_matches(months=months, include_details=include_details)
     print("="*60)
+    
+    # Show skipped tournament info
+    if fetcher.skipped_matches > 0:
+        print(f"\n⚠ Skipped {fetcher.skipped_matches} matches from filtered tournaments")
     
     # Generate filename with timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -554,6 +467,14 @@ def main():
                 print(f"    Winner: {matches[0]['winner']}")
                 print(f"    Duration: {matches[0]['duration_minutes']} minutes")
                 print(f"    Players: {len(matches[0]['players'])} heroes")
+                print(f"\n  Sample hero data (first player):")
+                first_player = matches[0]['players'][0]
+                print(f"    Hero: {first_player['hero_name']}")
+                print(f"    Team: {first_player['team']}")
+                print(f"    GPM: {first_player['gpm']}, XPM: {first_player['xpm']}")
+                print(f"    K/D/A: {first_player['kills']}/{first_player['deaths']}/{first_player['assists']}")
+                print(f"    Tower Damage: {first_player['tower_damage']}")
+                print(f"    Hero Healing: {first_player['hero_healing']}")
         else:
             # Statistics for summary data
             if matches:
