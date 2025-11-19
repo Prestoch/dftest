@@ -178,6 +178,51 @@ class OpenDotaFetcher:
         
         return position_map.get(team_position, f"Unknown (slot {player_slot})")
     
+    def _determine_role_by_stats(self, player: Dict, team_players: List[Dict]) -> str:
+        """
+        Determine role based on actual game statistics (farm priority).
+        
+        Args:
+            player: Player data
+            team_players: All players on the same team
+            
+        Returns:
+            Role name based on farm priority
+        """
+        # If lane_role is available and valid for cores, use it
+        lane_role = player.get('lane_role')
+        if lane_role in [1, 2, 3]:
+            role_map = {
+                1: "Carry (pos 1)",
+                2: "Mid (pos 2)",
+                3: "Offlane (pos 3)"
+            }
+            return role_map[lane_role]
+        
+        # Sort team by farm priority (GPM weighted more than XPM)
+        sorted_team = sorted(
+            team_players,
+            key=lambda p: (p.get('gold_per_min', 0) * 2 + p.get('xp_per_min', 0)),
+            reverse=True
+        )
+        
+        # Find this player's position in farm priority (0-4)
+        try:
+            farm_position = sorted_team.index(player)
+        except ValueError:
+            farm_position = 0
+        
+        # Map farm priority to role
+        position_map = {
+            0: "Carry (pos 1)",      # Highest farm
+            1: "Mid (pos 2)",         # Second highest farm
+            2: "Offlane (pos 3)",     # Third highest farm
+            3: "Support (pos 4)",     # Fourth highest farm
+            4: "Hard Support (pos 5)" # Lowest farm
+        }
+        
+        return position_map.get(farm_position, "Unknown")
+    
     def extract_match_data(self, match_details: Dict) -> Optional[Dict]:
         """
         Extract only the required fields from match details.
@@ -202,8 +247,10 @@ class OpenDotaFetcher:
             radiant_team_name = match_details.get('radiant_team', {}).get('name', 'Radiant')
             dire_team_name = match_details.get('dire_team', {}).get('name', 'Dire')
             
-            # Extract player/hero data
+            # Extract player/hero data - first pass to collect all data
             players_data = []
+            radiant_players = []
+            dire_players = []
             players = match_details.get('players', [])
             
             for i, player in enumerate(players):
@@ -219,19 +266,19 @@ class OpenDotaFetcher:
                 
                 # Extract lane advantages (from laning phase)
                 lane_efficiency = player.get('lane_efficiency_pct')
-                lane_data = player.get('lane', {})
                 
-                # Get player slot and role information
+                # Get player slot
                 player_slot = player.get('player_slot', i)
-                lane_role = player.get('lane_role')
-                is_roaming = player.get('is_roaming', False)
                 
                 player_data = {
                     'hero_name': hero_name,
                     'hero_id': hero_id,
                     'team': team_name,
-                    'role': self._get_role_name(lane_role, player_slot, is_roaming),
-                    'player_slot': player_slot,  # Adding this for debugging
+                    'is_radiant': is_radiant,
+                    'lane_role': player.get('lane_role'),
+                    'player_slot': player_slot,
+                    'gold_per_min': player.get('gold_per_min', 0),
+                    'xp_per_min': player.get('xp_per_min', 0),
                     'gpm': player.get('gold_per_min', 0),
                     'xpm': player.get('xp_per_min', 0),
                     'tower_damage': player.get('tower_damage', 0),
@@ -244,6 +291,25 @@ class OpenDotaFetcher:
                 }
                 
                 players_data.append(player_data)
+                
+                if is_radiant:
+                    radiant_players.append(player_data)
+                else:
+                    dire_players.append(player_data)
+            
+            # Second pass: assign roles based on farm priority within each team
+            for player_data in players_data:
+                if player_data['is_radiant']:
+                    role = self._determine_role_by_stats(player_data, radiant_players)
+                else:
+                    role = self._determine_role_by_stats(player_data, dire_players)
+                
+                player_data['role'] = role
+                # Clean up temporary fields
+                del player_data['is_radiant']
+                del player_data['lane_role']
+                del player_data['gold_per_min']
+                del player_data['xp_per_min']
             
             # Compile final match data
             extracted_data = {
