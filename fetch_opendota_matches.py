@@ -242,10 +242,8 @@ class OpenDotaFetcher:
                     'denies': player.get('denies', 0),
                     'net_worth': player.get('net_worth', 0),
                     'hero_damage': player.get('hero_damage', 0),
-                    'damage_taken': player.get('damage_taken', 0),
                     'teamfight_participation': player.get('teamfight_participation', 0),
                     'actions_per_min': player.get('actions_per_min', 0),
-                    'clicks_per_min': player.get('clicks_per_min', 0),
                     'won': player_won
                 }
                 
@@ -449,8 +447,7 @@ class OpenDotaFetcher:
                 'gpm', 'xpm', 'tower_damage', 'hero_healing',
                 'lane_efficiency_pct', 'kills', 'deaths', 'assists',
                 'last_hits', 'denies', 'net_worth', 'hero_damage', 
-                'damage_taken', 'teamfight_participation', 
-                'actions_per_min', 'clicks_per_min', 'won'
+                'teamfight_participation', 'actions_per_min', 'won'
             ]
             
             writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -490,8 +487,7 @@ def main():
         print("  - Match ID, Team/Tournament Names, Hero names")
         print("  - GPM, XPM, Tower Damage, Healing, Lane advantages")
         print("  - K/D/A, Last Hits, Denies, Net Worth")
-        print("  - Hero Damage, Damage Taken, Teamfight Participation")
-        print("  - Actions Per Min, Clicks Per Min")
+        print("  - Hero Damage, Teamfight Participation, Actions Per Min")
         print("  - Game Duration, Match Winner")
         print("\nExamples:")
         print("  # Last 3 months (default)")
@@ -690,7 +686,7 @@ def main():
                 print(f"    K/D/A: {first_player['kills']}/{first_player['deaths']}/{first_player['assists']}")
                 print(f"    Last Hits: {first_player['last_hits']}, Denies: {first_player['denies']}")
                 print(f"    Net Worth: {first_player['net_worth']}")
-                print(f"    Hero Damage: {first_player['hero_damage']}, Damage Taken: {first_player['damage_taken']}")
+                print(f"    Hero Damage: {first_player['hero_damage']}, APM: {first_player['actions_per_min']}")
         else:
             # Statistics for summary data
             if matches:
