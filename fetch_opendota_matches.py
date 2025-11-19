@@ -344,10 +344,6 @@ class OpenDotaFetcher:
                 
             all_matches.extend(recent_matches)
             pbar.update(1)
-            
-            # If we got fewer recent matches than total matches, we've gone past our cutoff
-            if len(recent_matches) < len(matches):
-                break
                 
             # Set up for next page
             less_than_match_id = matches[-1]['match_id']
