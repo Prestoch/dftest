@@ -216,11 +216,17 @@ class OpenDotaFetcher:
                 lane_efficiency = player.get('lane_efficiency_pct')
                 lane_data = player.get('lane', {})
                 
+                # Get player slot and role information
+                player_slot = player.get('player_slot', i)
+                lane_role = player.get('lane_role')
+                is_roaming = player.get('is_roaming', False)
+                
                 player_data = {
                     'hero_name': hero_name,
                     'hero_id': hero_id,
                     'team': team_name,
-                    'role': self._get_role_name(player.get('lane_role')),
+                    'role': self._get_role_name(lane_role, player_slot, is_roaming),
+                    'player_slot': player_slot,  # Adding this for debugging
                     'gpm': player.get('gold_per_min', 0),
                     'xpm': player.get('xp_per_min', 0),
                     'tower_damage': player.get('tower_damage', 0),
@@ -385,7 +391,7 @@ class OpenDotaFetcher:
             fieldnames = [
                 'match_id', 'tournament', 'radiant_team', 'dire_team',
                 'duration_minutes', 'winner', 'radiant_win',
-                'hero_name', 'hero_id', 'team', 'role',
+                'hero_name', 'hero_id', 'team', 'role', 'player_slot',
                 'gpm', 'xpm', 'tower_damage', 'hero_healing',
                 'lane_efficiency_pct', 'kills', 'deaths', 'assists', 'won'
             ]
