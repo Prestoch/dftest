@@ -353,11 +353,6 @@ class OpenDotaFetcher:
                 
             # Set up for next page
             less_than_match_id = matches[-1]['match_id']
-            
-            # Safety check: don't fetch more than 10,000 matches
-            if len(all_matches) >= 10000:
-                pbar.set_postfix_str(f"Reached 10k limit - {len(all_matches)} matches")
-                break
         
         pbar.close()
                 
