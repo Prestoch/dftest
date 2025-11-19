@@ -71,37 +71,58 @@ class OpenDotaFetcher:
             time.sleep(wait_time)
         self.last_request_time = time.time()
         
-    def _make_request(self, endpoint: str, params: Optional[Dict] = None) -> Optional[Dict]:
+    def _make_request(self, endpoint: str, params: Optional[Dict] = None, retries: int = 3) -> Optional[Dict]:
         """
-        Make a rate-limited request to OpenDota API.
+        Make a rate-limited request to OpenDota API with automatic retry.
         
         Args:
             endpoint: API endpoint (without base URL)
             params: Query parameters
+            retries: Number of retry attempts for 500 errors (default: 3)
             
         Returns:
             JSON response or None if failed
         """
-        self._rate_limit_wait()
-        
         if params is None:
             params = {}
         params['api_key'] = self.api_key
         
         url = f"{self.base_url}/{endpoint}"
         
-        try:
-            response = self.session.get(url, params=params, timeout=30)
-            response.raise_for_status()
-            self.request_count += 1
+        for attempt in range(retries):
+            self._rate_limit_wait()
             
-            if self.request_count % 100 == 0:
-                print(f"  Progress: {self.request_count} requests made")
+            try:
+                response = self.session.get(url, params=params, timeout=30)
+                response.raise_for_status()
+                self.request_count += 1
                 
-            return response.json()
-        except requests.exceptions.RequestException as e:
-            print(f"Error making request to {endpoint}: {e}")
-            return None
+                if self.request_count % 100 == 0:
+                    print(f"  Progress: {self.request_count} requests made")
+                    
+                return response.json()
+                
+            except requests.exceptions.HTTPError as e:
+                # Handle 500 errors with retry
+                if response.status_code == 500 and attempt < retries - 1:
+                    wait_time = 2 ** attempt  # Exponential backoff: 1s, 2s, 4s
+                    print(f"  ⚠ 500 error on {endpoint}, retrying in {wait_time}s (attempt {attempt + 1}/{retries})...")
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    # Final attempt failed or other HTTP error
+                    if response.status_code == 500:
+                        print(f"  ✗ 500 error on {endpoint} after {retries} attempts - skipping")
+                    else:
+                        print(f"  ✗ HTTP {response.status_code} error on {endpoint}: {e}")
+                    return None
+                    
+            except requests.exceptions.RequestException as e:
+                # Network errors, timeouts, etc.
+                print(f"  ✗ Request error on {endpoint}: {e}")
+                return None
+        
+        return None
             
     def get_pro_matches(self, less_than_match_id: Optional[int] = None) -> List[Dict]:
         """
@@ -412,7 +433,9 @@ class OpenDotaFetcher:
             if already_fetched > 0:
                 print(f"  ({len(extracted_matches) - already_fetched} newly fetched, {already_fetched} from checkpoint)")
             if failed_matches:
-                print(f"  ⚠ Failed to fetch {len(failed_matches)} matches: {failed_matches[:5]}{'...' if len(failed_matches) > 5 else ''}")
+                print(f"  ⚠ Failed to fetch {len(failed_matches)} matches (likely 500 errors from OpenDota)")
+                print(f"    Match IDs: {failed_matches[:10]}{'...' if len(failed_matches) > 10 else ''}")
+                print(f"    These matches may be corrupted in OpenDota's database")
             
             return extracted_matches
             
