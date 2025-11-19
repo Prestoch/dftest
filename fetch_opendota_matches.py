@@ -266,22 +266,36 @@ class OpenDotaFetcher:
             print(f"Error extracting data from match {match_details.get('match_id', 'unknown')}: {e}")
             return None
         
-    def fetch_recent_pro_matches(self, months: int = 3, include_details: bool = False) -> List[Dict]:
+    def fetch_recent_pro_matches(self, months: int = 3, include_details: bool = False, 
+                                 start_date: datetime = None, end_date: datetime = None) -> List[Dict]:
         """
-        Fetch all pro matches from the last N months.
+        Fetch pro matches from specified date range or last N months.
         
         Args:
-            months: Number of months to look back
+            months: Number of months to look back (if start_date not specified)
             include_details: Whether to fetch full match details (much slower)
+            start_date: Start date for fetching (inclusive)
+            end_date: End date for fetching (inclusive), defaults to now
             
         Returns:
             List of all pro matches
         """
-        # Calculate timestamp for N months ago
-        cutoff_date = datetime.now() - timedelta(days=months * 30)
-        cutoff_timestamp = int(cutoff_date.timestamp())
+        # Determine date range
+        if start_date:
+            cutoff_date = start_date
+            cutoff_timestamp = int(cutoff_date.timestamp())
+            end_timestamp = int(end_date.timestamp()) if end_date else None
+        else:
+            # Calculate timestamp for N months ago
+            cutoff_date = datetime.now() - timedelta(days=months * 30)
+            cutoff_timestamp = int(cutoff_date.timestamp())
+            end_timestamp = None
         
-        print(f"Fetching pro matches since {cutoff_date.strftime('%Y-%m-%d')}")
+        print(f"Fetching pro matches from {cutoff_date.strftime('%Y-%m-%d')}", end='')
+        if end_date:
+            print(f" to {end_date.strftime('%Y-%m-%d')}")
+        else:
+            print(" to now")
         print(f"Rate limit: {self.rate_limit} requests/minute")
         print(f"Include details: {include_details}")
         print()
@@ -306,15 +320,21 @@ class OpenDotaFetcher:
                 pbar.set_postfix_str(f"Complete - {len(all_matches)} total matches")
                 break
                 
-            # Filter matches by date
+            # Filter matches by date range
             recent_matches = []
             for match in matches:
                 match_time = match.get('start_time', 0)
-                if match_time >= cutoff_timestamp:
-                    recent_matches.append(match)
-                else:
-                    pbar.set_postfix_str(f"Reached cutoff date - {len(all_matches)} total matches")
+                
+                # Check if before cutoff date
+                if match_time < cutoff_timestamp:
+                    pbar.set_postfix_str(f"Reached start date - {len(all_matches)} total matches")
                     break
+                
+                # Check if after end date (if specified)
+                if end_timestamp and match_time > end_timestamp:
+                    continue  # Skip this match, it's too recent
+                
+                recent_matches.append(match)
                     
             if not recent_matches:
                 pbar.set_postfix_str(f"Complete - {len(all_matches)} total matches")
@@ -457,46 +477,108 @@ def main():
     """Main function to fetch pro matches."""
     # Check for API key
     if len(sys.argv) < 2:
-        print("Usage: python fetch_opendota_matches.py <API_KEY> [months] [include_details] [skip_tournaments]")
-        print("  API_KEY: Your OpenDota API key")
-        print("  months: Number of months to look back (default: 3)")
-        print("  include_details: 'yes' to fetch detailed match data (default: yes)")
-        print("  skip_tournaments: Comma-separated list of tournament names to skip (optional)")
+        print("Usage: python fetch_opendota_matches.py <API_KEY> [options]")
+        print("\nOptions:")
+        print("  months=N              Number of months to look back (default: 3)")
+        print("  from=YYYY-MM-DD       Start date (inclusive)")
+        print("  to=YYYY-MM-DD         End date (inclusive, defaults to today)")
+        print("  details=yes/no        Fetch detailed match data (default: yes)")
+        print("  skip=tournaments      Comma-separated tournament names to skip")
         print("\nFetched data includes:")
-        print("  - Match ID, Team/Tournament Names")
-        print("  - Hero names")
-        print("  - GPM, XPM, Tower Damage, Healing")
-        print("  - Lane advantages, K/D/A")
+        print("  - Match ID, Team/Tournament Names, Hero names")
+        print("  - GPM, XPM, Tower Damage, Healing, Lane advantages, K/D/A")
         print("  - Game Duration, Match Winner")
         print("\nExamples:")
+        print("  # Last 3 months (default)")
         print("  python fetch_opendota_matches.py YOUR_KEY")
-        print("  python fetch_opendota_matches.py YOUR_KEY 6")
-        print("  python fetch_opendota_matches.py YOUR_KEY 3 yes \"DPC,BTS\"")
+        print()
+        print("  # Last 6 months")
+        print("  python fetch_opendota_matches.py YOUR_KEY months=6")
+        print()
+        print("  # Specific date range")
+        print("  python fetch_opendota_matches.py YOUR_KEY from=2023-01-01 to=2023-12-31")
+        print()
+        print("  # From specific date to now")
+        print("  python fetch_opendota_matches.py YOUR_KEY from=2023-01-01")
+        print()
+        print("  # Skip tournaments")
+        print("  python fetch_opendota_matches.py YOUR_KEY from=2023-01-01 skip=DPC,Regional")
+        print()
+        print("  # Old format still works")
+        print("  python fetch_opendota_matches.py YOUR_KEY 6 yes \"DPC,BTS\"")
         print("\nFeatures:")
         print("  ✓ Auto-checkpoint every 10 matches (network failure protection)")
         print("  ✓ Auto-resume if interrupted (just run the same command again)")
         print("  ✓ Tournament filtering (saves API credits)")
-        print("\nTo skip tournaments:")
-        print("  Use partial names, comma-separated: \"DPC,Regional,Qualifier\"")
-        print("  Case-insensitive: 'dpc' matches 'DPC WEU 2023'")
+        print("  ✓ Date range filtering (from=YYYY-MM-DD to=YYYY-MM-DD)")
         sys.exit(1)
         
     api_key = sys.argv[1]
-    months = int(sys.argv[2]) if len(sys.argv) > 2 else 3
-    # Default to fetching details (include_details=True by default)
-    include_details = True
-    if len(sys.argv) > 3:
-        include_details = sys.argv[3].lower() not in ['no', 'false', '0']
     
-    # Parse skip tournaments list
+    # Parse arguments - support both old and new format
+    months = 3
+    include_details = True
     skip_tournaments = []
-    if len(sys.argv) > 4:
-        skip_tournaments = [t.strip() for t in sys.argv[4].split(',') if t.strip()]
+    start_date = None
+    end_date = None
+    
+    # Check if using new key=value format or old positional format
+    if len(sys.argv) > 2 and '=' in sys.argv[2]:
+        # New format: key=value
+        for arg in sys.argv[2:]:
+            if '=' in arg:
+                key, value = arg.split('=', 1)
+                key = key.lower().strip()
+                value = value.strip()
+                
+                if key == 'months':
+                    months = int(value)
+                elif key == 'from':
+                    try:
+                        start_date = datetime.strptime(value, '%Y-%m-%d')
+                    except ValueError:
+                        print(f"Error: Invalid date format for 'from': {value}")
+                        print("Use YYYY-MM-DD format, e.g., from=2023-01-01")
+                        sys.exit(1)
+                elif key == 'to':
+                    try:
+                        end_date = datetime.strptime(value, '%Y-%m-%d')
+                        # Set to end of day
+                        end_date = end_date.replace(hour=23, minute=59, second=59)
+                    except ValueError:
+                        print(f"Error: Invalid date format for 'to': {value}")
+                        print("Use YYYY-MM-DD format, e.g., to=2023-12-31")
+                        sys.exit(1)
+                elif key == 'details':
+                    include_details = value.lower() not in ['no', 'false', '0']
+                elif key == 'skip':
+                    skip_tournaments = [t.strip() for t in value.split(',') if t.strip()]
+    else:
+        # Old format: positional arguments
+        if len(sys.argv) > 2:
+            months = int(sys.argv[2])
+        if len(sys.argv) > 3:
+            include_details = sys.argv[3].lower() not in ['no', 'false', '0']
+        if len(sys.argv) > 4:
+            skip_tournaments = [t.strip() for t in sys.argv[4].split(',') if t.strip()]
+    
+    # Validate date range
+    if start_date and end_date and start_date > end_date:
+        print("Error: 'from' date must be before 'to' date!")
+        sys.exit(1)
     
     # Generate checkpoint filename (based on parameters for consistency)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     detail_suffix = "_detailed" if include_details else "_summary"
-    checkpoint_file = f".opendota_checkpoint_{months}months{detail_suffix}.json"
+    
+    if start_date:
+        # Date range based checkpoint
+        start_str = start_date.strftime("%Y%m%d")
+        end_str = end_date.strftime("%Y%m%d") if end_date else "now"
+        checkpoint_file = f".opendota_checkpoint_{start_str}_to_{end_str}{detail_suffix}.json"
+    else:
+        # Months based checkpoint
+        checkpoint_file = f".opendota_checkpoint_{months}months{detail_suffix}.json"
     
     # Create fetcher with rate limit of 600 req/min (50% of max)
     fetcher = OpenDotaFetcher(
@@ -521,7 +603,12 @@ def main():
         print()
     
     try:
-        matches = fetcher.fetch_recent_pro_matches(months=months, include_details=include_details)
+        matches = fetcher.fetch_recent_pro_matches(
+            months=months, 
+            include_details=include_details,
+            start_date=start_date,
+            end_date=end_date
+        )
     except KeyboardInterrupt:
         print("\n\n⚠ Interrupted by user!")
         print(f"💾 Progress saved in checkpoint: {checkpoint_file}")
@@ -543,7 +630,15 @@ def main():
     # Generate filename with timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     detail_suffix = "_detailed" if include_details else "_summary"
-    filename = f"opendota_pro_matches_{months}months{detail_suffix}_{timestamp}.json"
+    
+    if start_date:
+        # Date range based filename
+        start_str = start_date.strftime("%Y%m%d")
+        end_str = end_date.strftime("%Y%m%d") if end_date else "now"
+        filename = f"opendota_pro_matches_{start_str}_to_{end_str}{detail_suffix}_{timestamp}.json"
+    else:
+        # Months based filename
+        filename = f"opendota_pro_matches_{months}months{detail_suffix}_{timestamp}.json"
     
     # Save to file
     fetcher.save_matches(matches, filename)
