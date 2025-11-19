@@ -17,7 +17,7 @@ import os
 class OpenDotaFetcher:
     """Fetches pro matches from OpenDota API with rate limiting."""
     
-    def __init__(self, api_key: str, rate_limit: int = 600, skip_tournaments: List[str] = None):
+    def __init__(self, api_key: str, rate_limit: int = 600, skip_tournaments: List[str] = None, checkpoint_file: str = None):
         """
         Initialize the fetcher.
         
@@ -25,6 +25,7 @@ class OpenDotaFetcher:
             api_key: OpenDota API key
             rate_limit: Maximum requests per minute (default 600, well below 1200 limit)
             skip_tournaments: List of tournament names to skip (saves API credits)
+            checkpoint_file: File to save/resume progress (for crash recovery)
         """
         self.api_key = api_key
         self.base_url = "https://api.opendota.com/api"
@@ -36,6 +37,8 @@ class OpenDotaFetcher:
         self.hero_names = self._load_hero_names()
         self.skip_tournaments = [t.lower() for t in (skip_tournaments or [])]
         self.skipped_matches = 0
+        self.checkpoint_file = checkpoint_file
+        self.fetched_match_ids = set()
         
     def _load_hero_names(self) -> Dict[int, str]:
         """Load hero ID to name mapping."""
@@ -135,6 +138,46 @@ class OpenDotaFetcher:
             return False
         league_lower = league_name.lower()
         return any(skip_term in league_lower for skip_term in self.skip_tournaments)
+    
+    def _load_checkpoint(self) -> List[Dict]:
+        """Load checkpoint file if exists."""
+        if not self.checkpoint_file or not os.path.exists(self.checkpoint_file):
+            return []
+        
+        try:
+            with open(self.checkpoint_file, 'r') as f:
+                data = json.load(f)
+                matches = data.get('matches', [])
+                # Track which match IDs we already have
+                self.fetched_match_ids = set(m['match_id'] for m in matches)
+                print(f"📁 Loaded checkpoint: {len(matches)} matches already fetched")
+                return matches
+        except Exception as e:
+            print(f"⚠ Could not load checkpoint: {e}")
+            return []
+    
+    def _save_checkpoint(self, matches: List[Dict]):
+        """Save current progress to checkpoint file."""
+        if not self.checkpoint_file:
+            return
+        
+        try:
+            checkpoint_data = {
+                'matches': matches,
+                'timestamp': datetime.now().isoformat(),
+                'total_matches': len(matches)
+            }
+            
+            # Write to temp file first, then rename (atomic operation)
+            temp_file = self.checkpoint_file + '.tmp'
+            with open(temp_file, 'w') as f:
+                json.dump(checkpoint_data, f, indent=2)
+            
+            # Atomic rename
+            os.replace(temp_file, self.checkpoint_file)
+            
+        except Exception as e:
+            print(f"⚠ Could not save checkpoint: {e}")
     
     def extract_match_data(self, match_details: Dict) -> Optional[Dict]:
         """
@@ -302,15 +345,30 @@ class OpenDotaFetcher:
         # Optionally fetch detailed match data
         if include_details and all_matches:
             print(f"\nPhase 2: Fetching detailed data for {len(all_matches)} matches...")
+            
+            # Load checkpoint if exists
+            extracted_matches = self._load_checkpoint()
+            already_fetched = len(extracted_matches)
+            
+            if already_fetched > 0:
+                print(f"  Resuming from checkpoint ({already_fetched} already fetched)")
+            
             print("This will take a while...\n")
             
-            extracted_matches = []
             failed_matches = []
+            checkpoint_interval = 10  # Save every 10 matches
+            last_checkpoint_count = already_fetched
             
             # Progress bar for detailed fetching
-            with tqdm(total=len(all_matches), desc="Fetching details", unit=" matches", dynamic_ncols=True) as pbar:
+            with tqdm(total=len(all_matches), desc="Fetching details", unit=" matches", dynamic_ncols=True, initial=already_fetched) as pbar:
                 for match in all_matches:
                     match_id = match['match_id']
+                    
+                    # Skip if already fetched
+                    if match_id in self.fetched_match_ids:
+                        pbar.update(1)
+                        continue
+                    
                     details = self.get_match_details(match_id)
                     
                     if details:
@@ -318,15 +376,28 @@ class OpenDotaFetcher:
                         extracted = self.extract_match_data(details)
                         if extracted:
                             extracted_matches.append(extracted)
+                            self.fetched_match_ids.add(match_id)
+                            
+                            # Save checkpoint periodically
+                            if len(extracted_matches) - last_checkpoint_count >= checkpoint_interval:
+                                self._save_checkpoint(extracted_matches)
+                                last_checkpoint_count = len(extracted_matches)
                         else:
-                            failed_matches.append(match_id)
+                            # Tournament was skipped
+                            if match_id not in self.fetched_match_ids:
+                                self.fetched_match_ids.add(match_id)
                     else:
                         failed_matches.append(match_id)
                     
                     pbar.update(1)
                     pbar.set_postfix_str(f"{len(extracted_matches)} success, {len(failed_matches)} failed")
+            
+            # Final checkpoint save
+            self._save_checkpoint(extracted_matches)
                     
             print(f"\n✓ Fetched details for {len(extracted_matches)}/{len(all_matches)} matches")
+            if already_fetched > 0:
+                print(f"  ({len(extracted_matches) - already_fetched} newly fetched, {already_fetched} from checkpoint)")
             if failed_matches:
                 print(f"  ⚠ Failed to fetch {len(failed_matches)} matches: {failed_matches[:5]}{'...' if len(failed_matches) > 5 else ''}")
             
@@ -401,7 +472,11 @@ def main():
         print("  python fetch_opendota_matches.py YOUR_KEY")
         print("  python fetch_opendota_matches.py YOUR_KEY 6")
         print("  python fetch_opendota_matches.py YOUR_KEY 3 yes \"DPC,BTS\"")
-        print("\nTo skip tournaments (saves API credits):")
+        print("\nFeatures:")
+        print("  ✓ Auto-checkpoint every 10 matches (network failure protection)")
+        print("  ✓ Auto-resume if interrupted (just run the same command again)")
+        print("  ✓ Tournament filtering (saves API credits)")
+        print("\nTo skip tournaments:")
         print("  Use partial names, comma-separated: \"DPC,Regional,Qualifier\"")
         print("  Case-insensitive: 'dpc' matches 'DPC WEU 2023'")
         sys.exit(1)
@@ -418,15 +493,47 @@ def main():
     if len(sys.argv) > 4:
         skip_tournaments = [t.strip() for t in sys.argv[4].split(',') if t.strip()]
     
+    # Generate checkpoint filename (based on parameters for consistency)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    detail_suffix = "_detailed" if include_details else "_summary"
+    checkpoint_file = f".opendota_checkpoint_{months}months{detail_suffix}.json"
+    
     # Create fetcher with rate limit of 600 req/min (50% of max)
-    fetcher = OpenDotaFetcher(api_key, rate_limit=600, skip_tournaments=skip_tournaments)
+    fetcher = OpenDotaFetcher(
+        api_key, 
+        rate_limit=600, 
+        skip_tournaments=skip_tournaments,
+        checkpoint_file=checkpoint_file if include_details else None
+    )
     
     # Fetch matches
     print("="*60)
+    if include_details and checkpoint_file:
+        if os.path.exists(checkpoint_file):
+            print(f"💾 Checkpoint file found: will resume if interrupted")
+        else:
+            print(f"💾 Checkpoint enabled: progress saved every 10 matches")
+        print(f"   (Checkpoint file: {checkpoint_file})")
+        print()
+    
     if skip_tournaments:
         print(f"Skipping tournaments containing: {', '.join(skip_tournaments)}")
         print()
-    matches = fetcher.fetch_recent_pro_matches(months=months, include_details=include_details)
+    
+    try:
+        matches = fetcher.fetch_recent_pro_matches(months=months, include_details=include_details)
+    except KeyboardInterrupt:
+        print("\n\n⚠ Interrupted by user!")
+        print(f"💾 Progress saved in checkpoint: {checkpoint_file}")
+        print(f"   To resume, run the same command again:")
+        print(f"   python fetch_opendota_matches.py {' '.join(sys.argv[1:])}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"\n\n❌ Error occurred: {e}")
+        print(f"💾 Progress saved in checkpoint: {checkpoint_file}")
+        print(f"   To resume, run the same command again")
+        raise
+    
     print("="*60)
     
     # Show skipped tournament info
@@ -444,6 +551,14 @@ def main():
     # Also save as CSV if we have detailed data
     if include_details and matches:
         fetcher.save_matches_csv(matches, filename)
+    
+    # Clean up checkpoint file on successful completion
+    if checkpoint_file and os.path.exists(checkpoint_file):
+        try:
+            os.remove(checkpoint_file)
+            print(f"✓ Cleaned up checkpoint file")
+        except:
+            pass  # Not critical if cleanup fails
     
     # Print some statistics
     if matches:
