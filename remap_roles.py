@@ -17,14 +17,19 @@ def get_role_name(lane_role: Optional[int], player_slot: int, is_roaming: bool =
     
     In OpenDota API:
     - lane_role: 1=Safe Lane, 2=Mid, 3=Off Lane, 4=Jungle
-    - player_slot: 0-4 for Radiant, 128-132 for Dire (encoded)
+    - player_slot: Can be 0-9 (sequential) or 0-4, 128-132 (encoded)
     - Players within each team are typically ordered by farm priority (pos 1-5)
     """
     # Decode player_slot to get position within team (0-4)
-    if player_slot < 128:
-        team_position = player_slot  # Radiant: 0-4
+    if player_slot >= 128:
+        # Encoded format: Dire is 128-132
+        team_position = player_slot - 128
+    elif player_slot >= 5:
+        # Sequential format: Dire is 5-9
+        team_position = player_slot - 5
     else:
-        team_position = player_slot - 128  # Dire: 128-132 -> 0-4
+        # Radiant is always 0-4
+        team_position = player_slot
     
     # Try to determine role from lane_role first
     if lane_role == 1:
