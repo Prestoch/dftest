@@ -391,7 +391,7 @@ class ProgressBar:
         self.label = label
         self.start_time = time.time()
 
-    def update(self, successes: int, failures: int, step: int = 1) -> None:
+    def update(self, successes: int, failures: int, skipped: int, step: int = 1) -> None:
         if self.total <= 0:
             return
         self.current = min(self.total, self.current + step)
@@ -400,9 +400,11 @@ class ProgressBar:
         remaining = self.total - self.current
         elapsed = max(time.time() - self.start_time, 1e-6)
         rate = self.current / elapsed
+        fetched = successes + skipped
         sys.stdout.write(
             f"\r{self.label} [{bar}] {self.current}/{self.total} matches "
-            f"({remaining} left, {rate:.2f}/s, {successes} ok, {failures} failed)"
+            f"({remaining} left, {rate:.2f}/s, fetched {fetched}, "
+            f"skipped {skipped}, failed {failures})"
         )
         sys.stdout.flush()
         if self.current == self.total:
@@ -458,6 +460,7 @@ def main() -> None:
     total_rows_written = 0
     successes = 0
     failures = 0
+    skipped = 0
 
     for meta in matches:
         try:
@@ -465,19 +468,23 @@ def main() -> None:
         except requests.HTTPError as exc:
             print(f"\nWarning: failed to fetch match {meta.match_id}: {exc}", file=sys.stderr)
             failures += 1
-            progress.update(successes, failures)
+            progress.update(successes, failures, skipped)
             continue
         except requests.RequestException as exc:
             print(f"\nWarning: request issue for match {meta.match_id}: {exc}", file=sys.stderr)
             failures += 1
-            progress.update(successes, failures)
+            progress.update(successes, failures, skipped)
             continue
 
         rows = build_rows(match_data, meta, hero_map)
+        if not rows:
+            skipped += 1
+            progress.update(successes, failures, skipped)
+            continue
         pending_rows.extend(rows)
         matches_since_flush += 1
         successes += 1
-        progress.update(successes, failures)
+        progress.update(successes, failures, skipped)
 
         if matches_since_flush >= max(1, args.save_interval):
             append_rows(args.output, pending_rows)
