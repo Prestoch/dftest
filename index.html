@@ -246,8 +246,44 @@
       /* Remove previous separator to rely on flex gap */
       #counters-scroll > .col-md-3:nth-child(3),
       #counters-scroll > .col-xs-3:nth-child(3) { border-left: 0; padding-left: 0; }
-      #total .alert { font-size: 12px; padding: 4px 6px; }
-      #total .lane-bubble { font-size: 12px !important; padding: 4px 6px !important; }
+       #total .alert { font-size: 12px; padding: 4px 6px; }
+       #total .lane-bubble { font-size: 12px !important; padding: 4px 6px !important; }
+       #metric-delta-panel {
+         margin-top: 8px;
+         padding: 4px 12px;
+         display: none;
+       }
+       #metric-deltas {
+         width: 100%;
+       }
+       .metric-delta-wrapper {
+         border: 1px solid rgba(0,0,0,0.08);
+         border-radius: 6px;
+         padding: 10px 12px;
+         background: #fafafa;
+         display: flex;
+         flex-direction: column;
+         gap: 6px;
+       }
+       .metric-delta-row {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         gap: 8px;
+         font-family: 'Segoe UI', Arial, sans-serif;
+       }
+       .metric-label {
+         min-width: 190px;
+         font-weight: 600;
+       }
+       .metric-value {
+         font-family: 'Roboto Mono', 'Courier New', monospace;
+       }
+       .metric-badge {
+         padding: 2px 8px !important;
+         font-size: 13px !important;
+         line-height: 1.1 !important;
+       }
       /* Remove global alert shrink to keep original component sizes */
 
       div.pick-title {
@@ -347,8 +383,9 @@
           <div class="col-md-2 col-xs-2" id="hero-9"></div>
           <div class="col-md-1 col-xs-1"></div>                    
         </div>                
-        <div class="row lineup" id="score2" style="margin-top: 0;"></div>
-        <div class="row" style="height: 18px;" id="total"></div>
+          <div class="row lineup" id="score2" style="margin-top: 0;"></div>
+          <div class="row lineup" id="total"></div>
+          <div class="row" id="metric-delta-panel"></div>
         <div class="row pick-title">
           <div class="row">
             <div class="col-md-12 col-xs-12" style="text-align:center; font-weight:400">Advantages</div>

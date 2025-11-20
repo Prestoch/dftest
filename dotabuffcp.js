@@ -573,7 +573,7 @@ var MainView = Backbone.View.extend ({
   calculateAndShow: function () {
       
 
-      $('#metric-deltas').remove ();
+      $('#metric-delta-panel').empty ();
 
       if (this.isEmpty ()) {
       
@@ -730,7 +730,9 @@ var MainView = Backbone.View.extend ({
   },
 
   renderMetricDeltas: function (metricRows) {
-    $('#metric-deltas').remove ();
+    var mount = $('#metric-delta-panel');
+    mount.empty ();
+    mount.hide();
     if (!metricRows || !metricRows.length) {
       return;
     }
@@ -743,18 +745,16 @@ var MainView = Backbone.View.extend ({
       var deltaValue = row.delta.toFixed(decimals);
       var badgeClass = row.delta >= 0 ? 'alert alert-success' : 'alert alert-danger';
       var formattedDelta = (row.delta >= 0 ? '+' : '') + deltaValue;
-      return "<div class='metric-delta-row' style='display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:4px'>" +
-        "<span class='metric-label' style='min-width:160px; font-weight:600;'>" + label + "</span>" +
-        "<span class='metric-value' style='font-family:monospace;'>" + topText + suffix + "</span>" +
-        "<span class='" + badgeClass + "' style='padding:2px 8px; margin:0; font-size:13px; line-height:1;'>" + formattedDelta + suffix + "</span>" +
-        "<span class='metric-value' style='font-family:monospace;'>" + bottomText + suffix + "</span>" +
+      return "<div class='metric-delta-row'>" +
+        "<span class='metric-label'>" + label + "</span>" +
+        "<span class='metric-value'>" + topText + suffix + "</span>" +
+        "<span class='" + badgeClass + " metric-badge'>" + formattedDelta + suffix + "</span>" +
+        "<span class='metric-value'>" + bottomText + suffix + "</span>" +
       "</div>";
     }).join('');
-    var container = "<div id='metric-deltas' class='col-md-12 col-xs-12' style='margin-top:10px'>" +
-      "<div class='metric-delta-wrapper' style='border-top:1px solid rgba(255,255,255,0.15); padding-top:8px;'>" +
-      rowsHtml +
-      "</div></div>";
-    $('#total').append(container);
+    var container = "<div id='metric-deltas'><div class='metric-delta-wrapper'>" + rowsHtml + "</div></div>";
+    mount.append(container);
+    mount.show();
   }
 
 });
