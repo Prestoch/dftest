@@ -390,25 +390,41 @@ class ProgressBar:
         self.current = 0
         self.label = label
         self.start_time = time.time()
+        self.line_open = False
 
-    def update(self, successes: int, failures: int, skipped: int, step: int = 1) -> None:
+    def update(
+        self,
+        successes: int,
+        failures: int,
+        skipped: int,
+        written_matches: int,
+        step: int = 1,
+    ) -> None:
         if self.total <= 0:
             return
-        self.current = min(self.total, self.current + step)
-        filled = int(self.width * self.current / self.total)
+        if step:
+            self.current = min(self.total, self.current + step)
+        filled = int(self.width * (self.current / self.total if self.total else 0))
         bar = "#" * filled + "-" * (self.width - filled)
         remaining = self.total - self.current
         elapsed = max(time.time() - self.start_time, 1e-6)
-        rate = self.current / elapsed
+        rate = self.current / elapsed if self.current else 0.0
         fetched = successes + skipped
         sys.stdout.write(
             f"\r{self.label} [{bar}] {self.current}/{self.total} matches "
             f"({remaining} left, {rate:.2f}/s, fetched {fetched}, "
-            f"skipped {skipped}, failed {failures})"
+            f"written {written_matches}, skipped {skipped}, failed {failures})"
         )
         sys.stdout.flush()
-        if self.current == self.total:
+        self.line_open = True
+        if self.current == self.total and step:
             sys.stdout.write("\n")
+            self.line_open = False
+
+    def ensure_newline(self) -> None:
+        if self.line_open:
+            sys.stdout.write("\n")
+            self.line_open = False
 
 
 def fetch_match_details(session: requests.Session, match_id: int) -> Dict[str, Any]:
@@ -461,6 +477,7 @@ def main() -> None:
     successes = 0
     failures = 0
     skipped = 0
+    written_matches = 0
 
     for meta in matches:
         try:
@@ -468,37 +485,44 @@ def main() -> None:
         except requests.HTTPError as exc:
             print(f"\nWarning: failed to fetch match {meta.match_id}: {exc}", file=sys.stderr)
             failures += 1
-            progress.update(successes, failures, skipped)
+            progress.update(successes, failures, skipped, written_matches)
             continue
         except requests.RequestException as exc:
             print(f"\nWarning: request issue for match {meta.match_id}: {exc}", file=sys.stderr)
             failures += 1
-            progress.update(successes, failures, skipped)
+            progress.update(successes, failures, skipped, written_matches)
             continue
 
         rows = build_rows(match_data, meta, hero_map)
         if not rows:
             skipped += 1
-            progress.update(successes, failures, skipped)
+            progress.update(successes, failures, skipped, written_matches)
             continue
         pending_rows.extend(rows)
         matches_since_flush += 1
         successes += 1
-        progress.update(successes, failures, skipped)
+        progress.update(successes, failures, skipped, written_matches)
 
         if matches_since_flush >= max(1, args.save_interval):
             append_rows(args.output, pending_rows)
             total_rows_written += len(pending_rows)
             pending_rows.clear()
+            written_matches += matches_since_flush
             matches_since_flush = 0
+            progress.update(successes, failures, skipped, written_matches, step=0)
 
     if pending_rows:
         append_rows(args.output, pending_rows)
         total_rows_written += len(pending_rows)
+        written_matches += matches_since_flush
+        matches_since_flush = 0
+        progress.update(successes, failures, skipped, written_matches, step=0)
 
+    progress.ensure_newline()
     print(
-        f"Completed. Processed {len(matches)} matches "
-        f"and wrote {total_rows_written} hero rows to {args.output}."
+        f"Completed. Processed {len(matches)} matches: "
+        f"{successes} succeeded, {skipped} skipped, {failures} failed. "
+        f"Wrote {total_rows_written} hero rows ({written_matches} matches) to {args.output}."
     )
 
 

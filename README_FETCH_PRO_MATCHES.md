@@ -37,7 +37,7 @@ python3 fetch_pro_matches.py \
 ### Resilience and retry behavior
 
 - Automatic retry logic handles transient `429`/`5xx` responses with exponential backoff.
-- During match discovery you will see periodic counts, and while downloading detailed stats a live `Fetching details...` bar reports percentage complete, rate, and success/failure counts.
+- During match discovery you will see periodic counts, and while downloading detailed stats a live `Fetching details...` bar reports percentage complete, rate, matches fetched, how many were written to disk, plus skip/failure counts.
 - Partial results are saved every `--save-interval` matches; if the script stops mid-run, simply rerun it with the same arguments and it will append to the CSV without duplicating headers.
 
 ### Environment variables
