@@ -654,16 +654,13 @@ var MainView = Backbone.View.extend ({
       var rightSum2 = "<div class=\"col-md-1 col-xs-1\" style=\"text-align:right\">" + nb2.toFixed(2) + "</div>";
       $('#score1').html(data + rightSum1);
       $('#score2').html(data2 + rightSum2);
-      var wrdelta = (nb1 - nb2).toFixed(2);
-      var wrClass = (wrdelta > 0) ? 'alert alert-success' : 'alert alert-danger';
-      var wrBubble = "<span class='" + wrClass + "' style='display:inline-block; padding:4px 10px 4px 6px; margin:0; font-size:16px; white-space:nowrap'>= " + wrdelta + "</span>";
+        var wrdelta = (nb1 - nb2);
         var metricRows = MetricDeltaHelper.collect(DotaBuffCP.lineup, DotaBuffCP.lineup2);
-        var metricBadges = this.renderMetricBadges(metricRows);
+        var metricBadges = this.renderMetricBadges(metricRows, wrdelta);
 
         $('#total').html(
         "<div class='col-md-1 col-xs-1'></div>" +
         "<div class='col-md-10 col-xs-10' style='display:flex; justify-content:center; align-items:center; gap:4px; margin-left:15px; flex-wrap:nowrap'>" +
-            wrBubble +
             (metricBadges || '') +
         "</div>" +
         "<div class='col-md-1 col-xs-1'></div>"
@@ -729,11 +726,16 @@ var MainView = Backbone.View.extend ({
     $('#counters').scrollTop (0);
   },
 
-    renderMetricBadges: function (metricRows) {
-    if (!metricRows || !metricRows.length) {
-        return '';
-    }
-    var rowsHtml = metricRows.map(function (row) {
+    renderMetricBadges: function (metricRows, wrdelta) {
+      var badges = [];
+      if (typeof wrdelta === 'number' && !isNaN(wrdelta)) {
+        var wrClass = (wrdelta > 0) ? 'alert alert-success' : 'alert alert-danger';
+        badges.push("<span class='" + wrClass + " metric-badge-bubble'>= " + wrdelta.toFixed(2) + "</span>");
+      }
+      if (!metricRows || !metricRows.length) {
+        return badges.length ? "<div class='metric-badge-group'>" + badges.join('') + "</div>" : '';
+      }
+      var rowsHtml = metricRows.map(function (row) {
       var label = _.escape(row.label || '');
       var decimals = typeof row.decimals === 'number' ? row.decimals : 2;
       var suffix = row.suffix || '';
@@ -744,7 +746,8 @@ var MainView = Backbone.View.extend ({
           label + ": " + formattedDelta + suffix +
         "</span>";
     }).join('');
-      return "<div class='metric-badge-group'>" + rowsHtml + "</div>";
+      badges.push(rowsHtml);
+      return "<div class='metric-badge-group'>" + badges.join('') + "</div>";
   }
 
 });
