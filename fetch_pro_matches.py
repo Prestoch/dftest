@@ -36,6 +36,7 @@ DEFAULT_SAVE_INTERVAL = 10  # matches
 PRO_MATCHES_BATCH_SIZE = 100
 DEFAULT_RATE_LIMIT_WAIT = 1.0  # seconds without API key
 FAST_RATE_LIMIT_WAIT = 0.1  # seconds with API key
+COLLECT_LOG_INTERVAL = 1000  # matches between log updates
 
 FIELDNAMES = [
     "match_id",
@@ -192,6 +193,8 @@ def collect_matches(
     seen_ids: set[int] = set()
     less_than_id: Optional[int] = None
     stop_fetching = False
+    last_reported = 0
+    reported_progress = False
 
     while not stop_fetching:
         params = {"less_than_match_id": less_than_id} if less_than_id else {}
@@ -246,6 +249,18 @@ def collect_matches(
                 radiant_win=item.get("radiant_win"),
             )
             matches.append(match_meta)
+            if (
+                not quiet
+                and len(matches) >= last_reported + COLLECT_LOG_INTERVAL
+            ):
+                latest_date = dt.datetime.utcfromtimestamp(start_time).strftime("%Y-%m-%d")
+                print(
+                    f"\r  Collected {len(matches)} matches so far "
+                    f"(most recent start date {latest_date})",
+                    end="",
+                )
+                last_reported = len(matches)
+                reported_progress = True
             if max_matches and len(matches) >= max_matches:
                 stop_fetching = True
                 break
@@ -258,6 +273,9 @@ def collect_matches(
             break
         less_than_id = last_id
         time.sleep(rate_limit_wait)
+
+    if reported_progress and not quiet:
+        print()
 
     matches.sort(key=lambda meta: meta.start_time)
     if not quiet:
@@ -364,20 +382,25 @@ def parse_exclusions(values: Sequence[str]) -> List[str]:
 
 
 class ProgressBar:
-    def __init__(self, total: int, width: int = 40) -> None:
+    def __init__(self, total: int, width: int = 40, label: str = "Progress") -> None:
         self.total = total
         self.width = width
         self.current = 0
+        self.label = label
+        self.start_time = time.time()
 
-    def update(self, step: int = 1) -> None:
+    def update(self, successes: int, failures: int, step: int = 1) -> None:
         if self.total <= 0:
             return
         self.current = min(self.total, self.current + step)
         filled = int(self.width * self.current / self.total)
         bar = "#" * filled + "-" * (self.width - filled)
         remaining = self.total - self.current
+        elapsed = max(time.time() - self.start_time, 1e-6)
+        rate = self.current / elapsed
         sys.stdout.write(
-            f"\r[{bar}] {self.current}/{self.total} matches processed ({remaining} left)"
+            f"\r{self.label} [{bar}] {self.current}/{self.total} matches "
+            f"({remaining} left, {rate:.2f}/s, {successes} ok, {failures} failed)"
         )
         sys.stdout.flush()
         if self.current == self.total:
@@ -424,28 +447,35 @@ def main() -> None:
         return
 
     ensure_output_file(args.output)
-    progress = ProgressBar(total=len(matches))
+    if not args.quiet:
+        print("Fetching match details...")
+    progress = ProgressBar(total=len(matches), label="Fetching details")
 
     pending_rows: List[Dict[str, Any]] = []
     matches_since_flush = 0
     total_rows_written = 0
+    successes = 0
+    failures = 0
 
     for meta in matches:
         try:
             match_data = fetch_match_details(session, meta.match_id)
         except requests.HTTPError as exc:
             print(f"\nWarning: failed to fetch match {meta.match_id}: {exc}", file=sys.stderr)
-            progress.update()
+            failures += 1
+            progress.update(successes, failures)
             continue
         except requests.RequestException as exc:
             print(f"\nWarning: request issue for match {meta.match_id}: {exc}", file=sys.stderr)
-            progress.update()
+            failures += 1
+            progress.update(successes, failures)
             continue
 
         rows = build_rows(match_data, meta, hero_map)
         pending_rows.extend(rows)
         matches_since_flush += 1
-        progress.update()
+        successes += 1
+        progress.update(successes, failures)
 
         if matches_since_flush >= max(1, args.save_interval):
             append_rows(args.output, pending_rows)
