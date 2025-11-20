@@ -182,12 +182,12 @@ def collect_matches(
     session: requests.Session,
     start_ts: int,
     end_ts: int,
-    excluded: Sequence[str],
+    excluded_terms: Sequence[str],
     rate_limit_wait: float,
     quiet: bool,
     max_matches: Optional[int] = None,
 ) -> List[MatchMeta]:
-    excluded_normalized = {name.strip().lower() for name in excluded if name}
+    excluded_terms = [term for term in excluded_terms if term]
     matches: List[MatchMeta] = []
     seen_ids: set[int] = set()
     less_than_id: Optional[int] = None
@@ -232,7 +232,8 @@ def collect_matches(
                 break
 
             tournament = (item.get("league_name") or "").strip()
-            if tournament.lower() in excluded_normalized:
+            tournament_lower = tournament.lower()
+            if any(term in tournament_lower for term in excluded_terms):
                 continue
 
             match_meta = MatchMeta(
@@ -350,6 +351,18 @@ def build_rows(
     return rows
 
 
+def parse_exclusions(values: Sequence[str]) -> List[str]:
+    terms: List[str] = []
+    for value in values:
+        if not value:
+            continue
+        for chunk in value.split(","):
+            normalized = chunk.strip().lower()
+            if normalized:
+                terms.append(normalized)
+    return terms
+
+
 class ProgressBar:
     def __init__(self, total: int, width: int = 40) -> None:
         self.total = total
@@ -381,6 +394,7 @@ def main() -> None:
     args = parse_args()
     if args.api_key and args.rate_limit_wait == DEFAULT_RATE_LIMIT_WAIT:
         args.rate_limit_wait = FAST_RATE_LIMIT_WAIT
+    excluded_terms = parse_exclusions(args.exclude)
 
     start_ts = utc_timestamp(args.start_date)
     end_ts = utc_timestamp(args.end_date, end_of_day=True)
@@ -400,7 +414,7 @@ def main() -> None:
         session=session,
         start_ts=start_ts,
         end_ts=end_ts,
-        excluded=args.exclude,
+        excluded_terms=excluded_terms,
         rate_limit_wait=args.rate_limit_wait,
         quiet=args.quiet,
         max_matches=args.max_matches,

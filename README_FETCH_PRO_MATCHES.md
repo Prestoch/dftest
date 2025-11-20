@@ -28,9 +28,9 @@ python3 fetch_pro_matches.py \
 #### Key flags
 
 - `--start-date` / `--end-date` (required): Inclusive UTC date range in `YYYY-MM-DD` form.
-- `--exclude`: Repeatable flag for tournament (league) names to skip.
-- `--save-interval`: Flush buffered rows to disk every N matches (default 10) to guard against crashes.
-- `--max-matches`: Stop after processing a fixed number of matches (useful for sampling).
+- `--exclude`: Provide comma-separated keywords to skip tournaments (case-insensitive substring match). Example: `--exclude "major,dreamleague"`.
+- `--save-interval`: Flush buffered rows to disk every N matches (default 10). `--save-interval 10` means results are written after each batch of 10 matches so you never lose more than the latest batch if something fails.
+- `--max-matches`: Optional cap for sampling. Omit it to pull every match within the date range.
 - `--api-key`: Provide your OpenDota key; defaults to the `OPENDOTA_API_KEY` environment variable.
 - `--rate-limit-wait`: Delay between `proMatches` pagination requests. Defaults to 1.0s for anonymous use; automatically drops to 0.1s when an API key is supplied unless you override it.
 
