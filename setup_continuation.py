@@ -91,7 +91,7 @@ def setup_continuation(old_checkpoint_file):
         'hero_name', 'hero_id', 'team',
         'gpm', 'xpm', 'tower_damage', 'hero_healing',
         'lane_efficiency_pct', 'kills', 'deaths', 'assists',
-        'last_hits', 'denies', 'net_worth', 'hero_damage', 
+        'last_hits', 'denies', 'net_worth', 'hero_damage', 'damage_taken',
         'teamfight_participation', 'actions_per_min', 'won'
     ]
     
