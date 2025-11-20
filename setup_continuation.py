@@ -88,35 +88,79 @@ def setup_continuation(old_checkpoint_file):
     fieldnames = [
         'match_id', 'tournament', 'radiant_team', 'dire_team',
         'duration_minutes', 'winner', 'radiant_win',
-        'hero_name', 'hero_id', 'team',
-        'gpm', 'xpm', 'tower_damage', 'hero_healing',
-        'lane_efficiency_pct', 'kills', 'deaths', 'assists',
-        'last_hits', 'denies', 'net_worth', 'hero_damage', 'damage_taken',
-        'teamfight_participation', 'actions_per_min', 'won'
+        'radiant_heroes', 'dire_heroes',
+        'radiant_hero_ids', 'dire_hero_ids',
+        'radiant_gpm', 'dire_gpm',
+        'radiant_xpm', 'dire_xpm',
+        'radiant_tower_damage', 'dire_tower_damage',
+        'radiant_hero_healing', 'dire_hero_healing',
+        'radiant_lane_efficiency', 'dire_lane_efficiency',
+        'radiant_kills', 'dire_kills',
+        'radiant_deaths', 'dire_deaths',
+        'radiant_assists', 'dire_assists',
+        'radiant_last_hits', 'dire_last_hits',
+        'radiant_denies', 'dire_denies',
+        'radiant_net_worth', 'dire_net_worth',
+        'radiant_hero_damage', 'dire_hero_damage',
+        'radiant_damage_taken', 'dire_damage_taken',
+        'radiant_teamfight_participation', 'dire_teamfight_participation',
+        'radiant_actions_per_min', 'dire_actions_per_min'
     ]
     
-    rows_written = 0
     with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         
         for match in matches:
-            match_info = {
+            radiant_players = [p for p in match['players'] if p['team'] == match['radiant_team']]
+            dire_players = [p for p in match['players'] if p['team'] == match['dire_team']]
+            
+            csv_row = {
                 'match_id': match['match_id'],
                 'tournament': match['tournament'],
                 'radiant_team': match['radiant_team'],
                 'dire_team': match['dire_team'],
                 'duration_minutes': match['duration_minutes'],
                 'winner': match['winner'],
-                'radiant_win': match['radiant_win']
+                'radiant_win': match['radiant_win'],
+                'radiant_heroes': '|'.join([p['hero_name'] for p in radiant_players]),
+                'dire_heroes': '|'.join([p['hero_name'] for p in dire_players]),
+                'radiant_hero_ids': '|'.join([str(p['hero_id']) for p in radiant_players]),
+                'dire_hero_ids': '|'.join([str(p['hero_id']) for p in dire_players]),
+                'radiant_gpm': '|'.join([str(p['gpm']) for p in radiant_players]),
+                'dire_gpm': '|'.join([str(p['gpm']) for p in dire_players]),
+                'radiant_xpm': '|'.join([str(p['xpm']) for p in radiant_players]),
+                'dire_xpm': '|'.join([str(p['xpm']) for p in dire_players]),
+                'radiant_tower_damage': '|'.join([str(p['tower_damage']) for p in radiant_players]),
+                'dire_tower_damage': '|'.join([str(p['tower_damage']) for p in dire_players]),
+                'radiant_hero_healing': '|'.join([str(p['hero_healing']) for p in radiant_players]),
+                'dire_hero_healing': '|'.join([str(p['hero_healing']) for p in dire_players]),
+                'radiant_lane_efficiency': '|'.join([str(p.get('lane_efficiency_pct', '')) for p in radiant_players]),
+                'dire_lane_efficiency': '|'.join([str(p.get('lane_efficiency_pct', '')) for p in dire_players]),
+                'radiant_kills': '|'.join([str(p['kills']) for p in radiant_players]),
+                'dire_kills': '|'.join([str(p['kills']) for p in dire_players]),
+                'radiant_deaths': '|'.join([str(p['deaths']) for p in radiant_players]),
+                'dire_deaths': '|'.join([str(p['deaths']) for p in dire_players]),
+                'radiant_assists': '|'.join([str(p['assists']) for p in radiant_players]),
+                'dire_assists': '|'.join([str(p['assists']) for p in dire_players]),
+                'radiant_last_hits': '|'.join([str(p['last_hits']) for p in radiant_players]),
+                'dire_last_hits': '|'.join([str(p['last_hits']) for p in dire_players]),
+                'radiant_denies': '|'.join([str(p['denies']) for p in radiant_players]),
+                'dire_denies': '|'.join([str(p['denies']) for p in dire_players]),
+                'radiant_net_worth': '|'.join([str(p['net_worth']) for p in radiant_players]),
+                'dire_net_worth': '|'.join([str(p['net_worth']) for p in dire_players]),
+                'radiant_hero_damage': '|'.join([str(p['hero_damage']) for p in radiant_players]),
+                'dire_hero_damage': '|'.join([str(p['hero_damage']) for p in dire_players]),
+                'radiant_damage_taken': '|'.join([str(p['damage_taken']) for p in radiant_players]),
+                'dire_damage_taken': '|'.join([str(p['damage_taken']) for p in dire_players]),
+                'radiant_teamfight_participation': '|'.join([str(p['teamfight_participation']) for p in radiant_players]),
+                'dire_teamfight_participation': '|'.join([str(p['teamfight_participation']) for p in dire_players]),
+                'radiant_actions_per_min': '|'.join([str(p['actions_per_min']) for p in radiant_players]),
+                'dire_actions_per_min': '|'.join([str(p['actions_per_min']) for p in dire_players])
             }
-            
-            for player in match.get('players', []):
-                row = {**match_info, **player}
-                writer.writerow(row)
-                rows_written += 1
+            writer.writerow(csv_row)
     
-    print(f"✓ Created CSV with {len(matches)} matches ({rows_written} player rows)")
+    print(f"✓ Created CSV with {len(matches)} matches (one row per match)")
     
     # Create metadata file with filenames
     metadata = {
