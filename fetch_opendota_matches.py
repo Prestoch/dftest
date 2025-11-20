@@ -557,6 +557,9 @@ def main():
         print("  # Skip tournaments")
         print("  python fetch_opendota_matches.py YOUR_KEY from=2023-01-01 skip=DPC,Regional")
         print()
+        print("  # Continue from existing checkpoint (after conversion)")
+        print("  python fetch_opendota_matches.py YOUR_KEY from=2023-01-01 continue=yes")
+        print()
         print("  # Old format still works")
         print("  python fetch_opendota_matches.py YOUR_KEY 6 yes \"DPC,BTS\"")
         print("\nFeatures:")
@@ -576,6 +579,7 @@ def main():
     skip_tournaments = []
     start_date = None
     end_date = None
+    continue_mode = False
     
     # Check if using new key=value format or old positional format
     if len(sys.argv) > 2 and '=' in sys.argv[2]:
@@ -608,6 +612,8 @@ def main():
                     include_details = value.lower() not in ['no', 'false', '0']
                 elif key == 'skip':
                     skip_tournaments = [t.strip() for t in value.split(',') if t.strip()]
+                elif key == 'continue':
+                    continue_mode = value.lower() in ['yes', 'true', '1']
     else:
         # Old format: positional arguments
         if len(sys.argv) > 2:
@@ -621,6 +627,29 @@ def main():
     if start_date and end_date and start_date > end_date:
         print("Error: 'from' date must be before 'to' date!")
         sys.exit(1)
+    
+    # Check for continuation mode
+    continuation_files = None
+    if continue_mode:
+        metadata_file = '.continuation_metadata.json'
+        if os.path.exists(metadata_file):
+            try:
+                with open(metadata_file, 'r') as f:
+                    continuation_files = json.load(f)
+                print(f"✓ Continuation mode: Loading metadata from {metadata_file}")
+                print(f"  Will append to existing files:")
+                print(f"    - {continuation_files['json_output']}")
+                print(f"    - {continuation_files['csv_output']}")
+                print(f"  Already have: {continuation_files['matches_saved']} matches")
+                print()
+            except Exception as e:
+                print(f"⚠ Warning: Could not load continuation metadata: {e}")
+                print(f"  Run setup_continuation.py first!")
+                sys.exit(1)
+        else:
+            print(f"✗ Error: Continuation mode requested but no metadata file found!")
+            print(f"  Please run: python setup_continuation.py <checkpoint_file>")
+            sys.exit(1)
     
     # Generate checkpoint filename (based on parameters for consistency)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -683,23 +712,34 @@ def main():
     if fetcher.skipped_matches > 0:
         print(f"\n⚠ Skipped {fetcher.skipped_matches} matches from filtered tournaments")
     
-    # Generate filename with timestamp
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    detail_suffix = "_detailed" if include_details else "_summary"
-    
-    if start_date:
-        # Date range based filename
-        start_str = start_date.strftime("%Y%m%d")
-        end_str = end_date.strftime("%Y%m%d") if end_date else "now"
-        filename = f"opendota_pro_matches_{start_str}_to_{end_str}{detail_suffix}_{timestamp}.json"
+    # Generate filename with timestamp (or use continuation files)
+    if continuation_files:
+        # Use existing files from continuation setup
+        filename = continuation_files['json_output']
+        csv_filename = continuation_files['csv_output']
+        print(f"📝 Continuing with existing files:")
+        print(f"   {filename}")
+        print(f"   {csv_filename}")
+        print()
     else:
-        # Months based filename
-        filename = f"opendota_pro_matches_{months}months{detail_suffix}_{timestamp}.json"
+        # Generate new filenames with timestamp
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        detail_suffix = "_detailed" if include_details else "_summary"
+        
+        if start_date:
+            # Date range based filename
+            start_str = start_date.strftime("%Y%m%d")
+            end_str = end_date.strftime("%Y%m%d") if end_date else "now"
+            filename = f"opendota_pro_matches_{start_str}_to_{end_str}{detail_suffix}_{timestamp}.json"
+        else:
+            # Months based filename
+            filename = f"opendota_pro_matches_{months}months{detail_suffix}_{timestamp}.json"
+        
+        csv_filename = filename.replace('.json', '.csv')
     
     # Handle streaming vs non-streaming modes
     if isinstance(matches, dict) and matches.get('needs_streaming'):
         # Streaming mode: fetch and write incrementally (low memory)
-        csv_filename = filename.replace('.json', '.csv')
         total_matches = fetcher.fetch_and_stream_matches(
             matches['match_list'],
             filename,
