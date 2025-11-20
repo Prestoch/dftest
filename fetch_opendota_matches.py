@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Fetch pro matches from OpenDota API with specific data fields.
-Rate limited to stay well below 1200 calls/minute (targeting ~600 calls/min).
+Rate limited to stay safely below 1200 calls/minute (default: 1000 calls/min).
 """
 
 import requests
@@ -17,13 +17,13 @@ import os
 class OpenDotaFetcher:
     """Fetches pro matches from OpenDota API with rate limiting."""
     
-    def __init__(self, api_key: str, rate_limit: int = 600, skip_tournaments: List[str] = None, checkpoint_file: str = None):
+    def __init__(self, api_key: str, rate_limit: int = 1000, skip_tournaments: List[str] = None, checkpoint_file: str = None):
         """
         Initialize the fetcher.
         
         Args:
             api_key: OpenDota API key
-            rate_limit: Maximum requests per minute (default 600, well below 1200 limit)
+            rate_limit: Maximum requests per minute (default 1000, safely below 1200 limit)
             skip_tournaments: List of tournament names to skip (saves API credits)
             checkpoint_file: File to save/resume progress (for crash recovery)
         """
@@ -729,10 +729,10 @@ def main():
         # Months based checkpoint
         checkpoint_file = f".opendota_checkpoint_{months}months{detail_suffix}.json"
     
-    # Create fetcher with rate limit of 600 req/min (50% of max)
+    # Create fetcher with rate limit of 1000 req/min
     fetcher = OpenDotaFetcher(
         api_key, 
-        rate_limit=600, 
+        rate_limit=1000, 
         skip_tournaments=skip_tournaments,
         checkpoint_file=checkpoint_file if include_details else None
     )
