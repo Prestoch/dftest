@@ -253,7 +253,9 @@ def collect_matches(
                 not quiet
                 and len(matches) >= last_reported + COLLECT_LOG_INTERVAL
             ):
-                latest_date = dt.datetime.utcfromtimestamp(start_time).strftime("%Y-%m-%d")
+                latest_date = dt.datetime.fromtimestamp(
+                    start_time, tz=dt.timezone.utc
+                ).strftime("%Y-%m-%d")
                 print(
                     f"\r  Collected {len(matches)} matches so far "
                     f"(most recent start date {latest_date})",
