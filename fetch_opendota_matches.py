@@ -160,39 +160,37 @@ class OpenDotaFetcher:
         league_lower = league_name.lower()
         return any(skip_term in league_lower for skip_term in self.skip_tournaments)
     
-    def _load_checkpoint(self) -> List[Dict]:
-        """Load checkpoint file if exists."""
+    def _load_checkpoint(self) -> set:
+        """Load checkpoint file if exists, returns set of fetched match IDs."""
         if not self.checkpoint_file or not os.path.exists(self.checkpoint_file):
-            return []
+            return set()
         
         try:
             with open(self.checkpoint_file, 'r') as f:
                 data = json.load(f)
-                matches = data.get('matches', [])
-                # Track which match IDs we already have
-                self.fetched_match_ids = set(m['match_id'] for m in matches)
-                print(f"📁 Loaded checkpoint: {len(matches)} matches already fetched")
-                return matches
+                match_ids = set(data.get('fetched_match_ids', []))
+                print(f"📁 Loaded checkpoint: {len(match_ids)} matches already fetched")
+                return match_ids
         except Exception as e:
             print(f"⚠ Could not load checkpoint: {e}")
-            return []
+            return set()
     
-    def _save_checkpoint(self, matches: List[Dict]):
-        """Save current progress to checkpoint file."""
+    def _save_checkpoint(self, fetched_match_ids: set):
+        """Save only match IDs to checkpoint (lightweight)."""
         if not self.checkpoint_file:
             return
         
         try:
             checkpoint_data = {
-                'matches': matches,
+                'fetched_match_ids': list(fetched_match_ids),
                 'timestamp': datetime.now().isoformat(),
-                'total_matches': len(matches)
+                'total_matches': len(fetched_match_ids)
             }
             
             # Write to temp file first, then rename (atomic operation)
             temp_file = self.checkpoint_file + '.tmp'
             with open(temp_file, 'w') as f:
-                json.dump(checkpoint_data, f, indent=2)
+                json.dump(checkpoint_data, f)
             
             # Atomic rename
             os.replace(temp_file, self.checkpoint_file)
@@ -379,23 +377,73 @@ class OpenDotaFetcher:
         # Optionally fetch detailed match data
         if include_details and all_matches:
             print(f"\nPhase 2: Fetching detailed data for {len(all_matches)} matches...")
+            print("Data will be written incrementally to save memory")
             
             # Load checkpoint if exists
-            extracted_matches = self._load_checkpoint()
-            already_fetched = len(extracted_matches)
+            self.fetched_match_ids = self._load_checkpoint()
+            already_fetched = len(self.fetched_match_ids)
             
             if already_fetched > 0:
                 print(f"  Resuming from checkpoint ({already_fetched} already fetched)")
             
             print("This will take a while...\n")
             
-            failed_matches = []
-            checkpoint_interval = 10  # Save every 10 matches
-            last_checkpoint_count = already_fetched
+            # Return metadata for caller to handle file writing
+            return {
+                'match_list': all_matches,
+                'already_fetched': already_fetched,
+                'needs_streaming': True
+            }
+            
+        return all_matches
+        
+    def fetch_and_stream_matches(self, all_matches: List[Dict], json_filename: str, csv_filename: str, already_fetched: int = 0):
+        """
+        Fetch match details and write incrementally to files (low memory footprint).
+        
+        Args:
+            all_matches: List of match summaries to fetch
+            json_filename: Output JSON file
+            csv_filename: Output CSV file
+            already_fetched: Number of matches already fetched (from checkpoint)
+        """
+        import csv
+        
+        failed_matches = []
+        success_count = 0
+        checkpoint_interval = 100  # Save checkpoint every 100 matches
+        last_checkpoint_count = already_fetched
+        
+        # CSV fieldnames
+        fieldnames = [
+            'match_id', 'tournament', 'radiant_team', 'dire_team',
+            'duration_minutes', 'winner', 'radiant_win',
+            'hero_name', 'hero_id', 'team',
+            'gpm', 'xpm', 'tower_damage', 'hero_healing',
+            'lane_efficiency_pct', 'kills', 'deaths', 'assists',
+            'last_hits', 'denies', 'net_worth', 'hero_damage', 
+            'teamfight_participation', 'actions_per_min', 'won'
+        ]
+        
+        # Open files for appending/writing
+        json_mode = 'a' if already_fetched > 0 else 'w'
+        csv_mode = 'a' if already_fetched > 0 else 'w'
+        
+        json_file = open(json_filename, json_mode, encoding='utf-8')
+        csv_file = open(csv_filename, csv_mode, newline='', encoding='utf-8')
+        csv_writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        
+        try:
+            # Write JSON array opening bracket
+            if already_fetched == 0:
+                json_file.write('[\n')
+                csv_writer.writeheader()
             
             # Progress bar for detailed fetching
-            with tqdm(total=len(all_matches), desc="Fetching details", unit=" matches", dynamic_ncols=True, initial=already_fetched) as pbar:
-                for match in all_matches:
+            with tqdm(total=len(all_matches), desc="Fetching details", unit=" matches", 
+                     dynamic_ncols=True, initial=already_fetched) as pbar:
+                
+                for i, match in enumerate(all_matches):
                     match_id = match['match_id']
                     
                     # Skip if already fetched
@@ -409,86 +457,71 @@ class OpenDotaFetcher:
                         # Extract only the required fields
                         extracted = self.extract_match_data(details)
                         if extracted:
-                            extracted_matches.append(extracted)
+                            # Write to JSON (with comma separator)
+                            if success_count > 0 or already_fetched > 0:
+                                json_file.write(',\n')
+                            json_file.write('  ' + json.dumps(extracted))
+                            json_file.flush()  # Force write to disk
+                            
+                            # Write to CSV (one row per player)
+                            match_info = {
+                                'match_id': extracted['match_id'],
+                                'tournament': extracted['tournament'],
+                                'radiant_team': extracted['radiant_team'],
+                                'dire_team': extracted['dire_team'],
+                                'duration_minutes': extracted['duration_minutes'],
+                                'winner': extracted['winner'],
+                                'radiant_win': extracted['radiant_win']
+                            }
+                            
+                            for player in extracted['players']:
+                                row = {**match_info, **player}
+                                csv_writer.writerow(row)
+                            csv_file.flush()  # Force write to disk
+                            
+                            success_count += 1
                             self.fetched_match_ids.add(match_id)
                             
                             # Save checkpoint periodically
-                            if len(extracted_matches) - last_checkpoint_count >= checkpoint_interval:
-                                self._save_checkpoint(extracted_matches)
-                                last_checkpoint_count = len(extracted_matches)
+                            if len(self.fetched_match_ids) - last_checkpoint_count >= checkpoint_interval:
+                                self._save_checkpoint(self.fetched_match_ids)
+                                last_checkpoint_count = len(self.fetched_match_ids)
                         else:
                             # Tournament was skipped
-                            if match_id not in self.fetched_match_ids:
-                                self.fetched_match_ids.add(match_id)
+                            self.fetched_match_ids.add(match_id)
                     else:
                         failed_matches.append(match_id)
                     
                     pbar.update(1)
-                    pbar.set_postfix_str(f"{len(extracted_matches)} success, {len(failed_matches)} failed")
+                    pbar.set_postfix_str(f"{success_count} success, {len(failed_matches)} failed")
             
-            # Final checkpoint save
-            self._save_checkpoint(extracted_matches)
-                    
-            print(f"\n✓ Fetched details for {len(extracted_matches)}/{len(all_matches)} matches")
-            if already_fetched > 0:
-                print(f"  ({len(extracted_matches) - already_fetched} newly fetched, {already_fetched} from checkpoint)")
-            if failed_matches:
-                print(f"  ⚠ Failed to fetch {len(failed_matches)} matches (likely 500 errors from OpenDota)")
-                print(f"    Match IDs: {failed_matches[:10]}{'...' if len(failed_matches) > 10 else ''}")
-                print(f"    These matches may be corrupted in OpenDota's database")
+            # Write JSON array closing bracket
+            json_file.write('\n]')
             
-            return extracted_matches
-            
-        return all_matches
+        finally:
+            json_file.close()
+            csv_file.close()
         
+        # Final checkpoint save
+        self._save_checkpoint(self.fetched_match_ids)
+        
+        # Print summary
+        total_fetched = success_count + already_fetched
+        print(f"\n✓ Fetched details for {total_fetched}/{len(all_matches)} matches")
+        if already_fetched > 0:
+            print(f"  ({success_count} newly fetched, {already_fetched} from checkpoint)")
+        if failed_matches:
+            print(f"  ⚠ Failed to fetch {len(failed_matches)} matches (likely 500 errors from OpenDota)")
+            print(f"    Match IDs: {failed_matches[:10]}{'...' if len(failed_matches) > 10 else ''}")
+            print(f"    These matches may be corrupted in OpenDota's database")
+        
+        return total_fetched
+    
     def save_matches(self, matches: List[Dict], filename: str):
         """Save matches to JSON file."""
         with open(filename, 'w') as f:
             json.dump(matches, f, indent=2)
         print(f"\nSaved {len(matches)} matches to {filename}")
-    
-    def save_matches_csv(self, matches: List[Dict], filename: str):
-        """Save matches to CSV file with flattened player data."""
-        import csv
-        
-        if not matches:
-            print("No matches to save to CSV")
-            return
-        
-        csv_filename = filename.replace('.json', '.csv')
-        
-        with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
-            # Define CSV columns
-            fieldnames = [
-                'match_id', 'tournament', 'radiant_team', 'dire_team',
-                'duration_minutes', 'winner', 'radiant_win',
-                'hero_name', 'hero_id', 'team',
-                'gpm', 'xpm', 'tower_damage', 'hero_healing',
-                'lane_efficiency_pct', 'kills', 'deaths', 'assists',
-                'last_hits', 'denies', 'net_worth', 'hero_damage', 
-                'teamfight_participation', 'actions_per_min', 'won'
-            ]
-            
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            
-            # Flatten data: one row per player
-            for match in matches:
-                match_info = {
-                    'match_id': match['match_id'],
-                    'tournament': match['tournament'],
-                    'radiant_team': match['radiant_team'],
-                    'dire_team': match['dire_team'],
-                    'duration_minutes': match['duration_minutes'],
-                    'winner': match['winner'],
-                    'radiant_win': match['radiant_win']
-                }
-                
-                for player in match['players']:
-                    row = {**match_info, **player}
-                    writer.writerow(row)
-        
-        print(f"Saved {len(matches)} matches to CSV: {csv_filename}")
         
 
 def main():
@@ -527,10 +560,12 @@ def main():
         print("  # Old format still works")
         print("  python fetch_opendota_matches.py YOUR_KEY 6 yes \"DPC,BTS\"")
         print("\nFeatures:")
-        print("  ✓ Auto-checkpoint every 10 matches (network failure protection)")
+        print("  ✓ Auto-checkpoint every 100 matches (network failure protection)")
         print("  ✓ Auto-resume if interrupted (just run the same command again)")
+        print("  ✓ Streaming writes to disk (low memory usage, no crashes)")
         print("  ✓ Tournament filtering (saves API credits)")
         print("  ✓ Date range filtering (from=YYYY-MM-DD to=YYYY-MM-DD)")
+        print("  ✓ Automatic retry on 500 errors (handles OpenDota glitches)")
         sys.exit(1)
         
     api_key = sys.argv[1]
@@ -614,8 +649,9 @@ def main():
         if os.path.exists(checkpoint_file):
             print(f"💾 Checkpoint file found: will resume if interrupted")
         else:
-            print(f"💾 Checkpoint enabled: progress saved every 10 matches")
+            print(f"💾 Checkpoint enabled: progress saved every 100 matches")
         print(f"   (Checkpoint file: {checkpoint_file})")
+        print(f"   ⚡ Streaming mode: data written incrementally (low memory)")
         print()
     
     if skip_tournaments:
@@ -660,12 +696,56 @@ def main():
         # Months based filename
         filename = f"opendota_pro_matches_{months}months{detail_suffix}_{timestamp}.json"
     
-    # Save to file
-    fetcher.save_matches(matches, filename)
-    
-    # Also save as CSV if we have detailed data
-    if include_details and matches:
-        fetcher.save_matches_csv(matches, filename)
+    # Handle streaming vs non-streaming modes
+    if isinstance(matches, dict) and matches.get('needs_streaming'):
+        # Streaming mode: fetch and write incrementally (low memory)
+        csv_filename = filename.replace('.json', '.csv')
+        total_matches = fetcher.fetch_and_stream_matches(
+            matches['match_list'],
+            filename,
+            csv_filename,
+            matches['already_fetched']
+        )
+        
+        print(f"\nSaved {total_matches} matches to {filename}")
+        print(f"Saved {total_matches} matches to CSV: {csv_filename}")
+        
+        matches = []  # Clear for statistics (already written to files)
+    else:
+        # Legacy mode: save all at once
+        fetcher.save_matches(matches, filename)
+        
+        # Also save as CSV if we have detailed data
+        if include_details and matches:
+            csv_filename = filename.replace('.json', '.csv')
+            # Use simple CSV writer for backward compatibility
+            import csv
+            with open(csv_filename, 'w', newline='', encoding='utf-8') as f:
+                fieldnames = [
+                    'match_id', 'tournament', 'radiant_team', 'dire_team',
+                    'duration_minutes', 'winner', 'radiant_win',
+                    'hero_name', 'hero_id', 'team',
+                    'gpm', 'xpm', 'tower_damage', 'hero_healing',
+                    'lane_efficiency_pct', 'kills', 'deaths', 'assists',
+                    'last_hits', 'denies', 'net_worth', 'hero_damage', 
+                    'teamfight_participation', 'actions_per_min', 'won'
+                ]
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                for match in matches:
+                    match_info = {
+                        'match_id': match['match_id'],
+                        'tournament': match['tournament'],
+                        'radiant_team': match['radiant_team'],
+                        'dire_team': match['dire_team'],
+                        'duration_minutes': match['duration_minutes'],
+                        'winner': match['winner'],
+                        'radiant_win': match['radiant_win']
+                    }
+                    for player in match['players']:
+                        row = {**match_info, **player}
+                        writer.writerow(row)
+            print(f"Saved {len(matches)} matches to CSV: {csv_filename}")
     
     # Clean up checkpoint file on successful completion
     if checkpoint_file and os.path.exists(checkpoint_file):
