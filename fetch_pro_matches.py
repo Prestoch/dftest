@@ -34,6 +34,8 @@ HEROES_URL = f"{API_ROOT}/constants/heroes"
 
 DEFAULT_SAVE_INTERVAL = 10  # matches
 PRO_MATCHES_BATCH_SIZE = 100
+DEFAULT_RATE_LIMIT_WAIT = 1.0  # seconds without API key
+FAST_RATE_LIMIT_WAIT = 0.1  # seconds with API key
 
 FIELDNAMES = [
     "match_id",
@@ -118,8 +120,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--rate-limit-wait",
         type=float,
-        default=1.0,
+        default=DEFAULT_RATE_LIMIT_WAIT,
         help="Delay between paginated proMatches requests to avoid rate limits.",
+    )
+    parser.add_argument(
+        "--api-key",
+        default=os.environ.get("OPENDOTA_API_KEY"),
+        help="OpenDota API key (default: OPENDOTA_API_KEY env var).",
     )
     parser.add_argument(
         "--quiet",
@@ -136,7 +143,7 @@ def utc_timestamp(date_str: str, end_of_day: bool = False) -> int:
     return int(date.replace(tzinfo=dt.timezone.utc).timestamp())
 
 
-def build_session(retries: int) -> requests.Session:
+def build_session(retries: int, api_key: Optional[str]) -> requests.Session:
     session = requests.Session()
     retry = Retry(
         total=retries,
@@ -151,6 +158,9 @@ def build_session(retries: int) -> requests.Session:
     adapter = HTTPAdapter(max_retries=retry)
     session.mount("https://", adapter)
     session.mount("http://", adapter)
+    if api_key:
+        session.params = session.params or {}
+        session.params["api_key"] = api_key
     return session
 
 
@@ -369,13 +379,18 @@ def fetch_match_details(session: requests.Session, match_id: int) -> Dict[str, A
 
 def main() -> None:
     args = parse_args()
+    if args.api_key and args.rate_limit_wait == DEFAULT_RATE_LIMIT_WAIT:
+        args.rate_limit_wait = FAST_RATE_LIMIT_WAIT
+
     start_ts = utc_timestamp(args.start_date)
     end_ts = utc_timestamp(args.end_date, end_of_day=True)
     if start_ts > end_ts:
         raise SystemExit("Start date must be before or equal to end date.")
 
-    session = build_session(args.retries)
+    session = build_session(args.retries, api_key=args.api_key)
     if not args.quiet:
+        if args.api_key:
+            print("Using provided OpenDota API key.")
         print("Downloading hero list...")
     hero_map = fetch_hero_map(session)
 
