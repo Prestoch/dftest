@@ -1,0 +1,21 @@
+match_id,tournament,radiant_team,dire_team,duration_minutes,winner,hero_id,hero_name,player_team,gpm,xpm,tower_damage,hero_damage,hero_healing,lane_efficiency_pct,kda,last_hits,denies,net_worth,actions_per_min,damage_taken,teamfight_participation
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,123,Hoodwink,Vitality Warriors,447,667,929,10412,125,53.96,3/0/12,151,1,14329,266,4864,0.6
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,2,Axe,Vitality Warriors,580,675,775,14613,195,109.66,7/4/7,217,4,15153,293,20864,0.56
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,46,Templar Assassin,Vitality Warriors,688,830,6328,11573,0,90.66,6/3/8,265,10,19562,312,14351,0.56
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,76,Outworld Devourer,Vitality Warriors,647,819,3813,9261,0,95.65,4/3/4,271,0,18058,245,17204,0.32
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,56,Clinkz,Vitality Warriors,378,642,1853,12000,0,51.5,4/2/9,98,4,9777,253,14824,0.52
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,97,Magnus,TOXIC TEAM,237,328,0,4520,192,37.57,0/7/7,57,1,6362,290,16398,0.5833333
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,48,Luna,TOXIC TEAM,632,838,79,7439,0,90.04,1/5/2,372,4,17127,134,19145,0.25
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,39,Queen of Pain,TOXIC TEAM,779,980,703,14000,0,112.33,5/2/2,348,0,21137,190,16911,0.5833333
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,5,Crystal Maiden,TOXIC TEAM,201,299,0,6244,0,28.35,0/6/3,24,1,5423,124,9912,0.25
+7518752391,Dota 2 Space League,Vitality Warriors,TOXIC TEAM,28.58,Vitality Warriors,15,Razor,TOXIC TEAM,503,544,1158,12737,0,69.3,6/5/2,196,13,13252,356,19111,0.6666667
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,83,Treant Protector,TOXIC TEAM,222,426,268,10476,3271,39.33,1/9/11,22,0,6206,122,20577,0.54545456
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,107,Earth Spirit,TOXIC TEAM,503,600,0,15887,0,80.94,4/8/5,198,6,15492,315,27126,0.4090909
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,106,Ember Spirit,TOXIC TEAM,719,896,1397,62004,4,103.84,11/6/4,352,1,22618,216,27875,0.6818182
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,41,Faceless Void,TOXIC TEAM,616,758,494,13012,0,83.77,4/6/3,297,12,19115,133,30683,0.3181818
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,19,Tiny,TOXIC TEAM,317,489,540,9459,125,30.76,1/7/5,146,0,10257,256,24622,0.27272728
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,88,Nyx Assassin,Vitality Warriors,350,670,61,19801,0,30.64,5/7/20,17,5,12167,301,17616,0.6944444
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,71,Spirit Breaker,Vitality Warriors,585,780,1124,17227,0,65.97,8/7/14,183,6,18611,221,29076,0.6111111
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,54,Lifestealer,Vitality Warriors,702,918,4384,22372,634,71.71,5/2/13,288,6,23533,255,29362,0.5
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,80,Lone Druid,Vitality Warriors,698,1022,11645,23028,0,92.99,9/3/9,313,2,23260,256,23619,0.5
+7518788908,Dota 2 Space League,TOXIC TEAM,Vitality Warriors,33.97,Vitality Warriors,123,Hoodwink,Vitality Warriors,501,790,288,21619,125,52.99,8/4/14,121,3,16703,247,16159,0.6111111
