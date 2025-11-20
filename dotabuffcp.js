@@ -262,6 +262,86 @@ var DotaBuffCP = {
 
 };
 
+var EXTRA_METRIC_CONFIG = [
+  { key: 'heroes_gpm', label: 'Team GPM', aggregate: 'sum', decimals: 0 },
+  { key: 'heroes_xpm', label: 'Team XPM', aggregate: 'sum', decimals: 0 },
+  { key: 'heroes_hero_damage', label: 'Hero Damage', aggregate: 'sum', decimals: 0 },
+  { key: 'heroes_tower_damage', label: 'Tower Damage', aggregate: 'sum', decimals: 0 },
+  { key: 'heroes_damage_taken', label: 'Damage Taken', aggregate: 'sum', decimals: 0 },
+  { key: 'heroes_match_duration', label: 'Avg Match Duration (min)', aggregate: 'avg', decimals: 1 },
+  {
+    key: 'heroes_teamfight_participation',
+    label: 'Teamfight Participation (%)',
+    aggregate: 'avg',
+    decimals: 1,
+    multiplier: 100,
+    suffix: '%'
+  }
+];
+
+var MetricDeltaHelper = (function () {
+  function getMetricArray(key) {
+    if (typeof window === 'undefined') return null;
+    var arr = window[key];
+    return Array.isArray(arr) ? arr : null;
+  }
+
+  function parseValue(value) {
+    if (_.isUndefined(value) || value === null) return null;
+    if (typeof value === 'number') {
+      return isFinite(value) ? value : null;
+    }
+    var num = parseFloat(value);
+    return isNaN(num) ? null : num;
+  }
+
+  function aggregateLineup(lineup, metricArray, aggregate) {
+    if (!metricArray) return null;
+    var values = [];
+    for (var i = 0; i < lineup.length; i++) {
+      var heroIdx = parseInt(lineup[i], 10);
+      if (isNaN(heroIdx) || heroIdx < 0 || heroIdx >= metricArray.length) continue;
+      var val = parseValue(metricArray[heroIdx]);
+      if (val === null) continue;
+      values.push(val);
+    }
+    if (!values.length) return null;
+    var sum = values.reduce(function (acc, val) { return acc + val; }, 0);
+    if (aggregate === 'avg') {
+      return sum / values.length;
+    }
+    return sum;
+  }
+
+  function collect(lineupA, lineupB) {
+    if (!Array.isArray(EXTRA_METRIC_CONFIG) || !EXTRA_METRIC_CONFIG.length) {
+      return [];
+    }
+    var rows = [];
+    EXTRA_METRIC_CONFIG.forEach(function (cfg) {
+      var metricArr = getMetricArray(cfg.key);
+      if (!metricArr) return;
+      var aggregate = cfg.aggregate || 'sum';
+      var topValue = aggregateLineup(lineupA, metricArr, aggregate);
+      var bottomValue = aggregateLineup(lineupB, metricArr, aggregate);
+      if (topValue === null || bottomValue === null) return;
+      var multiplier = typeof cfg.multiplier === 'number' ? cfg.multiplier : 1;
+      var decimals = typeof cfg.decimals === 'number' ? cfg.decimals : 2;
+      var suffix = cfg.suffix || '';
+      rows.push({
+        label: cfg.label,
+        top: topValue * multiplier,
+        bottom: bottomValue * multiplier,
+        delta: (topValue - bottomValue) * multiplier,
+        decimals: decimals,
+        suffix: suffix
+      });
+    });
+    return rows;
+  }
+
+  return { collect: collect };
+})();
 
 
 // Backward compatibility: heroes_wr should be provided by cs.json for counter pick display
@@ -491,9 +571,11 @@ var MainView = Backbone.View.extend ({
   },
 
   calculateAndShow: function () {
-    
+      
 
-    if (this.isEmpty ()) {
+      $('#metric-deltas').remove ();
+
+      if (this.isEmpty ()) {
       
       $('div.lineup-title').show ();
       $('div.pick-title').hide ();
@@ -577,13 +659,15 @@ var MainView = Backbone.View.extend ({
       var wrdelta = (nb1 - nb2).toFixed(2);
       var wrClass = (wrdelta > 0) ? 'alert alert-success' : 'alert alert-danger';
       var wrBubble = "<span class='" + wrClass + "' style='display:inline-block; padding:4px 10px 4px 6px; margin:0; font-size:16px; white-space:nowrap'>= " + wrdelta + "</span>";
-      $('#total').html(
+        $('#total').html(
         "<div class='col-md-1 col-xs-1'></div>" +
         "<div class='col-md-10 col-xs-10' style='display:flex; justify-content:center; align-items:center; gap:4px; margin-left:15px; flex-wrap:nowrap'>" +
           wrBubble +
         "</div>" +
         "<div class='col-md-1 col-xs-1'></div>"
       );
+        var metricRows = MetricDeltaHelper.collect(DotaBuffCP.lineup, DotaBuffCP.lineup2);
+        this.renderMetricDeltas(metricRows);
     }
     
     
@@ -643,6 +727,34 @@ var MainView = Backbone.View.extend ({
     }
 
     $('#counters').scrollTop (0);
+  },
+
+  renderMetricDeltas: function (metricRows) {
+    $('#metric-deltas').remove ();
+    if (!metricRows || !metricRows.length) {
+      return;
+    }
+    var rowsHtml = metricRows.map(function (row) {
+      var label = _.escape(row.label || '');
+      var decimals = typeof row.decimals === 'number' ? row.decimals : 2;
+      var suffix = row.suffix || '';
+      var topText = row.top.toFixed(decimals);
+      var bottomText = row.bottom.toFixed(decimals);
+      var deltaValue = row.delta.toFixed(decimals);
+      var badgeClass = row.delta >= 0 ? 'alert alert-success' : 'alert alert-danger';
+      var formattedDelta = (row.delta >= 0 ? '+' : '') + deltaValue;
+      return "<div class='metric-delta-row' style='display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:4px'>" +
+        "<span class='metric-label' style='min-width:160px; font-weight:600;'>" + label + "</span>" +
+        "<span class='metric-value' style='font-family:monospace;'>" + topText + suffix + "</span>" +
+        "<span class='" + badgeClass + "' style='padding:2px 8px; margin:0; font-size:13px; line-height:1;'>" + formattedDelta + suffix + "</span>" +
+        "<span class='metric-value' style='font-family:monospace;'>" + bottomText + suffix + "</span>" +
+      "</div>";
+    }).join('');
+    var container = "<div id='metric-deltas' class='col-md-12 col-xs-12' style='margin-top:10px'>" +
+      "<div class='metric-delta-wrapper' style='border-top:1px solid rgba(255,255,255,0.15); padding-top:8px;'>" +
+      rowsHtml +
+      "</div></div>";
+    $('#total').append(container);
   }
 
 });
