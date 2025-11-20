@@ -103,16 +103,16 @@ class OpenDotaFetcher:
                 return response.json()
                 
             except requests.exceptions.HTTPError as e:
-                # Handle 500 errors with retry
-                if response.status_code == 500 and attempt < retries - 1:
+                # Handle 5xx errors with retry (500, 521, 502, 503, etc.)
+                if response.status_code >= 500 and response.status_code < 600 and attempt < retries - 1:
                     wait_time = 2 ** attempt  # Exponential backoff: 1s, 2s, 4s
-                    print(f"  ⚠ 500 error on {endpoint}, retrying in {wait_time}s (attempt {attempt + 1}/{retries})...")
+                    print(f"  ⚠ {response.status_code} error on {endpoint}, retrying in {wait_time}s (attempt {attempt + 1}/{retries})...")
                     time.sleep(wait_time)
                     continue
                 else:
                     # Final attempt failed or other HTTP error
-                    if response.status_code == 500:
-                        print(f"  ✗ 500 error on {endpoint} after {retries} attempts - skipping")
+                    if response.status_code >= 500 and response.status_code < 600:
+                        print(f"  ✗ {response.status_code} error on {endpoint} after {retries} attempts - skipping")
                     else:
                         print(f"  ✗ HTTP {response.status_code} error on {endpoint}: {e}")
                     return None
@@ -546,9 +546,26 @@ class OpenDotaFetcher:
             # Write JSON array closing bracket
             json_file.write('\n]')
             
-        finally:
+        except KeyboardInterrupt:
+            # User interrupted - close files gracefully
+            print("\n\n⚠ Interrupted! Closing files...")
+            json_file.write('\n]')  # Close JSON array
             json_file.close()
             csv_file.close()
+            # Save checkpoint before exiting
+            self._save_checkpoint(self.fetched_match_ids)
+            raise  # Re-raise to propagate to main()
+            
+        finally:
+            # Ensure files are closed
+            try:
+                json_file.close()
+            except:
+                pass
+            try:
+                csv_file.close()
+            except:
+                pass
         
         # Final checkpoint save
         self._save_checkpoint(self.fetched_match_ids)
@@ -788,15 +805,26 @@ def main():
     # Handle streaming vs non-streaming modes
     if isinstance(matches, dict) and matches.get('needs_streaming'):
         # Streaming mode: fetch and write incrementally (low memory)
-        total_matches = fetcher.fetch_and_stream_matches(
-            matches['match_list'],
-            filename,
-            csv_filename,
-            matches['already_fetched']
-        )
-        
-        print(f"\nSaved {total_matches} matches to {filename}")
-        print(f"Saved {total_matches} matches to CSV: {csv_filename}")
+        try:
+            total_matches = fetcher.fetch_and_stream_matches(
+                matches['match_list'],
+                filename,
+                csv_filename,
+                matches['already_fetched']
+            )
+            
+            print(f"\nSaved {total_matches} matches to {filename}")
+            print(f"Saved {total_matches} matches to CSV: {csv_filename}")
+            
+        except KeyboardInterrupt:
+            print("\n\n⚠ Interrupted by user during data fetching!")
+            print(f"💾 Progress saved in checkpoint: {checkpoint_file}")
+            print(f"💾 Partial data saved in:")
+            print(f"   - {filename}")
+            print(f"   - {csv_filename}")
+            print(f"\n   To resume, run the same command again:")
+            print(f"   python fetch_opendota_matches.py {' '.join(sys.argv[1:])}")
+            sys.exit(1)
         
         matches = []  # Clear for statistics (already written to files)
     else:
