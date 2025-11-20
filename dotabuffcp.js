@@ -573,8 +573,6 @@ var MainView = Backbone.View.extend ({
   calculateAndShow: function () {
       
 
-      $('#metric-delta-panel').empty ();
-
       if (this.isEmpty ()) {
       
       $('div.lineup-title').show ();
@@ -659,15 +657,17 @@ var MainView = Backbone.View.extend ({
       var wrdelta = (nb1 - nb2).toFixed(2);
       var wrClass = (wrdelta > 0) ? 'alert alert-success' : 'alert alert-danger';
       var wrBubble = "<span class='" + wrClass + "' style='display:inline-block; padding:4px 10px 4px 6px; margin:0; font-size:16px; white-space:nowrap'>= " + wrdelta + "</span>";
+        var metricRows = MetricDeltaHelper.collect(DotaBuffCP.lineup, DotaBuffCP.lineup2);
+        var metricBadges = this.renderMetricBadges(metricRows);
+
         $('#total').html(
         "<div class='col-md-1 col-xs-1'></div>" +
         "<div class='col-md-10 col-xs-10' style='display:flex; justify-content:center; align-items:center; gap:4px; margin-left:15px; flex-wrap:nowrap'>" +
-          wrBubble +
+            wrBubble +
+            (metricBadges || '') +
         "</div>" +
         "<div class='col-md-1 col-xs-1'></div>"
       );
-        var metricRows = MetricDeltaHelper.collect(DotaBuffCP.lineup, DotaBuffCP.lineup2);
-        this.renderMetricDeltas(metricRows);
     }
     
     
@@ -729,32 +729,22 @@ var MainView = Backbone.View.extend ({
     $('#counters').scrollTop (0);
   },
 
-  renderMetricDeltas: function (metricRows) {
-    var mount = $('#metric-delta-panel');
-    mount.empty ();
-    mount.hide();
+    renderMetricBadges: function (metricRows) {
     if (!metricRows || !metricRows.length) {
-      return;
+        return '';
     }
     var rowsHtml = metricRows.map(function (row) {
       var label = _.escape(row.label || '');
       var decimals = typeof row.decimals === 'number' ? row.decimals : 2;
       var suffix = row.suffix || '';
-      var topText = row.top.toFixed(decimals);
-      var bottomText = row.bottom.toFixed(decimals);
       var deltaValue = row.delta.toFixed(decimals);
       var badgeClass = row.delta >= 0 ? 'alert alert-success' : 'alert alert-danger';
       var formattedDelta = (row.delta >= 0 ? '+' : '') + deltaValue;
-      return "<div class='metric-delta-row'>" +
-        "<span class='metric-label'>" + label + "</span>" +
-        "<span class='metric-value'>" + topText + suffix + "</span>" +
-        "<span class='" + badgeClass + " metric-badge'>" + formattedDelta + suffix + "</span>" +
-        "<span class='metric-value'>" + bottomText + suffix + "</span>" +
-      "</div>";
+        return "<span class='" + badgeClass + " metric-badge-bubble'>" +
+          label + ": " + formattedDelta + suffix +
+        "</span>";
     }).join('');
-    var container = "<div id='metric-deltas'><div class='metric-delta-wrapper'>" + rowsHtml + "</div></div>";
-    mount.append(container);
-    mount.show();
+      return "<div class='metric-badge-group'>" + rowsHtml + "</div>";
   }
 
 });
