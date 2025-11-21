@@ -307,13 +307,13 @@ def append_rows(path: str, rows: Iterable[Dict[str, Any]]) -> None:
         writer.writerows(rows)
 
 
-def append_jsonl(path: str, payloads: Iterable[Dict[str, Any]]) -> None:
-    payloads = list(payloads)
-    if not payloads:
+def append_jsonl(path: str, rows: Iterable[Dict[str, Any]]) -> None:
+    rows = list(rows)
+    if not rows:
         return
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "a", encoding="utf-8") as handle:
-        for payload in payloads:
+        for payload in rows:
             json.dump(payload, handle, ensure_ascii=False)
             handle.write("\n")
 
@@ -487,13 +487,15 @@ def main() -> None:
     if args.json_output:
         os.makedirs(os.path.dirname(args.json_output) or ".", exist_ok=True)
         if not args.quiet:
-            print(f"Raw match payloads will also be appended to {args.json_output}.")
+            print(
+                f"Filtered per-hero stats will also be appended (JSONL) to {args.json_output}."
+            )
     if not args.quiet:
         print("Fetching match details...")
     progress = ProgressBar(total=len(matches), label="Fetching details")
 
     pending_rows: List[Dict[str, Any]] = []
-    pending_raw_matches: List[Dict[str, Any]] = []
+    pending_json_rows: List[Dict[str, Any]] = []
     matches_since_flush = 0
     total_rows_written = 0
     successes = 0
@@ -509,9 +511,9 @@ def main() -> None:
             total_rows_written += len(pending_rows)
             pending_rows.clear()
             wrote_any = True
-        if args.json_output and pending_raw_matches:
-            append_jsonl(args.json_output, pending_raw_matches)
-            pending_raw_matches.clear()
+        if args.json_output and pending_json_rows:
+            append_jsonl(args.json_output, pending_json_rows)
+            pending_json_rows.clear()
             wrote_any = True
         if matches_since_flush or wrote_any:
             written_matches += matches_since_flush
@@ -538,7 +540,7 @@ def main() -> None:
             progress.update(successes, failures, skipped, written_matches)
             continue
         if args.json_output:
-            pending_raw_matches.append(match_data)
+            pending_json_rows.extend(rows)
         pending_rows.extend(rows)
         matches_since_flush += 1
         successes += 1
@@ -547,7 +549,7 @@ def main() -> None:
         if matches_since_flush >= max(1, args.save_interval):
             flush_buffers()
 
-    if pending_rows or pending_raw_matches or matches_since_flush:
+    if pending_rows or pending_json_rows or matches_since_flush:
         flush_buffers()
 
     progress.ensure_newline()
@@ -555,7 +557,11 @@ def main() -> None:
         f"Completed. Processed {len(matches)} matches: "
         f"{successes} succeeded, {skipped} skipped, {failures} failed. "
         f"Wrote {total_rows_written} hero rows ({written_matches} matches) to {args.output}."
-        + (f" Raw match data appended to {args.json_output}." if args.json_output else "")
+        + (
+            f" JSON export with the same fields appended to {args.json_output}."
+            if args.json_output
+            else ""
+        )
     )
 
 
