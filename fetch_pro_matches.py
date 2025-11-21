@@ -64,6 +64,34 @@ FIELDNAMES = [
     "teamfight_participation",
 ]
 
+MATCH_JSON_FIELDS = [
+    "match_id",
+    "tournament",
+    "radiant_team",
+    "dire_team",
+    "duration_minutes",
+    "winner",
+]
+
+PLAYER_JSON_FIELDS = [
+    "hero_id",
+    "hero_name",
+    "player_team",
+    "gpm",
+    "xpm",
+    "tower_damage",
+    "hero_damage",
+    "hero_healing",
+    "lane_efficiency_pct",
+    "kda",
+    "last_hits",
+    "denies",
+    "net_worth",
+    "actions_per_min",
+    "damage_taken",
+    "teamfight_participation",
+]
+
 
 @dataclass(frozen=True)
 class MatchMeta:
@@ -133,7 +161,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--json-output",
         default=None,
-        help="Optional newline-delimited JSON file capturing each raw OpenDota match payload.",
+        help="Optional newline-delimited JSON file with one match per line (players array includes the same stats as the CSV).",
     )
     parser.add_argument(
         "--quiet",
@@ -388,6 +416,16 @@ def build_rows(
     return rows
 
 
+def build_match_json(rows: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    if not rows:
+        return None
+    match_entry = {field: rows[0].get(field) for field in MATCH_JSON_FIELDS}
+    match_entry["players"] = [
+        {field: row.get(field) for field in PLAYER_JSON_FIELDS} for row in rows
+    ]
+    return match_entry
+
+
 def parse_exclusions(values: Sequence[str]) -> List[str]:
     terms: List[str] = []
     for value in values:
@@ -488,14 +526,14 @@ def main() -> None:
         os.makedirs(os.path.dirname(args.json_output) or ".", exist_ok=True)
         if not args.quiet:
             print(
-                f"Filtered per-hero stats will also be appended (JSONL) to {args.json_output}."
+                f"Match-level JSON lines (one per match) will also be appended to {args.json_output}."
             )
     if not args.quiet:
         print("Fetching match details...")
     progress = ProgressBar(total=len(matches), label="Fetching details")
 
     pending_rows: List[Dict[str, Any]] = []
-    pending_json_rows: List[Dict[str, Any]] = []
+    pending_json_matches: List[Dict[str, Any]] = []
     matches_since_flush = 0
     total_rows_written = 0
     successes = 0
@@ -511,9 +549,9 @@ def main() -> None:
             total_rows_written += len(pending_rows)
             pending_rows.clear()
             wrote_any = True
-        if args.json_output and pending_json_rows:
-            append_jsonl(args.json_output, pending_json_rows)
-            pending_json_rows.clear()
+        if args.json_output and pending_json_matches:
+            append_jsonl(args.json_output, pending_json_matches)
+            pending_json_matches.clear()
             wrote_any = True
         if matches_since_flush or wrote_any:
             written_matches += matches_since_flush
@@ -540,7 +578,9 @@ def main() -> None:
             progress.update(successes, failures, skipped, written_matches)
             continue
         if args.json_output:
-            pending_json_rows.extend(rows)
+            match_json = build_match_json(rows)
+            if match_json:
+                pending_json_matches.append(match_json)
         pending_rows.extend(rows)
         matches_since_flush += 1
         successes += 1
@@ -549,7 +589,7 @@ def main() -> None:
         if matches_since_flush >= max(1, args.save_interval):
             flush_buffers()
 
-    if pending_rows or pending_json_rows or matches_since_flush:
+    if pending_rows or pending_json_matches or matches_since_flush:
         flush_buffers()
 
     progress.ensure_newline()
@@ -558,7 +598,7 @@ def main() -> None:
         f"{successes} succeeded, {skipped} skipped, {failures} failed. "
         f"Wrote {total_rows_written} hero rows ({written_matches} matches) to {args.output}."
         + (
-            f" JSON export with the same fields appended to {args.json_output}."
+            f" Match-level JSON lines written to {args.json_output}."
             if args.json_output
             else ""
         )
