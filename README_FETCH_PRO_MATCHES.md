@@ -42,6 +42,19 @@ python3 fetch_pro_matches.py \
 - The file is append-only; delete or rename it before rerunning if you want a fresh capture.
 - JSON saves follow the same `--save-interval` cadence as the CSV, so the data stays resilient if the run stops midway.
 
+### Converting existing CSV exports
+
+Need to reformat an existing CSV without re-hitting the API? Use the helper script:
+
+```bash
+python3 csv_to_match_jsonl.py \
+  --input existing_matches.csv \
+  --output existing_matches.jsonl \
+  --overwrite
+```
+
+It groups rows by `match_id` and emits the same match-per-line JSON structure produced by `fetch_pro_matches.py --json-output`.
+
 ### Resilience and retry behavior
 
 - Automatic retry logic handles transient `429`/`5xx` responses with exponential backoff.
