@@ -20,6 +20,7 @@ python3 fetch_pro_matches.py \
   --end-date 2024-01-31 \
   --exclude "DreamLeague Season 22" --exclude "Random Cup" \
   --output january_pro_matches.csv \
+  --json-output january_pro_matches.jsonl \
   --save-interval 10 \
   --max-matches 500 \
   --api-key "$OPENDOTA_API_KEY"
@@ -33,6 +34,13 @@ python3 fetch_pro_matches.py \
 - `--max-matches`: Optional cap for sampling. Omit it to pull every match within the date range.
 - `--api-key`: Provide your OpenDota key; defaults to the `OPENDOTA_API_KEY` environment variable.
 - `--rate-limit-wait`: Delay between `proMatches` pagination requests. Defaults to 1.0s for anonymous use; automatically drops to 0.1s when an API key is supplied unless you override it.
+- `--json-output`: When set, the raw OpenDota match payload for each processed match is appended (newline-delimited JSON) to the provided path alongside the CSV summary.
+
+### Raw JSON output
+
+- The JSON file is newline-delimited (JSONL). Each line is the exact payload returned by `GET /api/matches/{match_id}` for the matches that made it into the CSV.
+- The file is append-only; delete or rename it before rerunning if you want a fresh capture.
+- JSON saves follow the same `--save-interval` cadence as the CSV, so raw data is also durable if the run stops midway.
 
 ### Resilience and retry behavior
 

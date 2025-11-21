@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import csv
 import datetime as dt
+import json
 import os
 import sys
 import time
@@ -128,6 +129,11 @@ def parse_args() -> argparse.Namespace:
         "--api-key",
         default=os.environ.get("OPENDOTA_API_KEY"),
         help="OpenDota API key (default: OPENDOTA_API_KEY env var).",
+    )
+    parser.add_argument(
+        "--json-output",
+        default=None,
+        help="Optional newline-delimited JSON file capturing each raw OpenDota match payload.",
     )
     parser.add_argument(
         "--quiet",
@@ -301,6 +307,17 @@ def append_rows(path: str, rows: Iterable[Dict[str, Any]]) -> None:
         writer.writerows(rows)
 
 
+def append_jsonl(path: str, payloads: Iterable[Dict[str, Any]]) -> None:
+    payloads = list(payloads)
+    if not payloads:
+        return
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "a", encoding="utf-8") as handle:
+        for payload in payloads:
+            json.dump(payload, handle, ensure_ascii=False)
+            handle.write("\n")
+
+
 def format_kda(kills: Optional[int], deaths: Optional[int], assists: Optional[int]) -> str:
     k = kills if kills is not None else 0
     d = deaths if deaths is not None else 0
@@ -467,17 +484,39 @@ def main() -> None:
         return
 
     ensure_output_file(args.output)
+    if args.json_output:
+        os.makedirs(os.path.dirname(args.json_output) or ".", exist_ok=True)
+        if not args.quiet:
+            print(f"Raw match payloads will also be appended to {args.json_output}.")
     if not args.quiet:
         print("Fetching match details...")
     progress = ProgressBar(total=len(matches), label="Fetching details")
 
     pending_rows: List[Dict[str, Any]] = []
+    pending_raw_matches: List[Dict[str, Any]] = []
     matches_since_flush = 0
     total_rows_written = 0
     successes = 0
     failures = 0
     skipped = 0
     written_matches = 0
+
+    def flush_buffers() -> None:
+        nonlocal matches_since_flush, total_rows_written, written_matches
+        wrote_any = False
+        if pending_rows:
+            append_rows(args.output, pending_rows)
+            total_rows_written += len(pending_rows)
+            pending_rows.clear()
+            wrote_any = True
+        if args.json_output and pending_raw_matches:
+            append_jsonl(args.json_output, pending_raw_matches)
+            pending_raw_matches.clear()
+            wrote_any = True
+        if matches_since_flush or wrote_any:
+            written_matches += matches_since_flush
+            matches_since_flush = 0
+            progress.update(successes, failures, skipped, written_matches, step=0)
 
     for meta in matches:
         try:
@@ -498,31 +537,25 @@ def main() -> None:
             skipped += 1
             progress.update(successes, failures, skipped, written_matches)
             continue
+        if args.json_output:
+            pending_raw_matches.append(match_data)
         pending_rows.extend(rows)
         matches_since_flush += 1
         successes += 1
         progress.update(successes, failures, skipped, written_matches)
 
         if matches_since_flush >= max(1, args.save_interval):
-            append_rows(args.output, pending_rows)
-            total_rows_written += len(pending_rows)
-            pending_rows.clear()
-            written_matches += matches_since_flush
-            matches_since_flush = 0
-            progress.update(successes, failures, skipped, written_matches, step=0)
+            flush_buffers()
 
-    if pending_rows:
-        append_rows(args.output, pending_rows)
-        total_rows_written += len(pending_rows)
-        written_matches += matches_since_flush
-        matches_since_flush = 0
-        progress.update(successes, failures, skipped, written_matches, step=0)
+    if pending_rows or pending_raw_matches or matches_since_flush:
+        flush_buffers()
 
     progress.ensure_newline()
     print(
         f"Completed. Processed {len(matches)} matches: "
         f"{successes} succeeded, {skipped} skipped, {failures} failed. "
         f"Wrote {total_rows_written} hero rows ({written_matches} matches) to {args.output}."
+        + (f" Raw match data appended to {args.json_output}." if args.json_output else "")
     )
 
 
